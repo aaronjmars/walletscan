@@ -135,11 +135,12 @@ function saveJson(path, obj) {
 // Partial failures inside a bridge (one chain of many, a capped list): collected per call when
 // runBridge set up a context with an errors list, else printed like the CLI always did.
 const ctx = new AsyncLocalStorage();
-// err: the error behind msg; one that needs a key (needsKeyOf) is listed as a skipped part, not a failure
+// err: the error behind msg; one that needs a key (needsKeyOf) is listed as a skipped part, not a failure, and is not
+// printed outside a call either (an index warm-up rethrows it, so the scan lists it under the key it needs)
 function warn(msg, err) {
   const c = ctx.getStore(), nk = err && needsKeyOf(err);
   if (c?.errors) c.errors.push({ bridge: c.bridge, error: nk ? nk.message : msg, ...(nk && { needs_key: nk.needs_key, why: nk.why }) });
-  else console.error(`! ${msg}`);
+  else if (!nk) console.error(`! ${msg}`);
 }
 
 const revertText = (e) => `${e.shortMessage ?? ""} ${e.details ?? ""} ${e.message ?? ""}`;
