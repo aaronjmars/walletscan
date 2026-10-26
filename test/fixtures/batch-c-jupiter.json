@@ -1,0 +1,89 @@
+{
+ "venue": "jupiter",
+ "address": "CYEd2AVkTCfDP7G5M8NVUQYvNi6H13icLpaz2KoUkJcF",
+ "captured": "2026-10-20T17:18:45.248Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.jupiter_perps_positions\",{\"address\":\"CYEd2AVkTCfDP7G5M8NVUQYvNi6H13icLpaz2KoUkJcF\"}]",
+   "out": {
+    "dataList": [
+     {
+      "asset": "SOL",
+      "assetMint": "So11111111111111111111111111111111111111112",
+      "collateralToken": "SOL",
+      "collateralMint": "So11111111111111111111111111111111111111112",
+      "positionPubkey": "5aNaBjueqCWt5sRqaciLs2ZoZsQ3wwuZBcT9EooJTPR3",
+      "side": "long",
+      "leverage": "95.02",
+      "sizeUsd": "553601937755",
+      "sizeTokenAmount": "5485152486854",
+      "collateralUsd": "5825649592",
+      "valueUsd": "34473404958",
+      "entryPriceUsd": "100927356",
+      "markPriceUsd": "106337490",
+      "liquidationPriceUsd": "100214116",
+      "openFeesUsd": "332161162",
+      "closeFeesUsd": "332161162",
+      "borrowFeesUsd": "363332274",
+      "totalFeesUsd": "1027654598",
+      "pnlBeforeFeesUsd": "29675409964",
+      "pnlBeforeFeesPct": "509.39",
+      "pnlAfterFeesUsd": "28647755366",
+      "pnlAfterFeesPct": "491.75",
+      "createdTime": 1792352865,
+      "updatedTime": 1792365691,
+      "tpslRequests": [
+       {
+        "positionRequestPubkey": "BxqqFypAKwsQPyCyekF7vgMX1VBaau8XHNHMQBCNEXrE",
+        "requestType": "sl",
+        "desiredMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "desiredToken": "USDC",
+        "collateralUsdDelta": "0",
+        "entirePosition": false,
+        "sizeUsd": "550814612755",
+        "sizePercentage": "100.00",
+        "triggerPriceUsd": "101160000",
+        "openTime": "1792365715"
+       }
+      ]
+     },
+     {
+      "asset": "BTC",
+      "assetMint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+      "collateralToken": "BTC",
+      "collateralMint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+      "positionPubkey": "B9LyFaeV9RmUJt46ar9VNqoXgMtvxnuAwbWa5wgySNth",
+      "side": "long",
+      "leverage": "135.35",
+      "sizeUsd": "118845208375",
+      "sizeTokenAmount": "144233475",
+      "collateralUsd": "878012633",
+      "valueUsd": "1090109884",
+      "entryPriceUsd": "82397798450",
+      "markPriceUsd": "82645560000",
+      "liquidationPriceUsd": "82013361358",
+      "openFeesUsd": "71307125",
+      "closeFeesUsd": "71307125",
+      "borrowFeesUsd": "2643593",
+      "totalFeesUsd": "145257843",
+      "pnlBeforeFeesUsd": "357355094",
+      "pnlBeforeFeesPct": "40.70",
+      "pnlAfterFeesUsd": "212097251",
+      "pnlAfterFeesPct": "24.16",
+      "createdTime": 1792510723,
+      "updatedTime": 1792510869,
+      "tpslRequests": []
+     }
+    ],
+    "count": 2
+   }
+  },
+  {
+   "key": "get:[\"holdings.jupiter_perps_orders\",{\"address\":\"CYEd2AVkTCfDP7G5M8NVUQYvNi6H13icLpaz2KoUkJcF\"}]",
+   "out": {
+    "count": 0,
+    "dataList": []
+   }
+  }
+ ]
+}

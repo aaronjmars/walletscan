@@ -1,0 +1,262 @@
+{
+  "address": "0x1111111111111111111111111111111111111111",
+  "chains_listed": 1760,
+  "chains_live": 774,
+  "chains_checked": 716,
+  "chains_failed": 59,
+  "ms": 14947,
+  "balances": [
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "asset": "kpdUSDC",
+      "token": "0x7b5a0182e400b241b317e781a4e9dedfc1429822",
+      "amount": 5000.0,
+      "usd": 4998.122693973799,
+      "verified": true,
+      "price_from": "defillama",
+      "amount_from": "rpc",
+      "source": "routescan"
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "asset": "ETH",
+      "token": "native",
+      "amount": 0.038,
+      "usd": 93.45169389425341,
+      "verified": true,
+      "source": "rpc"
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "asset": "xAI",
+      "token": "0x692cd1cce74bfb88947a3e02f6993ce677d54638",
+      "amount": 10,
+      "usd": 12.18723028820957,
+      "verified": false,
+      "price_from": "explorer",
+      "amount_from": "rpc",
+      "source": "blockscout"
+    },
+    {
+      "chain_id": 2818,
+      "chain": "morph",
+      "asset": "ETH",
+      "token": "native",
+      "amount": 0.0017,
+      "usd": 4.1807336742166,
+      "verified": true,
+      "source": "rpc"
+    },
+    {
+      "chain_id": 34443,
+      "chain": "mode",
+      "asset": "ETH",
+      "token": "native",
+      "amount": 0.0014,
+      "usd": 3.442957143472494,
+      "verified": true,
+      "source": "rpc"
+    },
+    {
+      "chain_id": 1030,
+      "chain": "conflux",
+      "asset": "CFX",
+      "token": "native",
+      "amount": 30.0,
+      "usd": 1.6778749384912648,
+      "verified": true,
+      "source": "rpc"
+    },
+    {
+      "chain_id": 252,
+      "chain": "fraxtal",
+      "asset": "frxETH",
+      "token": "0xfc00000000000000000000000000000000000006",
+      "amount": 0.00051,
+      "usd": 1.2457249795255259,
+      "verified": true,
+      "price_from": "defillama",
+      "amount_from": "rpc",
+      "source": "etherscan"
+    },
+    {
+      "chain_id": 122,
+      "chain": "fuse",
+      "asset": "FUSE",
+      "token": "native",
+      "amount": 3.2,
+      "usd": 0.028297646552731932,
+      "verified": true,
+      "source": "rpc"
+    }
+  ],
+  "sunset": [
+    {
+      "id": "moonbeam",
+      "name": "Moonbeam",
+      "when": "Moonbeam shut down (2026-07-31)",
+      "chain_id": 1284,
+      "chain": "moonbeam",
+      "status": "shut_down",
+      "shutdown": "2026-07-31",
+      "closes": "2026-09-30",
+      "exit": "None now: the GLMR-to-Base migration bridge closed 2026-07-31 and the emailed late-claim window (helpdesk@moonbeam.foundation) ended 2026-09-30.",
+      "link": "https://migrate.portal.moonbeam.network/migrator",
+      "source": "https://x.com/MoonbeamNetwork/status/2073046469741781197",
+      "read": "rpc",
+      "balances": [
+        {
+          "chain_id": 1284,
+          "chain": "moonbeam",
+          "asset": "GLMR",
+          "token": "native",
+          "amount": 20.0,
+          "usd": 0.20507908712827289,
+          "verified": true,
+          "source": "rpc",
+          "halted": "2026-08-10",
+          "sunset": "moonbeam"
+        }
+      ],
+      "deposits": [],
+      "deposits_count": 0
+    },
+    {
+      "id": "polygon-zkevm",
+      "name": "Polygon zkEVM",
+      "when": "Polygon zkEVM shut down (2026-07-03)",
+      "chain_id": 1101,
+      "chain": "polygon-zkevm",
+      "status": "shut_down",
+      "shutdown": "2026-07-03",
+      "closes": "2027-12-31",
+      "exit": "Claim wallet (EOA) balances on Ethereum through the Polygon zkEVM claims site; funds held in contracts (DeFi, multisigs, bridges) are not covered.",
+      "link": "https://zkevm-claims.polygon.technology",
+      "source": "https://support.polygon.technology/support/solutions/articles/82000927750-recovering-funds-from-polygon-zkevm-the-claims-interface",
+      "read": "rpc",
+      "balances": [
+        {
+          "chain_id": 1101,
+          "chain": "polygon-zkevm",
+          "asset": "ETH",
+          "token": "native",
+          "amount": 0.002,
+          "usd": 4.918510204960706,
+          "verified": true,
+          "source": "rpc",
+          "halted": "2026-07-03",
+          "sunset": "polygon-zkevm"
+        }
+      ],
+      "deposits": [],
+      "deposits_count": 0
+    },
+    {
+      "id": "blast",
+      "name": "Blast",
+      "when": "Blast is closing",
+      "chain_id": 81457,
+      "chain": "blast",
+      "status": "closing",
+      "shutdown": null,
+      "closes": "2026-10-26",
+      "exit": "Withdraw to Ethereum through the Blast bridge UI (24h delay) by Oct 26; after that funds stay recoverable by calling the Blast bridge contracts on Ethereum directly.",
+      "link": "https://blast.io/en/bridge",
+      "source": "https://x.com/blast/status/2106032805280891073",
+      "read": "rpc",
+      "balances": [
+        {
+          "chain_id": 81457,
+          "chain": "blast",
+          "asset": "WETH",
+          "token": "0x4300000000000000000000000000000000000004",
+          "amount": 0.0014,
+          "usd": 3.4394237275799395,
+          "verified": true,
+          "price_from": "defillama",
+          "amount_from": "rpc",
+          "source": "routescan",
+          "sunset": "blast"
+        },
+        {
+          "chain_id": 81457,
+          "chain": "blast",
+          "asset": "BLAST",
+          "token": "0xb1a5700fa2358173fe465e6ea4ff52e36e88e2ad",
+          "amount": 3600.0,
+          "usd": 0.1649315341934497,
+          "verified": true,
+          "price_from": "defillama",
+          "amount_from": "routescan",
+          "source": "routescan",
+          "sunset": "blast"
+        },
+        {
+          "chain_id": 81457,
+          "chain": "blast",
+          "asset": "ETH",
+          "token": "native",
+          "amount": 1.3e-05,
+          "usd": 0.031970316332244585,
+          "verified": true,
+          "source": "rpc",
+          "sunset": "blast"
+        }
+      ],
+      "deposits": [],
+      "deposits_count": 0
+    },
+    {
+      "id": "redstone",
+      "name": "Redstone",
+      "when": "Redstone shut down (2026-05-15)",
+      "chain_id": 690,
+      "chain": "redstone",
+      "status": "shut_down",
+      "shutdown": "2026-05-15",
+      "closes": null,
+      "exit": "Only the L1 withdrawal contracts remain, for plain wallet (EOA) balances; funds in contracts like Uniswap pools are lost.",
+      "link": "https://x.com/latticexyz/status/2044103611072835744",
+      "source": "https://x.com/latticexyz/status/2044103611072835744",
+      "read": "none",
+      "balances": [],
+      "deposits": [
+        {
+          "tx": "0xabababababababababababababababababababababababababababababababab",
+          "date": "2024-05-02",
+          "asset": "ETH",
+          "value": 0.02
+        }
+      ],
+      "deposits_count": 1
+    }
+  ],
+  "active": [
+    {
+      "chain_id": 10,
+      "chain": "optimism",
+      "nonce": 765
+    },
+    {
+      "chain_id": 42161,
+      "chain": "arbitrum",
+      "nonce": 635
+    },
+    {
+      "chain_id": 747474,
+      "chain": "katana",
+      "nonce": 13
+    }
+  ],
+  "unpriced": 544,
+  "token_sources": {
+    "blockscout_cluster": true,
+    "routescan": true,
+    "per_chain": 46,
+    "etherscan": true
+  },
+  "list_built": "2026-10-15T22:06:55.163Z"
+}

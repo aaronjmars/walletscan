@@ -1,0 +1,23 @@
+{
+ "venue": "vela",
+ "address": "0x8c543ec76298165c6226548570f37baa0c022cf0",
+ "captured": "2026-10-20T17:17:58.791Z",
+ "calls": [
+  {
+   "key": "multicall:[\"arbitrum\",[{\"to\":\"0xAA0B397B0896A864714dE56AA33E3df471229268\",\"functionName\":\"balanceOf\",\"args\":[\"0x8c543ec76298165c6226548570f37baa0c022cf0\"]}]]",
+   "out": [
+    {
+     "$n": "973408114700718030119722791993082"
+    }
+   ]
+  },
+  {
+   "key": "multicall:[\"base\",[{\"to\":\"0xAA0B397B0896A864714dE56AA33E3df471229268\",\"functionName\":\"balanceOf\",\"args\":[\"0x8c543ec76298165c6226548570f37baa0c022cf0\"]}]]",
+   "out": [
+    {
+     "$n": "0"
+    }
+   ]
+  }
+ ]
+}

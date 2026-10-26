@@ -1,0 +1,77 @@
+{
+ "venue": "flashtrade",
+ "address": "8XZvREoCPobjred9ZccEWQzhMXKsXb735uw4AatMoEPG",
+ "captured": "2026-10-20T17:18:58.152Z",
+ "calls": [
+  {
+   "key": "get:[\"sol.flash_stakes\",{\"owner\":\"8XZvREoCPobjred9ZccEWQzhMXKsXb735uw4AatMoEPG\"}]",
+   "out": {
+    "jsonrpc": "2.0",
+    "result": [
+     {
+      "pubkey": "Cvtk1jgA7kms881CrNUtcokNzk1kRz4J42KSNkAEP3k4",
+      "account": {
+       "lamports": 1893120,
+       "data": [
+        "r7KrHrv9DXZv1nTm4p/OP/23tev3ztF10M5DFYOn0w5IHl0Knvyy79IFiie6hcscZvYr0TAjH4zmkAodFXrpOgFcv1XjoR00AAAAAAAAAAB5L+QHAAAAAAAAAAAAAAAAAAAAAAAAAABbsOsBAAAAAAAAAAAAAAAAwpekAQAAAABAHwAAAAAAAAH/AAAAAAAA",
+        "base64"
+       ],
+       "owner": "FLASH6Lo6h3iasJKWDs2F8TkW2UKf3s15C8PMGuVfgBn",
+       "executable": false,
+       "rentEpoch": 18446744073709552000,
+       "space": 144
+      }
+     }
+    ],
+    "id": 1
+   }
+  },
+  {
+   "key": "get:[\"sol.accounts\",{\"pubkeys\":\"F8qWvHm5F288VodQ7zGLhnrbbRR3zDbae6aNE53HQ98f,Cwneu1mq39LExywGhY79nzxeAAGnQhPVijZr98P9hs3Q\"}]",
+   "out": {
+    "jsonrpc": "2.0",
+    "result": {
+     "context": {
+      "slot": 459310089,
+      "apiVersion": "4.3.0-alpha.2"
+     },
+     "value": [
+      {
+       "lamports": 4429760,
+       "data": [
+        "8ZptBBGxbbwLAAAAQ29tbXVuaXR5LjMBAQEBAQEBAQEBAAEB5KpZZwAAAACxeYpTcQ4MsBJtqhYUX6p7fkatfr7orWVI8HDjsWxs05CGxyPegHXJ12A34Fi3goMdnEjOd26vSOUIK1QVuy6j/grZ8eFRRahBwdfn5jB9dM1SFjPxJ6T5LPn+d5E7wgNp1eqQ+SRXVZwJctycv09tmt3Myf4oyaCvDFpRr5mRngIAAABp1eqQ+SRXVZwJctycv09tmt3Myf4oyaCvDFpRr5mRnpJ5wf+YG9f6vOoWjKFQMqGDXGZXAwBkrVNZOtXlTsfGAgAAALgLAAAAAAAAZAAAAAAAAAAQJwAAAAAAAFgbAAAAAAAAZAAAAAAAAAAQJwAAAAAAAAAAAAAAZc0dAAAAAAAAAAAAAAAAOsY/HQAAAACJxekXAAAAAAAAAAAAAAAAIrVAfQAAAAAAAAAAAAAAAAAAAAAAAAAAQB8AAAAAAAD+//8AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKWPkFwdxh7bu+ix6bBjTX3Xb9Txxw75jcNde+igBYmXPVqHT/oPv164dPtmORGoD9+kG6w2UI7gmep/pcbwWTNEkK00AAAAAFlYXSQAAAAAbjnSDAAAAAAAAAAAAAAAAEAfAAAAAAAADVcXaQAAAAD/+qCGAQAAAAAAQEIPAAAAAAD66AIAAAAAAC03BAAAAAAA9NEOaQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAitUB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACK1QH0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIrVAfQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "base64"
+       ],
+       "owner": "FLASH6Lo6h3iasJKWDs2F8TkW2UKf3s15C8PMGuVfgBn",
+       "executable": false,
+       "rentEpoch": 18446744073709552000,
+       "space": 744
+      },
+      {
+       "lamports": 1461600,
+       "data": {
+        "program": "spl-token",
+        "parsed": {
+         "info": {
+          "decimals": 6,
+          "freezeAuthority": "81xGAvJ27ZeRThU2JEfKAUeT4Fx6qCCd8WHZpujZbiiG",
+          "isInitialized": true,
+          "mintAuthority": "81xGAvJ27ZeRThU2JEfKAUeT4Fx6qCCd8WHZpujZbiiG",
+          "supply": "2101392674"
+         },
+         "type": "mint"
+        },
+        "space": 82
+       },
+       "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+       "executable": false,
+       "rentEpoch": 18446744073709552000,
+       "space": 82
+      }
+     ]
+    },
+    "id": 1
+   }
+  }
+ ]
+}

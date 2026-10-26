@@ -1,0 +1,137 @@
+{
+ "items": [
+  {
+   "protocol": "Uniswap V3",
+   "chain": "ethereum",
+   "version": "v3",
+   "position_id": "112161",
+   "hooks": null,
+   "closed": false,
+   "legs": [
+    {
+     "token": "0x6793655c396eaee311fb4d3596b88fd7d195c79e",
+     "asset": "DGENV2",
+     "amount": 6.29055859,
+     "usd": null
+    },
+    {
+     "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+     "asset": "WETH",
+     "amount": 0.03198355264353634,
+     "usd": 78.35793096880447
+    }
+   ]
+  },
+  {
+   "protocol": "Uniswap V3",
+   "chain": "ethereum",
+   "version": "v3",
+   "position_id": "953024",
+   "hooks": null,
+   "closed": false,
+   "legs": [
+    {
+     "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+     "asset": "WETH",
+     "amount": 0.000201014351146556,
+     "usd": 0.4924740170809024
+    },
+    {
+     "token": "0xd78959df1ff28b45e6b4ea234bdcf9d6609d16e1",
+     "asset": "Mierda",
+     "amount": 19678.323702556045,
+     "usd": null
+    }
+   ]
+  },
+  {
+   "protocol": "Uniswap V3",
+   "chain": "ethereum",
+   "version": "v3",
+   "position_id": "1128633",
+   "hooks": null,
+   "closed": false,
+   "legs": [
+    {
+     "token": "0x4ea6b1487c599aff5e77587ed1fe53ea610a0882",
+     "asset": "BARK",
+     "amount": 606367.7493119468,
+     "usd": null
+    },
+    {
+     "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+     "asset": "WETH",
+     "amount": 0.001542112877910988,
+     "usd": 3.7780910638729153
+    }
+   ]
+  },
+  {
+   "protocol": "Uniswap V4",
+   "chain": "ethereum",
+   "version": "v4",
+   "position_id": "8472",
+   "hooks": null,
+   "closed": false,
+   "legs": [
+    {
+     "token": "0x0000000000000000000000000000000000000000",
+     "asset": "ETH",
+     "amount": 8.852246853764e-06,
+     "usd": 0.021675862404653124
+    },
+    {
+     "token": "0xf9c8631fba291bac14ed549a2dde7c7f2ddff1a8",
+     "asset": "GoGo",
+     "amount": 8499.556875477216,
+     "usd": null
+    }
+   ]
+  },
+  {
+   "protocol": "Uniswap V3",
+   "chain": "base",
+   "version": "v3",
+   "position_id": "1256577",
+   "hooks": null,
+   "closed": false,
+   "legs": [
+    {
+     "token": "0x07449b62ec61f12d6110c36db240436222b02530",
+     "asset": "DOGE",
+     "amount": 22150.00499495948,
+     "usd": null
+    },
+    {
+     "token": "0x4200000000000000000000000000000000000006",
+     "asset": "WETH",
+     "amount": 1.0474415984179e-05,
+     "usd": 0.025661738512113317
+    }
+   ]
+  },
+  {
+   "protocol": "Uniswap V3",
+   "chain": "base",
+   "version": "v3",
+   "position_id": "46052",
+   "hooks": null,
+   "closed": false,
+   "legs": [
+    {
+     "token": "0x2ef9f33ae8f8e7f7858ed24965b04ec8fc4e5841",
+     "asset": "NMB404",
+     "amount": 0.8084746253045724,
+     "usd": null
+    },
+    {
+     "token": "0x4200000000000000000000000000000000000006",
+     "asset": "WETH",
+     "amount": 0.17127714243328096,
+     "usd": 419.6195042151891
+    }
+   ]
+  }
+ ],
+ "errors": []
+}

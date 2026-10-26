@@ -1,0 +1,510 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "last_indexed_slot": 457377075,
+    "total": 365,
+    "limit": 1000,
+    "page": 1,
+    "items": [
+      {
+        "interface": "FungibleToken",
+        "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "content": {
+          "$schema": "https://schema.metaplex.com/nft1.0.json",
+          "json_uri": "",
+          "files": [
+            {
+              "uri": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v/logo.png",
+              "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v/logo.png",
+              "mime": "image/png"
+            }
+          ],
+          "metadata": {
+            "name": "USD Coin",
+            "symbol": "USDC"
+          },
+          "links": {
+            "image": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v/logo.png"
+          }
+        },
+        "authorities": [
+          {
+            "address": "2wmVCSfPxGPjrnMMn7rchp4uaeoTqN39mXFC2zhPdri9",
+            "scopes": [
+              "full"
+            ]
+          }
+        ],
+        "compression": {
+          "eligible": false,
+          "compressed": false,
+          "data_hash": "",
+          "creator_hash": "",
+          "asset_hash": "",
+          "tree": "",
+          "seq": 0,
+          "leaf_id": 0
+        },
+        "grouping": [],
+        "royalty": {
+          "royalty_model": "creators",
+          "target": null,
+          "percent": 0.0,
+          "basis_points": 0,
+          "primary_sale_happened": false,
+          "locked": false
+        },
+        "creators": [],
+        "ownership": {
+          "frozen": false,
+          "delegated": false,
+          "delegate": null,
+          "ownership_model": "token",
+          "owner": "CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq"
+        },
+        "supply": null,
+        "mutable": true,
+        "burnt": false,
+        "token_info": {
+          "token_accounts": [
+            {
+              "address": "3tBMiT532p88a2oSR7UqXZvNLAtcvtnVMrn3FvphvtGK",
+              "balance": 1000
+            }
+          ],
+          "symbol": "USDC",
+          "balance": 1000,
+          "supply": 7755660606800993,
+          "decimals": 6,
+          "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "associated_token_address": "3tBMiT532p88a2oSR7UqXZvNLAtcvtnVMrn3FvphvtGK",
+          "price_info": {
+            "price_per_token": 0.9998665,
+            "total_price": 0.000999866485595703,
+            "currency": "USDC"
+          },
+          "mint_authority": "BJE5MMbqXjVwjAF7oxwPYXnTXDyspzZyt4vwenNw5ruG",
+          "freeze_authority": "7dGbd2QZcCKcTndnHcTL8q7SMVXAkp688NTQYwrRCrar"
+        }
+      },
+      {
+        "interface": "FungibleToken",
+        "id": "EPeUFDgHRxs9xxEPVaL6kfGQvCon7jmAWKVUHuux1Tpz",
+        "content": {
+          "$schema": "https://schema.metaplex.com/nft1.0.json",
+          "json_uri": "",
+          "files": [
+            {
+              "uri": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EPeUFDgHRxs9xxEPVaL6kfGQvCon7jmAWKVUHuux1Tpz/logo.png",
+              "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EPeUFDgHRxs9xxEPVaL6kfGQvCon7jmAWKVUHuux1Tpz/logo.png",
+              "mime": "image/png"
+            }
+          ],
+          "metadata": {
+            "name": "Basic Attention Token (Wormhole)",
+            "symbol": "BAT"
+          },
+          "links": {
+            "image": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EPeUFDgHRxs9xxEPVaL6kfGQvCon7jmAWKVUHuux1Tpz/logo.png"
+          }
+        },
+        "authorities": [
+          {
+            "address": "BCD75RNBHrJJpW4dXVagL5mPjzRLnVZq4YirJdjEYMV7",
+            "scopes": [
+              "full"
+            ]
+          }
+        ],
+        "compression": {
+          "eligible": false,
+          "compressed": false,
+          "data_hash": "",
+          "creator_hash": "",
+          "asset_hash": "",
+          "tree": "",
+          "seq": 0,
+          "leaf_id": 0
+        },
+        "grouping": [],
+        "royalty": {
+          "royalty_model": "creators",
+          "target": null,
+          "percent": 0.0,
+          "basis_points": 0,
+          "primary_sale_happened": false,
+          "locked": false
+        },
+        "creators": [],
+        "ownership": {
+          "frozen": false,
+          "delegated": false,
+          "delegate": null,
+          "ownership_model": "token",
+          "owner": "CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq"
+        },
+        "supply": null,
+        "mutable": true,
+        "burnt": false,
+        "token_info": {
+          "token_accounts": [
+            {
+              "address": "5g2w5ebusJTy4aX3oRf5JpYd8i7REuDFeo8NkQhTQL4M",
+              "balance": 400000000
+            }
+          ],
+          "symbol": "BAT",
+          "balance": 400000000,
+          "supply": 180296271533163,
+          "decimals": 8,
+          "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "associated_token_address": "5g2w5ebusJTy4aX3oRf5JpYd8i7REuDFeo8NkQhTQL4M",
+          "price_info": {
+            "price_per_token": 0.21341303,
+            "total_price": 0.8536521196365356,
+            "currency": "USDC"
+          },
+          "mint_authority": "BCD75RNBHrJJpW4dXVagL5mPjzRLnVZq4YirJdjEYMV7"
+        }
+      },
+      {
+        "interface": "FungibleToken",
+        "id": "DriFtupJYLTosbwoN8koMbEYSx54aFAVLddWsbksjwg7",
+        "content": {
+          "$schema": "https://schema.metaplex.com/nft1.0.json",
+          "json_uri": "https://metadata.drift.foundation/drift.json",
+          "files": [
+            {
+              "uri": "https://metadata.drift.foundation/drift.png",
+              "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://metadata.drift.foundation/drift.png",
+              "mime": "image/png"
+            }
+          ],
+          "metadata": {
+            "description": "Drift Governance Token",
+            "json_name": "DRIFT",
+            "name": "Drift",
+            "symbol": "DRIFT",
+            "token_standard": "Fungible"
+          },
+          "links": {
+            "image": "https://metadata.drift.foundation/drift.png"
+          }
+        },
+        "authorities": [
+          {
+            "address": "2xN6e9Z7qT6KPAWSMNKt2WPDbeCcSDADdXqUXsh3UVfK",
+            "scopes": [
+              "full"
+            ]
+          }
+        ],
+        "compression": {
+          "eligible": false,
+          "compressed": false,
+          "data_hash": "",
+          "creator_hash": "",
+          "asset_hash": "",
+          "tree": "",
+          "seq": 0,
+          "leaf_id": 0
+        },
+        "grouping": [],
+        "royalty": {
+          "royalty_model": "creators",
+          "target": null,
+          "percent": 0.0,
+          "basis_points": 0,
+          "primary_sale_happened": false,
+          "locked": false
+        },
+        "creators": [],
+        "ownership": {
+          "frozen": false,
+          "delegated": false,
+          "delegate": null,
+          "ownership_model": "token",
+          "owner": "CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq"
+        },
+        "supply": null,
+        "mutable": false,
+        "burnt": false,
+        "token_info": {
+          "token_accounts": [
+            {
+              "address": "9782mp2SnNaKYretUnn9cTCnvyNPVZbzzQmujX6DdPRB",
+              "balance": 1
+            }
+          ],
+          "symbol": "DRIFT",
+          "balance": 1,
+          "supply": 999998337927152,
+          "decimals": 6,
+          "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "associated_token_address": "9782mp2SnNaKYretUnn9cTCnvyNPVZbzzQmujX6DdPRB",
+          "price_info": {
+            "price_per_token": 0.016104039,
+            "total_price": 1.6104038804769516E-8,
+            "currency": "USDC"
+          }
+        }
+      },
+      {
+        "interface": "FungibleToken",
+        "id": "ATLASXmbPQxBUYbxPsV97usA3fPQYEqzQBUHgiFCUsXx",
+        "content": {
+          "$schema": "https://schema.metaplex.com/nft1.0.json",
+          "json_uri": "",
+          "files": [
+            {
+              "uri": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/ATLASXmbPQxBUYbxPsV97usA3fPQYEqzQBUHgiFCUsXx/logo.png",
+              "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/ATLASXmbPQxBUYbxPsV97usA3fPQYEqzQBUHgiFCUsXx/logo.png",
+              "mime": "image/png"
+            }
+          ],
+          "metadata": {
+            "name": "Star Atlas",
+            "symbol": "ATLAS"
+          },
+          "links": {
+            "image": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/ATLASXmbPQxBUYbxPsV97usA3fPQYEqzQBUHgiFCUsXx/logo.png"
+          }
+        },
+        "authorities": [
+          {
+            "address": "GgYtnDJMHQG4gpVzy2KHukSvHfFJcs1jLXASsBCQE83P",
+            "scopes": [
+              "full"
+            ]
+          }
+        ],
+        "compression": {
+          "eligible": false,
+          "compressed": false,
+          "data_hash": "",
+          "creator_hash": "",
+          "asset_hash": "",
+          "tree": "",
+          "seq": 0,
+          "leaf_id": 0
+        },
+        "grouping": [],
+        "royalty": {
+          "royalty_model": "creators",
+          "target": null,
+          "percent": 0.0,
+          "basis_points": 0,
+          "primary_sale_happened": false,
+          "locked": false
+        },
+        "creators": [],
+        "ownership": {
+          "frozen": false,
+          "delegated": false,
+          "delegate": null,
+          "ownership_model": "token",
+          "owner": "CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq"
+        },
+        "supply": null,
+        "mutable": true,
+        "burnt": false,
+        "token_info": {
+          "token_accounts": [
+            {
+              "address": "7n8kaw5EP9rAyEjyiqjZ1pozyHfR18TYjvHgPBfwqC95",
+              "balance": 3
+            }
+          ],
+          "symbol": "ATLAS",
+          "balance": 3,
+          "supply": 3599915853764194680,
+          "decimals": 8,
+          "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "associated_token_address": "7n8kaw5EP9rAyEjyiqjZ1pozyHfR18TYjvHgPBfwqC95",
+          "price_info": {
+            "price_per_token": 0.00014015585,
+            "total_price": 4.2046756425406784E-12,
+            "currency": "USDC"
+          },
+          "mint_authority": "BVJESvrDeXZcSX5UVdK2Tt57Lur9gyakgCfdX45pVQ1V"
+        }
+      },
+      {
+        "interface": "FungibleToken",
+        "id": "Hf7oUc1PgenzBXN81VhBCDG13mq9MEzje5bQ38zLex3V",
+        "content": {
+          "$schema": "https://schema.metaplex.com/nft1.0.json",
+          "json_uri": "https://slerftools-pump-launch-bot-1231.mypinata.cloud/ipfs/QmPZQmEqCdDGHikSC3ELZgo5BhzY7myPFm2UbFAoJtNkX9",
+          "files": [
+            {
+              "uri": "https://slerftools-pump-launch-bot-1231.mypinata.cloud/ipfs/Qme7TZEcH7SgePrS7Dv9x5m1xBJCe2JdQUHNqHmFaWz124",
+              "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://slerftools-pump-launch-bot-1231.mypinata.cloud/ipfs/Qme7TZEcH7SgePrS7Dv9x5m1xBJCe2JdQUHNqHmFaWz124",
+              "mime": "image/png"
+            }
+          ],
+          "metadata": {
+            "description": "We are brothers, doing crypto together. Let’s welcome Solana’s all-time high together. Have fun together. Have fun together. Hold it together forever. we are brothers.",
+            "json_name": "hiBRO",
+            "name": "hiBRO",
+            "symbol": "HIB",
+            "token_standard": "Fungible"
+          },
+          "links": {
+            "image": "https://slerftools-pump-launch-bot-1231.mypinata.cloud/ipfs/Qme7TZEcH7SgePrS7Dv9x5m1xBJCe2JdQUHNqHmFaWz124"
+          }
+        },
+        "authorities": [
+          {
+            "address": "CZHKx8XSHPnjvm4qBrVUSfc6HnUP7WaHxArbFoLax2Jw",
+            "scopes": [
+              "full"
+            ]
+          }
+        ],
+        "compression": {
+          "eligible": false,
+          "compressed": false,
+          "data_hash": "",
+          "creator_hash": "",
+          "asset_hash": "",
+          "tree": "",
+          "seq": 0,
+          "leaf_id": 0
+        },
+        "grouping": [],
+        "royalty": {
+          "royalty_model": "creators",
+          "target": null,
+          "percent": 0.0,
+          "basis_points": 0,
+          "primary_sale_happened": false,
+          "locked": false
+        },
+        "creators": [
+          {
+            "address": "CZHKx8XSHPnjvm4qBrVUSfc6HnUP7WaHxArbFoLax2Jw",
+            "share": 100,
+            "verified": true
+          }
+        ],
+        "ownership": {
+          "frozen": false,
+          "delegated": false,
+          "delegate": null,
+          "ownership_model": "token",
+          "owner": "CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq"
+        },
+        "supply": null,
+        "mutable": false,
+        "burnt": false,
+        "token_info": {
+          "token_accounts": [
+            {
+              "address": "EXuJSvbYvNuf8ARsATPod5s9CMjM8QstjkESEdAsgYZy",
+              "balance": 50000000000
+            }
+          ],
+          "balance": 50000000000,
+          "supply": 140118449836874911,
+          "decimals": 9,
+          "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "associated_token_address": "EXuJSvbYvNuf8ARsATPod5s9CMjM8QstjkESEdAsgYZy"
+        }
+      },
+      {
+        "interface": "FungibleToken",
+        "id": "HREk65KiSb8eQJkQx9WYT8dEwzBBfN5sDcg8nQPFcTsN",
+        "content": {
+          "$schema": "https://schema.metaplex.com/nft1.0.json",
+          "json_uri": "https://ipfs.io/ipfs/QmP7x1MmHLpjNEXkqpjsDouDHKYnWjzWtD6E3XN5Xkyqoo",
+          "files": [
+            {
+              "uri": "https://ipfs.io/ipfs/QmQnnJsvZwPBhLGBYd6RDqAiS6j8nji55QEt9RAR8uTHzB",
+              "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://ipfs.io/ipfs/QmQnnJsvZwPBhLGBYd6RDqAiS6j8nji55QEt9RAR8uTHzB",
+              "mime": "image/png"
+            }
+          ],
+          "metadata": {
+            "attributes": [
+              {
+                "value": "True",
+                "trait_type": "Whitelist Pass"
+              },
+              {
+                "value": "546 NFT",
+                "trait_type": "Left:"
+              }
+            ],
+            "description": "Congratulations! You are one of the 100,000 Solana users who recently received this NFT token from the creator of Solana, Anatoly Yakovenko. You need to exchange this token for NFT at solscan.info! Only 1000 NFTs are available!",
+            "json_name": "Official Solana NFT",
+            "name": "Official Solana NFT",
+            "symbol": "NFT"
+          },
+          "links": {
+            "image": "https://ipfs.io/ipfs/QmQnnJsvZwPBhLGBYd6RDqAiS6j8nji55QEt9RAR8uTHzB",
+            "external_url": "https://solscan.info/"
+          },
+          "category": "image"
+        },
+        "authorities": [
+          {
+            "address": "5giB4Sy4g1NZENnViVbViXPk9VAif6N23VpcYDQ38art",
+            "scopes": [
+              "full"
+            ]
+          }
+        ],
+        "compression": {
+          "eligible": false,
+          "compressed": false,
+          "data_hash": "",
+          "creator_hash": "",
+          "asset_hash": "",
+          "tree": "",
+          "seq": 0,
+          "leaf_id": 0
+        },
+        "grouping": [],
+        "royalty": {
+          "royalty_model": "creators",
+          "target": null,
+          "percent": 0.0,
+          "basis_points": 0,
+          "primary_sale_happened": false,
+          "locked": false
+        },
+        "creators": [],
+        "ownership": {
+          "frozen": false,
+          "delegated": false,
+          "delegate": null,
+          "ownership_model": "token",
+          "owner": "CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq"
+        },
+        "supply": null,
+        "mutable": false,
+        "burnt": false,
+        "token_info": {
+          "token_accounts": [
+            {
+              "address": "DDCH13oUQAyPXfAvngCb1hWtKgGXgDQaXAq8j1z61oij",
+              "balance": 1
+            }
+          ],
+          "balance": 1,
+          "supply": 8581,
+          "decimals": 0,
+          "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "associated_token_address": "DDCH13oUQAyPXfAvngCb1hWtKgGXgDQaXAq8j1z61oij",
+          "mint_authority": "5giB4Sy4g1NZENnViVbViXPk9VAif6N23VpcYDQ38art"
+        }
+      }
+    ],
+    "nativeBalance": {
+      "lamports": 25728568,
+      "price_per_sol": 105.89530181884766,
+      "total_price": 2.7245344737267456
+    }
+  },
+  "id": 1
+}

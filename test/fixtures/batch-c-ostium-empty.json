@@ -1,0 +1,29 @@
+{
+ "venue": "ostium",
+ "address": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+ "captured": "2026-10-20T17:18:44.299Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.ostium_limits\",{\"address\":\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\"}]",
+   "out": {
+    "trader": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+    "chainId": 42161,
+    "first": 100,
+    "skip": 0,
+    "count": 0,
+    "limits": []
+   }
+  },
+  {
+   "key": "get:[\"holdings.ostium_trades\",{\"address\":\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\"}]",
+   "out": {
+    "trader": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+    "chainId": 42161,
+    "first": 1000,
+    "skip": 0,
+    "count": 0,
+    "trades": []
+   }
+  }
+ ]
+}

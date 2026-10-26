@@ -1,0 +1,1327 @@
+{
+ "venue": "gains",
+ "address": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+ "captured": "2026-10-20T17:27:10.186Z",
+ "calls": [
+  {
+   "key": "multicall:[\"polygon\",[{\"to\":\"0x209A9A01980377916851af2cA075C2b170452018\",\"functionName\":\"getCollaterals\"},{\"to\":\"0x209A9A01980377916851af2cA075C2b170452018\",\"functionName\":\"getTrades\",\"args\":[\"0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7\"]},{\"to\":\"0x209A9A01980377916851af2cA075C2b170452018\",\"functionName\":\"getPendingOrders\",\"args\":[\"0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7\"]}]]",
+   "out": [
+    [
+     {
+      "collateral": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     },
+     {
+      "collateral": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     },
+     {
+      "collateral": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000"
+      },
+      "precisionDelta": {
+       "$n": "1000000000000"
+      }
+     }
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "key": "multicall:[\"arbitrum\",[{\"to\":\"0xFF162c694eAA571f685030649814282eA457f169\",\"functionName\":\"getCollaterals\"},{\"to\":\"0xFF162c694eAA571f685030649814282eA457f169\",\"functionName\":\"getTrades\",\"args\":[\"0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7\"]},{\"to\":\"0xFF162c694eAA571f685030649814282eA457f169\",\"functionName\":\"getPendingOrders\",\"args\":[\"0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7\"]}]]",
+   "out": [
+    [
+     {
+      "collateral": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     },
+     {
+      "collateral": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     },
+     {
+      "collateral": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000"
+      },
+      "precisionDelta": {
+       "$n": "1000000000000"
+      }
+     },
+     {
+      "collateral": "0x18c11FD286C5EC11c3b683Caa813B77f5163A122",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     }
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "key": "multicall:[\"megaeth\",[{\"to\":\"0x2D5B1ba6E2093a5b927Fe5bF8C049B107de31eaF\",\"functionName\":\"getCollaterals\"},{\"to\":\"0x2D5B1ba6E2093a5b927Fe5bF8C049B107de31eaF\",\"functionName\":\"getTrades\",\"args\":[\"0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7\"]},{\"to\":\"0x2D5B1ba6E2093a5b927Fe5bF8C049B107de31eaF\",\"functionName\":\"getPendingOrders\",\"args\":[\"0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7\"]}]]",
+   "out": [
+    [
+     {
+      "collateral": "0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     }
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "key": "multicall:[\"apechain\",[{\"to\":\"0x2BE5D7058AdBa14Bc38E4A83E94A81f7491b0163\",\"functionName\":\"getCollaterals\"},{\"to\":\"0x2BE5D7058AdBa14Bc38E4A83E94A81f7491b0163\",\"functionName\":\"getTrades\",\"args\":[\"0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7\"]},{\"to\":\"0x2BE5D7058AdBa14Bc38E4A83E94A81f7491b0163\",\"functionName\":\"getPendingOrders\",\"args\":[\"0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7\"]}]]",
+   "out": [
+    [
+     {
+      "collateral": "0x00000000000f7e000644657dC9417b185962645a",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     }
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "key": "multicall:[\"base\",[{\"to\":\"0x6cD5aC19a07518A8092eEFfDA4f1174C72704eeb\",\"functionName\":\"getCollaterals\"},{\"to\":\"0x6cD5aC19a07518A8092eEFfDA4f1174C72704eeb\",\"functionName\":\"getTrades\",\"args\":[\"0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7\"]},{\"to\":\"0x6cD5aC19a07518A8092eEFfDA4f1174C72704eeb\",\"functionName\":\"getPendingOrders\",\"args\":[\"0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7\"]}]]",
+   "out": [
+    [
+     {
+      "collateral": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000"
+      },
+      "precisionDelta": {
+       "$n": "1000000000000"
+      }
+     },
+     {
+      "collateral": "0xe4b20925D9E9a62F1E492e15a81dC0de62804dd4",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     }
+    ],
+    [
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19156,
+      "pairIndex": 131,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "1000000"
+      },
+      "openPrice": {
+       "$n": "21597112155"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "46302486778005992162"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19243,
+      "pairIndex": 286,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "5000000"
+      },
+      "openPrice": {
+       "$n": "8423293999"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "593592008283308499567"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19256,
+      "pairIndex": 491,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "5000000"
+      },
+      "openPrice": {
+       "$n": "168157324"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "29734060276856807628548"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19270,
+      "pairIndex": 3,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "794854234"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "2516169790880839320367"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19283,
+      "pairIndex": 17,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "5000000"
+      },
+      "openPrice": {
+       "$n": "73082375918"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "68416318436510950823"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19285,
+      "pairIndex": 216,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "5324478883"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "375625142124815494338"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19287,
+      "pairIndex": 20,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "11809906503035"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "169348975878792854"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19289,
+      "pairIndex": 414,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "7074791088"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "282675155709143181647"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19290,
+      "pairIndex": 223,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "5000000"
+      },
+      "openPrice": {
+       "$n": "2705668060746"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "1847236675542327811"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19291,
+      "pairIndex": 140,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "69488672"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "28781878790960193265710"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19297,
+      "pairIndex": 167,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "930886652"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "2148489287823626458014"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19364,
+      "pairIndex": 8,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "1112863142"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "1797102860287602303494"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19368,
+      "pairIndex": 141,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "1294534293"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "1544907541586203569033"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19389,
+      "pairIndex": 216,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "5314654508"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "376322566986667255355"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19400,
+      "pairIndex": 51,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "6194248867134"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "322864556061483102"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19404,
+      "pairIndex": 109,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "1871786099"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "1068452402793646811274"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19405,
+      "pairIndex": 418,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "771673991"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "2591857174238238726887"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19406,
+      "pairIndex": 307,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "6670485299"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "299836996225583828514"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19407,
+      "pairIndex": 299,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "5020000"
+      },
+      "openPrice": {
+       "$n": "19828985045"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "253168408938704049677"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19410,
+      "pairIndex": 433,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "211956713"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "9435888921338386673320"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19413,
+      "pairIndex": 193,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "1000000"
+      },
+      "openPrice": {
+       "$n": "30275"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "33030553261767134599504541"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19414,
+      "pairIndex": 18,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "1000000"
+      },
+      "openPrice": {
+       "$n": "1789441501"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "558833908107978670092"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19417,
+      "pairIndex": 417,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "1000000"
+      },
+      "openPrice": {
+       "$n": "741450482"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "1348707734739863585387"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19423,
+      "pairIndex": 219,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "5000000"
+      },
+      "openPrice": {
+       "$n": "1919607999"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "2604733741367721869612"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19424,
+      "pairIndex": 320,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "1000000"
+      },
+      "openPrice": {
+       "$n": "76976313"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "12990990254600804667132"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19425,
+      "pairIndex": 194,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "1000000"
+      },
+      "openPrice": {
+       "$n": "21137838455"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "47308526939917897106"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19426,
+      "pairIndex": 134,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "1000000"
+      },
+      "openPrice": {
+       "$n": "44927"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "22258330180069891156765419"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19427,
+      "pairIndex": 373,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "1000000"
+      },
+      "openPrice": {
+       "$n": "1982154835"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "504501455861292490805"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19428,
+      "pairIndex": 321,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "1000000"
+      },
+      "openPrice": {
+       "$n": "1458298793"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "685731213635840887874"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19431,
+      "pairIndex": 50,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "833487396"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "2399426390247835684103"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19432,
+      "pairIndex": 2,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "121837691381"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "16415161884369939473"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19445,
+      "pairIndex": 482,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "1093063623"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "1829719659420044573196"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19446,
+      "pairIndex": 425,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "23818069613"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "83969861222858791381"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19447,
+      "pairIndex": 153,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "10166119766"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "196732350572667097580"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19449,
+      "pairIndex": 7,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "1523204711512"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "1313010020817414752"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19450,
+      "pairIndex": 407,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "5000000"
+      },
+      "openPrice": {
+       "$n": "46121149"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "108416612685331024984496"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19451,
+      "pairIndex": 191,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "3163511429"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "632211683321599621470"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19452,
+      "pairIndex": 207,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "4751081605"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "420956777062135938622"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19453,
+      "pairIndex": 282,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "2397539172"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "834188664509544872620"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19454,
+      "pairIndex": 442,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "31952494348"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "62598058461861326337"
+      },
+      "__placeholder": 0
+     },
+     {
+      "user": "0x05D2Db9dCcDeAa94A4a7B3e14A78Eeaf58639CD7",
+      "index": 19455,
+      "pairIndex": 159,
+      "leverage": 100000,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "2000000"
+      },
+      "openPrice": {
+       "$n": "614490763"
+      },
+      "tp": {
+       "$n": "0"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "3256900124377921694874"
+      },
+      "__placeholder": 0
+     }
+    ],
+    []
+   ]
+  },
+  {
+   "key": "multicall:[\"base\",[{\"to\":\"0x6cD5aC19a07518A8092eEFfDA4f1174C72704eeb\",\"functionName\":\"pairJob\",\"args\":[{\"$n\":\"299\"}]},{\"to\":\"0x6cD5aC19a07518A8092eEFfDA4f1174C72704eeb\",\"functionName\":\"pairJob\",\"args\":[{\"$n\":\"286\"}]},{\"to\":\"0x6cD5aC19a07518A8092eEFfDA4f1174C72704eeb\",\"functionName\":\"pairJob\",\"args\":[{\"$n\":\"491\"}]},{\"to\":\"0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913\",\"functionName\":\"symbol\"}]]",
+   "out": [
+    [
+     "RAY",
+     "USD"
+    ],
+    [
+     "AERO",
+     "USD"
+    ],
+    [
+     "AI",
+     "USD"
+    ],
+    "USDC"
+   ]
+  },
+  {
+   "key": "prices:[[\"base:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913\"]]",
+   "out": {
+    "base:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": 0.9998403944703017
+   }
+  }
+ ]
+}

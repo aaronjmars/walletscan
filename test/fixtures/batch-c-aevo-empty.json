@@ -1,0 +1,103 @@
+{
+ "venue": "aevo",
+ "address": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+ "captured": "2026-10-20T17:26:26.471Z",
+ "calls": [
+  {
+   "key": "multicall:[\"aevo\",[{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollaterals\"}]]",
+   "out": [
+    [
+     "0x643aaB1618c600229785A5E06E4b2d13946F7a1A",
+     "0xB9D571c1EC576300f01ddfA5A082D9c571E45e36",
+     "0xb49682E77D57Af214cd90310C7A02f1eDe855988",
+     "0xE281ACD6947932E402B97c2b49E00F1847598a19",
+     "0x05A5745b6276DFb85fd30C9cA66256db885835A9",
+     "0xceB3d89ed0fBF2acEBFf36E2FB23DACb79BaF9e7",
+     "0xaa46268f79449e8e3B812B769A617fE92CcB0f8E",
+     "0x7950557275676E247a1B25312634bEc42A9C1ffc",
+     "0x45fdC9ccbb385C6C921F7085B91EDEcBb5cFA95A",
+     "0xF66C2B5716F941abb5988d19B5d1E30689Ce4Dd9",
+     "0x711c6522C646819Ab159Fb8df3489a864203b0C2",
+     "0xD472EC275bc86A1dEe8BB8CAe5897bc7a884868E",
+     "0xdFB5332946AB8D53FD3262bB0bd1dBd540966910",
+     "0xDfd82E9f832B909671e135D355c60A443ABa042E"
+    ]
+   ]
+  },
+  {
+   "key": "multicall:[\"aevo\",[{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0x643aaB1618c600229785A5E06E4b2d13946F7a1A\"]},{\"to\":\"0x643aaB1618c600229785A5E06E4b2d13946F7a1A\",\"functionName\":\"symbol\"},{\"to\":\"0x643aaB1618c600229785A5E06E4b2d13946F7a1A\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0xB9D571c1EC576300f01ddfA5A082D9c571E45e36\"]},{\"to\":\"0xB9D571c1EC576300f01ddfA5A082D9c571E45e36\",\"functionName\":\"symbol\"},{\"to\":\"0xB9D571c1EC576300f01ddfA5A082D9c571E45e36\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0xb49682E77D57Af214cd90310C7A02f1eDe855988\"]},{\"to\":\"0xb49682E77D57Af214cd90310C7A02f1eDe855988\",\"functionName\":\"symbol\"},{\"to\":\"0xb49682E77D57Af214cd90310C7A02f1eDe855988\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0xE281ACD6947932E402B97c2b49E00F1847598a19\"]},{\"to\":\"0xE281ACD6947932E402B97c2b49E00F1847598a19\",\"functionName\":\"symbol\"},{\"to\":\"0xE281ACD6947932E402B97c2b49E00F1847598a19\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0x05A5745b6276DFb85fd30C9cA66256db885835A9\"]},{\"to\":\"0x05A5745b6276DFb85fd30C9cA66256db885835A9\",\"functionName\":\"symbol\"},{\"to\":\"0x05A5745b6276DFb85fd30C9cA66256db885835A9\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0xceB3d89ed0fBF2acEBFf36E2FB23DACb79BaF9e7\"]},{\"to\":\"0xceB3d89ed0fBF2acEBFf36E2FB23DACb79BaF9e7\",\"functionName\":\"symbol\"},{\"to\":\"0xceB3d89ed0fBF2acEBFf36E2FB23DACb79BaF9e7\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0xaa46268f79449e8e3B812B769A617fE92CcB0f8E\"]},{\"to\":\"0xaa46268f79449e8e3B812B769A617fE92CcB0f8E\",\"functionName\":\"symbol\"},{\"to\":\"0xaa46268f79449e8e3B812B769A617fE92CcB0f8E\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0x7950557275676E247a1B25312634bEc42A9C1ffc\"]},{\"to\":\"0x7950557275676E247a1B25312634bEc42A9C1ffc\",\"functionName\":\"symbol\"},{\"to\":\"0x7950557275676E247a1B25312634bEc42A9C1ffc\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0x45fdC9ccbb385C6C921F7085B91EDEcBb5cFA95A\"]},{\"to\":\"0x45fdC9ccbb385C6C921F7085B91EDEcBb5cFA95A\",\"functionName\":\"symbol\"},{\"to\":\"0x45fdC9ccbb385C6C921F7085B91EDEcBb5cFA95A\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0xF66C2B5716F941abb5988d19B5d1E30689Ce4Dd9\"]},{\"to\":\"0xF66C2B5716F941abb5988d19B5d1E30689Ce4Dd9\",\"functionName\":\"symbol\"},{\"to\":\"0xF66C2B5716F941abb5988d19B5d1E30689Ce4Dd9\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0x711c6522C646819Ab159Fb8df3489a864203b0C2\"]},{\"to\":\"0x711c6522C646819Ab159Fb8df3489a864203b0C2\",\"functionName\":\"symbol\"},{\"to\":\"0x711c6522C646819Ab159Fb8df3489a864203b0C2\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0xD472EC275bc86A1dEe8BB8CAe5897bc7a884868E\"]},{\"to\":\"0xD472EC275bc86A1dEe8BB8CAe5897bc7a884868E\",\"functionName\":\"symbol\"},{\"to\":\"0xD472EC275bc86A1dEe8BB8CAe5897bc7a884868E\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0xdFB5332946AB8D53FD3262bB0bd1dBd540966910\"]},{\"to\":\"0xdFB5332946AB8D53FD3262bB0bd1dBd540966910\",\"functionName\":\"symbol\"},{\"to\":\"0xdFB5332946AB8D53FD3262bB0bd1dBd540966910\",\"functionName\":\"decimals\"},{\"to\":\"0x05c1674269389be6760047c307c26a7beb8ba382\",\"functionName\":\"getCollateralBalance\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\",\"0xDfd82E9f832B909671e135D355c60A443ABa042E\"]},{\"to\":\"0xDfd82E9f832B909671e135D355c60A443ABa042E\",\"functionName\":\"symbol\"},{\"to\":\"0xDfd82E9f832B909671e135D355c60A443ABa042E\",\"functionName\":\"decimals\"}]]",
+   "out": [
+    {
+     "$n": "0"
+    },
+    "USDC",
+    6,
+    {
+     "$n": "0"
+    },
+    "WETH",
+    18,
+    {
+     "$n": "0"
+    },
+    "WBTC",
+    8,
+    {
+     "$n": "0"
+    },
+    "USDT",
+    6,
+    {
+     "$n": "0"
+    },
+    "USDT",
+    18,
+    {
+     "$n": "0"
+    },
+    "aeUSD",
+    6,
+    {
+     "$n": "0"
+    },
+    "weETH",
+    18,
+    {
+     "$n": "0"
+    },
+    "NVDAon",
+    18,
+    {
+     "$n": "0"
+    },
+    "TSLAon",
+    18,
+    {
+     "$n": "0"
+    },
+    "SPYon",
+    18,
+    {
+     "$n": "0"
+    },
+    "QQQon",
+    18,
+    {
+     "$n": "0"
+    },
+    "HOODon",
+    18,
+    {
+     "$n": "0"
+    },
+    "GOOGLon",
+    18,
+    {
+     "$n": "0"
+    },
+    "AMZNon",
+    18
+   ]
+  }
+ ]
+}

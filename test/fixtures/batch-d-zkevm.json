@@ -1,0 +1,29 @@
+{
+ "items": [
+  {
+   "protocol": "Polygon zkEVM",
+   "chain": "ethereum",
+   "deposit_count": 844188,
+   "token": "0x0000000000000000000000000000000000000000",
+   "asset": "ETH",
+   "amount": 0.020478251621257847,
+   "raw": "20478251621257850",
+   "claimed": false,
+   "read": true,
+   "usd": 50.1197635405821
+  },
+  {
+   "protocol": "Polygon zkEVM",
+   "chain": "ethereum",
+   "deposit_count": 844189,
+   "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "asset": "USDT",
+   "amount": 2.500392,
+   "raw": "2500392",
+   "claimed": false,
+   "read": true,
+   "usd": 2.4985897807269453
+  }
+ ],
+ "known": true
+}

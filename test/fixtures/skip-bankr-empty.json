@@ -1,0 +1,1 @@
+[{"id":"rewards.bankr_creator_fees","params":{"address":"0x00000000000000000000000000000000deadbeef"},"body_sha":null,"status":200,"data":{"address":"0x00000000000000000000000000000000deadbeef","chain":"base","days":1,"tokens":[],"dailyEarnings":[],"lifetimeEarnedWeth":"0","lifetimeDays":0,"lifetimeBestDay":null,"totals":{"claimableWeth":"0","claimedWeth":"0","claimCount":0}}}]

@@ -1,0 +1,17 @@
+{
+ "venue": "orderly",
+ "address": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+ "captured": "2026-10-20T17:26:26.860Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.orderly_accounts\",{\"address\":\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\"}]",
+   "out": {
+    "success": true,
+    "data": {
+     "rows": []
+    },
+    "timestamp": 1792517186760
+   }
+  }
+ ]
+}

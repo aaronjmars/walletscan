@@ -1,0 +1,239 @@
+{
+ "venue": "gains",
+ "address": "0x5dab48322C8DD4F58f83Bb84d2AD21B8923f2f7b",
+ "captured": "2026-10-20T17:27:08.026Z",
+ "calls": [
+  {
+   "key": "multicall:[\"arbitrum\",[{\"to\":\"0xFF162c694eAA571f685030649814282eA457f169\",\"functionName\":\"getCollaterals\"},{\"to\":\"0xFF162c694eAA571f685030649814282eA457f169\",\"functionName\":\"getTrades\",\"args\":[\"0x5dab48322C8DD4F58f83Bb84d2AD21B8923f2f7b\"]},{\"to\":\"0xFF162c694eAA571f685030649814282eA457f169\",\"functionName\":\"getPendingOrders\",\"args\":[\"0x5dab48322C8DD4F58f83Bb84d2AD21B8923f2f7b\"]}]]",
+   "out": [
+    [
+     {
+      "collateral": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     },
+     {
+      "collateral": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     },
+     {
+      "collateral": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000"
+      },
+      "precisionDelta": {
+       "$n": "1000000000000"
+      }
+     },
+     {
+      "collateral": "0x18c11FD286C5EC11c3b683Caa813B77f5163A122",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     }
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "key": "multicall:[\"megaeth\",[{\"to\":\"0x2D5B1ba6E2093a5b927Fe5bF8C049B107de31eaF\",\"functionName\":\"getCollaterals\"},{\"to\":\"0x2D5B1ba6E2093a5b927Fe5bF8C049B107de31eaF\",\"functionName\":\"getTrades\",\"args\":[\"0x5dab48322C8DD4F58f83Bb84d2AD21B8923f2f7b\"]},{\"to\":\"0x2D5B1ba6E2093a5b927Fe5bF8C049B107de31eaF\",\"functionName\":\"getPendingOrders\",\"args\":[\"0x5dab48322C8DD4F58f83Bb84d2AD21B8923f2f7b\"]}]]",
+   "out": [
+    [
+     {
+      "collateral": "0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     }
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "key": "multicall:[\"polygon\",[{\"to\":\"0x209A9A01980377916851af2cA075C2b170452018\",\"functionName\":\"getCollaterals\"},{\"to\":\"0x209A9A01980377916851af2cA075C2b170452018\",\"functionName\":\"getTrades\",\"args\":[\"0x5dab48322C8DD4F58f83Bb84d2AD21B8923f2f7b\"]},{\"to\":\"0x209A9A01980377916851af2cA075C2b170452018\",\"functionName\":\"getPendingOrders\",\"args\":[\"0x5dab48322C8DD4F58f83Bb84d2AD21B8923f2f7b\"]}]]",
+   "out": [
+    [
+     {
+      "collateral": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     },
+     {
+      "collateral": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     },
+     {
+      "collateral": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000"
+      },
+      "precisionDelta": {
+       "$n": "1000000000000"
+      }
+     }
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "key": "multicall:[\"base\",[{\"to\":\"0x6cD5aC19a07518A8092eEFfDA4f1174C72704eeb\",\"functionName\":\"getCollaterals\"},{\"to\":\"0x6cD5aC19a07518A8092eEFfDA4f1174C72704eeb\",\"functionName\":\"getTrades\",\"args\":[\"0x5dab48322C8DD4F58f83Bb84d2AD21B8923f2f7b\"]},{\"to\":\"0x6cD5aC19a07518A8092eEFfDA4f1174C72704eeb\",\"functionName\":\"getPendingOrders\",\"args\":[\"0x5dab48322C8DD4F58f83Bb84d2AD21B8923f2f7b\"]}]]",
+   "out": [
+    [
+     {
+      "collateral": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000"
+      },
+      "precisionDelta": {
+       "$n": "1000000000000"
+      }
+     },
+     {
+      "collateral": "0xe4b20925D9E9a62F1E492e15a81dC0de62804dd4",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     }
+    ],
+    [],
+    []
+   ]
+  },
+  {
+   "key": "multicall:[\"apechain\",[{\"to\":\"0x2BE5D7058AdBa14Bc38E4A83E94A81f7491b0163\",\"functionName\":\"getCollaterals\"},{\"to\":\"0x2BE5D7058AdBa14Bc38E4A83E94A81f7491b0163\",\"functionName\":\"getTrades\",\"args\":[\"0x5dab48322C8DD4F58f83Bb84d2AD21B8923f2f7b\"]},{\"to\":\"0x2BE5D7058AdBa14Bc38E4A83E94A81f7491b0163\",\"functionName\":\"getPendingOrders\",\"args\":[\"0x5dab48322C8DD4F58f83Bb84d2AD21B8923f2f7b\"]}]]",
+   "out": [
+    [
+     {
+      "collateral": "0x00000000000f7e000644657dC9417b185962645a",
+      "isActive": true,
+      "__placeholder": {
+       "$n": "0"
+      },
+      "precision": {
+       "$n": "1000000000000000000"
+      },
+      "precisionDelta": {
+       "$n": "1"
+      }
+     }
+    ],
+    [
+     {
+      "user": "0x5dab48322C8DD4F58f83Bb84d2AD21B8923f2f7b",
+      "index": 0,
+      "pairIndex": 55,
+      "leverage": 1185,
+      "long": true,
+      "isOpen": true,
+      "collateralIndex": 1,
+      "tradeType": 0,
+      "collateralAmount": {
+       "$n": "6154758421504788513211"
+      },
+      "openPrice": {
+       "$n": "1808604770"
+      },
+      "tp": {
+       "$n": "14400000000"
+      },
+      "sl": {
+       "$n": "0"
+      },
+      "isCounterTrade": false,
+      "positionSizeToken": {
+       "$n": "40326050523362924849214"
+      },
+      "__placeholder": 0
+     }
+    ],
+    []
+   ]
+  },
+  {
+   "key": "multicall:[\"apechain\",[{\"to\":\"0x2BE5D7058AdBa14Bc38E4A83E94A81f7491b0163\",\"functionName\":\"pairJob\",\"args\":[{\"$n\":\"55\"}]},{\"to\":\"0x00000000000f7e000644657dC9417b185962645a\",\"functionName\":\"symbol\"}]]",
+   "out": [
+    [
+     "APE",
+     "USD"
+    ],
+    "WAPE"
+   ]
+  },
+  {
+   "key": "prices:[[\"coingecko:apecoin\"]]",
+   "out": {
+    "coingecko:apecoin": 0.1465595910297524
+   }
+  }
+ ]
+}

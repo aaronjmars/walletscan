@@ -1,0 +1,22 @@
+{
+ "venue": "aster",
+ "address": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+ "captured": "2026-10-20T17:18:43.358Z",
+ "calls": [
+  {
+   "key": "call:[\"holdings.aster\",{\"address\":\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\"}]",
+   "out": {
+    "status": 200,
+    "ok": true,
+    "data": {
+     "result": {
+      "address": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+      "accountPrivacy": "enabled"
+     },
+     "id": 1,
+     "jsonrpc": "2.0"
+    }
+   }
+  }
+ ]
+}

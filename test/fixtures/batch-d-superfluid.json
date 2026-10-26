@@ -1,0 +1,15 @@
+{
+ "items": [
+  {
+   "protocol": "Superfluid",
+   "chain": "base",
+   "pool": "0x02c23334d2edb39bc62e44de8e22940662e1d463",
+   "token": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+   "asset": "USDCx",
+   "amount": 605.7799617646809,
+   "connected": false,
+   "usd": 605.6820095165203
+  }
+ ],
+ "errors": []
+}

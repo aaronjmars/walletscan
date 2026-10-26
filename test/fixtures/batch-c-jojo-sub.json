@@ -1,0 +1,82 @@
+{
+ "venue": "jojo",
+ "address": "0x9e3673ffbc5f9c24bd8db863cb391b26ad01975f",
+ "captured": "2026-10-20T17:17:36.161Z",
+ "calls": [
+  {
+   "key": "multicall:[\"base\",[{\"to\":\"0x8a2898d6849Aa183073455140F096221c3CF060E\",\"functionName\":\"getSubaccounts\",\"args\":[\"0x9e3673ffbc5f9c24bd8db863cb391b26ad01975f\"]}]]",
+   "out": [
+    [
+     "0x17D5EB61aba749D453c8Ba73396877aBFb2062AF"
+    ]
+   ]
+  },
+  {
+   "key": "multicall:[\"base\",[{\"to\":\"0x2f7c3cf9d9280b165981311b822becc4e05fe635\",\"functionName\":\"getTraderRisk\",\"args\":[\"0x9e3673ffbc5f9c24bd8db863cb391b26ad01975f\"]},{\"to\":\"0x2f7c3cf9d9280b165981311b822becc4e05fe635\",\"functionName\":\"getCreditOf\",\"args\":[\"0x9e3673ffbc5f9c24bd8db863cb391b26ad01975f\"]},{\"to\":\"0x2f7c3cf9d9280b165981311b822becc4e05fe635\",\"functionName\":\"getTraderRisk\",\"args\":[\"0x17D5EB61aba749D453c8Ba73396877aBFb2062AF\"]},{\"to\":\"0x2f7c3cf9d9280b165981311b822becc4e05fe635\",\"functionName\":\"getCreditOf\",\"args\":[\"0x17D5EB61aba749D453c8Ba73396877aBFb2062AF\"]}]]",
+   "out": [
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "791655"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "791655"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     }
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+[{"id":"sui.graphql","params":{},"body_sha":"1da30fc7ff38ea7f9e97f83627606309f04a04d3","status":200,"data":{"data":{"address":{"objects":{"pageInfo":{"hasNextPage":false,"endCursor":null},"nodes":[]}}}}}]

@@ -1,0 +1,2310 @@
+{
+ "venue": "fulcrom",
+ "address": "0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db",
+ "captured": "2026-10-20T17:17:46.479Z",
+ "calls": [
+  {
+   "key": "multicall:[\"zksync\",[{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"whitelistedTokenCount\"}]]",
+   "out": [
+    {
+     "$n": "6"
+    }
+   ]
+  },
+  {
+   "key": "multicall:[\"cronos-zkevm\",[{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"whitelistedTokenCount\"}]]",
+   "out": [
+    {
+     "$n": "3"
+    }
+   ]
+  },
+  {
+   "key": "multicall:[\"cronos\",[{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokenCount\"}]]",
+   "out": [
+    {
+     "$n": "25"
+    }
+   ]
+  },
+  {
+   "key": "multicall:[\"zksync\",[{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"0\"}]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"1\"}]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"2\"}]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"3\"}]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"4\"}]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"5\"}]}]]",
+   "out": [
+    "0xBBeB516fb02a01611cBBE0453Fe3c580D7281011",
+    "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
+    "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
+    "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
+    "0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E",
+    "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4"
+   ]
+  },
+  {
+   "key": "multicall:[\"cronos\",[{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"0\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"1\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"2\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"3\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"4\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"5\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"6\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"7\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"8\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"9\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"10\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"11\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"12\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"13\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"14\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"15\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"16\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"17\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"18\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"19\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"20\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"21\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"22\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"23\"}]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"24\"}]}]]",
+   "out": [
+    "0x062E66477Faf219F25D27dCED647BF57C3107d52",
+    "0xe44Fd7fCb2b1581822D0c862B68222998a0c299a",
+    "0xc21223249CA28397B4B6541dfFaEcC539BfF0c59",
+    "0x66e428c3f67a68878562e79A0234c1F83c208770",
+    "0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93",
+    "0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0",
+    "0xb9Ce0dd29C91E02d4620F57a66700Fc5e41d6D15",
+    "0x9d97Be214b68C7051215BB61059B4e299Cd792c3",
+    "0x7589B70aBb83427bb7049e08ee9fC6479ccB7a23",
+    "0xc9DE0F3e08162312528FF72559db82590b481800",
+    "0xf868c454784048AF4f857991583E34243c92Ff48",
+    "0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396",
+    "0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee",
+    "0x25e8C72D267b96E757875d8b565A42c0e3B8f12f",
+    "0xAFE470AE215e48c144c7158EAe3CcF0C451cb0CB",
+    "0x81710203A7FC16797aC9899228a87fd622df9706",
+    "0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23",
+    "0x16aD43896f7C47a5d9Ee546c44A22205738B329c",
+    "0xE657b115bc45c0786274c824f83e3e02CE809185",
+    "0xe0C7226a58f54db71eDc6289Ba2dc80349B41974",
+    "0x769409037336430A1a5890065B7853f0D1D8b58f",
+    "0xd1D7A0Ff6Cd3d494038b7FB93dbAeF624Da6f417",
+    "0x9D8c68F185A04314DDC8B8216732455e8dbb7E45",
+    "0x81749e7258f9e577f61f49ABeeB426b70F561b89",
+    "0xFbD40bEabDf81350E116f686e0fB7d24d867Bf38"
+   ]
+  },
+  {
+   "key": "multicall:[\"cronos-zkevm\",[{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"0\"}]},{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"1\"}]},{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"whitelistedTokens\",\"args\":[{\"$n\":\"2\"}]}]]",
+   "out": [
+    "0xD65E5DbA71231D35A5802bA83dC6cB6746c9758d",
+    "0x271602A97027ee1dd03b1E6e5dB153eB659A80b1",
+    "0x5b91e29Ae5A71d9052620Acb813d5aC25eC7a4A2"
+   ]
+  },
+  {
+   "key": "multicall:[\"cronos\",[{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x062E66477Faf219F25D27dCED647BF57C3107d52\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x062E66477Faf219F25D27dCED647BF57C3107d52\"]},{\"to\":\"0x062E66477Faf219F25D27dCED647BF57C3107d52\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0xe44Fd7fCb2b1581822D0c862B68222998a0c299a\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0xe44Fd7fCb2b1581822D0c862B68222998a0c299a\"]},{\"to\":\"0xe44Fd7fCb2b1581822D0c862B68222998a0c299a\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\"]},{\"to\":\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x66e428c3f67a68878562e79A0234c1F83c208770\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x66e428c3f67a68878562e79A0234c1F83c208770\"]},{\"to\":\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93\"]},{\"to\":\"0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0\"]},{\"to\":\"0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0xb9Ce0dd29C91E02d4620F57a66700Fc5e41d6D15\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0xb9Ce0dd29C91E02d4620F57a66700Fc5e41d6D15\"]},{\"to\":\"0xb9Ce0dd29C91E02d4620F57a66700Fc5e41d6D15\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x9d97Be214b68C7051215BB61059B4e299Cd792c3\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x9d97Be214b68C7051215BB61059B4e299Cd792c3\"]},{\"to\":\"0x9d97Be214b68C7051215BB61059B4e299Cd792c3\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x7589B70aBb83427bb7049e08ee9fC6479ccB7a23\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x7589B70aBb83427bb7049e08ee9fC6479ccB7a23\"]},{\"to\":\"0x7589B70aBb83427bb7049e08ee9fC6479ccB7a23\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0xc9DE0F3e08162312528FF72559db82590b481800\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0xc9DE0F3e08162312528FF72559db82590b481800\"]},{\"to\":\"0xc9DE0F3e08162312528FF72559db82590b481800\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0xf868c454784048AF4f857991583E34243c92Ff48\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0xf868c454784048AF4f857991583E34243c92Ff48\"]},{\"to\":\"0xf868c454784048AF4f857991583E34243c92Ff48\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396\"]},{\"to\":\"0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee\"]},{\"to\":\"0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x25e8C72D267b96E757875d8b565A42c0e3B8f12f\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x25e8C72D267b96E757875d8b565A42c0e3B8f12f\"]},{\"to\":\"0x25e8C72D267b96E757875d8b565A42c0e3B8f12f\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0xAFE470AE215e48c144c7158EAe3CcF0C451cb0CB\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0xAFE470AE215e48c144c7158EAe3CcF0C451cb0CB\"]},{\"to\":\"0xAFE470AE215e48c144c7158EAe3CcF0C451cb0CB\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x81710203A7FC16797aC9899228a87fd622df9706\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x81710203A7FC16797aC9899228a87fd622df9706\"]},{\"to\":\"0x81710203A7FC16797aC9899228a87fd622df9706\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23\"]},{\"to\":\"0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x16aD43896f7C47a5d9Ee546c44A22205738B329c\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x16aD43896f7C47a5d9Ee546c44A22205738B329c\"]},{\"to\":\"0x16aD43896f7C47a5d9Ee546c44A22205738B329c\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0xE657b115bc45c0786274c824f83e3e02CE809185\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0xE657b115bc45c0786274c824f83e3e02CE809185\"]},{\"to\":\"0xE657b115bc45c0786274c824f83e3e02CE809185\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0xe0C7226a58f54db71eDc6289Ba2dc80349B41974\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0xe0C7226a58f54db71eDc6289Ba2dc80349B41974\"]},{\"to\":\"0xe0C7226a58f54db71eDc6289Ba2dc80349B41974\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x769409037336430A1a5890065B7853f0D1D8b58f\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x769409037336430A1a5890065B7853f0D1D8b58f\"]},{\"to\":\"0x769409037336430A1a5890065B7853f0D1D8b58f\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0xd1D7A0Ff6Cd3d494038b7FB93dbAeF624Da6f417\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0xd1D7A0Ff6Cd3d494038b7FB93dbAeF624Da6f417\"]},{\"to\":\"0xd1D7A0Ff6Cd3d494038b7FB93dbAeF624Da6f417\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x9D8c68F185A04314DDC8B8216732455e8dbb7E45\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x9D8c68F185A04314DDC8B8216732455e8dbb7E45\"]},{\"to\":\"0x9D8c68F185A04314DDC8B8216732455e8dbb7E45\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0x81749e7258f9e577f61f49ABeeB426b70F561b89\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0x81749e7258f9e577f61f49ABeeB426b70F561b89\"]},{\"to\":\"0x81749e7258f9e577f61f49ABeeB426b70F561b89\",\"functionName\":\"symbol\"},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"stableTokens\",\"args\":[\"0xFbD40bEabDf81350E116f686e0fB7d24d867Bf38\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"shortableTokens\",\"args\":[\"0xFbD40bEabDf81350E116f686e0fB7d24d867Bf38\"]},{\"to\":\"0xFbD40bEabDf81350E116f686e0fB7d24d867Bf38\",\"functionName\":\"symbol\"}]]",
+   "out": [
+    false,
+    true,
+    "WBTC",
+    false,
+    true,
+    "WETH",
+    true,
+    false,
+    "USDC",
+    true,
+    false,
+    "USDT",
+    false,
+    true,
+    "ATOM",
+    false,
+    true,
+    "ADA",
+    false,
+    true,
+    "XRP",
+    false,
+    true,
+    "LTC",
+    false,
+    true,
+    "BCH",
+    false,
+    true,
+    "SOL",
+    false,
+    true,
+    "PEPE",
+    false,
+    true,
+    "DOGE",
+    false,
+    true,
+    "SHIB",
+    false,
+    true,
+    "WIF",
+    false,
+    true,
+    "NEAR",
+    false,
+    true,
+    "SUI",
+    false,
+    true,
+    "WCRO",
+    false,
+    true,
+    "UNI",
+    false,
+    true,
+    "AAVE",
+    false,
+    true,
+    "HBAR",
+    false,
+    true,
+    "PENGU",
+    false,
+    true,
+    "TRUMP",
+    false,
+    true,
+    "LION",
+    false,
+    true,
+    "PAXG",
+    false,
+    true,
+    "PUMP"
+   ]
+  },
+  {
+   "key": "multicall:[\"cronos-zkevm\",[{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"stableTokens\",\"args\":[\"0xD65E5DbA71231D35A5802bA83dC6cB6746c9758d\"]},{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"shortableTokens\",\"args\":[\"0xD65E5DbA71231D35A5802bA83dC6cB6746c9758d\"]},{\"to\":\"0xD65E5DbA71231D35A5802bA83dC6cB6746c9758d\",\"functionName\":\"symbol\"},{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"stableTokens\",\"args\":[\"0x271602A97027ee1dd03b1E6e5dB153eB659A80b1\"]},{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"shortableTokens\",\"args\":[\"0x271602A97027ee1dd03b1E6e5dB153eB659A80b1\"]},{\"to\":\"0x271602A97027ee1dd03b1E6e5dB153eB659A80b1\",\"functionName\":\"symbol\"},{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"stableTokens\",\"args\":[\"0x5b91e29Ae5A71d9052620Acb813d5aC25eC7a4A2\"]},{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"shortableTokens\",\"args\":[\"0x5b91e29Ae5A71d9052620Acb813d5aC25eC7a4A2\"]},{\"to\":\"0x5b91e29Ae5A71d9052620Acb813d5aC25eC7a4A2\",\"functionName\":\"symbol\"}]]",
+   "out": [
+    false,
+    true,
+    "WBTC",
+    false,
+    true,
+    "vETH",
+    true,
+    false,
+    "vUSD"
+   ]
+  },
+  {
+   "key": "multicall:[\"cronos\",[{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x062E66477Faf219F25D27dCED647BF57C3107d52\",\"0x062E66477Faf219F25D27dCED647BF57C3107d52\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0x062E66477Faf219F25D27dCED647BF57C3107d52\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0x062E66477Faf219F25D27dCED647BF57C3107d52\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xe44Fd7fCb2b1581822D0c862B68222998a0c299a\",\"0xe44Fd7fCb2b1581822D0c862B68222998a0c299a\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0xe44Fd7fCb2b1581822D0c862B68222998a0c299a\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0xe44Fd7fCb2b1581822D0c862B68222998a0c299a\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93\",\"0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0xB888d8Dd1733d72681b30c00ee76BDE93ae7aa93\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0\",\"0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xb9Ce0dd29C91E02d4620F57a66700Fc5e41d6D15\",\"0xb9Ce0dd29C91E02d4620F57a66700Fc5e41d6D15\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0xb9Ce0dd29C91E02d4620F57a66700Fc5e41d6D15\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0xb9Ce0dd29C91E02d4620F57a66700Fc5e41d6D15\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x9d97Be214b68C7051215BB61059B4e299Cd792c3\",\"0x9d97Be214b68C7051215BB61059B4e299Cd792c3\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0x9d97Be214b68C7051215BB61059B4e299Cd792c3\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0x9d97Be214b68C7051215BB61059B4e299Cd792c3\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x7589B70aBb83427bb7049e08ee9fC6479ccB7a23\",\"0x7589B70aBb83427bb7049e08ee9fC6479ccB7a23\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0x7589B70aBb83427bb7049e08ee9fC6479ccB7a23\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0x7589B70aBb83427bb7049e08ee9fC6479ccB7a23\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc9DE0F3e08162312528FF72559db82590b481800\",\"0xc9DE0F3e08162312528FF72559db82590b481800\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0xc9DE0F3e08162312528FF72559db82590b481800\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0xc9DE0F3e08162312528FF72559db82590b481800\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xf868c454784048AF4f857991583E34243c92Ff48\",\"0xf868c454784048AF4f857991583E34243c92Ff48\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0xf868c454784048AF4f857991583E34243c92Ff48\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0xf868c454784048AF4f857991583E34243c92Ff48\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396\",\"0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee\",\"0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x25e8C72D267b96E757875d8b565A42c0e3B8f12f\",\"0x25e8C72D267b96E757875d8b565A42c0e3B8f12f\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0x25e8C72D267b96E757875d8b565A42c0e3B8f12f\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0x25e8C72D267b96E757875d8b565A42c0e3B8f12f\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xAFE470AE215e48c144c7158EAe3CcF0C451cb0CB\",\"0xAFE470AE215e48c144c7158EAe3CcF0C451cb0CB\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0xAFE470AE215e48c144c7158EAe3CcF0C451cb0CB\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0xAFE470AE215e48c144c7158EAe3CcF0C451cb0CB\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x81710203A7FC16797aC9899228a87fd622df9706\",\"0x81710203A7FC16797aC9899228a87fd622df9706\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0x81710203A7FC16797aC9899228a87fd622df9706\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0x81710203A7FC16797aC9899228a87fd622df9706\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23\",\"0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x16aD43896f7C47a5d9Ee546c44A22205738B329c\",\"0x16aD43896f7C47a5d9Ee546c44A22205738B329c\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0x16aD43896f7C47a5d9Ee546c44A22205738B329c\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0x16aD43896f7C47a5d9Ee546c44A22205738B329c\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xE657b115bc45c0786274c824f83e3e02CE809185\",\"0xE657b115bc45c0786274c824f83e3e02CE809185\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0xE657b115bc45c0786274c824f83e3e02CE809185\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0xE657b115bc45c0786274c824f83e3e02CE809185\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xe0C7226a58f54db71eDc6289Ba2dc80349B41974\",\"0xe0C7226a58f54db71eDc6289Ba2dc80349B41974\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0xe0C7226a58f54db71eDc6289Ba2dc80349B41974\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0xe0C7226a58f54db71eDc6289Ba2dc80349B41974\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x769409037336430A1a5890065B7853f0D1D8b58f\",\"0x769409037336430A1a5890065B7853f0D1D8b58f\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0x769409037336430A1a5890065B7853f0D1D8b58f\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0x769409037336430A1a5890065B7853f0D1D8b58f\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xd1D7A0Ff6Cd3d494038b7FB93dbAeF624Da6f417\",\"0xd1D7A0Ff6Cd3d494038b7FB93dbAeF624Da6f417\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0xd1D7A0Ff6Cd3d494038b7FB93dbAeF624Da6f417\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0xd1D7A0Ff6Cd3d494038b7FB93dbAeF624Da6f417\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x9D8c68F185A04314DDC8B8216732455e8dbb7E45\",\"0x9D8c68F185A04314DDC8B8216732455e8dbb7E45\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0x9D8c68F185A04314DDC8B8216732455e8dbb7E45\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0x9D8c68F185A04314DDC8B8216732455e8dbb7E45\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x81749e7258f9e577f61f49ABeeB426b70F561b89\",\"0x81749e7258f9e577f61f49ABeeB426b70F561b89\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0x81749e7258f9e577f61f49ABeeB426b70F561b89\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0x81749e7258f9e577f61f49ABeeB426b70F561b89\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xFbD40bEabDf81350E116f686e0fB7d24d867Bf38\",\"0xFbD40bEabDf81350E116f686e0fB7d24d867Bf38\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc21223249CA28397B4B6541dfFaEcC539BfF0c59\",\"0xFbD40bEabDf81350E116f686e0fB7d24d867Bf38\",false]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x66e428c3f67a68878562e79A0234c1F83c208770\",\"0xFbD40bEabDf81350E116f686e0fB7d24d867Bf38\",false]}]]",
+   "out": [
+    [
+     {
+      "$n": "1943406064097676130926000000000000"
+     },
+     {
+      "$n": "292149108317204002726752352000000"
+     },
+     {
+      "$n": "83792264381186203263466990057790989"
+     },
+     {
+      "$n": "1028768"
+     },
+     {
+      "$n": "2319605"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1791995153"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "1885664454607223316785450986903939"
+     },
+     {
+      "$n": "366759847152844294524763211104377"
+     },
+     {
+      "$n": "2540811180462434034239787894858938"
+     },
+     {
+      "$n": "867040"
+     },
+     {
+      "$n": "742150565578048045"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1792064709"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "588557605894980000000000000000000"
+     },
+     {
+      "$n": "117741444918193230000000000000000"
+     },
+     {
+      "$n": "227717730000000000000000000000"
+     },
+     {
+      "$n": "945149"
+     },
+     {
+      "$n": "2584592802"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1791995208"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "714737867562933675317948200000000"
+     },
+     {
+      "$n": "168237235792494705344578931782600"
+     },
+     {
+      "$n": "1386789286704269607730683166929"
+     },
+     {
+      "$n": "1387244"
+     },
+     {
+      "$n": "515390386"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1791995565"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "856967151201921889207546380000000"
+     },
+     {
+      "$n": "200065880424431058120711248752660"
+     },
+     {
+      "$n": "113269166038011690013356526261734"
+     },
+     {
+      "$n": "1260135"
+     },
+     {
+      "$n": "7565758459"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1791478903"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "490379467497513000000000000000000"
+     },
+     {
+      "$n": "103331389454214202250000000000000"
+     },
+     {
+      "$n": "92340940988883393484275637427"
+     },
+     {
+      "$n": "512175"
+     },
+     {
+      "$n": "531053140942"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1791904494"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "266996309265829631186034907947555"
+     },
+     {
+      "$n": "53208689970997451109220947638078"
+     },
+     {
+      "$n": "4937529530000000000000000000000"
+     },
+     {
+      "$n": "416822"
+     },
+     {
+      "$n": "54074878467780957491515986"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1792421438"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "2110066811467183928694367870606982"
+     },
+     {
+      "$n": "435949798167232444977327141371206"
+     },
+     {
+      "$n": "63037463930130015399796157670"
+     },
+     {
+      "$n": "933135"
+     },
+     {
+      "$n": "33473218621325838842208"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1791904581"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "1069044451813767650314691200000000"
+     },
+     {
+      "$n": "387219954813415849410600681643200"
+     },
+     {
+      "$n": "8188498994859754260024604516966"
+     },
+     {
+      "$n": "173363"
+     },
+     {
+      "$n": "130554385179121261731"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1791473420"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "783619559410619342079360000000000"
+     },
+     {
+      "$n": "153828195295250161791930989540000"
+     },
+     {
+      "$n": "4281078200248148987902124249511422"
+     },
+     {
+      "$n": "130845"
+     },
+     {
+      "$n": "183042570762944136"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1790966176"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ]
+   ]
+  },
+  {
+   "key": "multicall:[\"cronos-zkevm\",[{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xD65E5DbA71231D35A5802bA83dC6cB6746c9758d\",\"0xD65E5DbA71231D35A5802bA83dC6cB6746c9758d\",true]},{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x5b91e29Ae5A71d9052620Acb813d5aC25eC7a4A2\",\"0xD65E5DbA71231D35A5802bA83dC6cB6746c9758d\",false]},{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x271602A97027ee1dd03b1E6e5dB153eB659A80b1\",\"0x271602A97027ee1dd03b1E6e5dB153eB659A80b1\",true]},{\"to\":\"0xdDDf221d5293619572616574Ff46a2760f162075\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x5b91e29Ae5A71d9052620Acb813d5aC25eC7a4A2\",\"0x271602A97027ee1dd03b1E6e5dB153eB659A80b1\",false]}]]",
+   "out": [
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ]
+   ]
+  },
+  {
+   "key": "multicall:[\"cronos\",[{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPositionDelta\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x062E66477Faf219F25D27dCED647BF57C3107d52\",\"0x062E66477Faf219F25D27dCED647BF57C3107d52\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getMinPrice\",\"args\":[\"0x062E66477Faf219F25D27dCED647BF57C3107d52\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPositionDelta\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xe44Fd7fCb2b1581822D0c862B68222998a0c299a\",\"0xe44Fd7fCb2b1581822D0c862B68222998a0c299a\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getMinPrice\",\"args\":[\"0xe44Fd7fCb2b1581822D0c862B68222998a0c299a\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPositionDelta\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0\",\"0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getMinPrice\",\"args\":[\"0x0e517979C2c1c1522ddB0c73905e0D39b3F990c0\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPositionDelta\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xb9Ce0dd29C91E02d4620F57a66700Fc5e41d6D15\",\"0xb9Ce0dd29C91E02d4620F57a66700Fc5e41d6D15\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getMinPrice\",\"args\":[\"0xb9Ce0dd29C91E02d4620F57a66700Fc5e41d6D15\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPositionDelta\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xc9DE0F3e08162312528FF72559db82590b481800\",\"0xc9DE0F3e08162312528FF72559db82590b481800\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getMinPrice\",\"args\":[\"0xc9DE0F3e08162312528FF72559db82590b481800\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPositionDelta\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396\",\"0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getMinPrice\",\"args\":[\"0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPositionDelta\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xAFE470AE215e48c144c7158EAe3CcF0C451cb0CB\",\"0xAFE470AE215e48c144c7158EAe3CcF0C451cb0CB\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getMinPrice\",\"args\":[\"0xAFE470AE215e48c144c7158EAe3CcF0C451cb0CB\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPositionDelta\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23\",\"0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getMinPrice\",\"args\":[\"0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPositionDelta\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x16aD43896f7C47a5d9Ee546c44A22205738B329c\",\"0x16aD43896f7C47a5d9Ee546c44A22205738B329c\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getMinPrice\",\"args\":[\"0x16aD43896f7C47a5d9Ee546c44A22205738B329c\"]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getPositionDelta\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x81749e7258f9e577f61f49ABeeB426b70F561b89\",\"0x81749e7258f9e577f61f49ABeeB426b70F561b89\",true]},{\"to\":\"0x8C7Ef34aa54210c76D6d5E475f43e0c11f876098\",\"functionName\":\"getMinPrice\",\"args\":[\"0x81749e7258f9e577f61f49ABeeB426b70F561b89\"]}]]",
+   "out": [
+    null,
+    {
+     "$n": "82737145941790000000000000000000000"
+    },
+    null,
+    {
+     "$n": "2450924406600000000000000000000000"
+    },
+    null,
+    {
+     "$n": "223079230000000000000000000000"
+    },
+    null,
+    {
+     "$n": "1328190770000000000000000000000"
+    },
+    null,
+    {
+     "$n": "106530641110000000000000000000000"
+    },
+    null,
+    {
+     "$n": "81217140000000000000000000000"
+    },
+    null,
+    {
+     "$n": "4928355420000000000000000000000"
+    },
+    null,
+    {
+     "$n": "57248120000000000000000000000"
+    },
+    null,
+    {
+     "$n": "7378675820000000000000000000000"
+    },
+    null,
+    {
+     "$n": "4121430000000000000000000000000000"
+    }
+   ]
+  },
+  {
+   "key": "multicall:[\"zksync\",[{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"stableTokens\",\"args\":[\"0xBBeB516fb02a01611cBBE0453Fe3c580D7281011\"]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"shortableTokens\",\"args\":[\"0xBBeB516fb02a01611cBBE0453Fe3c580D7281011\"]},{\"to\":\"0xBBeB516fb02a01611cBBE0453Fe3c580D7281011\",\"functionName\":\"symbol\"},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"stableTokens\",\"args\":[\"0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91\"]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"shortableTokens\",\"args\":[\"0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91\"]},{\"to\":\"0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91\",\"functionName\":\"symbol\"},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"stableTokens\",\"args\":[\"0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4\"]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"shortableTokens\",\"args\":[\"0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4\"]},{\"to\":\"0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4\",\"functionName\":\"symbol\"},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"stableTokens\",\"args\":[\"0x493257fD37EDB34451f62EDf8D2a0C418852bA4C\"]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"shortableTokens\",\"args\":[\"0x493257fD37EDB34451f62EDf8D2a0C418852bA4C\"]},{\"to\":\"0x493257fD37EDB34451f62EDf8D2a0C418852bA4C\",\"functionName\":\"symbol\"},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"stableTokens\",\"args\":[\"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\"]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"shortableTokens\",\"args\":[\"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\"]},{\"to\":\"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\",\"functionName\":\"symbol\"},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"stableTokens\",\"args\":[\"0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4\"]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"shortableTokens\",\"args\":[\"0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4\"]},{\"to\":\"0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4\",\"functionName\":\"symbol\"}]]",
+   "out": [
+    false,
+    true,
+    "WBTC",
+    false,
+    true,
+    "WETH",
+    true,
+    false,
+    "USDC.e",
+    true,
+    false,
+    "USDT",
+    false,
+    true,
+    "ZK",
+    true,
+    false,
+    "USDC"
+   ]
+  },
+  {
+   "key": "multicall:[\"zksync\",[{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0xBBeB516fb02a01611cBBE0453Fe3c580D7281011\",\"0xBBeB516fb02a01611cBBE0453Fe3c580D7281011\",true]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4\",\"0xBBeB516fb02a01611cBBE0453Fe3c580D7281011\",false]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x493257fD37EDB34451f62EDf8D2a0C418852bA4C\",\"0xBBeB516fb02a01611cBBE0453Fe3c580D7281011\",false]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4\",\"0xBBeB516fb02a01611cBBE0453Fe3c580D7281011\",false]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91\",\"0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91\",true]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4\",\"0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91\",false]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x493257fD37EDB34451f62EDf8D2a0C418852bA4C\",\"0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91\",false]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4\",\"0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91\",false]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\",\"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\",true]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4\",\"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\",false]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x493257fD37EDB34451f62EDf8D2a0C418852bA4C\",\"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\",false]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPosition\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4\",\"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\",false]}]]",
+   "out": [
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "2378751564764027090204960000000000"
+     },
+     {
+      "$n": "426215037134397317415947447020000"
+     },
+     {
+      "$n": "2476706096611981240288571716371720"
+     },
+     {
+      "$n": "524741"
+     },
+     {
+      "$n": "960449674678012299"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1792350992"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "683887661984812508675395840000000"
+     },
+     {
+      "$n": "224348686561335011052995863867120"
+     },
+     {
+      "$n": "15505213890872109401490529340"
+     },
+     {
+      "$n": "369848"
+     },
+     {
+      "$n": "44106947946549509011651"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1792464517"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ]
+   ]
+  },
+  {
+   "key": "multicall:[\"zksync\",[{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPositionDelta\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91\",\"0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91\",true]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getMinPrice\",\"args\":[\"0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91\"]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getPositionDelta\",\"args\":[\"0xf9d66f476a8adb831d2084ae22b499d2a8f2d1db\",\"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\",\"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\",true]},{\"to\":\"0x7d5b0215EF203D0660BC37d5D09d964fd6b55a1E\",\"functionName\":\"getMinPrice\",\"args\":[\"0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E\"]}]]",
+   "out": [
+    null,
+    {
+     "$n": "2451272395850000000000000000000000"
+    },
+    null,
+    {
+     "$n": "14895650000000000000000000000"
+    }
+   ]
+  }
+ ]
+}

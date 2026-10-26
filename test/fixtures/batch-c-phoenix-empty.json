@@ -1,0 +1,17 @@
+{
+ "venue": "phoenix",
+ "address": "CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq",
+ "captured": "2026-10-20T17:18:40.597Z",
+ "calls": [
+  {
+   "key": "call:[\"holdings.phoenix_state\",{\"address\":\"CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq\"}]",
+   "out": {
+    "status": 404,
+    "ok": false,
+    "data": {
+     "error": "Trader not found for provided authority and trader_pda_index"
+    }
+   }
+  }
+ ]
+}

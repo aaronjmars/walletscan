@@ -1,0 +1,783 @@
+{
+  "transfers": [
+    {
+      "transactionId": "0xb9f1b9ffcdeafc5adb776280657f4071e36565506a6c59417fe1876ff4d300dd",
+      "sending": {
+        "txHash": "0x24c9c68a275ab9f6a89f5b913b51f7380cc607d1ae3002c198b0a6211552e992",
+        "txLink": "https://etherscan.io/tx/0x24c9c68a275ab9f6a89f5b913b51f7380cc607d1ae3002c198b0a6211552e992",
+        "token": {
+          "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "chainId": 1,
+          "symbol": "WETH",
+          "decimals": 18,
+          "name": "WETH",
+          "coinKey": "WETH",
+          "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+          "priceUSD": "2481.97",
+          "tags": [
+            "major_asset"
+          ],
+          "verificationStatus": "verified",
+          "verificationStatusBreakdown": [
+            {
+              "provider": "hypernative",
+              "result": "verified",
+              "providerResult": "accept"
+            }
+          ]
+        },
+        "chainId": 1,
+        "gasPrice": "368105521",
+        "gasUsed": "309194",
+        "gasToken": {
+          "address": "0x0000000000000000000000000000000000000000",
+          "chainId": 1,
+          "symbol": "ETH",
+          "decimals": 18,
+          "name": "ETH",
+          "coinKey": "ETH",
+          "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+          "priceUSD": "2481.97",
+          "tags": [
+            "major_asset"
+          ],
+          "verificationStatus": "verified",
+          "verificationStatusBreakdown": [
+            {
+              "provider": "hypernative",
+              "result": "verified",
+              "providerResult": "accept"
+            }
+          ]
+        },
+        "gasAmount": "113816018460074",
+        "gasAmountUSD": "0.2825",
+        "amountUSD": "11.3811",
+        "value": "0",
+        "includedSteps": [
+          {
+            "tool": "feeCollection",
+            "toolDetails": {
+              "key": "feeCollection",
+              "name": "Integrator Fee",
+              "logoURI": "https://raw.githubusercontent.com/lifinance/types/main/src/assets/icons/protocols/feeCollection.svg"
+            },
+            "fromAmount": "4585528293798599",
+            "fromToken": {
+              "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "chainId": 1,
+              "symbol": "WETH",
+              "decimals": 18,
+              "name": "WETH",
+              "coinKey": "WETH",
+              "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+              "priceUSD": "2481.97",
+              "tags": [
+                "major_asset"
+              ],
+              "verificationStatus": "verified",
+              "verificationStatusBreakdown": [
+                {
+                  "provider": "hypernative",
+                  "result": "verified",
+                  "providerResult": "accept"
+                }
+              ]
+            },
+            "toToken": {
+              "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "chainId": 1,
+              "symbol": "WETH",
+              "decimals": 18,
+              "name": "WETH",
+              "coinKey": "WETH",
+              "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+              "priceUSD": "2481.97",
+              "tags": [
+                "major_asset"
+              ],
+              "verificationStatus": "verified",
+              "verificationStatusBreakdown": [
+                {
+                  "provider": "hypernative",
+                  "result": "verified",
+                  "providerResult": "accept"
+                }
+              ]
+            },
+            "toAmount": "4583235529651700"
+          },
+          {
+            "tool": "nordstern",
+            "toolDetails": {
+              "key": "nordstern",
+              "name": "Nordstern Finance",
+              "logoURI": "https://raw.githubusercontent.com/lifinance/types/main/src/assets/icons/exchanges/nordstern_finance.svg",
+              "webUrl": "https://nordstern.finance"
+            },
+            "fromAmount": "4583235529651700",
+            "fromToken": {
+              "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "chainId": 1,
+              "symbol": "WETH",
+              "decimals": 18,
+              "name": "WETH",
+              "coinKey": "WETH",
+              "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+              "priceUSD": "2481.97",
+              "tags": [
+                "major_asset"
+              ],
+              "verificationStatus": "verified",
+              "verificationStatusBreakdown": [
+                {
+                  "provider": "hypernative",
+                  "result": "verified",
+                  "providerResult": "accept"
+                }
+              ]
+            },
+            "toToken": {
+              "address": "0x76669a82255EF545E57F660E0412197ce9cCCb1E",
+              "chainId": 1,
+              "symbol": "GREG",
+              "decimals": 18,
+              "name": "Greg Heffley",
+              "coinKey": "GREG",
+              "logoURI": null,
+              "priceUSD": "0.000006411417606",
+              "tags": [],
+              "verificationStatus": "verified",
+              "verificationStatusBreakdown": [
+                {
+                  "provider": "hypernative",
+                  "result": "verified",
+                  "providerResult": "accept"
+                }
+              ]
+            },
+            "toAmount": "2301499906102905993611753",
+            "bridgedAmount": null
+          }
+        ],
+        "amount": "4585528293798599",
+        "timestamp": 1791573707
+      },
+      "receiving": {
+        "txHash": "0x24c9c68a275ab9f6a89f5b913b51f7380cc607d1ae3002c198b0a6211552e992",
+        "txLink": "https://etherscan.io/tx/0x24c9c68a275ab9f6a89f5b913b51f7380cc607d1ae3002c198b0a6211552e992",
+        "token": {
+          "address": "0x76669a82255EF545E57F660E0412197ce9cCCb1E",
+          "chainId": 1,
+          "symbol": "GREG",
+          "decimals": 18,
+          "name": "Greg Heffley",
+          "coinKey": "GREG",
+          "logoURI": null,
+          "priceUSD": "0.000006411417606",
+          "tags": [],
+          "verificationStatus": "verified",
+          "verificationStatusBreakdown": [
+            {
+              "provider": "hypernative",
+              "result": "verified",
+              "providerResult": "accept"
+            }
+          ]
+        },
+        "chainId": 1,
+        "gasPrice": "368105521",
+        "gasUsed": "309194",
+        "gasToken": {
+          "address": "0x0000000000000000000000000000000000000000",
+          "chainId": 1,
+          "symbol": "ETH",
+          "decimals": 18,
+          "name": "ETH",
+          "coinKey": "ETH",
+          "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+          "priceUSD": "2481.97",
+          "tags": [
+            "major_asset"
+          ],
+          "verificationStatus": "verified",
+          "verificationStatusBreakdown": [
+            {
+              "provider": "hypernative",
+              "result": "verified",
+              "providerResult": "accept"
+            }
+          ]
+        },
+        "gasAmount": "113816018460074",
+        "gasAmountUSD": "0.2825",
+        "amountUSD": "14.7559",
+        "value": "0",
+        "amount": "2301499906102905993611753",
+        "timestamp": 1791573707
+      },
+      "lifiExplorerLink": "https://scan.li.fi/tx/0x24c9c68a275ab9f6a89f5b913b51f7380cc607d1ae3002c198b0a6211552e992",
+      "fromAddress": "0x60b56234db89130d6ba39098643d87ca36a1f7fc",
+      "toAddress": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+      "tool": "nordstern",
+      "status": "DONE",
+      "substatus": "COMPLETED",
+      "substatusMessage": "The transfer is complete.",
+      "metadata": {
+        "integrator": "jumper.exchange"
+      },
+      "feeCosts": [
+        {
+          "name": "LIFI Fixed Fee",
+          "description": "Fixed LIFI fee, independent of any other fee",
+          "percentage": "0.0005",
+          "token": {
+            "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            "chainId": 1,
+            "symbol": "WETH",
+            "decimals": 18,
+            "name": "WETH",
+            "coinKey": "WETH",
+            "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+            "priceUSD": "2481.97"
+          },
+          "amount": "2292764146899",
+          "amountUSD": "0.0057",
+          "included": true,
+          "feeSplit": {
+            "lifiFee": "2292764146899",
+            "integratorFee": "0",
+            "recipients": [
+              {
+                "name": "lifi",
+                "fee": "2292764146899",
+                "type": "FIXED",
+                "walletAddress": "0x69a3136B94Daa2dD4A76c5C1560e0D95DC9022ba"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "transactionId": "0x680d011e2164d5c4d0e2ed0bba11750848fe7a051ccce046f979d7388eba8486",
+      "sending": {
+        "txHash": "0x516b8531905f38e3bdb58237d61042867149a6ed3d5768d838240f1e303015bc",
+        "txLink": "https://etherscan.io/tx/0x516b8531905f38e3bdb58237d61042867149a6ed3d5768d838240f1e303015bc",
+        "token": {
+          "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "chainId": 1,
+          "symbol": "WETH",
+          "decimals": 18,
+          "name": "WETH",
+          "coinKey": "WETH",
+          "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+          "priceUSD": "2481.76",
+          "tags": [
+            "major_asset"
+          ],
+          "verificationStatus": "verified",
+          "verificationStatusBreakdown": [
+            {
+              "provider": "hypernative",
+              "result": "verified",
+              "providerResult": "accept"
+            }
+          ]
+        },
+        "chainId": 1,
+        "gasPrice": "419320621",
+        "gasUsed": "325377",
+        "gasToken": {
+          "address": "0x0000000000000000000000000000000000000000",
+          "chainId": 1,
+          "symbol": "ETH",
+          "decimals": 18,
+          "name": "ETH",
+          "coinKey": "ETH",
+          "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+          "priceUSD": "2482.88",
+          "tags": [
+            "major_asset"
+          ],
+          "verificationStatus": "verified",
+          "verificationStatusBreakdown": [
+            {
+              "provider": "hypernative",
+              "result": "verified",
+              "providerResult": "accept"
+            }
+          ]
+        },
+        "gasAmount": "136437285699117",
+        "gasAmountUSD": "0.3388",
+        "amountUSD": "10.2872",
+        "value": "0",
+        "includedSteps": [
+          {
+            "tool": "feeCollection",
+            "toolDetails": {
+              "key": "feeCollection",
+              "name": "Integrator Fee",
+              "logoURI": "https://raw.githubusercontent.com/lifinance/types/main/src/assets/icons/protocols/feeCollection.svg"
+            },
+            "fromAmount": "4145113922058202",
+            "fromToken": {
+              "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "chainId": 1,
+              "symbol": "WETH",
+              "decimals": 18,
+              "name": "WETH",
+              "coinKey": "WETH",
+              "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+              "priceUSD": "2482.88",
+              "tags": [
+                "major_asset"
+              ],
+              "verificationStatus": "verified",
+              "verificationStatusBreakdown": [
+                {
+                  "provider": "hypernative",
+                  "result": "verified",
+                  "providerResult": "accept"
+                }
+              ]
+            },
+            "toToken": {
+              "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "chainId": 1,
+              "symbol": "WETH",
+              "decimals": 18,
+              "name": "WETH",
+              "coinKey": "WETH",
+              "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+              "priceUSD": "2482.88",
+              "tags": [
+                "major_asset"
+              ],
+              "verificationStatus": "verified",
+              "verificationStatusBreakdown": [
+                {
+                  "provider": "hypernative",
+                  "result": "verified",
+                  "providerResult": "accept"
+                }
+              ]
+            },
+            "toAmount": "4143041365097173"
+          },
+          {
+            "tool": "nordstern",
+            "toolDetails": {
+              "key": "nordstern",
+              "name": "Nordstern Finance",
+              "logoURI": "https://raw.githubusercontent.com/lifinance/types/main/src/assets/icons/exchanges/nordstern_finance.svg",
+              "webUrl": "https://nordstern.finance"
+            },
+            "fromAmount": "4143041365097173",
+            "fromToken": {
+              "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "chainId": 1,
+              "symbol": "WETH",
+              "decimals": 18,
+              "name": "WETH",
+              "coinKey": "WETH",
+              "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+              "priceUSD": "2482.88",
+              "tags": [
+                "major_asset"
+              ],
+              "verificationStatus": "verified",
+              "verificationStatusBreakdown": [
+                {
+                  "provider": "hypernative",
+                  "result": "verified",
+                  "providerResult": "accept"
+                }
+              ]
+            },
+            "toToken": {
+              "address": "0x76669a82255EF545E57F660E0412197ce9cCCb1E",
+              "chainId": 1,
+              "symbol": "GREG",
+              "decimals": 18,
+              "name": "Greg Heffley",
+              "coinKey": "GREG",
+              "logoURI": null,
+              "priceUSD": "0.000006411417606",
+              "tags": [],
+              "verificationStatus": "verified",
+              "verificationStatusBreakdown": [
+                {
+                  "provider": "hypernative",
+                  "result": "verified",
+                  "providerResult": "accept"
+                }
+              ]
+            },
+            "toAmount": "1608830338706062200254000",
+            "bridgedAmount": null
+          }
+        ],
+        "amount": "4145113922058202",
+        "timestamp": 1791572831
+      },
+      "receiving": {
+        "txHash": "0x516b8531905f38e3bdb58237d61042867149a6ed3d5768d838240f1e303015bc",
+        "txLink": "https://etherscan.io/tx/0x516b8531905f38e3bdb58237d61042867149a6ed3d5768d838240f1e303015bc",
+        "token": {
+          "address": "0x76669a82255EF545E57F660E0412197ce9cCCb1E",
+          "chainId": 1,
+          "symbol": "GREG",
+          "decimals": 18,
+          "name": "Greg Heffley",
+          "coinKey": "GREG",
+          "logoURI": null,
+          "priceUSD": "0.000006411417606",
+          "tags": [],
+          "verificationStatus": "verified",
+          "verificationStatusBreakdown": [
+            {
+              "provider": "hypernative",
+              "result": "verified",
+              "providerResult": "accept"
+            }
+          ]
+        },
+        "chainId": 1,
+        "gasPrice": "419320621",
+        "gasUsed": "325377",
+        "gasToken": {
+          "address": "0x0000000000000000000000000000000000000000",
+          "chainId": 1,
+          "symbol": "ETH",
+          "decimals": 18,
+          "name": "ETH",
+          "coinKey": "ETH",
+          "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+          "priceUSD": "2482.88",
+          "tags": [
+            "major_asset"
+          ],
+          "verificationStatus": "verified",
+          "verificationStatusBreakdown": [
+            {
+              "provider": "hypernative",
+              "result": "verified",
+              "providerResult": "accept"
+            }
+          ]
+        },
+        "gasAmount": "136437285699117",
+        "gasAmountUSD": "0.3388",
+        "amountUSD": "10.3149",
+        "value": "0",
+        "amount": "1608830338706062200254000",
+        "timestamp": 1791572831
+      },
+      "lifiExplorerLink": "https://scan.li.fi/tx/0x516b8531905f38e3bdb58237d61042867149a6ed3d5768d838240f1e303015bc",
+      "fromAddress": "0x60b56234db89130d6ba39098643d87ca36a1f7fc",
+      "toAddress": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+      "tool": "nordstern",
+      "status": "DONE",
+      "substatus": "COMPLETED",
+      "substatusMessage": "The transfer is complete.",
+      "metadata": {
+        "integrator": "jumper.exchange"
+      },
+      "feeCosts": [
+        {
+          "name": "LIFI Fixed Fee",
+          "description": "Fixed LIFI fee, independent of any other fee",
+          "percentage": "0.0005",
+          "token": {
+            "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            "chainId": 1,
+            "symbol": "WETH",
+            "decimals": 18,
+            "name": "WETH",
+            "coinKey": "WETH",
+            "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+            "priceUSD": "2482.88"
+          },
+          "amount": "2072556961029",
+          "amountUSD": "0.0051",
+          "included": true,
+          "feeSplit": {
+            "lifiFee": "2072556961029",
+            "integratorFee": "0",
+            "recipients": [
+              {
+                "name": "lifi",
+                "fee": "2072556961029",
+                "type": "FIXED",
+                "walletAddress": "0x69a3136B94Daa2dD4A76c5C1560e0D95DC9022ba"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "transactionId": "0x048f8f731190ef23f92db8a41f1f1b963fa2580c42e3755a790d566bc497896a",
+      "sending": {
+        "txHash": "0x410b855b1789789a9ef7b7da1d9604b6f17a47ec5f1bc81059452f97c170fb86",
+        "txLink": "https://etherscan.io/tx/0x410b855b1789789a9ef7b7da1d9604b6f17a47ec5f1bc81059452f97c170fb86",
+        "token": {
+          "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "chainId": 1,
+          "symbol": "WETH",
+          "decimals": 18,
+          "name": "WETH",
+          "coinKey": "WETH",
+          "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+          "priceUSD": "2480.66",
+          "tags": [
+            "major_asset"
+          ],
+          "verificationStatus": "verified",
+          "verificationStatusBreakdown": [
+            {
+              "provider": "hypernative",
+              "result": "verified",
+              "providerResult": "accept"
+            }
+          ]
+        },
+        "chainId": 1,
+        "gasPrice": "337313272",
+        "gasUsed": "309074",
+        "gasToken": {
+          "address": "0x0000000000000000000000000000000000000000",
+          "chainId": 1,
+          "symbol": "ETH",
+          "decimals": 18,
+          "name": "ETH",
+          "coinKey": "ETH",
+          "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+          "priceUSD": "2480.66",
+          "tags": [
+            "major_asset"
+          ],
+          "verificationStatus": "verified",
+          "verificationStatusBreakdown": [
+            {
+              "provider": "hypernative",
+              "result": "verified",
+              "providerResult": "accept"
+            }
+          ]
+        },
+        "gasAmount": "104254762230128",
+        "gasAmountUSD": "0.2586",
+        "amountUSD": "29.1821",
+        "value": "0",
+        "includedSteps": [
+          {
+            "tool": "feeCollection",
+            "toolDetails": {
+              "key": "feeCollection",
+              "name": "Integrator Fee",
+              "logoURI": "https://raw.githubusercontent.com/lifinance/types/main/src/assets/icons/protocols/feeCollection.svg"
+            },
+            "fromAmount": "11763860978806464",
+            "fromToken": {
+              "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "chainId": 1,
+              "symbol": "WETH",
+              "decimals": 18,
+              "name": "WETH",
+              "coinKey": "WETH",
+              "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+              "priceUSD": "2480.66",
+              "tags": [
+                "major_asset"
+              ],
+              "verificationStatus": "verified",
+              "verificationStatusBreakdown": [
+                {
+                  "provider": "hypernative",
+                  "result": "verified",
+                  "providerResult": "accept"
+                }
+              ]
+            },
+            "toToken": {
+              "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "chainId": 1,
+              "symbol": "WETH",
+              "decimals": 18,
+              "name": "WETH",
+              "coinKey": "WETH",
+              "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+              "priceUSD": "2480.66",
+              "tags": [
+                "major_asset"
+              ],
+              "verificationStatus": "verified",
+              "verificationStatusBreakdown": [
+                {
+                  "provider": "hypernative",
+                  "result": "verified",
+                  "providerResult": "accept"
+                }
+              ]
+            },
+            "toAmount": "11757979048317061"
+          },
+          {
+            "tool": "nordstern",
+            "toolDetails": {
+              "key": "nordstern",
+              "name": "Nordstern Finance",
+              "logoURI": "https://raw.githubusercontent.com/lifinance/types/main/src/assets/icons/exchanges/nordstern_finance.svg",
+              "webUrl": "https://nordstern.finance"
+            },
+            "fromAmount": "11757979048317061",
+            "fromToken": {
+              "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+              "chainId": 1,
+              "symbol": "WETH",
+              "decimals": 18,
+              "name": "WETH",
+              "coinKey": "WETH",
+              "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+              "priceUSD": "2480.66",
+              "tags": [
+                "major_asset"
+              ],
+              "verificationStatus": "verified",
+              "verificationStatusBreakdown": [
+                {
+                  "provider": "hypernative",
+                  "result": "verified",
+                  "providerResult": "accept"
+                }
+              ]
+            },
+            "toToken": {
+              "address": "0x76669a82255EF545E57F660E0412197ce9cCCb1E",
+              "chainId": 1,
+              "symbol": "GREG",
+              "decimals": 18,
+              "name": "Greg Heffley",
+              "coinKey": "GREG",
+              "logoURI": null,
+              "priceUSD": "0.000004611058287",
+              "tags": [],
+              "verificationStatus": "verified",
+              "verificationStatusBreakdown": [
+                {
+                  "provider": "hypernative",
+                  "result": "verified",
+                  "providerResult": "accept"
+                }
+              ]
+            },
+            "toAmount": "4622928560407412827734614",
+            "bridgedAmount": null
+          }
+        ],
+        "amount": "11763860978806464",
+        "timestamp": 1791572399
+      },
+      "receiving": {
+        "txHash": "0x410b855b1789789a9ef7b7da1d9604b6f17a47ec5f1bc81059452f97c170fb86",
+        "txLink": "https://etherscan.io/tx/0x410b855b1789789a9ef7b7da1d9604b6f17a47ec5f1bc81059452f97c170fb86",
+        "token": {
+          "address": "0x76669a82255EF545E57F660E0412197ce9cCCb1E",
+          "chainId": 1,
+          "symbol": "GREG",
+          "decimals": 18,
+          "name": "Greg Heffley",
+          "coinKey": "GREG",
+          "logoURI": null,
+          "priceUSD": "0.000004611058287",
+          "tags": [],
+          "verificationStatus": "verified",
+          "verificationStatusBreakdown": [
+            {
+              "provider": "hypernative",
+              "result": "verified",
+              "providerResult": "accept"
+            }
+          ]
+        },
+        "chainId": 1,
+        "gasPrice": "337313272",
+        "gasUsed": "309074",
+        "gasToken": {
+          "address": "0x0000000000000000000000000000000000000000",
+          "chainId": 1,
+          "symbol": "ETH",
+          "decimals": 18,
+          "name": "ETH",
+          "coinKey": "ETH",
+          "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
+          "priceUSD": "2480.66",
+          "tags": [
+            "major_asset"
+          ],
+          "verificationStatus": "verified",
+          "verificationStatusBreakdown": [
+            {
+              "provider": "hypernative",
+              "result": "verified",
+              "providerResult": "accept"
+            }
+          ]
+        },
+        "gasAmount": "104254762230128",
+        "gasAmountUSD": "0.2586",
+        "amountUSD": "21.3166",
+        "value": "0",
+        "amount": "4622928560407412827734614",
+        "timestamp": 1791572399
+      },
+      "lifiExplorerLink": "https://scan.li.fi/tx/0x410b855b1789789a9ef7b7da1d9604b6f17a47ec5f1bc81059452f97c170fb86",
+      "fromAddress": "0x60b56234db89130d6ba39098643d87ca36a1f7fc",
+      "toAddress": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+      "tool": "nordstern",
+      "status": "DONE",
+      "substatus": "COMPLETED",
+      "substatusMessage": "The transfer is complete.",
+      "metadata": {
+        "integrator": "jumper.exchange"
+      },
+      "feeCosts": [
+        {
+          "name": "LIFI Fixed Fee",
+          "description": "Fixed LIFI fee, independent of any other fee",
+          "percentage": "0.0005",
+          "token": {
+            "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+            "chainId": 1,
+            "symbol": "WETH",
+            "decimals": 18,
+            "name": "WETH",
+            "coinKey": "WETH",
+            "logoURI": "https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png",
+            "priceUSD": "2480.66"
+          },
+          "amount": "5881930489403",
+          "amountUSD": "0.0146",
+          "included": true,
+          "feeSplit": {
+            "lifiFee": "5881930489403",
+            "integratorFee": "0",
+            "recipients": [
+              {
+                "name": "lifi",
+                "fee": "5881930489403",
+                "type": "FIXED",
+                "walletAddress": "0x69a3136B94Daa2dD4A76c5C1560e0D95DC9022ba"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "totalReceivedUSD": 71.17,
+  "totalSentUSD": 76
+}

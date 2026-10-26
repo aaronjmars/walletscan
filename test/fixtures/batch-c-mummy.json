@@ -1,0 +1,3248 @@
+{
+ "venue": "mummy",
+ "address": "0x96b7c266c68baabc7da1b4d71de453435ea2b9e7",
+ "captured": "2026-10-20T17:17:51.840Z",
+ "calls": [
+  {
+   "key": "multicall:[\"arbitrum\",[{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"allWhitelistedTokensLength\"}]]",
+   "out": [
+    {
+     "$n": "10"
+    }
+   ]
+  },
+  {
+   "key": "multicall:[\"optimism\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokensLength\"}]]",
+   "out": [
+    {
+     "$n": "9"
+    }
+   ]
+  },
+  {
+   "key": "multicall:[\"base\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokensLength\"}]]",
+   "out": [
+    {
+     "$n": "6"
+    }
+   ]
+  },
+  {
+   "key": "multicall:[\"fantom\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokensLength\"},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"allWhitelistedTokensLength\"}]]",
+   "out": [
+    {
+     "$n": "9"
+    },
+    {
+     "$n": "11"
+    }
+   ]
+  },
+  {
+   "key": "multicall:[\"base\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"0\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"1\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"2\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"3\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"4\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"5\"}]}]]",
+   "out": [
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+    "0x4200000000000000000000000000000000000006",
+    "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+    "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb"
+   ]
+  },
+  {
+   "key": "multicall:[\"arbitrum\",[{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"0\"}]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"1\"}]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"2\"}]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"3\"}]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"4\"}]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"5\"}]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"6\"}]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"7\"}]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"8\"}]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"9\"}]}]]",
+   "out": [
+    "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+    "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+    "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+    "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+    "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+    "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
+    "0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0",
+    "0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a",
+    "0x3082CC23568eA640225c2467653dB90e9250AaA0",
+    "0x912CE59144191C1204E64559FE8253a0e49E6548"
+   ]
+  },
+  {
+   "key": "multicall:[\"optimism\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"0\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"1\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"2\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"3\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"4\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"5\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"6\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"7\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"8\"}]}]]",
+   "out": [
+    "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
+    "0x4200000000000000000000000000000000000006",
+    "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
+    "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+    "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+    "0x4200000000000000000000000000000000000042",
+    "0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6",
+    "0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4",
+    "0x67CCEA5bb16181E7b4109c9c2143c24a1c2205Be"
+   ]
+  },
+  {
+   "key": "multicall:[\"fantom\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"0\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"1\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"2\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"3\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"4\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"5\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"6\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"7\"}]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"8\"}]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"0\"}]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"1\"}]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"2\"}]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"3\"}]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"4\"}]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"5\"}]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"6\"}]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"7\"}]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"8\"}]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"9\"}]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"allWhitelistedTokens\",\"args\":[{\"$n\":\"10\"}]}]]",
+   "out": [
+    "0x321162Cd933E2Be498Cd2267a90534A804051b11",
+    "0x74b23882a30290451A17c44f4F05243b6b58C76d",
+    "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+    "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
+    "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
+    "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+    "0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8",
+    "0x1E4F97b9f9F913c46F1632781732927B9019C68b",
+    "0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454",
+    "0xf1648C50d2863f780c57849D812b4B7686031A3D",
+    "0x695921034f0387eAc4e11620EE91b1b15A6A09fE",
+    "0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf",
+    "0xcc1b99dDAc1a33c201a742A1851662E87BC7f22C",
+    "0x91a40C733c97a6e1BF876EaF9ed8c08102eB491f",
+    "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+    "0xd226392C23fb3476274ED6759D4a478db3197d82",
+    "0x448d59B4302aB5d2dadf9611bED9457491926c8e",
+    "0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B",
+    "0x1B6382DBDEa11d97f24495C9A90b7c88469134a4",
+    "0x2F733095B80A04b38b0D10cC884524a3d09b836a"
+   ]
+  },
+  {
+   "key": "multicall:[\"base\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913\"]},{\"to\":\"0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA\"]},{\"to\":\"0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b\"]},{\"to\":\"0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x4200000000000000000000000000000000000006\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x4200000000000000000000000000000000000006\"]},{\"to\":\"0x4200000000000000000000000000000000000006\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22\"]},{\"to\":\"0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb\"]},{\"to\":\"0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb\",\"functionName\":\"symbol\"}]]",
+   "out": [
+    true,
+    false,
+    "USDC",
+    true,
+    false,
+    "USDbC",
+    false,
+    true,
+    "tBTC",
+    false,
+    true,
+    "WETH",
+    false,
+    true,
+    "cbETH",
+    true,
+    false,
+    "DAI"
+   ]
+  },
+  {
+   "key": "multicall:[\"arbitrum\",[{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"stableTokens\",\"args\":[\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\"]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"shortableTokens\",\"args\":[\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\"]},{\"to\":\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",\"functionName\":\"symbol\"},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"stableTokens\",\"args\":[\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\"]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"shortableTokens\",\"args\":[\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\"]},{\"to\":\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",\"functionName\":\"symbol\"},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"stableTokens\",\"args\":[\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\"]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"shortableTokens\",\"args\":[\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\"]},{\"to\":\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"functionName\":\"symbol\"},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"stableTokens\",\"args\":[\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\"]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"shortableTokens\",\"args\":[\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\"]},{\"to\":\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"functionName\":\"symbol\"},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"stableTokens\",\"args\":[\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\"]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"shortableTokens\",\"args\":[\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\"]},{\"to\":\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"functionName\":\"symbol\"},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"stableTokens\",\"args\":[\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\"]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"shortableTokens\",\"args\":[\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\"]},{\"to\":\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",\"functionName\":\"symbol\"},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"stableTokens\",\"args\":[\"0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0\"]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"shortableTokens\",\"args\":[\"0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0\"]},{\"to\":\"0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0\",\"functionName\":\"symbol\"},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"stableTokens\",\"args\":[\"0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a\"]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"shortableTokens\",\"args\":[\"0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a\"]},{\"to\":\"0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a\",\"functionName\":\"symbol\"},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"stableTokens\",\"args\":[\"0x3082CC23568eA640225c2467653dB90e9250AaA0\"]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"shortableTokens\",\"args\":[\"0x3082CC23568eA640225c2467653dB90e9250AaA0\"]},{\"to\":\"0x3082CC23568eA640225c2467653dB90e9250AaA0\",\"functionName\":\"symbol\"},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"stableTokens\",\"args\":[\"0x912CE59144191C1204E64559FE8253a0e49E6548\"]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"shortableTokens\",\"args\":[\"0x912CE59144191C1204E64559FE8253a0e49E6548\"]},{\"to\":\"0x912CE59144191C1204E64559FE8253a0e49E6548\",\"functionName\":\"symbol\"}]]",
+   "out": [
+    false,
+    true,
+    "WBTC",
+    false,
+    true,
+    "WETH",
+    true,
+    false,
+    "USDC",
+    true,
+    false,
+    "USD₮0",
+    true,
+    false,
+    "DAI",
+    false,
+    true,
+    "LINK",
+    false,
+    true,
+    "UNI",
+    false,
+    true,
+    "GMX",
+    false,
+    true,
+    "RDNT",
+    false,
+    true,
+    "ARB"
+   ]
+  },
+  {
+   "key": "multicall:[\"optimism\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x68f180fcCe6836688e9084f035309E29Bf0A2095\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x68f180fcCe6836688e9084f035309E29Bf0A2095\"]},{\"to\":\"0x68f180fcCe6836688e9084f035309E29Bf0A2095\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x4200000000000000000000000000000000000006\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x4200000000000000000000000000000000000006\"]},{\"to\":\"0x4200000000000000000000000000000000000006\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x7F5c764cBc14f9669B88837ca1490cCa17c31607\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x7F5c764cBc14f9669B88837ca1490cCa17c31607\"]},{\"to\":\"0x7F5c764cBc14f9669B88837ca1490cCa17c31607\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x94b008aA00579c1307B0EF2c499aD98a8ce58e58\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x94b008aA00579c1307B0EF2c499aD98a8ce58e58\"]},{\"to\":\"0x94b008aA00579c1307B0EF2c499aD98a8ce58e58\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\"]},{\"to\":\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x4200000000000000000000000000000000000042\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x4200000000000000000000000000000000000042\"]},{\"to\":\"0x4200000000000000000000000000000000000042\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6\"]},{\"to\":\"0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4\"]},{\"to\":\"0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x67CCEA5bb16181E7b4109c9c2143c24a1c2205Be\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x67CCEA5bb16181E7b4109c9c2143c24a1c2205Be\"]},{\"to\":\"0x67CCEA5bb16181E7b4109c9c2143c24a1c2205Be\",\"functionName\":\"symbol\"}]]",
+   "out": [
+    false,
+    true,
+    "WBTC",
+    false,
+    true,
+    "WETH",
+    true,
+    false,
+    "USDC",
+    true,
+    false,
+    "USDT",
+    true,
+    false,
+    "DAI",
+    false,
+    true,
+    "OP",
+    false,
+    true,
+    "LINK",
+    false,
+    true,
+    "SNX",
+    false,
+    true,
+    "FXS"
+   ]
+  },
+  {
+   "key": "multicall:[\"base\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b\",\"0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913\",\"0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA\",\"0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb\",\"0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x4200000000000000000000000000000000000006\",\"0x4200000000000000000000000000000000000006\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913\",\"0x4200000000000000000000000000000000000006\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA\",\"0x4200000000000000000000000000000000000006\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb\",\"0x4200000000000000000000000000000000000006\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22\",\"0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913\",\"0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA\",\"0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb\",\"0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22\",false]}]]",
+   "out": [
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ]
+   ]
+  },
+  {
+   "key": "multicall:[\"arbitrum\",[{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",true]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",true]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x82aF49447D8a07e3bd95BD0d56f35241523fBab1\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",true]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0xf97f4df75117a78c1A5a0DBb814Af92458539FB4\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0\",\"0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0\",true]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a\",\"0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a\",true]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x3082CC23568eA640225c2467653dB90e9250AaA0\",\"0x3082CC23568eA640225c2467653dB90e9250AaA0\",true]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0x3082CC23568eA640225c2467653dB90e9250AaA0\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0x3082CC23568eA640225c2467653dB90e9250AaA0\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x3082CC23568eA640225c2467653dB90e9250AaA0\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x912CE59144191C1204E64559FE8253a0e49E6548\",\"0x912CE59144191C1204E64559FE8253a0e49E6548\",true]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8\",\"0x912CE59144191C1204E64559FE8253a0e49E6548\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9\",\"0x912CE59144191C1204E64559FE8253a0e49E6548\",false]},{\"to\":\"0x304951d7172bCAdA54ccAC1E4674862b3d5b3d5b\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x912CE59144191C1204E64559FE8253a0e49E6548\",false]}]]",
+   "out": [
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ]
+   ]
+  },
+  {
+   "key": "multicall:[\"optimism\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x68f180fcCe6836688e9084f035309E29Bf0A2095\",\"0x68f180fcCe6836688e9084f035309E29Bf0A2095\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x7F5c764cBc14f9669B88837ca1490cCa17c31607\",\"0x68f180fcCe6836688e9084f035309E29Bf0A2095\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x94b008aA00579c1307B0EF2c499aD98a8ce58e58\",\"0x68f180fcCe6836688e9084f035309E29Bf0A2095\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x68f180fcCe6836688e9084f035309E29Bf0A2095\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x4200000000000000000000000000000000000006\",\"0x4200000000000000000000000000000000000006\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x7F5c764cBc14f9669B88837ca1490cCa17c31607\",\"0x4200000000000000000000000000000000000006\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x94b008aA00579c1307B0EF2c499aD98a8ce58e58\",\"0x4200000000000000000000000000000000000006\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x4200000000000000000000000000000000000006\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x4200000000000000000000000000000000000042\",\"0x4200000000000000000000000000000000000042\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x7F5c764cBc14f9669B88837ca1490cCa17c31607\",\"0x4200000000000000000000000000000000000042\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x94b008aA00579c1307B0EF2c499aD98a8ce58e58\",\"0x4200000000000000000000000000000000000042\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x4200000000000000000000000000000000000042\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6\",\"0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x7F5c764cBc14f9669B88837ca1490cCa17c31607\",\"0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x94b008aA00579c1307B0EF2c499aD98a8ce58e58\",\"0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4\",\"0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x7F5c764cBc14f9669B88837ca1490cCa17c31607\",\"0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x94b008aA00579c1307B0EF2c499aD98a8ce58e58\",\"0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x8700dAec35aF8Ff88c16BdF0418774CB3D7599B4\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x67CCEA5bb16181E7b4109c9c2143c24a1c2205Be\",\"0x67CCEA5bb16181E7b4109c9c2143c24a1c2205Be\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x7F5c764cBc14f9669B88837ca1490cCa17c31607\",\"0x67CCEA5bb16181E7b4109c9c2143c24a1c2205Be\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x94b008aA00579c1307B0EF2c499aD98a8ce58e58\",\"0x67CCEA5bb16181E7b4109c9c2143c24a1c2205Be\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1\",\"0x67CCEA5bb16181E7b4109c9c2143c24a1c2205Be\",false]}]]",
+   "out": [
+    [
+     {
+      "$n": "141523587744000000000000000000000"
+     },
+     {
+      "$n": "48795353305756000000000000000000"
+     },
+     {
+      "$n": "92601050000000000000000000000000000"
+     },
+     {
+      "$n": "144341"
+     },
+     {
+      "$n": "152831"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "1736429689"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ]
+   ]
+  },
+  {
+   "key": "multicall:[\"fantom\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x321162Cd933E2Be498Cd2267a90534A804051b11\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x321162Cd933E2Be498Cd2267a90534A804051b11\"]},{\"to\":\"0x321162Cd933E2Be498Cd2267a90534A804051b11\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x74b23882a30290451A17c44f4F05243b6b58C76d\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x74b23882a30290451A17c44f4F05243b6b58C76d\"]},{\"to\":\"0x74b23882a30290451A17c44f4F05243b6b58C76d\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x04068DA6C83AFCFA0e13ba15A6696662335D5B75\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x04068DA6C83AFCFA0e13ba15A6696662335D5B75\"]},{\"to\":\"0x04068DA6C83AFCFA0e13ba15A6696662335D5B75\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x049d68029688eAbF473097a2fC38ef61633A3C7A\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x049d68029688eAbF473097a2fC38ef61633A3C7A\"]},{\"to\":\"0x049d68029688eAbF473097a2fC38ef61633A3C7A\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E\"]},{\"to\":\"0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\"]},{\"to\":\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8\"]},{\"to\":\"0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0x1E4F97b9f9F913c46F1632781732927B9019C68b\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0x1E4F97b9f9F913c46F1632781732927B9019C68b\"]},{\"to\":\"0x1E4F97b9f9F913c46F1632781732927B9019C68b\",\"functionName\":\"symbol\"},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"stableTokens\",\"args\":[\"0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454\"]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"shortableTokens\",\"args\":[\"0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454\"]},{\"to\":\"0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454\",\"functionName\":\"symbol\"},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"stableTokens\",\"args\":[\"0xf1648C50d2863f780c57849D812b4B7686031A3D\"]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"shortableTokens\",\"args\":[\"0xf1648C50d2863f780c57849D812b4B7686031A3D\"]},{\"to\":\"0xf1648C50d2863f780c57849D812b4B7686031A3D\",\"functionName\":\"symbol\"},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"stableTokens\",\"args\":[\"0x695921034f0387eAc4e11620EE91b1b15A6A09fE\"]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"shortableTokens\",\"args\":[\"0x695921034f0387eAc4e11620EE91b1b15A6A09fE\"]},{\"to\":\"0x695921034f0387eAc4e11620EE91b1b15A6A09fE\",\"functionName\":\"symbol\"},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"stableTokens\",\"args\":[\"0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf\"]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"shortableTokens\",\"args\":[\"0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf\"]},{\"to\":\"0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf\",\"functionName\":\"symbol\"},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"stableTokens\",\"args\":[\"0xcc1b99dDAc1a33c201a742A1851662E87BC7f22C\"]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"shortableTokens\",\"args\":[\"0xcc1b99dDAc1a33c201a742A1851662E87BC7f22C\"]},{\"to\":\"0xcc1b99dDAc1a33c201a742A1851662E87BC7f22C\",\"functionName\":\"symbol\"},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"stableTokens\",\"args\":[\"0x91a40C733c97a6e1BF876EaF9ed8c08102eB491f\"]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"shortableTokens\",\"args\":[\"0x91a40C733c97a6e1BF876EaF9ed8c08102eB491f\"]},{\"to\":\"0x91a40C733c97a6e1BF876EaF9ed8c08102eB491f\",\"functionName\":\"symbol\"},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"stableTokens\",\"args\":[\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\"]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"shortableTokens\",\"args\":[\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\"]},{\"to\":\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",\"functionName\":\"symbol\"},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"stableTokens\",\"args\":[\"0xd226392C23fb3476274ED6759D4a478db3197d82\"]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"shortableTokens\",\"args\":[\"0xd226392C23fb3476274ED6759D4a478db3197d82\"]},{\"to\":\"0xd226392C23fb3476274ED6759D4a478db3197d82\",\"functionName\":\"symbol\"},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"stableTokens\",\"args\":[\"0x448d59B4302aB5d2dadf9611bED9457491926c8e\"]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"shortableTokens\",\"args\":[\"0x448d59B4302aB5d2dadf9611bED9457491926c8e\"]},{\"to\":\"0x448d59B4302aB5d2dadf9611bED9457491926c8e\",\"functionName\":\"symbol\"},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"stableTokens\",\"args\":[\"0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B\"]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"shortableTokens\",\"args\":[\"0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B\"]},{\"to\":\"0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B\",\"functionName\":\"symbol\"},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"stableTokens\",\"args\":[\"0x1B6382DBDEa11d97f24495C9A90b7c88469134a4\"]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"shortableTokens\",\"args\":[\"0x1B6382DBDEa11d97f24495C9A90b7c88469134a4\"]},{\"to\":\"0x1B6382DBDEa11d97f24495C9A90b7c88469134a4\",\"functionName\":\"symbol\"},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"stableTokens\",\"args\":[\"0x2F733095B80A04b38b0D10cC884524a3d09b836a\"]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"shortableTokens\",\"args\":[\"0x2F733095B80A04b38b0D10cC884524a3d09b836a\"]},{\"to\":\"0x2F733095B80A04b38b0D10cC884524a3d09b836a\",\"functionName\":\"symbol\"}]]",
+   "out": [
+    false,
+    true,
+    "BTC",
+    false,
+    true,
+    "ETH",
+    true,
+    false,
+    "USDC",
+    true,
+    false,
+    "fUSDT",
+    true,
+    false,
+    "DAI",
+    false,
+    true,
+    "WFTM",
+    false,
+    true,
+    "LINK",
+    false,
+    true,
+    "CRV",
+    false,
+    true,
+    "BNB",
+    false,
+    true,
+    "WBTC",
+    false,
+    true,
+    "WETH",
+    true,
+    false,
+    "USDC",
+    true,
+    false,
+    "USDT",
+    true,
+    false,
+    "DAI",
+    false,
+    true,
+    "WFTM",
+    true,
+    false,
+    "axlUSDT",
+    false,
+    true,
+    "axlWBTC",
+    false,
+    true,
+    "axlETH",
+    true,
+    false,
+    "axlUSDC",
+    true,
+    false,
+    "USDC.e"
+   ]
+  },
+  {
+   "key": "multicall:[\"optimism\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPositionDelta\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x68f180fcCe6836688e9084f035309E29Bf0A2095\",\"0x68f180fcCe6836688e9084f035309E29Bf0A2095\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getMinPrice\",\"args\":[\"0x68f180fcCe6836688e9084f035309E29Bf0A2095\"]}]]",
+   "out": [
+    [
+     false,
+     {
+      "$n": "16327151451149000620255740080701"
+     }
+    ],
+    {
+     "$n": "81917944858401300000000000000000000"
+    }
+   ]
+  },
+  {
+   "key": "multicall:[\"fantom\",[{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x321162Cd933E2Be498Cd2267a90534A804051b11\",\"0x321162Cd933E2Be498Cd2267a90534A804051b11\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x04068DA6C83AFCFA0e13ba15A6696662335D5B75\",\"0x321162Cd933E2Be498Cd2267a90534A804051b11\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x049d68029688eAbF473097a2fC38ef61633A3C7A\",\"0x321162Cd933E2Be498Cd2267a90534A804051b11\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E\",\"0x321162Cd933E2Be498Cd2267a90534A804051b11\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x74b23882a30290451A17c44f4F05243b6b58C76d\",\"0x74b23882a30290451A17c44f4F05243b6b58C76d\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x04068DA6C83AFCFA0e13ba15A6696662335D5B75\",\"0x74b23882a30290451A17c44f4F05243b6b58C76d\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x049d68029688eAbF473097a2fC38ef61633A3C7A\",\"0x74b23882a30290451A17c44f4F05243b6b58C76d\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E\",\"0x74b23882a30290451A17c44f4F05243b6b58C76d\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x04068DA6C83AFCFA0e13ba15A6696662335D5B75\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x049d68029688eAbF473097a2fC38ef61633A3C7A\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8\",\"0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x04068DA6C83AFCFA0e13ba15A6696662335D5B75\",\"0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x049d68029688eAbF473097a2fC38ef61633A3C7A\",\"0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E\",\"0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x1E4F97b9f9F913c46F1632781732927B9019C68b\",\"0x1E4F97b9f9F913c46F1632781732927B9019C68b\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x04068DA6C83AFCFA0e13ba15A6696662335D5B75\",\"0x1E4F97b9f9F913c46F1632781732927B9019C68b\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x049d68029688eAbF473097a2fC38ef61633A3C7A\",\"0x1E4F97b9f9F913c46F1632781732927B9019C68b\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E\",\"0x1E4F97b9f9F913c46F1632781732927B9019C68b\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454\",\"0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454\",true]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x04068DA6C83AFCFA0e13ba15A6696662335D5B75\",\"0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x049d68029688eAbF473097a2fC38ef61633A3C7A\",\"0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454\",false]},{\"to\":\"0xA6D7D0e650aa40FFa42d845A354c12c2bc0aB15f\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E\",\"0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xf1648C50d2863f780c57849D812b4B7686031A3D\",\"0xf1648C50d2863f780c57849D812b4B7686031A3D\",true]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf\",\"0xf1648C50d2863f780c57849D812b4B7686031A3D\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xcc1b99dDAc1a33c201a742A1851662E87BC7f22C\",\"0xf1648C50d2863f780c57849D812b4B7686031A3D\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x91a40C733c97a6e1BF876EaF9ed8c08102eB491f\",\"0xf1648C50d2863f780c57849D812b4B7686031A3D\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xd226392C23fb3476274ED6759D4a478db3197d82\",\"0xf1648C50d2863f780c57849D812b4B7686031A3D\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x1B6382DBDEa11d97f24495C9A90b7c88469134a4\",\"0xf1648C50d2863f780c57849D812b4B7686031A3D\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x2F733095B80A04b38b0D10cC884524a3d09b836a\",\"0xf1648C50d2863f780c57849D812b4B7686031A3D\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x695921034f0387eAc4e11620EE91b1b15A6A09fE\",\"0x695921034f0387eAc4e11620EE91b1b15A6A09fE\",true]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf\",\"0x695921034f0387eAc4e11620EE91b1b15A6A09fE\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xcc1b99dDAc1a33c201a742A1851662E87BC7f22C\",\"0x695921034f0387eAc4e11620EE91b1b15A6A09fE\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x91a40C733c97a6e1BF876EaF9ed8c08102eB491f\",\"0x695921034f0387eAc4e11620EE91b1b15A6A09fE\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xd226392C23fb3476274ED6759D4a478db3197d82\",\"0x695921034f0387eAc4e11620EE91b1b15A6A09fE\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x1B6382DBDEa11d97f24495C9A90b7c88469134a4\",\"0x695921034f0387eAc4e11620EE91b1b15A6A09fE\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x2F733095B80A04b38b0D10cC884524a3d09b836a\",\"0x695921034f0387eAc4e11620EE91b1b15A6A09fE\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",true]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xcc1b99dDAc1a33c201a742A1851662E87BC7f22C\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x91a40C733c97a6e1BF876EaF9ed8c08102eB491f\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xd226392C23fb3476274ED6759D4a478db3197d82\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x1B6382DBDEa11d97f24495C9A90b7c88469134a4\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x2F733095B80A04b38b0D10cC884524a3d09b836a\",\"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x448d59B4302aB5d2dadf9611bED9457491926c8e\",\"0x448d59B4302aB5d2dadf9611bED9457491926c8e\",true]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf\",\"0x448d59B4302aB5d2dadf9611bED9457491926c8e\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xcc1b99dDAc1a33c201a742A1851662E87BC7f22C\",\"0x448d59B4302aB5d2dadf9611bED9457491926c8e\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x91a40C733c97a6e1BF876EaF9ed8c08102eB491f\",\"0x448d59B4302aB5d2dadf9611bED9457491926c8e\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xd226392C23fb3476274ED6759D4a478db3197d82\",\"0x448d59B4302aB5d2dadf9611bED9457491926c8e\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x1B6382DBDEa11d97f24495C9A90b7c88469134a4\",\"0x448d59B4302aB5d2dadf9611bED9457491926c8e\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x2F733095B80A04b38b0D10cC884524a3d09b836a\",\"0x448d59B4302aB5d2dadf9611bED9457491926c8e\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B\",\"0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B\",true]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x28a92dde19D9989F39A49905d7C9C2FAc7799bDf\",\"0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xcc1b99dDAc1a33c201a742A1851662E87BC7f22C\",\"0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x91a40C733c97a6e1BF876EaF9ed8c08102eB491f\",\"0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0xd226392C23fb3476274ED6759D4a478db3197d82\",\"0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x1B6382DBDEa11d97f24495C9A90b7c88469134a4\",\"0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B\",false]},{\"to\":\"0x7e9E9d925846B110B025041cfdF9942f2C401F4F\",\"functionName\":\"getPosition\",\"args\":[\"0x96b7c266c68baabc7da1b4d71de453435ea2b9e7\",\"0x2F733095B80A04b38b0D10cC884524a3d09b836a\",\"0xfe7eDa5F2c56160d406869A8aA4B2F365d544C7B\",false]}]]",
+   "out": [
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ],
+    [
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     true,
+     {
+      "$n": "0"
+     }
+    ]
+   ]
+  }
+ ]
+}

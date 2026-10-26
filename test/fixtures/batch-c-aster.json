@@ -1,0 +1,54 @@
+{
+ "venue": "aster",
+ "address": "0x80d709700f9191da81a42f3d9562117dfb75935d",
+ "captured": "2026-10-20T17:32:22.781Z",
+ "calls": [
+  {
+   "key": "call:[\"holdings.aster\",{\"address\":\"0x80d709700f9191da81a42f3d9562117dfb75935d\"}]",
+   "out": {
+    "status": 200,
+    "ok": true,
+    "data": {
+     "result": {
+      "address": "0x80d709700f9191da81a42f3d9562117dfb75935d",
+      "accountPrivacy": "disabled",
+      "perpAssets": [
+       {
+        "asset": "USDC",
+        "walletBalance": 20070.92670781
+       },
+       {
+        "asset": "USDT",
+        "walletBalance": 117.49669511
+       }
+      ],
+      "positions": [
+       {
+        "tradingProduct": "perps",
+        "positions": [
+         {
+          "id": "98000008497102_DOODUSDT_SHORT",
+          "symbol": "DOODUSDT",
+          "positionAmount": "-3584647",
+          "positionSide": "SHORT",
+          "notionalValue": "8646.16856400",
+          "unrealizedProfit": "760.9282136501683",
+          "cumRealized": "122.68165188"
+         }
+        ]
+       }
+      ],
+      "staking": {
+       "totalStakedAmount": null,
+       "totalUnclaimedRewards": null,
+       "totalPendingStakeAmount": null,
+       "totalPendingUnstakeAmount": null
+      }
+     },
+     "id": 1,
+     "jsonrpc": "2.0"
+    }
+   }
+  }
+ ]
+}

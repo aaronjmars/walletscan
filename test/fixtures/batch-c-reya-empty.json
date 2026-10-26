@@ -1,0 +1,15 @@
+{
+ "venue": "reya",
+ "address": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+ "captured": "2026-10-20T17:18:46.207Z",
+ "calls": [
+  {
+   "key": "call:[\"holdings.reya_balances\",{\"address\":\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\"}]",
+   "out": {
+    "status": 200,
+    "ok": true,
+    "data": []
+   }
+  }
+ ]
+}

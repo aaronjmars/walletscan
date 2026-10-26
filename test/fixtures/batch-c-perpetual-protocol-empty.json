@@ -1,0 +1,18 @@
+{
+ "venue": "perpetual-protocol",
+ "address": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+ "captured": "2026-10-20T17:17:34.593Z",
+ "calls": [
+  {
+   "key": "multicall:[\"optimism\",[{\"to\":\"0xAD7b4C162707E0B2b5f6fdDbD3f8538A5fbA0d60\",\"functionName\":\"getFreeCollateral\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\"]},{\"to\":\"0xAD7b4C162707E0B2b5f6fdDbD3f8538A5fbA0d60\",\"functionName\":\"getAccountValue\",\"args\":[\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\"]}]]",
+   "out": [
+    {
+     "$n": "0"
+    },
+    {
+     "$n": "0"
+    }
+   ]
+  }
+ ]
+}

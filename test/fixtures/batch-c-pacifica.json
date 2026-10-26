@@ -1,0 +1,40 @@
+{
+ "venue": "pacifica",
+ "address": "9SL9PHbdixQFyMS5npowKXLdXUWwYReHKuyBrFdFCRxc",
+ "captured": "2026-10-20T17:18:59.256Z",
+ "calls": [
+  {
+   "key": "call:[\"holdings.pacifica\",{\"address\":\"9SL9PHbdixQFyMS5npowKXLdXUWwYReHKuyBrFdFCRxc\"}]",
+   "out": {
+    "status": 200,
+    "ok": true,
+    "data": {
+     "success": true,
+     "data": {
+      "balance": "1180800.117362",
+      "fee_level": 3,
+      "maker_fee": "0.00006",
+      "taker_fee": "0.00034",
+      "account_equity": "1060625.282129",
+      "cross_account_equity": "1060625.282129",
+      "spot_market_value": "0",
+      "spot_collateral": "0",
+      "available_to_spend": "937098.115898",
+      "available_to_withdraw": "875390.472658",
+      "pending_balance": "0",
+      "pending_interest": "0",
+      "total_margin_used": "123527.166232",
+      "cross_mmr": "35377.3065",
+      "positions_count": 2,
+      "orders_count": 200,
+      "stop_orders_count": 0,
+      "spot_balances": [],
+      "updated_at": 1792516737033
+     },
+     "error": null,
+     "code": null
+    }
+   }
+  }
+ ]
+}

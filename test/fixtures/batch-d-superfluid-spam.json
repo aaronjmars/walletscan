@@ -1,0 +1,15 @@
+{
+ "items": [
+  {
+   "protocol": "Superfluid",
+   "chain": "base",
+   "pool": "0x5e59cc134cb06297d5434f801c1def62f837dda8",
+   "token": "0x3a9ea14e6b3500b9dcd416991a923697b83f4e0e",
+   "asset": "BOCKER",
+   "amount": 2393078.6707931994,
+   "connected": false,
+   "usd": null
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,15 @@
+{
+ "venue": "variational",
+ "address": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+ "captured": "2026-10-20T17:26:27.639Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.variational_logs\",{\"payer\":\"0x000000000000000000000000d8da6bf26964af9d7eed9e03e53415d37aa96045\"}]",
+   "out": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": []
+   }
+  }
+ ]
+}

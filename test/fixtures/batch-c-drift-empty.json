@@ -1,0 +1,17 @@
+{
+ "venue": "drift",
+ "address": "CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq",
+ "captured": "2026-10-20T17:18:32.959Z",
+ "calls": [
+  {
+   "key": "call:[\"holdings.drift_eligibility\",{\"address\":\"CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq\"}]",
+   "out": {
+    "status": 404,
+    "ok": false,
+    "data": {
+     "error": "user not found"
+    }
+   }
+  }
+ ]
+}

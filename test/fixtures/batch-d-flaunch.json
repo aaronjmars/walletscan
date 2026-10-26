@@ -1,0 +1,14 @@
+{
+ "items": [
+  {
+   "protocol": "Flaunch",
+   "chain": "base",
+   "token": "0x0000000000000000000000000000000000000000",
+   "asset": "ETH",
+   "amount": 0.028355590269474634,
+   "contract": "0x72e6f7948b1b1a343b477f39aabd2e35e6d27dde",
+   "usd": 69.3990609504296
+  }
+ ],
+ "claimable_eth": 0.028355590269474634
+}

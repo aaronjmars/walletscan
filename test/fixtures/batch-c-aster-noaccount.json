@@ -1,0 +1,22 @@
+{
+ "venue": "aster",
+ "address": "0x078dc883caa5a9f326f0d4ad4427fe3dc5497a33",
+ "captured": "2026-10-20T17:32:09.233Z",
+ "calls": [
+  {
+   "key": "call:[\"holdings.aster\",{\"address\":\"0x078dc883caa5a9f326f0d4ad4427fe3dc5497a33\"}]",
+   "out": {
+    "status": 200,
+    "ok": false,
+    "data": {
+     "id": 1,
+     "jsonrpc": "2.0",
+     "error": {
+      "code": -32603,
+      "message": "Internal error: BinanceApiError[code=-40000005,msg=The account does not exist, please open a futures account.,params=null]"
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,849 @@
+{
+  "data": [
+    {
+      "type": "positions",
+      "id": "0x4200000000000000000000000000000000000006-base-nmb404/weth pool 1% #46052-reward",
+      "attributes": {
+        "parent": null,
+        "protocol": "Uniswap V3",
+        "protocol_module": "liquidity_pool",
+        "pool_address": "0xf3b058e81ac53c475cf6e9d12724e3493fd8ffe7",
+        "group_id": "a3a671d3ca175361b5bc355928f8b8b52fb1cacfc9ab2bde4fd36a6bcf2c3ec5",
+        "name": "NMB404/WETH Pool 1% #46052",
+        "position_type": "reward",
+        "quantity": {
+          "int": "171277142433280955",
+          "decimals": 18,
+          "float": 0.171277142433281,
+          "numeric": "0.171277142433280955"
+        },
+        "value": 421.1794905343763,
+        "price": 2459.0525305993,
+        "changes": {
+          "absolute_1d": 6.576789882172136,
+          "percent_1d": 1.586287274980669
+        },
+        "fungible_info": {
+          "name": "Wrapped Ether",
+          "symbol": "WETH",
+          "icon": {
+            "url": "https://cdn.zerion.io/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.png"
+          },
+          "flags": {
+            "verified": true
+          },
+          "implementations": [
+            {
+              "chain_id": "abstract",
+              "address": "0x3439153eb7af838ad19d56e1571fbd09333c2809",
+              "decimals": 18
+            },
+            {
+              "chain_id": "arbitrum",
+              "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+              "decimals": 18
+            },
+            {
+              "chain_id": "astar-zkevm",
+              "address": "0xe9cc37904875b459fa5d0fe37680d36f1ed55e38",
+              "decimals": 18
+            },
+            {
+              "chain_id": "aurora",
+              "address": "0xc9bdeed33cd01541e1eed10f90519d2c06fe3feb",
+              "decimals": 18
+            },
+            {
+              "chain_id": "avalanche",
+              "address": "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab",
+              "decimals": 18
+            },
+            {
+              "chain_id": "base",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "berachain",
+              "address": "0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590",
+              "decimals": 18
+            },
+            {
+              "chain_id": "binance-smart-chain",
+              "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+              "decimals": 18
+            },
+            {
+              "chain_id": "blast",
+              "address": "0x4300000000000000000000000000000000000004",
+              "decimals": 18
+            },
+            {
+              "chain_id": "celo",
+              "address": "0x2def4285787d58a2f811af24755a8150622f4361",
+              "decimals": 18
+            },
+            {
+              "chain_id": "degen",
+              "address": "0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590",
+              "decimals": 18
+            },
+            {
+              "chain_id": "ethereum",
+              "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "decimals": 18
+            },
+            {
+              "chain_id": "gravity-alpha",
+              "address": "0xf6f832466cd6c21967e0d954109403f36bc8ceaa",
+              "decimals": 18
+            },
+            {
+              "chain_id": "ink",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "katana",
+              "address": "0xee7d8bcfb72bc1880d0cf19822eb0a2e6577ab62",
+              "decimals": 18
+            },
+            {
+              "chain_id": "lens",
+              "address": "0xe5ecd226b3032910ceaa43ba92ee8232f8237553",
+              "decimals": 18
+            },
+            {
+              "chain_id": "linea",
+              "address": "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+              "decimals": 18
+            },
+            {
+              "chain_id": "lisk",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "manta-pacific",
+              "address": "0x0dc808adce2099a9f62aa87d9670745aba741746",
+              "decimals": 18
+            },
+            {
+              "chain_id": "mantle",
+              "address": "0xdeaddeaddeaddeaddeaddeaddeaddeaddead1111",
+              "decimals": 18
+            },
+            {
+              "chain_id": "megaeth",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "metis-andromeda",
+              "address": "0x420000000000000000000000000000000000000a",
+              "decimals": 18
+            },
+            {
+              "chain_id": "mode",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "monad",
+              "address": "0xee8c0e9f1bffb4eb878d8f15f368a02a35481242",
+              "decimals": 18
+            },
+            {
+              "chain_id": "okbchain",
+              "address": "0x5a77f1443d16ee5761d310e38b62f77f726bc71c",
+              "decimals": 18
+            },
+            {
+              "chain_id": "optimism",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "polygon",
+              "address": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+              "decimals": 18
+            },
+            {
+              "chain_id": "polygon-zkevm",
+              "address": "0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9",
+              "decimals": 18
+            },
+            {
+              "chain_id": "robinhood",
+              "address": "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+              "decimals": 18
+            },
+            {
+              "chain_id": "scroll",
+              "address": "0x5300000000000000000000000000000000000004",
+              "decimals": 18
+            },
+            {
+              "chain_id": "soneium",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "sonic",
+              "address": "0x50c42deacd8fc9773493ed674b675be577f2634b",
+              "decimals": 18
+            },
+            {
+              "chain_id": "swellchain",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "taiko",
+              "address": "0xa51894664a773981c6c112c43ce576f315d5b1b6",
+              "decimals": 18
+            },
+            {
+              "chain_id": "tomochain",
+              "address": "0x2eaa73bd0db20c64f53febea7b5f5e5bccc7fb8b",
+              "decimals": 18
+            },
+            {
+              "chain_id": "unichain",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "wonder",
+              "address": "0x1e347256309b4764edd8d7bdf4aa4ecb62b58320",
+              "decimals": 18
+            },
+            {
+              "chain_id": "world",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "xdai",
+              "address": "0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1",
+              "decimals": 18
+            },
+            {
+              "chain_id": "xinfin-xdc",
+              "address": "0xa7348290de5cf01772479c48d50dec791c3fc212",
+              "decimals": 18
+            },
+            {
+              "chain_id": "zero",
+              "address": "0xac98b49576b1c892ba6bfae08fe1bb0d80cf599c",
+              "decimals": 18
+            },
+            {
+              "chain_id": "zkcandy",
+              "address": "0x1e347256309b4764edd8d7bdf4aa4ecb62b58320",
+              "decimals": 18
+            },
+            {
+              "chain_id": "zksync-era",
+              "address": "0x5aea5775959fbc2557cc8789bc1bf90a239d9a91",
+              "decimals": 18
+            },
+            {
+              "chain_id": "zora",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            }
+          ]
+        },
+        "flags": {
+          "displayable": true,
+          "is_trash": false
+        },
+        "updated_at": "2026-09-29T17:08:55Z",
+        "updated_at_block": 51956194,
+        "application_metadata": {
+          "name": "Uniswap V3",
+          "icon": {
+            "url": "https://protocol-icons.s3.amazonaws.com/icons/uniswap-v3.jpg"
+          },
+          "url": "https://app.uniswap.org/pools"
+        },
+        "receipt": {
+          "nft_info": {
+            "chain_id": "base",
+            "contract_address": "0x03a520b32c04bf3beef7beb72e919cf822ed34f1",
+            "token_id": "46052"
+          }
+        }
+      },
+      "relationships": {
+        "chain": {
+          "links": {
+            "related": "https://api.zerion.io/v1/chains/base"
+          },
+          "data": {
+            "type": "chains",
+            "id": "base"
+          }
+        },
+        "dapp": {
+          "data": {
+            "type": "dapps",
+            "id": "uniswap-v3"
+          }
+        },
+        "fungible": {
+          "links": {
+            "related": "https://api.zerion.io/v1/fungibles/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2?currency=usd"
+          },
+          "data": {
+            "type": "fungibles",
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+          }
+        }
+      }
+    },
+    {
+      "type": "positions",
+      "id": "0x4200000000000000000000000000000000000006-base-sushiswap v3 weth/brics pool (#5572)-reward",
+      "attributes": {
+        "parent": null,
+        "protocol": "SushiSwap V3",
+        "protocol_module": "liquidity_pool",
+        "pool_address": "0x05b90904148b83eda4e178cbddbcf5ddca0a6a54",
+        "group_id": "916d35a8f4fa1a1c008b20388ebf35a11d83afb812284946870d0a186e27bc95",
+        "name": "SushiSwap V3 WETH/BRICS Pool (#5572)",
+        "position_type": "reward",
+        "quantity": {
+          "int": "53661115092151677",
+          "decimals": 18,
+          "float": 0.0536611150921517,
+          "numeric": "0.053661115092151677"
+        },
+        "value": 131.95550086213586,
+        "price": 2459.0525305993,
+        "changes": {
+          "absolute_1d": 2.0605077466283035,
+          "percent_1d": 1.586287274980669
+        },
+        "fungible_info": {
+          "name": "Wrapped Ether",
+          "symbol": "WETH",
+          "icon": {
+            "url": "https://cdn.zerion.io/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.png"
+          },
+          "flags": {
+            "verified": true
+          },
+          "implementations": [
+            {
+              "chain_id": "abstract",
+              "address": "0x3439153eb7af838ad19d56e1571fbd09333c2809",
+              "decimals": 18
+            },
+            {
+              "chain_id": "arbitrum",
+              "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+              "decimals": 18
+            },
+            {
+              "chain_id": "astar-zkevm",
+              "address": "0xe9cc37904875b459fa5d0fe37680d36f1ed55e38",
+              "decimals": 18
+            },
+            {
+              "chain_id": "aurora",
+              "address": "0xc9bdeed33cd01541e1eed10f90519d2c06fe3feb",
+              "decimals": 18
+            },
+            {
+              "chain_id": "avalanche",
+              "address": "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab",
+              "decimals": 18
+            },
+            {
+              "chain_id": "base",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "berachain",
+              "address": "0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590",
+              "decimals": 18
+            },
+            {
+              "chain_id": "binance-smart-chain",
+              "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+              "decimals": 18
+            },
+            {
+              "chain_id": "blast",
+              "address": "0x4300000000000000000000000000000000000004",
+              "decimals": 18
+            },
+            {
+              "chain_id": "celo",
+              "address": "0x2def4285787d58a2f811af24755a8150622f4361",
+              "decimals": 18
+            },
+            {
+              "chain_id": "degen",
+              "address": "0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590",
+              "decimals": 18
+            },
+            {
+              "chain_id": "ethereum",
+              "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "decimals": 18
+            },
+            {
+              "chain_id": "gravity-alpha",
+              "address": "0xf6f832466cd6c21967e0d954109403f36bc8ceaa",
+              "decimals": 18
+            },
+            {
+              "chain_id": "ink",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "katana",
+              "address": "0xee7d8bcfb72bc1880d0cf19822eb0a2e6577ab62",
+              "decimals": 18
+            },
+            {
+              "chain_id": "lens",
+              "address": "0xe5ecd226b3032910ceaa43ba92ee8232f8237553",
+              "decimals": 18
+            },
+            {
+              "chain_id": "linea",
+              "address": "0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+              "decimals": 18
+            },
+            {
+              "chain_id": "lisk",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "manta-pacific",
+              "address": "0x0dc808adce2099a9f62aa87d9670745aba741746",
+              "decimals": 18
+            },
+            {
+              "chain_id": "mantle",
+              "address": "0xdeaddeaddeaddeaddeaddeaddeaddeaddead1111",
+              "decimals": 18
+            },
+            {
+              "chain_id": "megaeth",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "metis-andromeda",
+              "address": "0x420000000000000000000000000000000000000a",
+              "decimals": 18
+            },
+            {
+              "chain_id": "mode",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "monad",
+              "address": "0xee8c0e9f1bffb4eb878d8f15f368a02a35481242",
+              "decimals": 18
+            },
+            {
+              "chain_id": "okbchain",
+              "address": "0x5a77f1443d16ee5761d310e38b62f77f726bc71c",
+              "decimals": 18
+            },
+            {
+              "chain_id": "optimism",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "polygon",
+              "address": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+              "decimals": 18
+            },
+            {
+              "chain_id": "polygon-zkevm",
+              "address": "0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9",
+              "decimals": 18
+            },
+            {
+              "chain_id": "robinhood",
+              "address": "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+              "decimals": 18
+            },
+            {
+              "chain_id": "scroll",
+              "address": "0x5300000000000000000000000000000000000004",
+              "decimals": 18
+            },
+            {
+              "chain_id": "soneium",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "sonic",
+              "address": "0x50c42deacd8fc9773493ed674b675be577f2634b",
+              "decimals": 18
+            },
+            {
+              "chain_id": "swellchain",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "taiko",
+              "address": "0xa51894664a773981c6c112c43ce576f315d5b1b6",
+              "decimals": 18
+            },
+            {
+              "chain_id": "tomochain",
+              "address": "0x2eaa73bd0db20c64f53febea7b5f5e5bccc7fb8b",
+              "decimals": 18
+            },
+            {
+              "chain_id": "unichain",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "wonder",
+              "address": "0x1e347256309b4764edd8d7bdf4aa4ecb62b58320",
+              "decimals": 18
+            },
+            {
+              "chain_id": "world",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            },
+            {
+              "chain_id": "xdai",
+              "address": "0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1",
+              "decimals": 18
+            },
+            {
+              "chain_id": "xinfin-xdc",
+              "address": "0xa7348290de5cf01772479c48d50dec791c3fc212",
+              "decimals": 18
+            },
+            {
+              "chain_id": "zero",
+              "address": "0xac98b49576b1c892ba6bfae08fe1bb0d80cf599c",
+              "decimals": 18
+            },
+            {
+              "chain_id": "zkcandy",
+              "address": "0x1e347256309b4764edd8d7bdf4aa4ecb62b58320",
+              "decimals": 18
+            },
+            {
+              "chain_id": "zksync-era",
+              "address": "0x5aea5775959fbc2557cc8789bc1bf90a239d9a91",
+              "decimals": 18
+            },
+            {
+              "chain_id": "zora",
+              "address": "0x4200000000000000000000000000000000000006",
+              "decimals": 18
+            }
+          ]
+        },
+        "flags": {
+          "displayable": true,
+          "is_trash": false
+        },
+        "updated_at": "2026-10-15T13:28:11Z",
+        "updated_at_block": 52640772,
+        "application_metadata": {
+          "name": "SushiSwap V3",
+          "icon": {
+            "url": "https://protocol-icons.s3.amazonaws.com/icons/sushiswap-v3.jpg"
+          },
+          "url": "https://app.sushi.com/"
+        }
+      },
+      "relationships": {
+        "chain": {
+          "links": {
+            "related": "https://api.zerion.io/v1/chains/base"
+          },
+          "data": {
+            "type": "chains",
+            "id": "base"
+          }
+        },
+        "dapp": {
+          "data": {
+            "type": "dapps",
+            "id": "sushiswap-v3"
+          }
+        },
+        "fungible": {
+          "links": {
+            "related": "https://api.zerion.io/v1/fungibles/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2?currency=usd"
+          },
+          "data": {
+            "type": "fungibles",
+            "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+          }
+        }
+      }
+    },
+    {
+      "type": "positions",
+      "id": "base-base-zora rewards-reward",
+      "attributes": {
+        "parent": null,
+        "protocol": "ZORA",
+        "protocol_module": "rewards",
+        "pool_address": "0x7777777f279eba3d3ad8f4e708545291a6fdba8b",
+        "group_id": "0e84157e8a3c9e8da60ce90f9a7b73a3250556882b5a1ce6e3b456376ad1a949",
+        "name": "ZORA Rewards",
+        "position_type": "reward",
+        "quantity": {
+          "int": "38345208291388476",
+          "decimals": 18,
+          "float": 0.0383452082913885,
+          "numeric": "0.038345208291388476"
+        },
+        "value": 94.24600329482335,
+        "price": 2457.83,
+        "changes": {
+          "absolute_1d": 1.4383287630099773,
+          "percent_1d": 1.5497950684207007
+        },
+        "fungible_info": {
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "icon": {
+            "url": "https://cdn.zerion.io/eth.png"
+          },
+          "flags": {
+            "verified": true
+          },
+          "implementations": [
+            {
+              "chain_id": "abstract",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "arbitrum",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "astar-zkevm",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "aurora",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "base",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "blast",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "bob",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "cyber",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "ethereum",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "ink",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "katana",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "linea",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "lisk",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "manta-pacific",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "megaeth",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "mode",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "optimism",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "polygon-zkevm",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "polynomial",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "rari",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "redstone",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "robinhood",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "scroll",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "soneium",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "swellchain",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "taiko",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "unichain",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "wonder",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "world",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "zero",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "zkcandy",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "zklink-nova",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "zksync-era",
+              "address": null,
+              "decimals": 18
+            },
+            {
+              "chain_id": "zora",
+              "address": null,
+              "decimals": 18
+            }
+          ]
+        },
+        "flags": {
+          "displayable": true,
+          "is_trash": false
+        },
+        "updated_at": "1970-01-01T00:00:00Z",
+        "updated_at_block": 23155058,
+        "application_metadata": {
+          "name": "Zora",
+          "icon": {
+            "url": "https://protocol-icons.s3.amazonaws.com/icons/zora.jpg"
+          },
+          "url": "https://zora.co"
+        }
+      },
+      "relationships": {
+        "chain": {
+          "links": {
+            "related": "https://api.zerion.io/v1/chains/base"
+          },
+          "data": {
+            "type": "chains",
+            "id": "base"
+          }
+        },
+        "dapp": {
+          "data": {
+            "type": "dapps",
+            "id": "zora"
+          }
+        },
+        "fungible": {
+          "links": {
+            "related": "https://api.zerion.io/v1/fungibles/eth?currency=usd"
+          },
+          "data": {
+            "type": "fungibles",
+            "id": "eth"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+ "venue": "jupiter",
+ "address": "CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq",
+ "captured": "2026-10-20T17:18:37.694Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.jupiter_perps_positions\",{\"address\":\"CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq\"}]",
+   "out": {
+    "dataList": [],
+    "count": 0
+   }
+  },
+  {
+   "key": "get:[\"holdings.jupiter_perps_orders\",{\"address\":\"CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq\"}]",
+   "out": {
+    "count": 0,
+    "dataList": []
+   }
+  }
+ ]
+}

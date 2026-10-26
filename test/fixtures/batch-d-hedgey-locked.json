@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "protocol": "Hedgey",
+   "chain": "linea",
+   "contract": "0xA600EC7Db69DFCD21f19face5B209a55EAb7a7C0",
+   "kind": "lockup",
+   "plan_id": "2",
+   "token": "0xbd26a6b703edad9abe251de31b24a97bd3c930dd",
+   "asset": "Secta-LP",
+   "amount": 0,
+   "locked": 4.2069,
+   "next_unlock": "2069-04-20",
+   "usd": null
+  }
+ ],
+ "errors": []
+}

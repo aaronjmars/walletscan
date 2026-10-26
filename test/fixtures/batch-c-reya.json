@@ -1,0 +1,34 @@
+{
+ "venue": "reya",
+ "address": "0x58ba15026605bd25d79d1eb2822ded321d7796e1",
+ "captured": "2026-10-20T17:19:13.600Z",
+ "calls": [
+  {
+   "key": "call:[\"holdings.reya_balances\",{\"address\":\"0x58ba15026605bd25d79d1eb2822ded321d7796e1\"}]",
+   "out": {
+    "status": 200,
+    "ok": true,
+    "data": [
+     {
+      "accountId": 28639,
+      "asset": "RUSD",
+      "realBalance": "494.36783",
+      "balanceDEPRECATED": "478.703454"
+     },
+     {
+      "accountId": 136544,
+      "asset": "RUSD",
+      "realBalance": "94.549037",
+      "balanceDEPRECATED": "99.126603"
+     },
+     {
+      "accountId": 10000023396,
+      "asset": "RUSD",
+      "realBalance": "0",
+      "balanceDEPRECATED": "0"
+     }
+    ]
+   }
+  }
+ ]
+}

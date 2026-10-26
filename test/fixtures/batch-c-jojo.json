@@ -1,0 +1,49 @@
+{
+ "venue": "jojo",
+ "address": "0x89a2a3b5acbec34fc20589b82f50ea3321678a3e",
+ "captured": "2026-10-20T17:18:02.057Z",
+ "calls": [
+  {
+   "key": "multicall:[\"base\",[{\"to\":\"0x8a2898d6849Aa183073455140F096221c3CF060E\",\"functionName\":\"getSubaccounts\",\"args\":[\"0x89a2a3b5acbec34fc20589b82f50ea3321678a3e\"]}]]",
+   "out": [
+    []
+   ]
+  },
+  {
+   "key": "multicall:[\"base\",[{\"to\":\"0x2f7c3cf9d9280b165981311b822becc4e05fe635\",\"functionName\":\"getTraderRisk\",\"args\":[\"0x89a2a3b5acbec34fc20589b82f50ea3321678a3e\"]},{\"to\":\"0x2f7c3cf9d9280b165981311b822becc4e05fe635\",\"functionName\":\"getCreditOf\",\"args\":[\"0x89a2a3b5acbec34fc20589b82f50ea3321678a3e\"]}]]",
+   "out": [
+    [
+     {
+      "$n": "1782174355"
+     },
+     {
+      "$n": "1811692"
+     },
+     {
+      "$n": "36233"
+     },
+     {
+      "$n": "18116"
+     }
+    ],
+    [
+     {
+      "$n": "1981976526"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     },
+     {
+      "$n": "0"
+     }
+    ]
+   ]
+  }
+ ]
+}

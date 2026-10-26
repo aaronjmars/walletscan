@@ -1,0 +1,42 @@
+{
+ "venue": "variational",
+ "address": "0x9DA45Dc652a5Fc020f838Fa745bFcBEFa97503e8",
+ "captured": "2026-10-20T17:26:34.513Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.variational_logs\",{\"payer\":\"0x0000000000000000000000009da45dc652a5fc020f838fa745bfcbefa97503e8\"}]",
+   "out": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": [
+     {
+      "address": "0x33f720ef288bc3ee46a30e0c5bb640075e794614",
+      "blockHash": "0x86429054914a5ef293e0c3f76b283c9fdf4ca66e8d06ec3cbf1653f4cd68e2c5",
+      "blockNumber": "0x1ecb0769",
+      "blockTimestamp": "0x6ad77898",
+      "data": "0x0000000000000000000000000000000000000000000000000000000059b47a40000000000000000000000000000000006eb8aef36dff43ca8313172d396d4e0f",
+      "logIndex": "0x2",
+      "removed": false,
+      "topics": [
+       "0x6f7c6475a03ea665d7b001b4a434f753ce3aeb4927db94002435b25d7a1f65d0",
+       "0x00000000000000000000000033f720ef288bc3ee46a30e0c5bb640075e794614",
+       "0x0000000000000000000000009da45dc652a5fc020f838fa745bfcbefa97503e8"
+      ],
+      "transactionHash": "0x5a286cc24971afbef60642f235953a463e6d21dd8bb7c0d4d83974b9c416780b",
+      "transactionIndex": "0x2"
+     }
+    ]
+   }
+  },
+  {
+   "key": "multicall:[\"arbitrum\",[{\"to\":\"0x33f720ef288bc3ee46a30e0c5bb640075e794614\",\"functionName\":\"checkOtherAddress\",\"args\":[\"0x9DA45Dc652a5Fc020f838Fa745bFcBEFa97503e8\"]},{\"to\":\"0x33f720ef288bc3ee46a30e0c5bb640075e794614\",\"functionName\":\"creatorAddress\"},{\"to\":\"0xaf88d065e77c8cC2239327C5EDb3A432268e5831\",\"functionName\":\"balanceOf\",\"args\":[\"0x33f720ef288bc3ee46a30e0c5bb640075e794614\"]}]]",
+   "out": [
+    true,
+    "0x74bBBb0E7F0bAd6938509Dd4B556a39A4Db1F2Cd",
+    {
+     "$n": "1684474850"
+    }
+   ]
+  }
+ ]
+}

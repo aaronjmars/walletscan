@@ -1,0 +1,15 @@
+{
+ "venue": "adrena",
+ "address": "CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq",
+ "captured": "2026-10-20T17:18:36.030Z",
+ "calls": [
+  {
+   "key": "get:[\"sol.adrena_positions\",{\"owner\":\"CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq\"}]",
+   "out": {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 1
+   }
+  }
+ ]
+}

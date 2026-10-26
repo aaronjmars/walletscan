@@ -1,0 +1,17 @@
+{
+ "venue": "derive",
+ "address": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+ "captured": "2026-10-20T17:18:50.845Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.derive_subaccounts\",{\"address\":\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\"}]",
+   "out": {
+    "id": "b2d24f07-45f3-434d-a115-c8da5617bd0d",
+    "result": {
+     "wallet": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+     "subaccount_ids": []
+    }
+   }
+  }
+ ]
+}

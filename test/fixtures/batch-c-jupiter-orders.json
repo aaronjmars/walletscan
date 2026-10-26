@@ -1,0 +1,43 @@
+{
+ "venue": "jupiter",
+ "address": "3T3hYGY1brJc5pBELcfUUHoe5SqQWY76ZPwDshADd6vm",
+ "captured": "2026-10-20T17:18:43.240Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.jupiter_perps_positions\",{\"address\":\"3T3hYGY1brJc5pBELcfUUHoe5SqQWY76ZPwDshADd6vm\"}]",
+   "out": {
+    "dataList": [],
+    "count": 0
+   }
+  },
+  {
+   "key": "get:[\"holdings.jupiter_perps_orders\",{\"address\":\"3T3hYGY1brJc5pBELcfUUHoe5SqQWY76ZPwDshADd6vm\"}]",
+   "out": {
+    "count": 1,
+    "dataList": [
+     {
+      "collateralMint": "So11111111111111111111111111111111111111112",
+      "collateralCustody": "7xS2gz2bTp3fwCC7knJvUWTEU9Tycczu6VhJYKgi1wdz",
+      "collateralUsd": "2126696950",
+      "collateralUsdAtTriggerPrice": "2045000000",
+      "collateralTokenAmount": "20000000000",
+      "custody": "7xS2gz2bTp3fwCC7knJvUWTEU9Tycczu6VhJYKgi1wdz",
+      "executed": false,
+      "inputMint": "So11111111111111111111111111111111111111112",
+      "liquidationPriceUsd": "73311614",
+      "marketMint": "So11111111111111111111111111111111111111112",
+      "maxSizeUsdDelta": "409000000000",
+      "minSizeUsdDelta": "2249500000",
+      "openTime": "1792506034",
+      "positionPubkey": "4EU1Zr7bib7dYUwxr3rkx9TwsL4qwRPB7f3zR79iCphF",
+      "positionRequestPubkey": "hMGBUMcoA43oFbDdUcjx1j6xy3vbVG94Ki17eQeXjKj",
+      "side": "long",
+      "sizeUsdDelta": "7139964125",
+      "triggerPrice": "102250000",
+      "triggerToLiquidationPercent": null
+     }
+    ]
+   }
+  }
+ ]
+}

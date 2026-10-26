@@ -1,0 +1,35 @@
+{
+ "items": [
+  {
+   "protocol": "UNCX",
+   "chain": "base",
+   "contract": "0xa82685520c463a752d5319e6616e4e5fd0215e33",
+   "lock_id": "1058",
+   "token": "0xfd6a7a30f70df459331a88bfbd6233a98f15ce88",
+   "asset": "pGAS",
+   "amount": 248971242.21491495,
+   "usd": null
+  },
+  {
+   "protocol": "UNCX",
+   "chain": "base",
+   "contract": "0xa82685520c463a752d5319e6616e4e5fd0215e33",
+   "lock_id": "1059",
+   "token": "0xfd6a7a30f70df459331a88bfbd6233a98f15ce88",
+   "asset": "pGAS",
+   "amount": 248971242.21491495,
+   "usd": null
+  },
+  {
+   "protocol": "Unvest",
+   "chain": "base",
+   "contract": "0xe9179aaf79ce373db20a1fe37c2dc40a516912fc",
+   "token": "0xe9179aaf79ce373db20a1fe37c2dc40a516912fc",
+   "asset": "$BARM",
+   "amount": 12856.11668,
+   "usd": null
+  }
+ ],
+ "running_locks": 1,
+ "errors": []
+}

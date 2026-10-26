@@ -1,0 +1,14 @@
+{
+ "venue": "apex-pro",
+ "address": "0x80d709700f9191da81a42f3d9562117dfb75935d",
+ "captured": "2026-10-20T17:18:27.222Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.apex_pro_exists\",{\"address\":\"0x80d709700f9191da81a42f3d9562117dfb75935d\"}]",
+   "out": {
+    "data": true,
+    "timeCost": 1987
+   }
+  }
+ ]
+}

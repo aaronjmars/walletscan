@@ -1,0 +1,21 @@
+{
+ "venue": "pacifica",
+ "address": "CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq",
+ "captured": "2026-10-20T17:18:39.405Z",
+ "calls": [
+  {
+   "key": "call:[\"holdings.pacifica\",{\"address\":\"CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq\"}]",
+   "out": {
+    "status": 404,
+    "ok": false,
+    "data": {
+     "success": false,
+     "data": null,
+     "error": "Account not found",
+     "code": 404,
+     "error_id": "unspecified"
+    }
+   }
+  }
+ ]
+}

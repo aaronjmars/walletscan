@@ -1,0 +1,230 @@
+{
+  "captured": "2026-10-20",
+  "rewards.old_contracts": {
+    "0x9a02ed4ca9ad55b75ff9a05debb36d5eb382e184": {
+      "items": [
+        {
+          "category": "unstake_ready",
+          "protocol": "ENS (2017 registrar)",
+          "contract": "0xCae656f96fA9b96A5Cf998F73a002fdA0717f7B4",
+          "asset": "ETH",
+          "amount": 0.01,
+          "confidence": "high",
+          "action": "release the 2017 ENS deed of chakrit.eth: releaseDeed(0x549b35f0bc6adbaa110458aa39d555297094d86ebea202d3fd7edd558d10c56e) on the old registrar refunds the deposit",
+          "how_to_claim": "https://etherscan.io/address/0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef#writeContract",
+          "detail": "deed 0xCae656f96fA9b96A5Cf998F73a002fdA0717f7B4 for chakrit.eth still holds the auction deposit; its owner() is this wallet. The old registrar 0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef pays it back with releaseDeed(labelHash); the name itself lives on in the current ENS registrar",
+          "usd": 24.498735695782308
+        },
+        {
+          "category": "unstake_ready",
+          "protocol": "ENS (2017 registrar)",
+          "contract": "0x380a19ac342f019F1FbB0c2470c2793a9C4BB8D5",
+          "asset": "ETH",
+          "amount": 1700.2562524246698,
+          "confidence": "high",
+          "action": "release the 2017 ENS deed of lottery.eth: releaseDeed(0x9ba8f5e26c79b94eec0b96a2610abe847397cb6f2792f2f6cdb526da0e6c305f) on the old registrar refunds the deposit",
+          "how_to_claim": "https://etherscan.io/address/0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef#writeContract",
+          "detail": "deed 0x380a19ac342f019F1FbB0c2470c2793a9C4BB8D5 for lottery.eth still holds the auction deposit; its owner() is this wallet. The old registrar 0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef pays it back with releaseDeed(labelHash); the name itself lives on in the current ENS registrar",
+          "usd": 4165412.854325331
+        },
+        {
+          "category": "unstake_ready",
+          "protocol": "ENS (2017 registrar)",
+          "contract": "0x60Cd5Ef0267cAcf8FF56A23Af6A865116361a6bB",
+          "asset": "ETH",
+          "amount": 0.01,
+          "confidence": "high",
+          "action": "release the 2017 ENS deed of ethfinex.eth: releaseDeed(0x7899f44eb80191c3a7930a4d8f511022d01aa9e5ab4783359dea18d96835852a) on the old registrar refunds the deposit",
+          "how_to_claim": "https://etherscan.io/address/0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef#writeContract",
+          "detail": "deed 0x60Cd5Ef0267cAcf8FF56A23Af6A865116361a6bB for ethfinex.eth still holds the auction deposit; its owner() is this wallet. The old registrar 0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef pays it back with releaseDeed(labelHash); the name itself lives on in the current ENS registrar",
+          "usd": 24.498735695782308
+        },
+        {
+          "category": "unstake_ready",
+          "protocol": "ENS (2017 registrar)",
+          "contract": "0x3F0280687c22249c765E425871425eB5C266EdAf",
+          "asset": "ETH",
+          "amount": 555,
+          "confidence": "high",
+          "action": "release the 2017 ENS deed of thaifinex.eth: releaseDeed(0xc8a000c510be40cd2a198c3177e094548a92ab357324d3888cbe77267afb22a1) on the old registrar refunds the deposit",
+          "how_to_claim": "https://etherscan.io/address/0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef#writeContract",
+          "detail": "deed 0x3F0280687c22249c765E425871425eB5C266EdAf for thaifinex.eth still holds the auction deposit; its owner() is this wallet. The old registrar 0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef pays it back with releaseDeed(labelHash); the name itself lives on in the current ENS registrar",
+          "usd": 1359679.831115918
+        }
+      ],
+      "errors": [],
+      "index": {
+        "dir": "/tmp/ws-b-oldeth",
+        "shards": 80,
+        "checked": null,
+        "warming": true
+      }
+    },
+    "0xd8da6bf26964af9d7eed9e03e53415d37aa96045": {
+      "items": [
+        {
+          "category": "reward",
+          "protocol": "BitConnect v3",
+          "contract": "0x38e219ee67a5e1536c5a89fec2da0d69c254cac4",
+          "asset": "ETH",
+          "amount": 0.02196404119338932,
+          "confidence": "high",
+          "action": "take the ETH left in BitConnect v3: sell(tokens), then withdraw() on the contract",
+          "how_to_claim": "https://etherscan.io/address/0x38e219ee67a5e1536c5a89fec2da0d69c254cac4#writeContract",
+          "detail": "BitConnect v3 0x38e219ee67a5e1536c5a89fec2da0d69c254cac4 (gambling): 0.02196404119338932 ETH read onchain now (Forgotten ETH listed 0.006651501383033114)",
+          "usd": 53.80912400081199
+        },
+        {
+          "category": "unstake_ready",
+          "protocol": "ENS (2017 registrar)",
+          "contract": "0xD5B4298248466C889f2EC643892Ee9fA9c70027d",
+          "asset": "ETH",
+          "amount": 0.01,
+          "confidence": "high",
+          "action": "release the 2017 ENS deed of vitalik-buterin.eth: releaseDeed(0x5a52bc089c8474b8ce5a521a46335ef6a8cf1b39eaccbb1026842409a71146e9) on the old registrar refunds the deposit",
+          "how_to_claim": "https://etherscan.io/address/0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef#writeContract",
+          "detail": "deed 0xD5B4298248466C889f2EC643892Ee9fA9c70027d for vitalik-buterin.eth still holds the auction deposit; its owner() is this wallet. The old registrar 0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef pays it back with releaseDeed(labelHash); the name itself lives on in the current ENS registrar",
+          "usd": 24.498735695782308
+        }
+      ],
+      "errors": [],
+      "index": {
+        "dir": "/tmp/ws-b-oldeth",
+        "shards": 2,
+        "checked": null,
+        "warming": true
+      }
+    }
+  },
+  "rewards.validators_0x00": {
+    "items": [
+      {
+        "category": "unstake_ready",
+        "protocol": "Ethereum staking",
+        "contract": "0x00000000219ab540356cBB839Cbe05303d7705Fa",
+        "asset": "ETH",
+        "amount": 393.461545565,
+        "confidence": "medium",
+        "action": "set an 0x01 withdrawal address on 10 exited validators: sign a BLS-to-execution change with the withdrawal mnemonic, offline (staking-deposit-cli or ethdo), and broadcast it; the balance is then paid out by itself",
+        "how_to_claim": "https://launchpad.ethereum.org/en/withdrawals",
+        "detail": "validators #25053, #25054, #25055, #25056, #25057, #25058, #25059, #25069 and 2 more exited but still have 0x00 (BLS) withdrawal credentials, so nothing is ever paid out. Found from deposits this wallet sent; only the holder of the withdrawal key can claim",
+        "usd": 963931.0411250942
+      }
+    ],
+    "holdings": [],
+    "errors": [],
+    "validators": [
+      {
+        "index": "25053",
+        "status": "withdrawal_possible",
+        "balance_eth": 39.453082695
+      },
+      {
+        "index": "25054",
+        "status": "withdrawal_possible",
+        "balance_eth": 39.069941771
+      },
+      {
+        "index": "25055",
+        "status": "withdrawal_possible",
+        "balance_eth": 39.445011997
+      },
+      {
+        "index": "25056",
+        "status": "withdrawal_possible",
+        "balance_eth": 39.381459454
+      },
+      {
+        "index": "25057",
+        "status": "withdrawal_possible",
+        "balance_eth": 39.594484761
+      },
+      {
+        "index": "25058",
+        "status": "withdrawal_possible",
+        "balance_eth": 39.450998078
+      },
+      {
+        "index": "25059",
+        "status": "withdrawal_possible",
+        "balance_eth": 39.323719156
+      },
+      {
+        "index": "25069",
+        "status": "withdrawal_possible",
+        "balance_eth": 39.505726353
+      },
+      {
+        "index": "25070",
+        "status": "withdrawal_possible",
+        "balance_eth": 38.981894024
+      },
+      {
+        "index": "25072",
+        "status": "withdrawal_possible",
+        "balance_eth": 39.255227276
+      }
+    ]
+  },
+  "rewards.argent_wallets": {
+    "items": [
+      {
+        "category": "reward",
+        "protocol": "Argent (L1 smart wallet)",
+        "contract": "0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12",
+        "how_to_claim": "https://etherscan.io/address/0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12",
+        "asset": "ETH",
+        "amount": 13342.084482627864,
+        "confidence": "high",
+        "action": "move the ETH out of your old Argent smart wallet 0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12 on Ethereum (owner() is this wallet): sign as owner (Argent app or its TransferManager module); lost key = guardian recovery",
+        "detail": "your old Argent smart wallet 0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12 on Ethereum (owner() is this wallet) holds 13342.084482627864 ETH",
+        "usd": 32686420.137069847
+      },
+      {
+        "category": "reward",
+        "protocol": "Argent (L1 smart wallet)",
+        "contract": "0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12",
+        "how_to_claim": "https://etherscan.io/address/0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12",
+        "asset": "LINK",
+        "amount": 68004.45649155357,
+        "usd": 831606.6810321277,
+        "confidence": "medium",
+        "action": "move the LINK out of your old Argent smart wallet 0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12 on Ethereum (owner() is this wallet)",
+        "detail": "your old Argent smart wallet 0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12 on Ethereum (owner() is this wallet) holds 68004.45649155357 LINK (Zerion's read)"
+      },
+      {
+        "category": "reward",
+        "protocol": "Argent (L1 smart wallet)",
+        "contract": "0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12",
+        "how_to_claim": "https://etherscan.io/address/0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12",
+        "asset": "UNI",
+        "amount": 129586.78201378,
+        "usd": 953476.2253392427,
+        "confidence": "medium",
+        "action": "move the UNI out of your old Argent smart wallet 0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12 on Ethereum (owner() is this wallet)",
+        "detail": "your old Argent smart wallet 0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12 on Ethereum (owner() is this wallet) holds 129586.78201378 UNI (Zerion's read)"
+      }
+    ],
+    "errors": [],
+    "wallets": [
+      "0x15855bb8e1ea1d8c143a8b2a26d6e85c7e449c12"
+    ]
+  },
+  "rewards.maker_scd": {
+    "items": [
+      {
+        "category": "unstake_ready",
+        "protocol": "Maker SCD (SAI)",
+        "contract": "0x448a5065aeBB8E423F0896E6c5D525C040f59af3",
+        "asset": "ETH",
+        "amount": 473.6043322138607,
+        "confidence": "high",
+        "action": "take back the collateral of SAI vault #12844: free(cup, ink) and exit(PETH) on SaiTub for WETH (through your DSProxy's execute, it owns the vault)",
+        "how_to_claim": "https://etherscan.io/address/0x448a5065aeBB8E423F0896E6c5D525C040f59af3#writeContract",
+        "detail": "Single-Collateral Dai vault #12844 on SaiTub 0x448a5065aeBB8E423F0896E6c5D525C040f59af3, owned by your DSProxy 0x87B221b32bcAc8e3F12b8765a8e2de57e997dE2C: 450.4373940035946 PETH at 1.0514 WETH each, no debt. SCD shut down in 2020",
+        "usd": 1160270.7359284852
+      }
+    ],
+    "errors": []
+  }
+}

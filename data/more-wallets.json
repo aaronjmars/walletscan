@@ -1,0 +1,11 @@
+{
+  "why": "Apps with email or social login (Privy, Magic, Coinbase, Para...) give you a separate wallet in each app. No public API lists them, so a scan of one address cannot see them: list them yourself, then scan each address.",
+  "where": [
+    { "provider": "Privy", "url": "https://home.privy.io", "how": "log in with the same email the apps used, then link your Google, X or phone there: every Privy app you used shows with its wallet, and each app's key can be exported, even for apps that shut down" },
+    { "provider": "Magic", "url": "https://reveal.magic.link/<app>", "how": "put the app's name in the link (e.g. https://reveal.magic.link/polymarket) and log in with the same email; only for apps that turned it on" },
+    { "provider": "Coinbase Smart Wallet", "url": "https://wallet.coinbase.com", "how": "sign in with the passkey you made (keys.coinbase.com now leads here); one wallet for every app" },
+    { "provider": "Para", "url": "https://connect.getpara.com", "how": "log in with the same email or phone: lists, connects and exports your Para wallet" }
+  ],
+  "then": "scan each address you find. Smart accounts those addresses own (Coinbase, Kernel, LightAccount, Biconomy, thirdweb, Safe...) come back in the same scan. Never paste a private key or seed phrase into any site or chat to do this.",
+  "checked": "2026-10-21"
+}

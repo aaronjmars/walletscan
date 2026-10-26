@@ -1,0 +1,56 @@
+{
+ "venue": "ostium",
+ "address": "0xe3ce1f8578fb61c210f16c6c0e363cce88ffa9e5",
+ "captured": "2026-10-20T17:19:48.866Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.ostium_limits\",{\"address\":\"0xe3ce1f8578fb61c210f16c6c0e363cce88ffa9e5\"}]",
+   "out": {
+    "trader": "0xe3ce1f8578fb61c210f16c6c0e363cce88ffa9e5",
+    "chainId": 42161,
+    "first": 100,
+    "skip": 0,
+    "count": 1,
+    "limits": [
+     {
+      "id": "0xe3ce1f8578fb61c210f16c6c0e363cce88ffa9e5_5_0",
+      "trader": "0xe3ce1f8578fb61c210f16c6c0e363cce88ffa9e5",
+      "isActive": true,
+      "isBuy": true,
+      "isDayTrade": false,
+      "limitType": "LIMIT",
+      "openPrice": 3850,
+      "stopLossPrice": 0,
+      "takeProfitPrice": 0,
+      "collateral": 66.40676,
+      "notionalInUsd": 1328.1352,
+      "notionalInUnits": 0,
+      "leverage": 20,
+      "orderId": "",
+      "uniqueId": "444160794_8",
+      "block": "444160794",
+      "executionStarted": "0",
+      "initiatedAt": "1774106863",
+      "updatedAt": "0",
+      "pair": {
+       "from": "XAU",
+       "id": "5",
+       "to": "USD"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "key": "get:[\"holdings.ostium_trades\",{\"address\":\"0xe3ce1f8578fb61c210f16c6c0e363cce88ffa9e5\"}]",
+   "out": {
+    "trader": "0xe3ce1f8578fb61c210f16c6c0e363cce88ffa9e5",
+    "chainId": 42161,
+    "first": 1000,
+    "skip": 0,
+    "count": 0,
+    "trades": []
+   }
+  }
+ ]
+}

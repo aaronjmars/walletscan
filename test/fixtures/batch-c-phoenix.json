@@ -1,0 +1,2527 @@
+{
+ "venue": "phoenix",
+ "address": "J7sSuML4yAg4rrtxFJHFpC7AtX56XBQawaXAJuybXv91",
+ "captured": "2026-10-20T17:19:00.640Z",
+ "calls": [
+  {
+   "key": "call:[\"holdings.phoenix_state\",{\"address\":\"J7sSuML4yAg4rrtxFJHFpC7AtX56XBQawaXAJuybXv91\"}]",
+   "out": {
+    "status": 200,
+    "ok": true,
+    "data": {
+     "authority": "J7sSuML4yAg4rrtxFJHFpC7AtX56XBQawaXAJuybXv91",
+     "traderPdaIndex": 0,
+     "slot": 459310129,
+     "slotIndex": 392,
+     "snapshot": {
+      "version": 1,
+      "capabilities": {
+       "flags": 62,
+       "state": "cold",
+       "capabilities": {
+        "placeLimitOrder": {
+         "immediate": false,
+         "viaColdActivation": true
+        },
+        "placeMarketOrder": {
+         "immediate": true
+        },
+        "riskIncreasingTrade": {
+         "immediate": true
+        },
+        "riskReducingTrade": {
+         "immediate": true
+        },
+        "depositCollateral": {
+         "immediate": true
+        },
+        "withdrawCollateral": {
+         "immediate": true
+        }
+       }
+      },
+      "makerFeeOverrideMultiplier": 0.9,
+      "takerFeeOverrideMultiplier": 0.9,
+      "subaccounts": [
+       {
+        "subaccountIndex": 0,
+        "sequence": 0,
+        "collateral": "23175638656",
+        "spotCollaterals": [
+         {
+          "assetIndex": 4294901760,
+          "symbol": "SOL",
+          "balance": "0",
+          "decimals": 9,
+          "maxBalance": "1000000000000"
+         }
+        ],
+        "cooldownStatus": {
+         "lastDepositSlot": 451765524,
+         "cooldownPeriodInSlots": 0
+        },
+        "positions": [
+         {
+          "symbol": "AMAT",
+          "positionSequenceNumber": "233",
+          "basePositionLots": "2483",
+          "entryPriceTicks": "40490",
+          "entryPriceUsd": "404.9",
+          "virtualQuotePositionLots": "-1005367580",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "-27401",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "ARM",
+          "positionSequenceNumber": "235",
+          "basePositionLots": "-31279",
+          "entryPriceTicks": "22405",
+          "entryPriceUsd": "224.05",
+          "virtualQuotePositionLots": "7008340217",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "135168",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "BTC",
+          "positionSequenceNumber": "106",
+          "basePositionLots": "245",
+          "entryPriceTicks": "81337",
+          "entryPriceUsd": "81337",
+          "virtualQuotePositionLots": "-1992756500",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "-137200",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "CBRS",
+          "positionSequenceNumber": "152",
+          "basePositionLots": "-17830",
+          "entryPriceTicks": "12249",
+          "entryPriceUsd": "122.49",
+          "virtualQuotePositionLots": "2184060246",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "17008",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "COIN",
+          "positionSequenceNumber": "236",
+          "basePositionLots": "2665",
+          "entryPriceTicks": "17117",
+          "entryPriceUsd": "171.17",
+          "virtualQuotePositionLots": "-456168050",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "-15990",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "CRCL",
+          "positionSequenceNumber": "220",
+          "basePositionLots": "1639",
+          "entryPriceTicks": "85627",
+          "entryPriceUsd": "85.627",
+          "virtualQuotePositionLots": "-1403435559",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "-7455",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "CRWV",
+          "positionSequenceNumber": "153",
+          "basePositionLots": "-4961",
+          "entryPriceTicks": "6222",
+          "entryPriceUsd": "62.22",
+          "virtualQuotePositionLots": "308698363",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "10060",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "ETH",
+          "positionSequenceNumber": "221",
+          "basePositionLots": "344",
+          "entryPriceTicks": "24297",
+          "entryPriceUsd": "2429.7",
+          "virtualQuotePositionLots": "-835816800",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "6192",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "FARTCOIN",
+          "positionSequenceNumber": "219",
+          "basePositionLots": "1087",
+          "entryPriceTicks": "14594",
+          "entryPriceUsd": "0.14594",
+          "virtualQuotePositionLots": "-158636780",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "-1087",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "HOOD",
+          "positionSequenceNumber": "162",
+          "basePositionLots": "10205",
+          "entryPriceTicks": "9862",
+          "entryPriceUsd": "98.62",
+          "virtualQuotePositionLots": "-1006461362",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "-30765",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "HYPE",
+          "positionSequenceNumber": "227",
+          "basePositionLots": "-653",
+          "entryPriceTicks": "78562",
+          "entryPriceUsd": "78.562",
+          "virtualQuotePositionLots": "513014747",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "347004",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "INTC",
+          "positionSequenceNumber": "217",
+          "basePositionLots": "6770",
+          "entryPriceTicks": "9270",
+          "entryPriceUsd": "92.7",
+          "virtualQuotePositionLots": "-627579000",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "-13540",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "JTO",
+          "positionSequenceNumber": "226",
+          "basePositionLots": "133",
+          "entryPriceTicks": "4758",
+          "entryPriceUsd": "0.4758",
+          "virtualQuotePositionLots": "-6328140",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "-133",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "JUP",
+          "positionSequenceNumber": "246",
+          "basePositionLots": "-1273",
+          "entryPriceTicks": "31531",
+          "entryPriceUsd": "0.31531",
+          "virtualQuotePositionLots": "401393069",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "0",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "LIT",
+          "positionSequenceNumber": "142",
+          "basePositionLots": "6180",
+          "entryPriceTicks": "32442",
+          "entryPriceUsd": "3.2442",
+          "virtualQuotePositionLots": "-2004938865",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "135542",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "META",
+          "positionSequenceNumber": "147",
+          "basePositionLots": "-2887",
+          "entryPriceTicks": "69068",
+          "entryPriceUsd": "690.68",
+          "virtualQuotePositionLots": "1994020784",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "165918",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "MSTR",
+          "positionSequenceNumber": "134",
+          "basePositionLots": "-731",
+          "entryPriceTicks": "144319",
+          "entryPriceUsd": "144.319",
+          "virtualQuotePositionLots": "1054978451",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "130975",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "MU",
+          "positionSequenceNumber": "197",
+          "basePositionLots": "-6187",
+          "entryPriceTicks": "9173",
+          "entryPriceUsd": "917.3",
+          "virtualQuotePositionLots": "567533510",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "18561",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "NBIS",
+          "positionSequenceNumber": "241",
+          "basePositionLots": "-14926",
+          "entryPriceTicks": "17025",
+          "entryPriceUsd": "170.25",
+          "virtualQuotePositionLots": "2541180608",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "1034",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "NEAR",
+          "positionSequenceNumber": "242",
+          "basePositionLots": "-74",
+          "entryPriceTicks": "49500",
+          "entryPriceUsd": "4.95",
+          "virtualQuotePositionLots": "366300000",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "16576",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "QCOM",
+          "positionSequenceNumber": "247",
+          "basePositionLots": "2474",
+          "entryPriceTicks": "17470",
+          "entryPriceUsd": "174.7",
+          "virtualQuotePositionLots": "-432207800",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "0",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "SKHY",
+          "positionSequenceNumber": "245",
+          "basePositionLots": "7146",
+          "entryPriceTicks": "14045",
+          "entryPriceUsd": "140.45",
+          "virtualQuotePositionLots": "-1003717431",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "0",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "SNDK",
+          "positionSequenceNumber": "161",
+          "basePositionLots": "30495",
+          "entryPriceTicks": "13769",
+          "entryPriceUsd": "1376.9",
+          "virtualQuotePositionLots": "-4199158391",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "-116205",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "SOL",
+          "positionSequenceNumber": "243",
+          "basePositionLots": "-773",
+          "entryPriceTicks": "10662",
+          "entryPriceUsd": "106.62",
+          "virtualQuotePositionLots": "824172600",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "14687",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "SPCX",
+          "positionSequenceNumber": "205",
+          "basePositionLots": "-4208",
+          "entryPriceTicks": "14825",
+          "entryPriceUsd": "148.25",
+          "virtualQuotePositionLots": "623836000",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "54704",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         },
+         {
+          "symbol": "ZEC",
+          "positionSequenceNumber": "248",
+          "basePositionLots": "94",
+          "entryPriceTicks": "121602",
+          "entryPriceUsd": "1216.02",
+          "virtualQuotePositionLots": "-1143058800",
+          "unsettledFundingQuoteLots": "0",
+          "accumulatedFundingQuoteLots": "0",
+          "takeProfitTriggers": [],
+          "stopLossTriggers": [],
+          "conditionalTakeProfitTriggers": [],
+          "conditionalStopLossTriggers": []
+         }
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "key": "call:[\"holdings.phoenix_trader\",{\"trader\":\"6kodQ2FJoPaPcDE4TZgWhR7E8jzEZG7sPGCr66wj54Pi\"}]",
+   "out": {
+    "status": 200,
+    "ok": true,
+    "data": {
+     "flags": 62,
+     "state": "cold",
+     "capabilities": {
+      "placeLimitOrder": {
+       "immediate": false,
+       "viaColdActivation": true
+      },
+      "placeMarketOrder": {
+       "immediate": true
+      },
+      "riskIncreasingTrade": {
+       "immediate": true
+      },
+      "riskReducingTrade": {
+       "immediate": true
+      },
+      "depositCollateral": {
+       "immediate": true
+      },
+      "withdrawCollateral": {
+       "immediate": true
+      }
+     },
+     "slot": 459310130,
+     "slotIndex": 990,
+     "traderKey": "6kodQ2FJoPaPcDE4TZgWhR7E8jzEZG7sPGCr66wj54Pi",
+     "traderPdaIndex": 0,
+     "traderSubaccountIndex": 0,
+     "authority": "J7sSuML4yAg4rrtxFJHFpC7AtX56XBQawaXAJuybXv91",
+     "collateralBalance": {
+      "value": 23175638656,
+      "decimals": 6,
+      "ui": "23175.638656"
+     },
+     "effectiveCollateral": {
+      "value": 23254250063,
+      "decimals": 6,
+      "ui": "23254.250063"
+     },
+     "effectiveCollateralForWithdrawals": {
+      "value": 23147044688,
+      "decimals": 6,
+      "ui": "23147.044688"
+     },
+     "withdrawableQuoteCollateral": {
+      "value": 20017118690,
+      "decimals": 6,
+      "ui": "20017.118690"
+     },
+     "unrealizedPnl": {
+      "value": 78611407,
+      "decimals": 6,
+      "ui": "78.611407"
+     },
+     "discountedUnrealizedPnl": {
+      "value": 78611407,
+      "decimals": 6,
+      "ui": "78.611407"
+     },
+     "unsettledFundingOwed": {
+      "value": 0,
+      "decimals": 6,
+      "ui": "0.000000"
+     },
+     "accumulatedFunding": {
+      "value": 703653,
+      "decimals": 6,
+      "ui": "0.703653"
+     },
+     "portfolioValue": {
+      "value": 23254250063,
+      "decimals": 6,
+      "ui": "23254.250063"
+     },
+     "maintenanceMargin": {
+      "value": 1564962995,
+      "decimals": 6,
+      "ui": "1564.962995"
+     },
+     "cancelMargin": {
+      "value": 2343224595,
+      "decimals": 6,
+      "ui": "2343.224595"
+     },
+     "initialMargin": {
+      "value": 3129925998,
+      "decimals": 6,
+      "ui": "3129.925998"
+     },
+     "initialMarginForWithdrawals": {
+      "value": 3129925998,
+      "decimals": 6,
+      "ui": "3129.925998"
+     },
+     "riskState": "healthy",
+     "riskTier": "safe",
+     "positions": [
+      {
+       "symbol": "MSTR",
+       "positionSize": {
+        "value": -731,
+        "decimals": 2,
+        "ui": "-7.31"
+       },
+       "virtualQuotePosition": {
+        "value": 1054978451,
+        "decimals": 6,
+        "ui": "1054.978451"
+       },
+       "entryPrice": {
+        "value": 144320000,
+        "decimals": 6,
+        "ui": "144.320000"
+       },
+       "unrealizedPnl": {
+        "value": -2025619,
+        "decimals": 6,
+        "ui": "-2.025619"
+       },
+       "discountedUnrealizedPnl": {
+        "value": -2025619,
+        "decimals": 6,
+        "ui": "-2.025619"
+       },
+       "positionInitialMargin": {
+        "value": 105700407,
+        "decimals": 6,
+        "ui": "105.700407"
+       },
+       "initialMargin": {
+        "value": 105700407,
+        "decimals": 6,
+        "ui": "105.700407"
+       },
+       "maintenanceMargin": {
+        "value": 52850203,
+        "decimals": 6,
+        "ui": "52.850203"
+       },
+       "backstopMargin": {
+        "value": 21140081,
+        "decimals": 6,
+        "ui": "21.140081"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": -1057004070,
+        "decimals": 6,
+        "ui": "-1057.004070"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 130975,
+        "decimals": 6,
+        "ui": "0.130975"
+       },
+       "liquidationPrice": {
+        "value": 29703790,
+        "decimals": 4,
+        "ui": "2970.3790"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "SNDK",
+       "positionSize": {
+        "value": 30495,
+        "decimals": 4,
+        "ui": "3.0495"
+       },
+       "virtualQuotePosition": {
+        "value": -4199158391,
+        "decimals": 6,
+        "ui": "-4199.158391"
+       },
+       "entryPrice": {
+        "value": 1377000000,
+        "decimals": 6,
+        "ui": "1377.000000"
+       },
+       "unrealizedPnl": {
+        "value": 18910009,
+        "decimals": 6,
+        "ui": "18.910009"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 18910009,
+        "decimals": 6,
+        "ui": "18.910009"
+       },
+       "positionInitialMargin": {
+        "value": 281204560,
+        "decimals": 6,
+        "ui": "281.204560"
+       },
+       "initialMargin": {
+        "value": 281204560,
+        "decimals": 6,
+        "ui": "281.204560"
+       },
+       "maintenanceMargin": {
+        "value": 140602280,
+        "decimals": 6,
+        "ui": "140.602280"
+       },
+       "backstopMargin": {
+        "value": 56240912,
+        "decimals": 6,
+        "ui": "56.240912"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 4218068400,
+        "decimals": 6,
+        "ui": "4218.068400"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": -116205,
+        "decimals": 6,
+        "ui": "-0.116205"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "BTC",
+       "positionSize": {
+        "value": 245,
+        "decimals": 4,
+        "ui": "0.0245"
+       },
+       "virtualQuotePosition": {
+        "value": -1992756500,
+        "decimals": 6,
+        "ui": "-1992.756500"
+       },
+       "entryPrice": {
+        "value": 81337000000,
+        "decimals": 6,
+        "ui": "81337.000000"
+       },
+       "unrealizedPnl": {
+        "value": 35010500,
+        "decimals": 6,
+        "ui": "35.010500"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 35010500,
+        "decimals": 6,
+        "ui": "35.010500"
+       },
+       "positionInitialMargin": {
+        "value": 50694175,
+        "decimals": 6,
+        "ui": "50.694175"
+       },
+       "initialMargin": {
+        "value": 50694175,
+        "decimals": 6,
+        "ui": "50.694175"
+       },
+       "maintenanceMargin": {
+        "value": 25347087,
+        "decimals": 6,
+        "ui": "25.347087"
+       },
+       "backstopMargin": {
+        "value": 10138835,
+        "decimals": 6,
+        "ui": "10.138835"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 2027767000,
+        "decimals": 6,
+        "ui": "2027.767000"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": -137200,
+        "decimals": 6,
+        "ui": "-0.137200"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "CRCL",
+       "positionSize": {
+        "value": 1639,
+        "decimals": 2,
+        "ui": "16.39"
+       },
+       "virtualQuotePosition": {
+        "value": -1403435559,
+        "decimals": 6,
+        "ui": "-1403.435559"
+       },
+       "entryPrice": {
+        "value": 85628000,
+        "decimals": 6,
+        "ui": "85.628000"
+       },
+       "unrealizedPnl": {
+        "value": 8120411,
+        "decimals": 6,
+        "ui": "8.120411"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 8120411,
+        "decimals": 6,
+        "ui": "8.120411"
+       },
+       "positionInitialMargin": {
+        "value": 141155597,
+        "decimals": 6,
+        "ui": "141.155597"
+       },
+       "initialMargin": {
+        "value": 141155597,
+        "decimals": 6,
+        "ui": "141.155597"
+       },
+       "maintenanceMargin": {
+        "value": 70577798,
+        "decimals": 6,
+        "ui": "70.577798"
+       },
+       "backstopMargin": {
+        "value": 28231119,
+        "decimals": 6,
+        "ui": "28.231119"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 1411555970,
+        "decimals": 6,
+        "ui": "1411.555970"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": -7455,
+        "decimals": 6,
+        "ui": "-0.007455"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "SKHY",
+       "positionSize": {
+        "value": 7146,
+        "decimals": 3,
+        "ui": "7.146"
+       },
+       "virtualQuotePosition": {
+        "value": -1003717431,
+        "decimals": 6,
+        "ui": "-1003.717431"
+       },
+       "entryPrice": {
+        "value": 140460000,
+        "decimals": 6,
+        "ui": "140.460000"
+       },
+       "unrealizedPnl": {
+        "value": -704871,
+        "decimals": 6,
+        "ui": "-0.704871"
+       },
+       "discountedUnrealizedPnl": {
+        "value": -704871,
+        "decimals": 6,
+        "ui": "-0.704871"
+       },
+       "positionInitialMargin": {
+        "value": 100301256,
+        "decimals": 6,
+        "ui": "100.301256"
+       },
+       "initialMargin": {
+        "value": 100301256,
+        "decimals": 6,
+        "ui": "100.301256"
+       },
+       "maintenanceMargin": {
+        "value": 50150628,
+        "decimals": 6,
+        "ui": "50.150628"
+       },
+       "backstopMargin": {
+        "value": 20060251,
+        "decimals": 6,
+        "ui": "20.060251"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 1003012560,
+        "decimals": 6,
+        "ui": "1003.012560"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "SOL",
+       "positionSize": {
+        "value": -773,
+        "decimals": 2,
+        "ui": "-7.73"
+       },
+       "virtualQuotePosition": {
+        "value": 824172600,
+        "decimals": 6,
+        "ui": "824.172600"
+       },
+       "entryPrice": {
+        "value": 106620000,
+        "decimals": 6,
+        "ui": "106.620000"
+       },
+       "unrealizedPnl": {
+        "value": 850300,
+        "decimals": 6,
+        "ui": "0.850300"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 850300,
+        "decimals": 6,
+        "ui": "0.850300"
+       },
+       "positionInitialMargin": {
+        "value": 32932892,
+        "decimals": 6,
+        "ui": "32.932892"
+       },
+       "initialMargin": {
+        "value": 32932892,
+        "decimals": 6,
+        "ui": "32.932892"
+       },
+       "maintenanceMargin": {
+        "value": 16466446,
+        "decimals": 6,
+        "ui": "16.466446"
+       },
+       "backstopMargin": {
+        "value": 6586578,
+        "decimals": 6,
+        "ui": "6.586578"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": -823322300,
+        "decimals": 6,
+        "ui": "-823.322300"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 14687,
+        "decimals": 6,
+        "ui": "0.014687"
+       },
+       "liquidationPrice": {
+        "value": 28573600,
+        "decimals": 4,
+        "ui": "2857.3600"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "ETH",
+       "positionSize": {
+        "value": 344,
+        "decimals": 3,
+        "ui": "0.344"
+       },
+       "virtualQuotePosition": {
+        "value": -835816800,
+        "decimals": 6,
+        "ui": "-835.816800"
+       },
+       "entryPrice": {
+        "value": 2429700000,
+        "decimals": 6,
+        "ui": "2429.700000"
+       },
+       "unrealizedPnl": {
+        "value": 6776800,
+        "decimals": 6,
+        "ui": "6.776800"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 6776800,
+        "decimals": 6,
+        "ui": "6.776800"
+       },
+       "positionInitialMargin": {
+        "value": 33703744,
+        "decimals": 6,
+        "ui": "33.703744"
+       },
+       "initialMargin": {
+        "value": 33703744,
+        "decimals": 6,
+        "ui": "33.703744"
+       },
+       "maintenanceMargin": {
+        "value": 16851872,
+        "decimals": 6,
+        "ui": "16.851872"
+       },
+       "backstopMargin": {
+        "value": 6740748,
+        "decimals": 6,
+        "ui": "6.740748"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 842593600,
+        "decimals": 6,
+        "ui": "842.593600"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 6192,
+        "decimals": 6,
+        "ui": "0.006192"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "ZEC",
+       "positionSize": {
+        "value": 94,
+        "decimals": 2,
+        "ui": "0.94"
+       },
+       "virtualQuotePosition": {
+        "value": -1143058800,
+        "decimals": 6,
+        "ui": "-1143.058800"
+       },
+       "entryPrice": {
+        "value": 1216020000,
+        "decimals": 6,
+        "ui": "1216.020000"
+       },
+       "unrealizedPnl": {
+        "value": 291400,
+        "decimals": 6,
+        "ui": "0.291400"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 291400,
+        "decimals": 6,
+        "ui": "0.291400"
+       },
+       "positionInitialMargin": {
+        "value": 114335020,
+        "decimals": 6,
+        "ui": "114.335020"
+       },
+       "initialMargin": {
+        "value": 114335020,
+        "decimals": 6,
+        "ui": "114.335020"
+       },
+       "maintenanceMargin": {
+        "value": 57167510,
+        "decimals": 6,
+        "ui": "57.167510"
+       },
+       "backstopMargin": {
+        "value": 22867004,
+        "decimals": 6,
+        "ui": "22.867004"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 1143350200,
+        "decimals": 6,
+        "ui": "1143.350200"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "ARM",
+       "positionSize": {
+        "value": -31279,
+        "decimals": 3,
+        "ui": "-31.279"
+       },
+       "virtualQuotePosition": {
+        "value": 7008340217,
+        "decimals": 6,
+        "ui": "7008.340217"
+       },
+       "entryPrice": {
+        "value": 224060000,
+        "decimals": 6,
+        "ui": "224.060000"
+       },
+       "unrealizedPnl": {
+        "value": 25929047,
+        "decimals": 6,
+        "ui": "25.929047"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 25929047,
+        "decimals": 6,
+        "ui": "25.929047"
+       },
+       "positionInitialMargin": {
+        "value": 698241117,
+        "decimals": 6,
+        "ui": "698.241117"
+       },
+       "initialMargin": {
+        "value": 698241117,
+        "decimals": 6,
+        "ui": "698.241117"
+       },
+       "maintenanceMargin": {
+        "value": 349120558,
+        "decimals": 6,
+        "ui": "349.120558"
+       },
+       "backstopMargin": {
+        "value": 139648223,
+        "decimals": 6,
+        "ui": "139.648223"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": -6982411170,
+        "decimals": 6,
+        "ui": "-6982.411170"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 135168,
+        "decimals": 6,
+        "ui": "0.135168"
+       },
+       "liquidationPrice": {
+        "value": 883630,
+        "decimals": 3,
+        "ui": "883.630"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "NEAR",
+       "positionSize": {
+        "value": -74,
+        "decimals": 0,
+        "ui": "-74"
+       },
+       "virtualQuotePosition": {
+        "value": 366300000,
+        "decimals": 6,
+        "ui": "366.300000"
+       },
+       "entryPrice": {
+        "value": 4950000,
+        "decimals": 6,
+        "ui": "4.950000"
+       },
+       "unrealizedPnl": {
+        "value": 1864800,
+        "decimals": 6,
+        "ui": "1.864800"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 1864800,
+        "decimals": 6,
+        "ui": "1.864800"
+       },
+       "positionInitialMargin": {
+        "value": 36443520,
+        "decimals": 6,
+        "ui": "36.443520"
+       },
+       "initialMargin": {
+        "value": 36443520,
+        "decimals": 6,
+        "ui": "36.443520"
+       },
+       "maintenanceMargin": {
+        "value": 18221760,
+        "decimals": 6,
+        "ui": "18.221760"
+       },
+       "backstopMargin": {
+        "value": 7288704,
+        "decimals": 6,
+        "ui": "7.288704"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": -364435200,
+        "decimals": 6,
+        "ui": "-364.435200"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 16576,
+        "decimals": 6,
+        "ui": "0.016576"
+       },
+       "liquidationPrice": {
+        "value": 284066300,
+        "decimals": 6,
+        "ui": "284.066300"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "QCOM",
+       "positionSize": {
+        "value": 2474,
+        "decimals": 3,
+        "ui": "2.474"
+       },
+       "virtualQuotePosition": {
+        "value": -432207800,
+        "decimals": 6,
+        "ui": "-432.207800"
+       },
+       "entryPrice": {
+        "value": 174700000,
+        "decimals": 6,
+        "ui": "174.700000"
+       },
+       "unrealizedPnl": {
+        "value": 173180,
+        "decimals": 6,
+        "ui": "0.173180"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 173180,
+        "decimals": 6,
+        "ui": "0.173180"
+       },
+       "positionInitialMargin": {
+        "value": 43238098,
+        "decimals": 6,
+        "ui": "43.238098"
+       },
+       "initialMargin": {
+        "value": 43238098,
+        "decimals": 6,
+        "ui": "43.238098"
+       },
+       "maintenanceMargin": {
+        "value": 21619049,
+        "decimals": 6,
+        "ui": "21.619049"
+       },
+       "backstopMargin": {
+        "value": 8647619,
+        "decimals": 6,
+        "ui": "8.647619"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 432380980,
+        "decimals": 6,
+        "ui": "432.380980"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "CRWV",
+       "positionSize": {
+        "value": -4961,
+        "decimals": 3,
+        "ui": "-4.961"
+       },
+       "virtualQuotePosition": {
+        "value": 308698363,
+        "decimals": 6,
+        "ui": "308.698363"
+       },
+       "entryPrice": {
+        "value": 62230000,
+        "decimals": 6,
+        "ui": "62.230000"
+       },
+       "unrealizedPnl": {
+        "value": -1860237,
+        "decimals": 6,
+        "ui": "-1.860237"
+       },
+       "discountedUnrealizedPnl": {
+        "value": -1860237,
+        "decimals": 6,
+        "ui": "-1.860237"
+       },
+       "positionInitialMargin": {
+        "value": 31055860,
+        "decimals": 6,
+        "ui": "31.055860"
+       },
+       "initialMargin": {
+        "value": 31055860,
+        "decimals": 6,
+        "ui": "31.055860"
+       },
+       "maintenanceMargin": {
+        "value": 15527930,
+        "decimals": 6,
+        "ui": "15.527930"
+       },
+       "backstopMargin": {
+        "value": 6211172,
+        "decimals": 6,
+        "ui": "6.211172"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": -310558600,
+        "decimals": 6,
+        "ui": "-310.558600"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 10060,
+        "decimals": 6,
+        "ui": "0.010060"
+       },
+       "liquidationPrice": {
+        "value": 4226380,
+        "decimals": 3,
+        "ui": "4226.380"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "MU",
+       "positionSize": {
+        "value": -6187,
+        "decimals": 4,
+        "ui": "-0.6187"
+       },
+       "virtualQuotePosition": {
+        "value": 567533510,
+        "decimals": 6,
+        "ui": "567.533510"
+       },
+       "entryPrice": {
+        "value": 917300000,
+        "decimals": 6,
+        "ui": "917.300000"
+       },
+       "unrealizedPnl": {
+        "value": 4454640,
+        "decimals": 6,
+        "ui": "4.454640"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 4454640,
+        "decimals": 6,
+        "ui": "4.454640"
+       },
+       "positionInitialMargin": {
+        "value": 37538592,
+        "decimals": 6,
+        "ui": "37.538592"
+       },
+       "initialMargin": {
+        "value": 37538592,
+        "decimals": 6,
+        "ui": "37.538592"
+       },
+       "maintenanceMargin": {
+        "value": 18769296,
+        "decimals": 6,
+        "ui": "18.769296"
+       },
+       "backstopMargin": {
+        "value": 7507718,
+        "decimals": 6,
+        "ui": "7.507718"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": -563078870,
+        "decimals": 6,
+        "ui": "-563.078870"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 18561,
+        "decimals": 6,
+        "ui": "0.018561"
+       },
+       "liquidationPrice": {
+        "value": 3483550,
+        "decimals": 2,
+        "ui": "34835.50"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "META",
+       "positionSize": {
+        "value": -2887,
+        "decimals": 3,
+        "ui": "-2.887"
+       },
+       "virtualQuotePosition": {
+        "value": 1994020784,
+        "decimals": 6,
+        "ui": "1994.020784"
+       },
+       "entryPrice": {
+        "value": 690690000,
+        "decimals": 6,
+        "ui": "690.690000"
+       },
+       "unrealizedPnl": {
+        "value": -1560226,
+        "decimals": 6,
+        "ui": "-1.560226"
+       },
+       "discountedUnrealizedPnl": {
+        "value": -1560226,
+        "decimals": 6,
+        "ui": "-1.560226"
+       },
+       "positionInitialMargin": {
+        "value": 99779051,
+        "decimals": 6,
+        "ui": "99.779051"
+       },
+       "initialMargin": {
+        "value": 99779051,
+        "decimals": 6,
+        "ui": "99.779051"
+       },
+       "maintenanceMargin": {
+        "value": 49889525,
+        "decimals": 6,
+        "ui": "49.889525"
+       },
+       "backstopMargin": {
+        "value": 19955810,
+        "decimals": 6,
+        "ui": "19.955810"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": -1995581010,
+        "decimals": 6,
+        "ui": "-1995.581010"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 165918,
+        "decimals": 6,
+        "ui": "0.165918"
+       },
+       "liquidationPrice": {
+        "value": 8020740,
+        "decimals": 3,
+        "ui": "8020.740"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "NBIS",
+       "positionSize": {
+        "value": -14926,
+        "decimals": 3,
+        "ui": "-14.926"
+       },
+       "virtualQuotePosition": {
+        "value": 2541180608,
+        "decimals": 6,
+        "ui": "2541.180608"
+       },
+       "entryPrice": {
+        "value": 170250000,
+        "decimals": 6,
+        "ui": "170.250000"
+       },
+       "unrealizedPnl": {
+        "value": 5253208,
+        "decimals": 6,
+        "ui": "5.253208"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 5253208,
+        "decimals": 6,
+        "ui": "5.253208"
+       },
+       "positionInitialMargin": {
+        "value": 253592740,
+        "decimals": 6,
+        "ui": "253.592740"
+       },
+       "initialMargin": {
+        "value": 253592740,
+        "decimals": 6,
+        "ui": "253.592740"
+       },
+       "maintenanceMargin": {
+        "value": 126796370,
+        "decimals": 6,
+        "ui": "126.796370"
+       },
+       "backstopMargin": {
+        "value": 50718548,
+        "decimals": 6,
+        "ui": "50.718548"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": -2535927400,
+        "decimals": 6,
+        "ui": "-2535.927400"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 1034,
+        "decimals": 6,
+        "ui": "0.001034"
+       },
+       "liquidationPrice": {
+        "value": 1553830,
+        "decimals": 3,
+        "ui": "1553.830"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "FARTCOIN",
+       "positionSize": {
+        "value": 1087,
+        "decimals": 0,
+        "ui": "1087"
+       },
+       "virtualQuotePosition": {
+        "value": -158636780,
+        "decimals": 6,
+        "ui": "-158.636780"
+       },
+       "entryPrice": {
+        "value": 145940,
+        "decimals": 6,
+        "ui": "0.145940"
+       },
+       "unrealizedPnl": {
+        "value": 1717460,
+        "decimals": 6,
+        "ui": "1.717460"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 1717460,
+        "decimals": 6,
+        "ui": "1.717460"
+       },
+       "positionInitialMargin": {
+        "value": 16035424,
+        "decimals": 6,
+        "ui": "16.035424"
+       },
+       "initialMargin": {
+        "value": 16035424,
+        "decimals": 6,
+        "ui": "16.035424"
+       },
+       "maintenanceMargin": {
+        "value": 8017712,
+        "decimals": 6,
+        "ui": "8.017712"
+       },
+       "backstopMargin": {
+        "value": 3207084,
+        "decimals": 6,
+        "ui": "3.207084"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 160354240,
+        "decimals": 6,
+        "ui": "160.354240"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": -1087,
+        "decimals": 6,
+        "ui": "-0.001087"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "CBRS",
+       "positionSize": {
+        "value": -17830,
+        "decimals": 3,
+        "ui": "-17.830"
+       },
+       "virtualQuotePosition": {
+        "value": 2184060246,
+        "decimals": 6,
+        "ui": "2184.060246"
+       },
+       "entryPrice": {
+        "value": 122490000,
+        "decimals": 6,
+        "ui": "122.490000"
+       },
+       "unrealizedPnl": {
+        "value": 24847246,
+        "decimals": 6,
+        "ui": "24.847246"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 24847246,
+        "decimals": 6,
+        "ui": "24.847246"
+       },
+       "positionInitialMargin": {
+        "value": 215921300,
+        "decimals": 6,
+        "ui": "215.921300"
+       },
+       "initialMargin": {
+        "value": 215921300,
+        "decimals": 6,
+        "ui": "215.921300"
+       },
+       "maintenanceMargin": {
+        "value": 107960650,
+        "decimals": 6,
+        "ui": "107.960650"
+       },
+       "backstopMargin": {
+        "value": 43184260,
+        "decimals": 6,
+        "ui": "43.184260"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": -2159213000,
+        "decimals": 6,
+        "ui": "-2159.213000"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 17008,
+        "decimals": 6,
+        "ui": "0.017008"
+       },
+       "liquidationPrice": {
+        "value": 1279630,
+        "decimals": 3,
+        "ui": "1279.630"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "HOOD",
+       "positionSize": {
+        "value": 10205,
+        "decimals": 3,
+        "ui": "10.205"
+       },
+       "virtualQuotePosition": {
+        "value": -1006461362,
+        "decimals": 6,
+        "ui": "-1006.461362"
+       },
+       "entryPrice": {
+        "value": 98620000,
+        "decimals": 6,
+        "ui": "98.620000"
+       },
+       "unrealizedPnl": {
+        "value": 261888,
+        "decimals": 6,
+        "ui": "0.261888"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 261888,
+        "decimals": 6,
+        "ui": "0.261888"
+       },
+       "positionInitialMargin": {
+        "value": 100672325,
+        "decimals": 6,
+        "ui": "100.672325"
+       },
+       "initialMargin": {
+        "value": 100672325,
+        "decimals": 6,
+        "ui": "100.672325"
+       },
+       "maintenanceMargin": {
+        "value": 50336162,
+        "decimals": 6,
+        "ui": "50.336162"
+       },
+       "backstopMargin": {
+        "value": 20134465,
+        "decimals": 6,
+        "ui": "20.134465"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 1006723250,
+        "decimals": 6,
+        "ui": "1006.723250"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": -30765,
+        "decimals": 6,
+        "ui": "-0.030765"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "AMAT",
+       "positionSize": {
+        "value": 2483,
+        "decimals": 3,
+        "ui": "2.483"
+       },
+       "virtualQuotePosition": {
+        "value": -1005367580,
+        "decimals": 6,
+        "ui": "-1005.367580"
+       },
+       "entryPrice": {
+        "value": 404900000,
+        "decimals": 6,
+        "ui": "404.900000"
+       },
+       "unrealizedPnl": {
+        "value": -274010,
+        "decimals": 6,
+        "ui": "-0.274010"
+       },
+       "discountedUnrealizedPnl": {
+        "value": -274010,
+        "decimals": 6,
+        "ui": "-0.274010"
+       },
+       "positionInitialMargin": {
+        "value": 100509357,
+        "decimals": 6,
+        "ui": "100.509357"
+       },
+       "initialMargin": {
+        "value": 100509357,
+        "decimals": 6,
+        "ui": "100.509357"
+       },
+       "maintenanceMargin": {
+        "value": 50254678,
+        "decimals": 6,
+        "ui": "50.254678"
+       },
+       "backstopMargin": {
+        "value": 20101871,
+        "decimals": 6,
+        "ui": "20.101871"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 1005093570,
+        "decimals": 6,
+        "ui": "1005.093570"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": -27401,
+        "decimals": 6,
+        "ui": "-0.027401"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "LIT",
+       "positionSize": {
+        "value": 6180,
+        "decimals": 1,
+        "ui": "618.0"
+       },
+       "virtualQuotePosition": {
+        "value": -2004938865,
+        "decimals": 6,
+        "ui": "-2004.938865"
+       },
+       "entryPrice": {
+        "value": 3244200,
+        "decimals": 6,
+        "ui": "3.244200"
+       },
+       "unrealizedPnl": {
+        "value": -40069665,
+        "decimals": 6,
+        "ui": "-40.069665"
+       },
+       "discountedUnrealizedPnl": {
+        "value": -40069665,
+        "decimals": 6,
+        "ui": "-40.069665"
+       },
+       "positionInitialMargin": {
+        "value": 392973840,
+        "decimals": 6,
+        "ui": "392.973840"
+       },
+       "initialMargin": {
+        "value": 392973840,
+        "decimals": 6,
+        "ui": "392.973840"
+       },
+       "maintenanceMargin": {
+        "value": 196486920,
+        "decimals": 6,
+        "ui": "196.486920"
+       },
+       "backstopMargin": {
+        "value": 78594768,
+        "decimals": 6,
+        "ui": "78.594768"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 1964869200,
+        "decimals": 6,
+        "ui": "1964.869200"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 135542,
+        "decimals": 6,
+        "ui": "0.135542"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "SPCX",
+       "positionSize": {
+        "value": -4208,
+        "decimals": 3,
+        "ui": "-4.208"
+       },
+       "virtualQuotePosition": {
+        "value": 623836000,
+        "decimals": 6,
+        "ui": "623.836000"
+       },
+       "entryPrice": {
+        "value": 148250000,
+        "decimals": 6,
+        "ui": "148.250000"
+       },
+       "unrealizedPnl": {
+        "value": 1599040,
+        "decimals": 6,
+        "ui": "1.599040"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 1599040,
+        "decimals": 6,
+        "ui": "1.599040"
+       },
+       "positionInitialMargin": {
+        "value": 41482464,
+        "decimals": 6,
+        "ui": "41.482464"
+       },
+       "initialMargin": {
+        "value": 41482464,
+        "decimals": 6,
+        "ui": "41.482464"
+       },
+       "maintenanceMargin": {
+        "value": 20741232,
+        "decimals": 6,
+        "ui": "20.741232"
+       },
+       "backstopMargin": {
+        "value": 8296492,
+        "decimals": 6,
+        "ui": "8.296492"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": -622236960,
+        "decimals": 6,
+        "ui": "-622.236960"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 54704,
+        "decimals": 6,
+        "ui": "0.054704"
+       },
+       "liquidationPrice": {
+        "value": 5135910,
+        "decimals": 3,
+        "ui": "5135.910"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "COIN",
+       "positionSize": {
+        "value": 2665,
+        "decimals": 3,
+        "ui": "2.665"
+       },
+       "virtualQuotePosition": {
+        "value": -456168050,
+        "decimals": 6,
+        "ui": "-456.168050"
+       },
+       "entryPrice": {
+        "value": 171170000,
+        "decimals": 6,
+        "ui": "171.170000"
+       },
+       "unrealizedPnl": {
+        "value": 1945450,
+        "decimals": 6,
+        "ui": "1.945450"
+       },
+       "discountedUnrealizedPnl": {
+        "value": 1945450,
+        "decimals": 6,
+        "ui": "1.945450"
+       },
+       "positionInitialMargin": {
+        "value": 45811350,
+        "decimals": 6,
+        "ui": "45.811350"
+       },
+       "initialMargin": {
+        "value": 45811350,
+        "decimals": 6,
+        "ui": "45.811350"
+       },
+       "maintenanceMargin": {
+        "value": 22905675,
+        "decimals": 6,
+        "ui": "22.905675"
+       },
+       "backstopMargin": {
+        "value": 9162270,
+        "decimals": 6,
+        "ui": "9.162270"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 458113500,
+        "decimals": 6,
+        "ui": "458.113500"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": -15990,
+        "decimals": 6,
+        "ui": "-0.015990"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "JUP",
+       "positionSize": {
+        "value": -1273,
+        "decimals": 0,
+        "ui": "-1273"
+       },
+       "virtualQuotePosition": {
+        "value": 401393069,
+        "decimals": 6,
+        "ui": "401.393069"
+       },
+       "entryPrice": {
+        "value": 315310,
+        "decimals": 6,
+        "ui": "0.315310"
+       },
+       "unrealizedPnl": {
+        "value": -2109741,
+        "decimals": 6,
+        "ui": "-2.109741"
+       },
+       "discountedUnrealizedPnl": {
+        "value": -2109741,
+        "decimals": 6,
+        "ui": "-2.109741"
+       },
+       "positionInitialMargin": {
+        "value": 40350281,
+        "decimals": 6,
+        "ui": "40.350281"
+       },
+       "initialMargin": {
+        "value": 40350281,
+        "decimals": 6,
+        "ui": "40.350281"
+       },
+       "maintenanceMargin": {
+        "value": 20175140,
+        "decimals": 6,
+        "ui": "20.175140"
+       },
+       "backstopMargin": {
+        "value": 8070056,
+        "decimals": 6,
+        "ui": "8.070056"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": -403502810,
+        "decimals": 6,
+        "ui": "-403.502810"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "liquidationPrice": {
+        "value": 16543580,
+        "decimals": 6,
+        "ui": "16.543580"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "INTC",
+       "positionSize": {
+        "value": 6770,
+        "decimals": 3,
+        "ui": "6.770"
+       },
+       "virtualQuotePosition": {
+        "value": -627579000,
+        "decimals": 6,
+        "ui": "-627.579000"
+       },
+       "entryPrice": {
+        "value": 92700000,
+        "decimals": 6,
+        "ui": "92.700000"
+       },
+       "unrealizedPnl": {
+        "value": -744700,
+        "decimals": 6,
+        "ui": "-0.744700"
+       },
+       "discountedUnrealizedPnl": {
+        "value": -744700,
+        "decimals": 6,
+        "ui": "-0.744700"
+       },
+       "positionInitialMargin": {
+        "value": 62683430,
+        "decimals": 6,
+        "ui": "62.683430"
+       },
+       "initialMargin": {
+        "value": 62683430,
+        "decimals": 6,
+        "ui": "62.683430"
+       },
+       "maintenanceMargin": {
+        "value": 31341715,
+        "decimals": 6,
+        "ui": "31.341715"
+       },
+       "backstopMargin": {
+        "value": 12536686,
+        "decimals": 6,
+        "ui": "12.536686"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 626834300,
+        "decimals": 6,
+        "ui": "626.834300"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": -13540,
+        "decimals": 6,
+        "ui": "-0.013540"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "JTO",
+       "positionSize": {
+        "value": 133,
+        "decimals": 1,
+        "ui": "13.3"
+       },
+       "virtualQuotePosition": {
+        "value": -6328140,
+        "decimals": 6,
+        "ui": "-6.328140"
+       },
+       "entryPrice": {
+        "value": 475800,
+        "decimals": 6,
+        "ui": "0.475800"
+       },
+       "unrealizedPnl": {
+        "value": -6650,
+        "decimals": 6,
+        "ui": "-0.006650"
+       },
+       "discountedUnrealizedPnl": {
+        "value": -6650,
+        "decimals": 6,
+        "ui": "-0.006650"
+       },
+       "positionInitialMargin": {
+        "value": 1264298,
+        "decimals": 6,
+        "ui": "1.264298"
+       },
+       "initialMargin": {
+        "value": 1264298,
+        "decimals": 6,
+        "ui": "1.264298"
+       },
+       "maintenanceMargin": {
+        "value": 632149,
+        "decimals": 6,
+        "ui": "0.632149"
+       },
+       "backstopMargin": {
+        "value": 252859,
+        "decimals": 6,
+        "ui": "0.252859"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": 6321490,
+        "decimals": 6,
+        "ui": "6.321490"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": -133,
+        "decimals": 6,
+        "ui": "-0.000133"
+       },
+       "liquidationPrice": {
+        "value": -1,
+        "decimals": 0,
+        "ui": "-1"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      },
+      {
+       "symbol": "HYPE",
+       "positionSize": {
+        "value": -653,
+        "decimals": 2,
+        "ui": "-6.53"
+       },
+       "virtualQuotePosition": {
+        "value": 513014747,
+        "decimals": 6,
+        "ui": "513.014747"
+       },
+       "entryPrice": {
+        "value": 78563000,
+        "decimals": 6,
+        "ui": "78.563000"
+       },
+       "unrealizedPnl": {
+        "value": -10038253,
+        "decimals": 6,
+        "ui": "-10.038253"
+       },
+       "discountedUnrealizedPnl": {
+        "value": -10038253,
+        "decimals": 6,
+        "ui": "-10.038253"
+       },
+       "positionInitialMargin": {
+        "value": 52305300,
+        "decimals": 6,
+        "ui": "52.305300"
+       },
+       "initialMargin": {
+        "value": 52305300,
+        "decimals": 6,
+        "ui": "52.305300"
+       },
+       "maintenanceMargin": {
+        "value": 26152650,
+        "decimals": 6,
+        "ui": "26.152650"
+       },
+       "backstopMargin": {
+        "value": 10461060,
+        "decimals": 6,
+        "ui": "10.461060"
+       },
+       "limitOrderMargin": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "positionValue": {
+        "value": -523053000,
+        "decimals": 6,
+        "ui": "-523.053000"
+       },
+       "unsettledFunding": {
+        "value": 0,
+        "decimals": 6,
+        "ui": "0.000000"
+       },
+       "accumulatedFunding": {
+        "value": 347004,
+        "decimals": 6,
+        "ui": "0.347004"
+       },
+       "liquidationPrice": {
+        "value": 32434180,
+        "decimals": 4,
+        "ui": "3243.4180"
+       },
+       "takeProfitPrice": null,
+       "stopLossPrice": null
+      }
+     ],
+     "limitOrders": {
+      "QCOM": [],
+      "JTO": [],
+      "SOL": [],
+      "SKHY": [],
+      "NEAR": [],
+      "LIT": [],
+      "COIN": [],
+      "MSTR": [],
+      "SNDK": [],
+      "ZEC": [],
+      "ARM": [],
+      "NBIS": [],
+      "BTC": [],
+      "FARTCOIN": [],
+      "CRCL": [],
+      "HOOD": [],
+      "SPCX": [],
+      "JUP": [],
+      "AMAT": [],
+      "CRWV": [],
+      "INTC": [],
+      "ETH": [],
+      "META": [],
+      "HYPE": [],
+      "MU": [],
+      "CBRS": []
+     },
+     "makerFeeOverrideMultiplier": 0.9,
+     "takerFeeOverrideMultiplier": 0.9,
+     "maxPositions": 128,
+     "lastDepositSlot": 451765524,
+     "isInActiveTraders": false,
+     "numMarketsWithSplines": 0
+    }
+   }
+  }
+ ]
+}

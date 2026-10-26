@@ -1,0 +1,45 @@
+{
+  "name": "walletscan",
+  "version": "0.1.0",
+  "description": "walletscan: a command line tool that finds the money a wallet forgot (rent, rewards, stuck bridges, airdrops, unredeemed bets) on EVM, Solana and more chains. Read-only, runs locally.",
+  "type": "module",
+  "bin": {
+    "walletscan": "cli.mjs"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "dependencies": {
+    "@noble/curves": "^1.9.1",
+    "@noble/hashes": "^1.8.0",
+    "@scure/base": "^1.2.6",
+    "viem": "^2.57.2"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "license": "MIT",
+  "author": "aaronjmars",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronjmars/walletscan.git"
+  },
+  "bugs": "https://github.com/aaronjmars/walletscan/issues",
+  "homepage": "https://github.com/aaronjmars/walletscan#readme",
+  "keywords": ["wallet", "crypto", "ethereum", "solana", "airdrop", "bridge", "unclaimed", "cli"],
+  "files": [
+    "*.mjs",
+    "airdrops/",
+    "chains/",
+    "data/",
+    "forgotten/",
+    "nonevm/",
+    "oldeth/",
+    "perps/",
+    "stuck/",
+    "unclaimed/",
+    "LICENSE",
+    "README.md",
+    "!**/.cache/"
+  ]
+}

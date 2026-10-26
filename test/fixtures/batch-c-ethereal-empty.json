@@ -1,0 +1,14 @@
+{
+ "venue": "ethereal",
+ "address": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
+ "captured": "2026-10-20T17:18:49.919Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.ethereal_subaccounts\",{\"address\":\"0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045\"}]",
+   "out": {
+    "data": [],
+    "hasNext": false
+   }
+  }
+ ]
+}

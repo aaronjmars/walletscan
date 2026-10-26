@@ -1,0 +1,15 @@
+{
+ "venue": "flashtrade",
+ "address": "CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq",
+ "captured": "2026-10-20T17:18:34.449Z",
+ "calls": [
+  {
+   "key": "get:[\"sol.flash_stakes\",{\"owner\":\"CuieVDEDtLo7FypA9SbLM9saXFdb1dsshEkyErMqkRQq\"}]",
+   "out": {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 1
+   }
+  }
+ ]
+}

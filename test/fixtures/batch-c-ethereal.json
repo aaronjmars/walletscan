@@ -1,0 +1,41 @@
+{
+ "venue": "ethereal",
+ "address": "0xccfb4b987f5d6e3783d08e34ab3ac6ea19d37aff",
+ "captured": "2026-10-20T17:19:19.072Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.ethereal_subaccounts\",{\"address\":\"0xccfb4b987f5d6e3783d08e34ab3ac6ea19d37aff\"}]",
+   "out": {
+    "data": [
+     {
+      "id": "45926054-784b-4ecf-a9cf-7dd0c44199f4",
+      "name": "0x7072696d61727900000000000000000000000000000000000000000000000000",
+      "account": "0xccfb4b987f5d6e3783d08e34ab3ac6ea19d37aff",
+      "createdBlockNumber": "5580507",
+      "registeredBlockNumber": "5580660",
+      "createdAt": 1787149735762
+     }
+    ],
+    "hasNext": false
+   }
+  },
+  {
+   "key": "get:[\"holdings.ethereal_balance\",{\"id\":\"45926054-784b-4ecf-a9cf-7dd0c44199f4\"}]",
+   "out": {
+    "data": [
+     {
+      "subaccountId": "45926054-784b-4ecf-a9cf-7dd0c44199f4",
+      "tokenAddress": "0xb6fc4b1bff391e5f6b4a3d2c7bda1fee3524692d",
+      "tokenId": "7cca1f9a-3403-4c00-a524-568c75d6984f",
+      "tokenName": "USD",
+      "amount": "10",
+      "available": "10",
+      "totalUsed": "0",
+      "updatedAt": 1787149735794
+     }
+    ],
+    "hasNext": false
+   }
+  }
+ ]
+}

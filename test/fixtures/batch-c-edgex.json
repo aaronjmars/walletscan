@@ -1,0 +1,21 @@
+{
+ "venue": "edgex",
+ "address": "0x488F6C0445af6bb2AfD902758f64BcCDc1C9CF7a",
+ "captured": "2026-10-20T17:19:26.691Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.edgex_exists\",{\"address\":\"0x488F6C0445af6bb2AfD902758f64BcCDc1C9CF7a\"}]",
+   "out": {
+    "code": "SUCCESS",
+    "data": {
+     "isUserExist": true
+    },
+    "errorParam": null,
+    "msg": null,
+    "requestTime": "1792516766587",
+    "responseTime": "1792516766592",
+    "traceId": ""
+   }
+  }
+ ]
+}

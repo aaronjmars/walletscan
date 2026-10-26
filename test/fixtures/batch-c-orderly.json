@@ -1,0 +1,42 @@
+{
+ "venue": "orderly",
+ "address": "0x745db3ccb3a01f908125d407d4c7a7378bcc79a8",
+ "captured": "2026-10-20T17:26:33.855Z",
+ "calls": [
+  {
+   "key": "get:[\"holdings.orderly_accounts\",{\"address\":\"0x745db3ccb3a01f908125d407d4c7a7378bcc79a8\"}]",
+   "out": {
+    "success": true,
+    "data": {
+     "rows": [
+      {
+       "user_id": 1467462,
+       "account_id": "0x1b11e3e7547c41416f7fc49321ac755f1488c0ef1bf0dc2bb19bacac1db604fc",
+       "broker_id": "raydium",
+       "chain_type": "EVM",
+       "user_type": "MAIN"
+      }
+     ]
+    },
+    "timestamp": 1792517193462
+   }
+  },
+  {
+   "key": "multicall:[\"orderly\",[{\"to\":\"0x6F7a338F2aA472838dEFD3283eB360d4Dff5D203\",\"functionName\":\"getUserTokenBalance\",\"args\":[\"0x1b11e3e7547c41416f7fc49321ac755f1488c0ef1bf0dc2bb19bacac1db604fc\",\"0xd6aca1be9729c13d677335161321649cccae6a591554772516700f986f942eaa\"]},{\"to\":\"0x6F7a338F2aA472838dEFD3283eB360d4Dff5D203\",\"functionName\":\"getUserTotalFrozenBalance\",\"args\":[\"0x1b11e3e7547c41416f7fc49321ac755f1488c0ef1bf0dc2bb19bacac1db604fc\",\"0xd6aca1be9729c13d677335161321649cccae6a591554772516700f986f942eaa\"]}]]",
+   "out": [
+    {
+     "$n": "1514290081"
+    },
+    {
+     "$n": "0"
+    }
+   ]
+  },
+  {
+   "key": "prices:[[\"coingecko:usd-coin\"]]",
+   "out": {
+    "coingecko:usd-coin": 0.9998314408723329
+   }
+  }
+ ]
+}

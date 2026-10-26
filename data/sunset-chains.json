@@ -1,0 +1,2783 @@
+[
+ {
+  "id": "heco",
+  "name": "HECO (Huobi ECO Chain)",
+  "chain_id": 128,
+  "native": "HT",
+  "status": "shut_down",
+  "shutdown": "2025-01-15",
+  "closes": "2025-01-10",
+  "exit": "None now: the HecoDAO deposit-for-HTX-points window for listed HRC20 assets closed on 2025-01-10 and the network retired on 2025-01-15; no path for native HT or other tokens was announced.",
+  "link": null,
+  "source": "https://web.archive.org/web/20241207133841/https://www.heco123.com/",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "Official HecoDAO page (heco123.com, now offline, archived copy used): only HRC20ETH/TUSD/LINK/USDC/UNI/SHIB/HBTC/USDT could be deposited to 0xC4eFCc9Ca713D76fb22f17cccF269Dd99aE353AA for points, paid in HTX on TRON in 12 batches from 2025-01-15. Public RPC http-mainnet.hecochain.com dead (checked 2026-10-15). Shutdown followed the Nov 2023 HECO bridge hack (~$87M)."
+ },
+ {
+  "id": "oktc",
+  "name": "OKTC (OKXChain)",
+  "chain_id": 66,
+  "native": "OKT",
+  "status": "shut_down",
+  "shutdown": "2026-01-01",
+  "closes": "2026-01-01",
+  "exit": "Officially none after 2026-01-01; the chain still makes empty blocks, so a last try is sending OKT over OKTC to an OKX deposit address and asking OKX support to credit it as OKB, with no promise it works.",
+  "link": "https://www.okx.com/en-us/help/x-layer-okt-okb",
+  "source": "https://www.okx.com/en-us/help/announcement-on-the-pp-upgrade-of-x-layer-and-optimisation-of-the-okb-gas",
+  "rpcs": [
+   "https://exchainrpc.okex.org",
+   "https://public.1rpc.io/oktc",
+   "https://oktc.drpc.org"
+  ],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "OKX announcement 2025-08-13: OKT trading stopped 2025-08-13, exchange OKT auto-converted to OKB from 2025-08-15 at the 2025-07-13..08-12 average price, OKTChain 'will remain operational until January 1, 2026', on-chain holders could deposit OKT to OKX (funding account) for conversion before then and should move other assets out. OKX gives no post-deadline recovery statement (FAQ page last modified 2026-08 still says the same). imToken notice (2025-12-29) says assets become non-transferable and unrecoverable after shutdown. Yet RPC exchainrpc.okex.org still returns new blocks with current timestamps on 2026-10-15 (block ~47.84M, 200 sampled blocks over the last ~200k blocks had 0 transactions). Treat as dead for funds; whether OKX still credits OKTC deposits is unverified. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 0 OKT at the latest block (2026-10-26 17:49 UTC)."
+ },
+ {
+  "id": "boba-bnb",
+  "name": "Boba BNB",
+  "chain_id": 56288,
+  "native": "BOBA",
+  "status": "shut_down",
+  "shutdown": "2025-10-15",
+  "closes": "2025-10-15",
+  "exit": "None announced now: users had to move funds out of BobaBNB before 2025-10-15; the RPCs are offline.",
+  "link": null,
+  "source": "https://x.com/bobanetwork/status/1967677949303284126",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": "bsc",
+  "note": "Boba Governance Foundation announcement 2025-09-15: BobaBNB shut down because BNB Chain changes made it incompatible with OP Stack. Reminder 2025-10-06 (x.com/bobanetwork/status/1975267188908191926). All public RPCs (bnb.boba.network, replica, Tenderly gateways) dead on 2026-10-15. No post-deadline recovery path found; possible manual help via Boba on X."
+ },
+ {
+  "id": "boba-avax",
+  "name": "Boba Avax (BobaAvax)",
+  "chain_id": 43288,
+  "native": "BOBA",
+  "status": "shut_down",
+  "shutdown": "2023-10-31",
+  "closes": "2023-10-31",
+  "exit": "None now: funds had to be bridged to Avalanche C-Chain before 2023-10-31.",
+  "link": null,
+  "source": "https://x.com/bobanetwork/status/1695109244100509941",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": "avalanche",
+  "note": "Boba Foundation announcement 2023-08-25; reminder 2023-10-30 (x.com/bobanetwork/status/1719029195391545834). Removed from ethereum-lists as sunset in Apr 2024. RPCs dead."
+ },
+ {
+  "id": "bobaopera",
+  "name": "Bobaopera (Boba on Fantom)",
+  "chain_id": 301,
+  "native": "BOBA",
+  "status": "shut_down",
+  "shutdown": null,
+  "closes": null,
+  "exit": "None now: the network was deprecated in 2023 and its RPCs are offline.",
+  "link": null,
+  "source": "https://messari.io/report/state-of-boba-network-q2-2023",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": "fantom",
+  "note": "No official dated announcement found. Messari Q1 2023 report still lists Fantom as live; Messari Q2 2023 says Boba's Fantom and Moonbeam deployments 'have since been deprecated', so shutdown was roughly Q2 2023 (likely around May 2023, same time as Bobabeam). ethereum-lists marks it deprecated (removed as sunset network 2024-04-10)."
+ },
+ {
+  "id": "bobabeam",
+  "name": "Bobabeam (Boba on Moonbeam)",
+  "chain_id": 1294,
+  "native": "BOBA",
+  "status": "shut_down",
+  "shutdown": "2023-05-25",
+  "closes": "2023-05-15",
+  "exit": "None now: the bridge back to Moonbeam closed on 2023-05-15, and Moonbeam itself shut down on 2026-07-31.",
+  "link": null,
+  "source": "https://messari.io/report/state-of-boba-network-q2-2023",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": "moonbeam",
+  "note": "Messari Q2 2023: 'Bobabeam wound down and was deprecated on May 25.' Moonbeam's own guide (moonbeam.network/news/how-to-bridge-funds-from-bobabeam-to-moonbeam, now 404) gave a 2023-05-15 bridge deadline and needed >=10 BOBA on Bobabeam for the fee. RPCs dead."
+ },
+ {
+  "id": "milkomeda-c1",
+  "name": "Milkomeda C1 (Cardano EVM sidechain)",
+  "chain_id": 2001,
+  "native": "mADA",
+  "status": "shut_down",
+  "shutdown": "2025-09-05",
+  "closes": "2025-09-01",
+  "exit": "None now: withdrawals back to Cardano had to be done before 2025-09-01 00:00 EST; remaining funds are frozen.",
+  "link": null,
+  "source": "https://x.com/Milkomeda_com/status/1914794030707122405",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "Cardano EVM sidechain. Announced 2025-04-22: 'Milkomeda will shut down in four months. Please withdraw your funds before September 1 (00:00 EST). Any funds left after that deadline will be frozen.' Final post 2025-09-05: 'We have officially shutdown with a few extra days' (x.com/Milkomeda_com/status/1964059609666134104). X bio: 'deprecated protocol... Shutdown since Sept 5th.' RPC dead."
+ },
+ {
+  "id": "milkomeda-a1",
+  "name": "Milkomeda A1 (Algorand EVM rollup)",
+  "chain_id": 2002,
+  "native": "mALGO",
+  "status": "shut_down",
+  "shutdown": "2024-05-31",
+  "closes": "2024-05-31",
+  "exit": "None now: users were told to move funds off A1 within six months of 2023-12-01, before validators stopped at the end of May 2024.",
+  "link": null,
+  "source": "https://x.com/Milkomeda_com/status/1730385309479702660",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "Algorand EVM rollup. Announced 2023-12-01: A1 not earning enough fees to pay validators; 'Milkomeda A1's validators will be shutting down at the end of May 2024.' Exact last block date not confirmed (2024-05-31 = 'end of May'). RPC dead."
+ },
+ {
+  "id": "canto",
+  "name": "Canto",
+  "chain_id": 7700,
+  "native": "CANTO",
+  "status": "shut_down",
+  "shutdown": null,
+  "closes": null,
+  "exit": "No known path: every public EVM and Cosmos endpoint is down and the team has posted nothing since September 2024.",
+  "link": null,
+  "source": "https://x.com/CantoPublic/status/1823107945841995869",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "No official shutdown announcement found. Last official X posts are Aug-Sep 2024 (chain halt after v8 'Callisto' upgrade on 2024-08-10/12, then 'operations restructuring', founder left). On 2026-10-15 all chain-registry RPC/REST/EVM endpoints fail and status.cosmos.directory reports canto unavailable with ~28k errors per endpoint. Koinly lists CANTO as deprecated (user post 2026-03-21); LayerZero ended Canto support 2026-07-31. Effectively dead, but date unknown; source URL is the last official status post, not a shutdown notice."
+ },
+ {
+  "id": "evmos",
+  "name": "Evmos",
+  "chain_id": 9001,
+  "native": "EVMOS",
+  "status": "shut_down",
+  "shutdown": "2026-05-18",
+  "closes": "2026-05-18",
+  "exit": "None now: the chain halted for good at block 37,318,000 (about 2026-05-18) and no claim or migration was offered.",
+  "link": null,
+  "source": "https://stakeflow.io/evmos/proposals/331",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "Governance proposal #331 'Evmos shutdown' (MsgSoftwareUpgrade halt at height 37318000, around May 18) submitted 2026-05-13, passed 99.98% yes. Core team had left about a year earlier; website, explorer and RPCs offline. Stride deprecated its Evmos host zone. No IBC exit deadline announced. Chain-registry status 'killed'."
+ },
+ {
+  "id": "godwoken",
+  "name": "Godwoken v1 (Nervos CKB EVM rollup)",
+  "chain_id": 71402,
+  "native": "pCKB",
+  "status": "shut_down",
+  "shutdown": "2026-01-01",
+  "closes": "2026-01-01",
+  "exit": "None now: the Godwoken Bridge exit to CKB closed at 2026-01-01 23:59:59 UTC and Nervos says leftover funds cannot be pulled out through the normal front end.",
+  "link": "https://bridge.godwoken.io",
+  "source": "https://talk.nervos.org/t/important-godwoken-freeze-date-extension-and-final-deadline-for-asset-withdrawal/9665",
+  "rpcs": [
+   "https://v1.mainnet.godwoken.io/rpc"
+  ],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "Nervos CKB layer 2. Sunset announced 2025-06-01 (talk.nervos.org/t/sunset-of-force-bridge-and-godwoken/8789), exit window first to 2025-10-31, then extended to a final freeze on 2026-01-01 23:59:59 UTC. Public RPC v1.mainnet.godwoken.io still answers but its last block is 2,851,258 at 2026-06-12 05:34 UTC, so blocks kept coming months after the freeze before stopping. Nervos said reports of remaining assets would be published on its Sunset Hub; Magickbase may help case by case (only promised for Force Bridge). Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 0 pCKB at the latest block (2026-06-12 05:34 UTC)."
+ },
+ {
+  "id": "nahmii-2",
+  "name": "Nahmii 2.0",
+  "chain_id": 5551,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-03-31",
+  "closes": "2026-03-31",
+  "exit": "None now: the migration deadline was 2026-03-31, and Nahmii 3.0, the migration target, shut down on 2026-06-30.",
+  "link": null,
+  "source": "https://x.com/Nahmii_io/status/2016070309410177251",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": "ethereum",
+  "note": "Nahmii post 2026-01-27: 'Nahmii 2.0 decommissioning: March 31, 2026'; reminder 2026-03-30 (x.com/Nahmii_io/status/2038481028407513420). The linked blog post (blog.nahmii.io / medium) has been deleted. A trusted bridge 2.0 -> 3.0 ran until April 2024. RPC l2.nahmii.io dead. Contact was info@nahmii.io."
+ },
+ {
+  "id": "nahmii-3",
+  "name": "Nahmii 3.0",
+  "chain_id": 4061,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-06-30",
+  "closes": "2026-06-30",
+  "exit": "None announced now: June 30, 2026 was the last day to withdraw; maybe email info@nahmii.io as a last resort.",
+  "link": null,
+  "source": "https://x.com/Nahmii_io/status/2061433438058742146",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": "ethereum",
+  "note": "Announced 2026-06-01 ('shut down Nahmii 3.0, our Layer-2 network, on June 30th, 2026'); last-chance reminder 2026-06-29 (x.com/Nahmii_io/status/2071654837306245155). Nahmii 3.0 is an Ethereum L2; whether any forced withdrawal via its L1 contracts still works was not checked. RPC rpc.n3.nahmii.io dead."
+ },
+ {
+  "id": "sx-network-legacy",
+  "name": "SX Network (legacy Polygon Edge chain)",
+  "chain_id": 416,
+  "native": "SX",
+  "status": "shut_down",
+  "shutdown": null,
+  "closes": null,
+  "exit": "No official exit for leftover balances found; SX Bet and the SX token moved to SX Rollup (chain 4162), so contact SX support.",
+  "link": null,
+  "source": "https://x.com/SX_Network/status/1850967167103009007",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "SX announced the move from Polygon Edge to an Arbitrum Orbit rollup on 2024-06-20 (medium post since deleted); Q3 2024 review (2024-10-02) says 'Completed migration to SX rollup'; 2024-10-28 'SX Network has made the move to SX Rollup'. So 416 stopped around Sep-Oct 2024, exact date unknown. RPC rpc.sx.technology returns Cloudflare 1016 (origin gone). SX Rollup 4162 is live: api.sx.bet metadata reports chainId 4162 (its listed public RPC rpc.sx-rollup.gelato.digital did not answer from here). Whether old 416 balances were carried into 4162 at genesis was not confirmed."
+ },
+ {
+  "id": "loot-chain",
+  "name": "Loot Chain",
+  "chain_id": 5151706,
+  "native": "AGLD",
+  "status": "shut_down",
+  "shutdown": null,
+  "closes": null,
+  "exit": "No official exit for Loot Chain balances found; AGLD activity moved to Adventure Layer and AGLD on Ethereum.",
+  "link": null,
+  "source": "https://x.com/AdventureLayer/status/1831122945739305319",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": "ethereum",
+  "note": "AGIP-8 (proposed 2024-09-04, passed Sept 2024) replaced Loot Chain with Adventure Layer (Arbitrum Orbit + Stylus); Adventure Layer mainnet launched May 2025. No dated Loot Chain shutdown or bridge-out deadline found. RPC rpc.lootchain.com returns Cloudflare 1016 (origin gone); not in ethereum-lists. Shutdown date unknown."
+ },
+ {
+  "id": "fantom-opera",
+  "name": "Fantom Opera",
+  "chain_id": 250,
+  "native": "FTM",
+  "status": "closing",
+  "shutdown": null,
+  "closes": null,
+  "exit": "Use the Sonic upgrade portal to bridge native FTM on Opera to S on Sonic; Sonic Labs says Opera and the funded bridge stay up until at least the end of 2026.",
+  "link": "https://my.soniclabs.com/upgrade",
+  "source": "https://www.soniclabs.com/blog/sonics-successful-network-migration-what-this-means-for-fantom-opera/",
+  "rpcs": [
+   "https://fantom.drpc.org",
+   "https://rpcapi.fantom.network",
+   "https://rpc.fantom.network",
+   "https://rpc2.fantom.network",
+   "https://rpc3.fantom.network",
+   "https://public.1rpc.io/ftm",
+   "https://fantom.api.onfinality.io/public",
+   "https://api.zan.top/ftm-mainnet",
+   "https://fantom.api.pocket.network"
+  ],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "Shutdown announced for 2026-06-30, then postponed: Opera stays up through at least 2026-12-31. 2026-04-07 official notice: Opera to cease operation 2026-06-30 17:00 GMT, after which FTM -> S migration would be impossible (ERC-20 FTM -> S route and Sonic Gateway unaffected). Reversed 2026-06-23 ('The First 1%', soniclabs.com/blog/the-first-1 and x.com/SonicLabs/status/2069527299796668461): 'Fantom Opera is not shutting down at the end of the month. It stays live through at least the end of the year, and the bridge stays funded.' No newer date found. Opera RPC (rpcapi.fantom.network) live on 2026-10-15. Fantom Opera testnet retired 2026-05-01. Flag as closing with likely end on or after 2026-12-31. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 3.12418 FTM at the latest block (2026-10-26 17:49 UTC)."
+ },
+ {
+  "id": "moonbeam",
+  "name": "Moonbeam",
+  "chain_id": 1284,
+  "native": "GLMR",
+  "status": "shut_down",
+  "shutdown": "2026-07-31",
+  "closes": "2026-09-30",
+  "exit": "None now: the GLMR-to-Base migration bridge closed 2026-07-31 and the emailed late-claim window (helpdesk@moonbeam.foundation) ended 2026-09-30.",
+  "link": "https://migrate.portal.moonbeam.network/migrator",
+  "source": "https://x.com/MoonbeamNetwork/status/2073046469741781197",
+  "rpcs": [
+   "https://moonbeam.api.onfinality.io/public",
+   "https://moonbeam.drpc.org",
+   "https://public.1rpc.io/glmr",
+   "https://moonbeam.api.pocket.network"
+  ],
+  "explorer": "https://moonbeam.subscan.io",
+  "explorer_kind": "subscan",
+  "l1_bridges": [],
+  "parent": null,
+  "note": "Polkadot parachain. Announced 2026-07-03: GLMR migrates 1:1 to a Base ERC-20, bridge deadline 2026-07-31; CEX balances migrated by exchanges. 2026-08-02: public window closed 2026-07-31 23:59 UTC, 60 days of late claims by email; 2026-09-29/30: final day for late claims, no more extensions planned. Only GLMR was migrated; other tokens on Moonbeam (Wormhole, Moonwell etc.) had to be bridged out before 2026-07-31. RPC rpc.api.moonbeam.network dead. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 5.42978 GLMR at the latest block (2026-08-10 11:36 UTC)."
+ },
+ {
+  "id": "moonriver",
+  "name": "Moonriver",
+  "chain_id": 1285,
+  "native": "MOVR",
+  "status": "shut_down",
+  "shutdown": "2026-07-31",
+  "closes": "2026-09-30",
+  "exit": "None now: the MOVR migration bridge closed 2026-07-31 and the emailed late-claim window ended 2026-09-30.",
+  "link": null,
+  "source": "https://x.com/MoonriverNW/status/2083852988758499816",
+  "rpcs": [
+   "https://moonriver.api.onfinality.io/public",
+   "https://moonriver.drpc.org",
+   "https://moonriver.api.pocket.network"
+  ],
+  "explorer": "https://moonriver.subscan.io",
+  "explorer_kind": "subscan",
+  "l1_bridges": [],
+  "parent": null,
+  "note": "Kusama parachain. Moonriver sunset alongside Moonbeam (decided separately, per Moonwell); MOVR migrated to Base. 2026-08-02 post: public window closed 2026-07-31 23:59 UTC, late claims via helpdesk@moonbeam.foundation for 60 days; 2026-09-29 post: late claims end 2026-09-30. RPC rpc.api.moonriver.moonbeam.network dead. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 0 MOVR at the latest block (2026-08-10 08:27 UTC)."
+ },
+ {
+  "id": "bouncebit",
+  "name": "BounceBit (EVM L1)",
+  "chain_id": 6001,
+  "native": "BB",
+  "status": "shut_down",
+  "shutdown": "2026-08-20",
+  "closes": null,
+  "exit": "BB balances at snapshot block 20,697,260 were airdropped 1:1 as BEP-20 BB on BNB Chain to the same address; balances under 10 BB can be claimed at portal.bouncebit.io.",
+  "link": "https://portal.bouncebit.io",
+  "source": "https://x.com/bouncebit/status/2090785561800061430",
+  "rpcs": [],
+  "explorer": "https://explorer.bouncebit.io",
+  "explorer_kind": "blockscout",
+  "l1_bridges": [],
+  "parent": null,
+  "note": "Chain halted 2026-08-20 02:36 UTC at block 20,702,857 after an exploit minted/moved 286.5M BB; BounceBit said it will not restart the network (it cited Evmos' end as a reason). Migration done 2026-09-03 (x.com/bouncebit/status/2095392503654391984); new BB on BSC 0xe0620aBeA429A66Ba69d9a0cdE9aB93dc15bB9c4. Unclear whether non-BB assets on the chain (e.g. BBTC, BBUSD) got any path. Details from cryptobriefing.com/bouncebit-l1-shutdown-286m-bb-exploit plus BounceBit posts. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): not read (no RPC answered on 2026-10-26)."
+ },
+ {
+  "id": "dogechain",
+  "name": "Dogechain",
+  "chain_id": 2000,
+  "native": "DOGE",
+  "status": "shut_down",
+  "shutdown": "2026-08-08",
+  "closes": "2026-08-08",
+  "exit": "No confirmed path after the deadline; about 2.08M DOGE still shown on chain.",
+  "link": null,
+  "source": "https://cryptobriefing.com/dogechain-shutdown-august-withdraw-assets/",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "EVM sidechain, not an L2. Deadline 2026-08-08 12:00 UTC; CryptoSlate saw blocks still produced after it."
+ },
+ {
+  "id": "botanix",
+  "name": "Botanix",
+  "chain_id": 3637,
+  "native": "BTC",
+  "status": "shut_down",
+  "shutdown": "2026-07-09",
+  "closes": "2026-07-15",
+  "exit": "Federation swept remaining BTC after the deadline; recovery is a manual process with no guarantee; other assets unrecoverable.",
+  "link": null,
+  "source": "https://www.theblock.co/post/404216/bitcoin-layer-2-botanix-to-wind-down-network-urges-users-to-withdraw-assets",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "Bitcoin EVM L2 (Spiderchain), not an Ethereum rollup. Deadline July 9, reportedly extended to July 15 (unofficial X mirrors only)."
+ },
+ {
+  "id": "over-protocol",
+  "name": "Over Protocol",
+  "chain_id": 54176,
+  "native": "OVER",
+  "status": "shut_down",
+  "shutdown": "2026-04-28",
+  "closes": null,
+  "exit": "None: the Over Foundation shut down all RPCs, explorers, wallets and APIs and said it would not restore them; the chain only lives on if independent validators keep it running.",
+  "link": null,
+  "source": "https://www.techflowpost.com/en-US/newsletter/121148",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "Ethereum-like L1. Only secondary coverage of the 2026-04-28 Over Foundation notice was found; public RPCs dead on 2026-10-15."
+ },
+ {
+  "id": "polygon-zkevm",
+  "name": "Polygon zkEVM",
+  "chain_id": 1101,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-07-03",
+  "closes": "2027-12-31",
+  "exit": "Claim wallet (EOA) balances on Ethereum through the Polygon zkEVM claims site; funds held in contracts (DeFi, multisigs, bridges) are not covered.",
+  "link": "https://zkevm-claims.polygon.technology",
+  "source": "https://support.polygon.technology/support/solutions/articles/82000927750-recovering-funds-from-polygon-zkevm-the-claims-interface",
+  "rpcs": [
+   "https://zkevm-rpc.com",
+   "https://polygon-zkevm.drpc.org",
+   "https://poly-zkevm.api.pocket.network"
+  ],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x2a3DD3EB832aF982ec71669E178424b10Dca2EDe",
+    "what": "Polygon Agglayer unified bridge (shared by all Polygon CDK chains; deposit calldata carries the destination network id)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Polygon product page says sunset July 1, support article says July 3; last block seen on zkevm-rpc.com is 2026-07-03 15:55 UTC. Agglayer bridge no longer processes withdrawals. Unclaimed funds treated as abandoned after 2027-12-31. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 0.0204783 ETH at the latest block (2026-07-03 15:55 UTC)."
+ },
+ {
+  "id": "silicon",
+  "name": "Silicon",
+  "chain_id": 2355,
+  "native": "ETH",
+  "status": "closing",
+  "shutdown": "2026-12-31",
+  "closes": "2026-12-31",
+  "exit": "Withdraw to Ethereum through the Silicon bridge, then press Finalize to claim on Ethereum, before 2026-12-31 12:00 KST (03:00 UTC); deposits stopped 2026-09-02.",
+  "link": "https://bridge.silicon.network",
+  "source": "https://docs.silicon.network/important-service-termination",
+  "rpcs": [
+   "https://rpc.silicon.network",
+   "https://silicon-mainnet.nodeinfra.com"
+  ],
+  "explorer": "https://scope.silicon.network",
+  "explorer_kind": "other",
+  "l1_bridges": [
+   {
+    "address": "0x2a3DD3EB832aF982ec71669E178424b10Dca2EDe",
+    "what": "Agglayer unified bridge (ETH + ERC20 escrow, shared by all Agglayer chains: count only BridgeEvent with destinationNetwork 10)"
+   },
+   {
+    "address": "0x419dcD0f72ebAFd3524b65a97ac96699C7fBebdB",
+    "what": "Silicon rollup contract (rollupID 10 in RollupManager)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Polygon CDK chain tied to Korbit, Agglayer network id 10. Official notice: docs.silicon.network/important-service-termination (deposits off 2026-09-02, withdrawals until 2026-12-31 12:00 KST, then explorer and network off; inquiries go to Ozys). About $9.75M still on chain. Tokens issued natively on Silicon cannot bridge; exits already sent to Ethereum and not claimed are bridge.agglayer findings. Exits list: bridge-service.silicon.network/bridges/{address}; claimed check isClaimed(deposit_cnt, 10) on the unified bridge. Test wallet 0xb7c6fd0521a85a71f362aec8d9522ededec6fb92: 0.031 ETH exit (deposit 2599) ready and not claimed on Ethereum."
+ },
+ {
+  "id": "ancient8",
+  "name": "Ancient8",
+  "chain_id": 888888888,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-08-05",
+  "closes": null,
+  "exit": "No official path announced; a forced withdrawal through the L1 OptimismPortal may work only for balances covered by the last posted state root.",
+  "link": "https://app.ancient8.gg/bridge",
+  "source": "https://l2beat.com/scaling/projects/ancient8",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x639F2AECE398Aa76b07e59eF6abe2cFe32bacb68",
+    "what": "OptimismPortal2 (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0x12d4E64E1B46d27A00fe392653A894C1dd36fb80",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No shutdown notice; L2BEAT shows no state updates since 2026-08-05 and RPC/explorer DNS are gone. Looks dead but no shutdown notice found. L2BEAT reports no state updates since 2026-08-05; rpc.ancient8.gg and scan.ancient8.gg do not resolve (2026-10-15). ancient8.gg and the bridge page still load with no notice. Not archived on L2BEAT yet."
+ },
+ {
+  "id": "swellchain",
+  "name": "Swellchain",
+  "chain_id": 1923,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-06-30",
+  "closes": "2026-06-23",
+  "exit": "Nothing supported now; Swell said funds left after June 23 are unrecoverable.",
+  "link": "https://superbridge.swellnetwork.io",
+  "source": "https://www.swellnetwork.io/post/sunsetting-swellchain-from-l2-to-faro",
+  "rpcs": [
+   "https://swell.drpc.org"
+  ],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x758E0EE66102816F5C3Ec9ECc1188860fbb87812",
+    "what": "OptimismPortal2 (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0x7aA4960908B13D104bf056B23E2C76B43c5AACc8",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Announced 2026-04-28, deposits off 2026-05-05, deadline moved from June 15 to June 23 (https://x.com/swellnetworkio/status/2067031459731570952), chain to run until June 30. L2BEAT archived 2026-08-05. Odd: swell.drpc.org still serves new empty blocks about 12h behind the clock; official RPCs dead. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 0 ETH at the latest block (2026-10-26 05:45 UTC)."
+ },
+ {
+  "id": "superposition",
+  "name": "Superposition",
+  "chain_id": 55244,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-09-08",
+  "closes": "2026-09-08",
+  "exit": "No path documented after the deadline; before it, users bridged to Arbitrum One (native bridge, Relay, Stargate for USDC).",
+  "link": "https://bridge.superposition.so",
+  "source": "https://fluidity.notion.site/The-next-month-of-Superposition-user-edition-35a58f1b62ca80be9be7d6c5999ef960",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x2EAf07A964c6601c4fAefd6D8969DF0B84f65e55",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0x62bEd4b862254789825Cd6F2352aa2b76B16145e",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   },
+   {
+    "address": "0x9FE42A08751E8566A0918807bF2870594bf22806",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   },
+   {
+    "address": "0xEca0fEB4aA6112a3923823559e7197294Bc49CC7",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   }
+  ],
+  "parent": "arbitrum",
+  "note": "Arbitrum Orbit L3 on Arbitrum One. Team moved to Arbitrum One (9lives). L2BEAT: rpc.superposition.so last resolved 2026-09-08 11:00 UTC. Official X announcement URL not found; source is the team Notion post."
+ },
+ {
+  "id": "superseed",
+  "name": "Superseed",
+  "chain_id": 5330,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-08-15",
+  "closes": "2026-08-15",
+  "exit": "SUPR balances will be claimable on Ethereum from a snapshot claim contract; other assets left after Aug 15 may be unrecoverable.",
+  "link": "https://bridge.superseed.xyz",
+  "source": "https://x.com/superseed/status/2079216129059283250",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x2c2150aa5c75A24fB93d4fD2F2a895D618054f07",
+    "what": "OptimismPortal2 (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0x8b0576E39F1233679109F9b40cFcC2a7E0901Ede",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Announced 2026-07-21, moving to Ethereum mainnet. SUPR claim contract URL/date not published in sources found. RPC mainnet.superseed.xyz returns 403."
+ },
+ {
+  "id": "b3",
+  "name": "B3",
+  "chain_id": 8333,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-09-26",
+  "closes": null,
+  "exit": "If the chain still finalizes, a standard OP Stack withdrawal to Base (7 day) would apply; no official guidance found.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/b3",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x3a314A6a3c1470Bf2854960D3Ce9D2435c7Ba794",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0x769547a723783FCA36BAaf1ECcf9dfdbF6d09F38",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "base",
+  "note": "No shutdown notice; L2BEAT archived 2026-09-26 and the official RPC/explorer return 404. Treat as likely dead. L2BEAT archived 2026-09-26 with no reason. Official RPC mainnet-rpc.b3.fun returns 404, explorer.b3.fun 404; thirdweb RPC still serves blocks about 3 days behind. B3 product moved to B3OS on Base (April 2026). No shutdown announcement found."
+ },
+ {
+  "id": "syndicate",
+  "name": "Syndicate Chain",
+  "chain_id": 510,
+  "native": "SYND",
+  "status": "shut_down",
+  "shutdown": "2026-06-30",
+  "closes": null,
+  "exit": "No exit guidance found; Orbit L1 withdrawal only if the last state was confirmed.",
+  "link": null,
+  "source": "https://theblock.co/post/402130/syndicate-labs-wind-down",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x3C8cF0ae6E89AC0796f29B3a58e7dEa1cD072277",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0x534Eb1F79C8df3aB1E507e408EeF4e99D53A1239",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   },
+   {
+    "address": "0x5EA55Fd41D42Eb307D281bdE78E4e7572A35ea13",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0x6CA109706c6EBe5379c45f20B3311441D50cb711",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Syndicate Labs wind-down announced 2026-05-21; no chain-specific notice. Date is the L2BEAT archive date. Syndicate Labs announced its wind-down 2026-05-21 (code to stay open source, seeking maintainers). L2BEAT archived chain 510 on 2026-06-30 without a notice. rpc.syndicate.io returns Cloudflare 530, explorer does not resolve. Likely dead; no chain-specific shutdown notice found."
+ },
+ {
+  "id": "blast",
+  "name": "Blast",
+  "chain_id": 81457,
+  "native": "ETH",
+  "status": "closing",
+  "shutdown": null,
+  "closes": "2026-10-26",
+  "exit": "Withdraw to Ethereum through the Blast bridge UI (24h delay) by Oct 26; after that funds stay recoverable by calling the Blast bridge contracts on Ethereum directly.",
+  "link": "https://blast.io/en/bridge",
+  "source": "https://x.com/blast/status/2106032805280891073",
+  "rpcs": [
+   "https://rpc.blast.io",
+   "https://blast-rpc.publicnode.com",
+   "https://blast.drpc.org",
+   "https://blast.api.pocket.network",
+   "https://rpc.swiftnodes.io/rpc/blast"
+  ],
+  "explorer": "https://blastscan.io",
+  "explorer_kind": "etherscan",
+  "l1_bridges": [
+   {
+    "address": "0x0Ec68c5B10F21EFFb74f2A5C61DFe6b08C0Db6Cb",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0x697402166Fbf2F22E970df8a6486Ef171dbfc524",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Announced 2026-10-02. UI deadline 2026-10-26; withdrawals paused about a week first while Blast unwinds Lido positions. Sequencer stop date not announced; chain live on 2026-10-15. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 0.00116291 ETH at the latest block (2026-10-26 17:49 UTC)."
+ },
+ {
+  "id": "abstract",
+  "name": "Abstract",
+  "chain_id": 2741,
+  "native": "ETH",
+  "status": "closing",
+  "shutdown": "2026-12-15",
+  "closes": "2026-12-15",
+  "exit": "Move funds via the Abstract Migration Hub or the native bridge (about 3h) before Dec 15; third-party bridges (Stargate, Relay, Jumper) also work.",
+  "link": "https://migrate.abs.xyz",
+  "source": "https://x.com/AbstractChain/status/2107554632675340420",
+  "rpcs": [
+   "https://api.mainnet.abs.xyz",
+   "https://abstract.drpc.org",
+   "https://abstract-mainnet.gateway.tatum.io"
+  ],
+  "explorer": "https://abscan.org",
+  "explorer_kind": "etherscan",
+  "l1_bridges": [
+   {
+    "address": "0x2EDc71E9991A962c7FE172212d1aA9E50480fBb9",
+    "what": "ZK stack chain diamond (this chain only; settlement contract)"
+   },
+   {
+    "address": "0x303a465B659cBB0ab36eE643eA362c509EEb5213",
+    "what": "ZK stack BridgeHub (shared by all ZK chains; deposit calldata carries the chain id)"
+   },
+   {
+    "address": "0x8829AD80E425C646DAB305381ff105169FeEcE56",
+    "what": "ZK stack L1AssetRouter (shared ERC20/ETH escrow for all ZK chains)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Announced 2026-10-06. Native bridge https://native-bridge.abs.xyz. Funds left after Dec 15 said to be inaccessible. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 0.000971603 ETH at the latest block (2026-10-26 17:49 UTC)."
+ },
+ {
+  "id": "sophon",
+  "name": "Sophon",
+  "chain_id": 50104,
+  "native": "SOPH",
+  "status": "closing",
+  "shutdown": null,
+  "closes": null,
+  "exit": "Withdraw to Ethereum through claim.sophon.com (canonical route; LayerZero disconnected).",
+  "link": "https://claim.sophon.com",
+  "source": "https://x.com/sophon/status/2070192257295335800",
+  "rpcs": [
+   "https://rpc.sophon.xyz"
+  ],
+  "explorer": "https://explorer.sophon.xyz",
+  "explorer_kind": "other",
+  "l1_bridges": [
+   {
+    "address": "0x05eDE6aD1f39B7A16C949d5C33a0658c9C7241e3",
+    "what": "ZK stack chain diamond (this chain only; settlement contract)"
+   },
+   {
+    "address": "0x303a465B659cBB0ab36eE643eA362c509EEb5213",
+    "what": "ZK stack BridgeHub (shared by all ZK chains; deposit calldata carries the chain id)"
+   },
+   {
+    "address": "0x8829AD80E425C646DAB305381ff105169FeEcE56",
+    "what": "ZK stack L1AssetRouter (shared ERC20/ETH escrow for all ZK chains)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Deposits disabled 2026-06-25. No hard shutdown date; reports say live at least through end of 2026 (L2BEAT: sunsetting late 2026). Upbit's own SOPH withdrawal cutoff is 2026-12-16 (exchange specific). SOPH migrated 1:1 to ERC20 on Ethereum. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 0 SOPH at the latest block (2026-10-26 17:37 UTC)."
+ },
+ {
+  "id": "cronos-zkevm",
+  "name": "Cronos zkEVM",
+  "chain_id": 388,
+  "native": "zkCRO",
+  "status": "closing",
+  "shutdown": "2027-06-03",
+  "closes": "2027-06-03",
+  "exit": "Withdraw through the official Cronos zkEVM bridge; deposits are already disabled.",
+  "link": "https://zkevm.cronos.org/bridge",
+  "source": "https://x.com/CronosNetwork/status/2062006553595785239",
+  "rpcs": [
+   "https://mainnet.zkevm.cronos.org",
+   "https://cronos-zkevm.drpc.org"
+  ],
+  "explorer": "https://explorer.zkevm.cronos.org",
+  "explorer_kind": "other",
+  "l1_bridges": [
+   {
+    "address": "0x7b2DA4e77BAE0e0d23c53C3BE6650497d0576CFc",
+    "what": "ZK stack chain diamond (this chain only; settlement contract)"
+   },
+   {
+    "address": "0x303a465B659cBB0ab36eE643eA362c509EEb5213",
+    "what": "ZK stack BridgeHub (shared by all ZK chains; deposit calldata carries the chain id)"
+   },
+   {
+    "address": "0x8829AD80E425C646DAB305381ff105169FeEcE56",
+    "what": "ZK stack L1AssetRouter (shared ERC20/ETH escrow for all ZK chains)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Announced 2026-06-03. One guide gives 03:00 UTC as the cutoff (unverified). zkCRO is liquid staked CRO (Veno), so exiting may mean unwinding that position. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 0 zkCRO at the latest block (2026-10-26 17:46 UTC)."
+ },
+ {
+  "id": "lisk",
+  "name": "Lisk",
+  "chain_id": 1135,
+  "native": "ETH",
+  "status": "closing",
+  "shutdown": "2026-10-31",
+  "closes": "2026-10-31",
+  "exit": "Bridge to Ethereum via bridge.lisk.com (at least 7 days, plus 3 days if unstaking LSK), so start by about Oct 21; nothing recoverable after Oct 31.",
+  "link": "https://bridge.lisk.com",
+  "source": "https://lisk.com/blog/posts/introducing-the-new-lisk",
+  "rpcs": [
+   "https://rpc.api.lisk.com",
+   "https://lisk.drpc.org",
+   "https://lisk-mainnet.gateway.tatum.io"
+  ],
+  "explorer": "https://blockscout.lisk.com",
+  "explorer_kind": "blockscout",
+  "l1_bridges": [
+   {
+    "address": "0x2658723Bf70c7667De6B25F99fcce13A16D25d08",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0x26dB93F8b8b4f7016240af62F7730979d353f9A7",
+    "what": "OptimismPortal2 (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Announced 2026-08-25. FAQ: https://support.lisk.com/faq/lisk-chain-closure (covers LSK, ETH, stablecoins, DeFi positions). Unwrap WETH first. LSK token continues on Ethereum and Base. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 1e-7 ETH at the latest block (2026-10-26 17:49 UTC)."
+ },
+ {
+  "id": "gravity-alpha",
+  "name": "Gravity Alpha Mainnet",
+  "chain_id": 1625,
+  "native": "G",
+  "status": "closing",
+  "shutdown": "2026-11-01",
+  "closes": "2026-11-01",
+  "exit": "G, DAI, WBTC via bridge.gravity.xyz (fast withdraw about 10 min, canonical 7 days so start by Oct 25); USDC, USDT, WETH only via Stargate; unstake G first.",
+  "link": "https://bridge.gravity.xyz",
+  "source": "https://x.com/GravityChain/status/2098079560138977516",
+  "rpcs": [
+   "https://rpc.gravity.xyz"
+  ],
+  "explorer": "https://explorer.gravity.xyz",
+  "explorer_kind": "other",
+  "l1_bridges": [
+   {
+    "address": "0x7983403dDA368AA7d67145a9b81c5c517F364c42",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0x7AD2a94BefF3294a31894cFb5ba4206957a53c19",
+    "what": "Arbitrum Inbox (deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Announced 2026-07-22; Gravity moves to its own L1 (chain 127001). Galxe guide: https://help.galxe.com/en/articles/16305612-how-to-bridge-g-tokens-from-gravity-alpha-to-gravity-l1-mainnet Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 300.307 G at the latest block (2026-10-26 17:45 UTC)."
+ },
+ {
+  "id": "degen",
+  "name": "Degen Chain",
+  "chain_id": 666666666,
+  "native": "DEGEN",
+  "status": "shut_down",
+  "shutdown": "2026-08-31",
+  "closes": "2026-08-31",
+  "exit": "No path documented after Aug 31; the route was the Degen L3 bridge to Base.",
+  "link": "https://bridge.degen.tips",
+  "source": "https://x.com/degentokenbase/status/2086430796412576030",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x21A1e2BFC61F30F2E81E0b08cd37c1FC7ef776E7",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0xEfEf4558802bF373Ce3307189C79a9cAb0a4Cb9C",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   }
+  ],
+  "parent": "base",
+  "note": "Alchemy deprecation notice confirms Aug 31: https://www.alchemy.com/docs/reference/degen-deprecation-notice. L2BEAT archived 2026-09-02; rpc.degen.tips returns 530. Bridge page still loads."
+ },
+ {
+  "id": "derive",
+  "name": "Derive (Lyra Chain)",
+  "chain_id": 957,
+  "native": "ETH",
+  "status": "closing",
+  "shutdown": null,
+  "closes": null,
+  "exit": "Derive protocol balances were snapshotted into Derive V3 on Ethereum on 2026-10-06; withdraw from Derive V3 at derive.xyz. Plain wallet balances on chain 957 are not clearly covered.",
+  "link": "https://derive.xyz",
+  "source": "https://x.com/DeriveXYZ/status/2108069298673758548",
+  "rpcs": [
+   "https://rpc.lyra.finance"
+  ],
+  "explorer": "https://explorer.derive.xyz",
+  "explorer_kind": "blockscout",
+  "l1_bridges": [
+   {
+    "address": "0x61E44dC0dae6888B5a301887732217d5725B0bFf",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0x85eA9c11cf3D4786027F7FD08F4406b15777e5f8",
+    "what": "OptimismPortal2 (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Proposal: https://forums.derive.xyz/t/dip-launch-derive-v3/322 (chain to be wound down promptly after migration; no date). Chain still producing blocks on 2026-10-15. Pending rewards claimable on Optimism until 2027-02-01. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 0 ETH at the latest block (2026-10-26 17:49 UTC)."
+ },
+ {
+  "id": "arena-z",
+  "name": "Arena-Z",
+  "chain_id": 7897,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-05-31",
+  "closes": "2026-05-31",
+  "exit": "Nothing known now.",
+  "link": null,
+  "source": "https://medium.com/lokverse/sunset-procedures-lok-universe-arena-z-network-74e68a587fb9",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x564Eb0CeFCcA86160649a8986C419693c82F3678",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0xB20f99b598E8d888d1887715439851BC68806b22",
+    "what": "OptimismPortal2 (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "LOK team post (2026-04-20) announced closure of League of Kingdoms and Arena-Z, end date May 31 2026 (read via search summary; page blocks fetch). L2BEAT archived 2026-05-07; rpc.arena-z.gg does not resolve. Binance delisted A2Z 2026-04-01."
+ },
+ {
+  "id": "form",
+  "name": "Form Network",
+  "chain_id": 478,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-12-12",
+  "closes": null,
+  "exit": "Nothing known; no announcement or exit guidance found.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/form",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x4E259Ee5F4136408908160dD32295A5031Fa426F",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0xdc20aA63D3DE59574E065957190D8f24e0F7B8Ba",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No official shutdown notice found. L2BEAT tracked it until 2025-12-12 and archived 2025-12-15; rpc.form.network and explorer.form.network do not resolve. FORM token appears rebranded as Four. Date is approximate."
+ },
+ {
+  "id": "polynomial",
+  "name": "Polynomial Chain",
+  "chain_id": 8008,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-03-03",
+  "closes": "2026-02-24",
+  "exit": "Nothing; users were told to withdraw before Feb 24; no claim path announced.",
+  "link": null,
+  "source": "https://mpost.io/polynomial-shuts-down-defi-derivatives-platform-cancels-token-launch-and-initiates-withdrawal-deadline-for-users/",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x034cbb620d1e0e4C2E29845229bEAc57083b04eC",
+    "what": "OptimismPortal2 (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0x3Be64BF2b9C2dE637067C7AAb6baE5EDf9fEBA55",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Markets stopped 2026-02-13, forced closes from Feb 18, liquidity layer off Feb 24, full chain shutdown Mar 3. L2BEAT archived 2026-04-15. Official X post URL not found."
+ },
+ {
+  "id": "automata",
+  "name": "Automata",
+  "chain_id": 65536,
+  "native": "ATA",
+  "status": "shut_down",
+  "shutdown": "2026-07-13",
+  "closes": null,
+  "exit": "No action needed: remaining L2 balances were sent to the same addresses on Ethereum in one transaction.",
+  "link": "https://etherscan.io/tx/0xfd9f3fc489e3aa26adfbeb35a37a997d880c8265a787b1cd222a2627a0c71d4c",
+  "source": "https://docs.ata.network/attestation-l2",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0xD52ba64CBE1e3B44167f810622fBef36bE24d95c",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0xE639919b92AB6DD238aEACc6F2A8d6e355D17bd5",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Guardian paused the L1 contracts 2026-07-13 (L2BEAT); L2BEAT archived 2026-07-16. Docs give no date. Scanner hint: check the same address on Ethereum."
+ },
+ {
+  "id": "corn",
+  "name": "Corn",
+  "chain_id": 21000000,
+  "native": "BTCN",
+  "status": "shut_down",
+  "shutdown": "2026-06-30",
+  "closes": "2026-06-30",
+  "exit": "None now: Corn said assets still on Corn when the sequencer went offline on 2026-06-30 are no longer retrievable (no bridging, claiming or contract calls after that date); popCORN and airdrop locker claims closed 2026-06-26 and unclaimed CORN went back to the Foundation Treasury.",
+  "link": "https://t.me/usecorn/107",
+  "source": "https://t.me/usecorn/107",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x37693F11f3D724E55D0B03D5F328D8202C913243",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0x7E31f112d340a4D0cB0e4bD82f2853089d1bF10C",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Official notice: Corn Telegram 2026-05-14 (https://t.me/usecorn/107): the network ceases operations on 2026-06-30, users had to move assets, deposits and open positions off before then (mid-June urged). Follow-up 2026-06-18 (https://t.me/usecorn/108): the app moved to https://legacy.usecorn.com, last day to claim popCORN and matured airdrop locks was 2026-06-26, then unclaimed CORN was clawed back. L2BEAT archived Corn 2026-06-30 (https://l2beat.com/scaling/projects/corn); help.usecorn.com no longer resolves; mainnet.corn-rpc.com has a bad TLS cert, other RPCs dead."
+ },
+ {
+  "id": "ternoa",
+  "name": "Ternoa zkEVM",
+  "chain_id": 752025,
+  "native": "CAPS",
+  "status": "shut_down",
+  "shutdown": "2026-07-12",
+  "closes": null,
+  "exit": "No exit guidance found.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/ternoa",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x7fF0B5fF6Eb8B789456639AC2A02487c338c1789",
+    "what": "Polygon CDK rollup contract"
+   },
+   {
+    "address": "0x2a3DD3EB832aF982ec71669E178424b10Dca2EDe",
+    "what": "Polygon Agglayer unified bridge (shared by all Polygon CDK chains; deposit calldata carries the destination network id)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No shutdown notice; date is the L2BEAT archive date, RPC and explorer dead. No announcement found. L2BEAT archived 2026-07-12; RPC times out, explorer does not resolve; ternoa.network now brands itself Builders of Cifer and DCA Yield. Polygon CDK validium on Agglayer."
+ },
+ {
+  "id": "mint",
+  "name": "Mint",
+  "chain_id": 185,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-04-17",
+  "closes": "2026-10-20",
+  "exit": "Request withdrawal of ETH, WBTC, USDC, USDT at mintchain.io/withdraw; processed in weekly batches, up to about 10 days, so it may already be too late to land before Oct 20.",
+  "link": "https://www.mintchain.io/withdraw",
+  "source": "https://mintchain.io/withdraw",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x2b3F201543adF73160bA42E1a5b7750024F30420",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0x59625d1FE0Eeb8114a4d13c863978F39b3471781",
+    "what": "OptimismPortal2 (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Ceased operations 2026-04-17, withdraw-only. Contact zk@mintchain.io. Unclear if Oct 20 is the request or arrival deadline. Assets left after are unrecoverable."
+ },
+ {
+  "id": "karak-k2",
+  "name": "Karak K2",
+  "chain_id": 2410,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-09-15",
+  "closes": "2027-09-12",
+  "exit": "Claim on Ethereum with a Merkle proof: sign in with the wallet on k2bridge.karak.network (it gives the proof), then claimETH on the K2 OptimismPortal 0xeeCE9CD7Abd1CC84d9dfc7493e7e68079E47eA73 for ETH and claimTokens on the L1StandardBridge 0xBA61F25dd9f2d5f02D01B1C2c1c5F0B14c4B48A3 for USDC and rswETH. Both Merkle roots are set and claims are open; the tree itself is not published.",
+  "link": "https://k2bridge.karak.network",
+  "source": "https://etherscan.io/tx/0x59515cbe7245d0856751523549d7b4524beb5f31930b2bc7bc3016b8071e65fd",
+  "rpcs": [
+   "https://rpc.karak.network"
+  ],
+  "explorer": "https://explorer.karak.network",
+  "explorer_kind": "blockscout",
+  "l1_bridges": [
+   {
+    "address": "0xBA61F25dd9f2d5f02D01B1C2c1c5F0B14c4B48A3",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0xeeCE9CD7Abd1CC84d9dfc7493e7e68079E47eA73",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Per L2BEAT: portal and bridge upgraded 2026-09-15 to disable deposits and normal withdrawals; Merkle claims since (verified portal and bridge sources: claimETH / claimTokens, RECOVERY_TIMESTAMP 1820707200 = 2027-09-12, after which the guardian can pause claims and recover the rest; 256 claims paid by 2026-10-21). Only public notice was a Nov 2025 Discord message (https://farcaster.xyz/pranjal/0x030bd1ba) asking to bridge out by 2025-12-31. Last block 2026-09-17. Karak rebranded to OpenGDP. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 0 ETH at the latest block (2026-09-17 03:53 UTC)."
+ },
+ {
+  "id": "kroma",
+  "name": "Kroma",
+  "chain_id": 255,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-06-30",
+  "closes": null,
+  "exit": "Security Council emergency upgrade lets a multisig sweep funds into a snapshot-based claim contract; no live claim site confirmed.",
+  "link": "https://www.tally.xyz/gov/kroma-security-council-l1/proposal/65062828528938632533434599886654403612919061068562681503121575285695351742174",
+  "source": "https://x.com/kroma_network/status/1936692354603520198",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x31F648572b67e60Ec6eb8E197E1848CC5F5558de",
+    "what": "KromaPortal (ETH deposits / withdrawals)"
+   },
+   {
+    "address": "0x827962404D7104202C5aaa6b929115C8211d9596",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Some reports say June 26 2025. ETH claim was planned on zkCandy mainnet (itself now dead); ERC20 bridge claims planned on Ethereum (Tally proposals Sep 2025 and Mar 2026). L2BEAT archived 2025-07-09."
+ },
+ {
+  "id": "redstone",
+  "name": "Redstone",
+  "chain_id": 690,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-05-15",
+  "closes": null,
+  "exit": "Only the L1 withdrawal contracts remain, for plain wallet (EOA) balances; funds in contracts like Uniswap pools are lost.",
+  "link": null,
+  "source": "https://x.com/latticexyz/status/2044103611072835744",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0xc473ca7E02af24c129c2eEf51F2aDf0411c1Df69",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0xC7bCb0e8839a28A1cFadd1CF716de9016CdA51ae",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Announced 2026-04-15, shutdown 2026-05-15 23:59 UTC; last batch 2026-05-21 (L2BEAT). No official withdrawal guide found; L1 contracts below are from L2BEAT. Lattice wound down. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): not read (no RPC answered on 2026-10-26)."
+ },
+ {
+  "id": "zero-network",
+  "name": "ZERO Network",
+  "chain_id": 543210,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-07-31",
+  "closes": "2026-07-31",
+  "exit": "No post-deadline path documented; the canonical bridge to Ethereum (claim after 24h) was the route.",
+  "link": "https://bridge.zero.network/bridge",
+  "source": "https://x.com/zerodotnetwork/status/2057529610628128917",
+  "rpcs": [],
+  "explorer": "https://explorer.zero.network",
+  "explorer_kind": "blockscout",
+  "l1_bridges": [
+   {
+    "address": "0xdbD849acC6bA61F461CB8A41BBaeE2D673CA02d9",
+    "what": "ZK stack chain diamond (this chain only; settlement contract)"
+   },
+   {
+    "address": "0x303a465B659cBB0ab36eE643eA362c509EEb5213",
+    "what": "ZK stack BridgeHub (shared by all ZK chains; deposit calldata carries the chain id)"
+   },
+   {
+    "address": "0x8829AD80E425C646DAB305381ff105169FeEcE56",
+    "what": "ZK stack L1AssetRouter (shared ERC20/ETH escrow for all ZK chains)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Zerion's chain. Guide: https://help.zerion.io/en/articles/15214238 . L2BEAT: last L2 block 2026-08-12. Claim page https://bridge.zero.network/receive-methods may still finish already started withdrawals."
+ },
+ {
+  "id": "zkcandy",
+  "name": "zkCandy",
+  "chain_id": 320,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-08-25",
+  "closes": null,
+  "exit": "No exit guidance found.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/zkcandy",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0xF2704433d11842d15aa76BBF0E00407267a99C92",
+    "what": "ZK stack chain diamond (this chain only; settlement contract)"
+   },
+   {
+    "address": "0x303a465B659cBB0ab36eE643eA362c509EEb5213",
+    "what": "ZK stack BridgeHub (shared by all ZK chains; deposit calldata carries the chain id)"
+   },
+   {
+    "address": "0x8829AD80E425C646DAB305381ff105169FeEcE56",
+    "what": "ZK stack L1AssetRouter (shared ERC20/ETH escrow for all ZK chains)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No shutdown notice; date is the L2BEAT archive date, RPC dead. No announcement found. L2BEAT archived 2026-08-25; rpc.zkcandy.io times out, explorer returns 403. ZK Stack validium."
+ },
+ {
+  "id": "treasure",
+  "name": "Treasure",
+  "chain_id": 61166,
+  "native": "MAGIC",
+  "status": "shut_down",
+  "shutdown": "2025-05-30",
+  "closes": null,
+  "exit": "Nothing documented after the deadline; MAGIC and ETH were bridged to Ethereum before May 30 2025.",
+  "link": null,
+  "source": "https://snapshot.box/#/s:treasuregaming.eth/proposal/0x733799d525cec0794f157cbace52851b28809706eb87d51472dac8584949d791",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x5e64D248Eab336AB3Fd0BeC0CFe31D4AAE32E879",
+    "what": "ZK stack chain diamond (this chain only; settlement contract)"
+   },
+   {
+    "address": "0x303a465B659cBB0ab36eE643eA362c509EEb5213",
+    "what": "ZK stack BridgeHub (shared by all ZK chains; deposit calldata carries the chain id)"
+   },
+   {
+    "address": "0x8829AD80E425C646DAB305381ff105169FeEcE56",
+    "what": "ZK stack L1AssetRouter (shared ERC20/ETH escrow for all ZK chains)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "TIP-52 shutdown of the ZK Stack Treasure Chain. L2BEAT archived 2025-07-16. WARNING: L2BEAT says chain id 61166 is now used by Ethscriptions, so do not flag live 61166 balances as Treasure."
+ },
+ {
+  "id": "wonder",
+  "name": "Wonder",
+  "chain_id": 9637,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-11-18",
+  "closes": null,
+  "exit": "No exit guidance found.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/wonder",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0xC8C4cB5AF7c723c7EfD360898B47920679f92C92",
+    "what": "ZK stack chain diamond (this chain only; settlement contract)"
+   },
+   {
+    "address": "0x303a465B659cBB0ab36eE643eA362c509EEb5213",
+    "what": "ZK stack BridgeHub (shared by all ZK chains; deposit calldata carries the chain id)"
+   },
+   {
+    "address": "0x8829AD80E425C646DAB305381ff105169FeEcE56",
+    "what": "ZK stack L1AssetRouter (shared ERC20/ETH escrow for all ZK chains)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No shutdown notice; date is the L2BEAT archive date, RPC dead. Chain id not in chainid.network. ZK Stack validium by WonderFi. No shutdown announcement found. L2BEAT archived 2025-11-18 (tracked until 2026-02-18); rpc.mainnet.wonderchain.org does not answer. Robinhood finished buying WonderFi 2026-06-01."
+ },
+ {
+  "id": "lachain-classic",
+  "name": "LaChain (classic)",
+  "chain_id": 274,
+  "native": "LAC",
+  "status": "shut_down",
+  "shutdown": "2026-09-01",
+  "closes": null,
+  "exit": "No exit guidance found.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/lachain",
+  "rpcs": [
+   "https://rpc1.mainnet.lachain.network",
+   "https://rpc2.mainnet.lachain.network"
+  ],
+  "explorer": "https://explorer.lachain.network",
+  "explorer_kind": "other",
+  "l1_bridges": [],
+  "parent": null,
+  "note": "Old LaChain L1 (replaced by the ZK stack LaChain, 2904). No notice; RPC still answers but last block is 2026-09-01. RPCs rpc1/rpc2.mainnet.lachain.network still answer but the latest block is 2026-09-01 12:36 UTC (halted). Ripio moved LaChain to a ZK Stack L2 (chain 2904) in May 2025. No announcement found. Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): 0 LAC at the latest block (2026-09-01 12:36 UTC)."
+ },
+ {
+  "id": "lachain-zk",
+  "name": "LaChain ZK (Ripio)",
+  "chain_id": 2904,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-10-20",
+  "closes": null,
+  "exit": "No exit guidance found; bridge page still loads.",
+  "link": "https://bridge.zk.lachain.network",
+  "source": "https://l2beat.com/scaling/projects/lachain",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x742A28e22277945BBAAa34810393bf6e8512576C",
+    "what": "ZK stack chain diamond (this chain only; settlement contract)"
+   },
+   {
+    "address": "0x303a465B659cBB0ab36eE643eA362c509EEb5213",
+    "what": "ZK stack BridgeHub (shared by all ZK chains; deposit calldata carries the chain id)"
+   },
+   {
+    "address": "0x8829AD80E425C646DAB305381ff105169FeEcE56",
+    "what": "ZK stack L1AssetRouter (shared ERC20/ETH escrow for all ZK chains)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No shutdown notice; date is the L2BEAT archive date, RPC dead. Chain id not in chainid.network. Not in the original list (L2BEAT uses this id for LaChain). L2BEAT archived 2025-10-20; rpc1.zk.lachain.network did not answer on 2026-10-15; explorer page loads. No announcement found."
+ },
+ {
+  "id": "aleph-zero-evm",
+  "name": "Aleph Zero EVM",
+  "chain_id": 41455,
+  "native": "AZERO",
+  "status": "shut_down",
+  "shutdown": "2025-09-19",
+  "closes": "2025-08-31",
+  "exit": "Nothing official now: the withdrawal window (Across, Gelato bridge to Ethereum, Common bridge to the L1) closed on 2025-08-31; leftover funds need a ticket with the Aleph Zero team.",
+  "link": null,
+  "source": "https://alephzero.org/blog/sunset-of-the-aleph-zero-evm",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x41Ec9456AB918f2aBA81F38c03Eb0B93b78E84d9",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0x56D8EC76a421063e1907503aDd3794c395256AEb",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0xccaF21F002EAF230c9Fa810B34837a3739B70F7B",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   },
+   {
+    "address": "0xeBb17f398ed30d02F2e8733e7c1e5cf566e17812",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Announced 2025-07-08 with 2025-08-31 as the last day to move funds. Shutdown date is the L2BEAT archive date; exact sequencer stop day not published. Aleph Zero L1 dropped EVM plans."
+ },
+ {
+  "id": "astar-zkevm",
+  "name": "Astar zkEVM",
+  "chain_id": 3776,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-03-31",
+  "closes": "2025-03-31",
+  "exit": "Nothing possible: the Astar Portal bridge and all RPCs were disabled at 09:30 UTC on 2025-03-31; only a Discord support ticket remains.",
+  "link": null,
+  "source": "https://x.com/AstarNetwork/status/1906658995538194650",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x1E163594e13030244DCAf4cDfC2cd0ba3206DA80",
+    "what": "Polygon CDK rollup contract"
+   },
+   {
+    "address": "0x2a3DD3EB832aF982ec71669E178424b10Dca2EDe",
+    "what": "Polygon Agglayer unified bridge (shared by all Polygon CDK chains; deposit calldata carries the destination network id)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Sunset plan: https://forum.astar.network/t/astar-zkevm-sunsetting-migration-plan/7780 . Eligible NFTs were migrated to Soneium automatically."
+ },
+ {
+  "id": "blessnet",
+  "name": "Blessnet",
+  "chain_id": 45513,
+  "native": "BLESS",
+  "status": "shut_down",
+  "shutdown": null,
+  "closes": null,
+  "exit": "No announced exit; the Orbit L3 RPC is dead, so funds can only come out if the operator brings it back.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/blessnet",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x46B6462301182B393ac5f014779687d3B6d4FB57",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0xC1bf6E0Ac80e92A331c4D448652C4824D4195459",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   }
+  ],
+  "parent": "arbitrum",
+  "note": "No shutdown notice; L2BEAT archived 2025-02-12 after state roots stopped, RPC dead. L2BEAT archived it 2025-02-12 after the operator stopped posting state roots (Jan 24 to Mar 27, 2025), yet Loomlock still used Blessnet for $LOCKS in Sep-Oct 2025. No shutdown announcement found; RPC dead on 2026-10-15. Not the same project as Bless Network ($BLESS staking)."
+ },
+ {
+  "id": "capx",
+  "name": "Capx Chain",
+  "chain_id": 757,
+  "native": "CAPX",
+  "status": "shut_down",
+  "shutdown": "2026-07-30",
+  "closes": "2026-09-27",
+  "exit": "Nothing possible: the migration portals (app.capx.ai for Capx Chain holders) stopped taking claims on 2026-09-27; CAPX now lives only on Solana.",
+  "link": null,
+  "source": "https://capx.ai/blog/migrating-to-solana",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x89AB6919680c66C60968B9c5f0614fC09Aab7EE1",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0xAAAA894f556D0eE585773190114CED3d491C0F72",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Blog posted 2026-08-29, updated 2026-10-02 with a closure notice. Governance background: https://gov.capx.ai/proposal/cip-005 . Native symbol not in chainlist, assumed CAPX."
+ },
+ {
+  "id": "donatuz",
+  "name": "Donatuz",
+  "chain_id": 42026,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-07-07",
+  "closes": null,
+  "exit": "Nothing known: the OP Stack L3 on Base is offline (bridge.donatuz.com dead) and no official exit or claim path was found.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/donatuz",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0xb765Df9d2925a82678F4B7bc60eF5294c1604514",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0xBbea8Cc549702F67cc082d2cAA9842Ba3767536B",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "base",
+  "note": "No official announcement found. Date is the L2BEAT archive date. Donatuz relaunched as an app (Bangalore, Sep 2025, with 0G AI) and no longer mentions its chain."
+ },
+ {
+  "id": "ebi-chain",
+  "name": "Ebi Chain",
+  "chain_id": 98881,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-04-07",
+  "closes": "2025-06-05",
+  "exit": "Nothing possible now: ebi.xyz moved balances to a Claims Portal on Arbitrum, which closed on 2025-06-05.",
+  "link": null,
+  "source": "https://x.com/ebixyzdex/status/1861326984078598388",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x73CF739b0233027cd516998e177d473D0a45E037",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0xeb8307Fc8c1bEe7DfDCedf7e8c85778a81CB150f",
+    "what": "Arbitrum Inbox (deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Wind-down announced 2024-11-26; Claims Portal on Arbitrum announced 2024-12-04 (https://x.com/ebixyzdex/status/1864226976514625904). The 2025-06-05 cutoff comes from search snippets of an ebi.xyz post, not fetched directly. Shutdown date is the L2BEAT archive date."
+ },
+ {
+  "id": "edgeless",
+  "name": "Edgeless",
+  "chain_id": 2026,
+  "native": "EwEth",
+  "status": "shut_down",
+  "shutdown": "2025-09-01",
+  "closes": null,
+  "exit": "No official exit; about 9.2 ewETH still sits in the L1 bridge and Orbit validation is permissionless, so only a self-run withdrawal through the L1 outbox is possible in theory.",
+  "link": null,
+  "source": "https://x.com/DefimonAlerts/status/2098643882267304049",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x6a1B2ea25c3099CAFcbd4E60a3Ae251E52B69e78",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   },
+   {
+    "address": "0x6B595398152999bBc759D5D8ed8169793F915488",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0xb47D14b4282DF795E036e9Ea43E54C31FCB0eCAC",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   },
+   {
+    "address": "0xf51551afD112a50Fc5EDa0454111078fE6E6096E",
+    "what": "Arbitrum Inbox (deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Abandoned without an announcement: team stopped posting to the sequencer around Sep 2025 (day approximate); L2BEAT archived 2025-10-29. On 2026-09-11 an attacker posted a fake rollup assertion to drain the L1 bridge (confirmable ~Sep 17-18, 2026); outcome unknown."
+ },
+ {
+  "id": "epic-chain",
+  "name": "Epic Chain (Ethernity)",
+  "chain_id": 183,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-04-10",
+  "closes": null,
+  "exit": "Nothing announced: the OP Stack L2 (Gelato RaaS) RPC is dead; try the Gelato bridge page or ask the Epic team.",
+  "link": "https://bridge.gelato.network/bridge/ethernity-mainnet",
+  "source": "https://l2beat.com/scaling/projects/epicchain",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x908C324c35fF36F64236A7CDa4D50f3003E9C5C3",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0xDA29f0B4da6c23f6c1aF273945c290C0268c4ea9",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No official shutdown announcement found. Date is the L2BEAT archive date. Project pivoted to Epic Travel on the XRP economy (2026-05-05); Binance delists EPIC on 2026-10-28. EPIC token is an ERC-20, not the gas token."
+ },
+ {
+  "id": "everclear-hub",
+  "name": "Everclear Hub",
+  "chain_id": 25327,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-05-01",
+  "closes": null,
+  "exit": "Nothing on the hub: the L3 stopped producing blocks and its L1 RollupProxy was paused; Everclear itself keeps running on its spoke chains, so ask Everclear for any stuck balance.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/everclear",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x149e3df73d9D48cb6573555De9256cc1456F50B5",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   },
+   {
+    "address": "0x4eb4fB614e1aa3634513319F4Ec7334bC4321356",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0x97FdC935c5E25613AA13a054C7Aa71cf751DB495",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0xA880b3fC75928695ac75e06793277aC4bEA84a3E",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No public shutdown announcement (per L2BEAT). L2BEAT text says May 1, 2026 but its archive timestamp 1746134029 is 2025-05-01 21:13 UTC; year is uncertain."
+ },
+ {
+  "id": "fluence",
+  "name": "Fluence",
+  "chain_id": 9999999,
+  "native": "FLT",
+  "status": "shut_down",
+  "shutdown": "2026-04-01",
+  "closes": "2027-04-01",
+  "exit": "Claim migrated FLT and USDC on Ethereum L1 with the Fluence Migration Tool (pFLT converts 1:1 to FLT) until 2027-04-01.",
+  "link": "https://flt.fluence.ai/chain-migration",
+  "source": "https://fluence.ai/blog/ai-focus-flt-updates/",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x06084a0AC843084a1d1B8ba0f67E048e4f8f3B95",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0x5E6B2D08EA7B3251fef4a244F54D508E0cBD6D3A",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Announced 2026-03-31; migration ran 2026-04-01 08:00 UTC. L2BEAT links the same tool at flt.fluence.network/chain-migration. Bridge escrows now sweep to a 2-of-4 multisig."
+ },
+ {
+  "id": "game7",
+  "name": "Game7 (G7 Network)",
+  "chain_id": 2187,
+  "native": "G7",
+  "status": "shut_down",
+  "shutdown": "2025-09-12",
+  "closes": "2025-09-10",
+  "exit": "Nothing to do now: the bridge-out window closed 2025-09-10 and Game7 says all user assets were removed from G7 Network, with locked tokens airdropped on Arbitrum.",
+  "link": null,
+  "source": "https://x.com/Game7HQ/status/1956388668115214789",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x20aD3d835e152F25Bf8c7B6fbC31adD32393559e",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0x8098247EE48ee54ADD4Feda2F93b3bA0d014d4c7",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   },
+   {
+    "address": "0xB1146A7eb098ECF46e8AAf695f4A960A963948d6",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0xe41363751bd1C305384375F428585C20e3dF516A",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   }
+  ],
+  "parent": "arbitrum",
+  "note": "Sunset first flagged 2025-08-14 (https://x.com/game7hq/status/1956022740164522367). Migration complete post: https://x.com/Game7HQ/status/1966792391681081606 . G7 token now on Arbitrum One."
+ },
+ {
+  "id": "geist",
+  "name": "Geist",
+  "chain_id": 63157,
+  "native": "GHST",
+  "status": "shut_down",
+  "shutdown": "2025-08-15",
+  "closes": null,
+  "exit": "Nothing to do on Geist: Aavegotchi re-minted assets 1:1 on Base, so holders check their wallet on Base.",
+  "link": "https://dapp.aavegotchi.com/",
+  "source": "https://decrypt.co/313913/ethereum-game-aavegotchi-polygon-base-geist",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x32AB85A3F0C702EbE74f73C5934b7Fb8452B492f",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0x9F904Fea0efF79708B37B99960e05900fE310A8E",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   }
+  ],
+  "parent": "base",
+  "note": "DAO vote to move to Base and sunset Geist passed 2025-04-08. Final sunset was 'expected mid-August 2025' (day approximate); L2BEAT archived 2025-07-01. Alchemy deprecated all Geist RPC services. No separate Geist bridge deadline found."
+ },
+ {
+  "id": "gm-network",
+  "name": "GM Network",
+  "chain_id": 2777,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-03-31",
+  "closes": null,
+  "exit": "Nothing known: the OP Stack alt-DA L2 is offline and no exit or claim path was published.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/gmnetwork",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x2321F7982Af3cBbA1Ab9D426ae7fe595E1CF427C",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0xd2726bde3D07645faf5aD7cCF15C94817B3556D6",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "L2BEAT milestone 'GM Network sunsets' 2025-03-31 cites https://x.com/GMNetwork_AI/status/1894592894893527317, which is now deleted."
+ },
+ {
+  "id": "gpt-protocol",
+  "name": "GPT Protocol",
+  "chain_id": 1511670449,
+  "native": "GPT",
+  "status": "shut_down",
+  "shutdown": "2025-01-24",
+  "closes": null,
+  "exit": "Nothing possible: the operator stopped servicing the Polygon CDK validium and forked it outside the shared Agglayer contracts; no exit was announced.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/gpt",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0xC4E903D3Af4c3d2e437492d602adcC9d9b536858",
+    "what": "Polygon CDK rollup contract"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No official announcement found. Date is the L2BEAT archive date."
+ },
+ {
+  "id": "ham",
+  "name": "Ham",
+  "chain_id": 5112,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-11-26",
+  "closes": null,
+  "exit": "Nothing known: the OP Stack L3 on Base is offline and no official exit or claim path was found.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/ham",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x936c137699230c4732d534c7E968cC7cEAa6Cf45",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0xdD83c537B35d98776913D7ab60EBaA5c28F9dD01",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "base",
+  "note": "No official announcement found. Date is the L2BEAT archive date (PR l2beat#10203, no reason given). HAM was backed 1:1 by TN100x on Base."
+ },
+ {
+  "id": "hychain",
+  "name": "HYCHAIN",
+  "chain_id": 2911,
+  "native": "TOPIA",
+  "status": "shut_down",
+  "shutdown": "2025-10-30",
+  "closes": "2025-09-01",
+  "exit": "Nothing on the chain now: HYTOPIA retired HYCHAIN and replaced TOPIA with HYBUX on Base via a 1 TOPIA = 2 HYBUX airdrop to wallets, reported deadline 2025-09-01.",
+  "link": null,
+  "source": "https://playtoearn.com/news/hytopia-announces-hy-foundation-and-migrates-to-base-with-new-hybux-token",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x73C6af7029E714DFf1F1554F88b79B335011Da68",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0xD6c596b7ca17870DD50D322393deCE6C2085a116",
+    "what": "Arbitrum Inbox (deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Migration announced July 2025 (official X thread not fetched). Shutdown date is the L2BEAT archive date; airdrop deadline from secondary reports. TOPIA on Ethereum L1 is a separate ERC-20."
+ },
+ {
+  "id": "inevm",
+  "name": "inEVM",
+  "chain_id": 2525,
+  "native": "INJ",
+  "status": "shut_down",
+  "shutdown": "2025-12-31",
+  "closes": null,
+  "exit": "Nothing on inEVM: the old bridge site now only says inEVM is deprecated and points to the Injective Bridge for Injective native EVM.",
+  "link": "https://bridge.inevm.com/",
+  "source": "https://inevm.com/",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x173B8dd6960d8922DCF7eD29E245B1041Fcf71Ae",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   },
+   {
+    "address": "0x1c37A831e405e2F3dd76eb8C9ecE483370D53AfE",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0x2Bb27ECb6531B8978E1aFe0288C2cbC6505Ff5b7",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0xE72E807A72c7D36717a3ea9e7668ea690A2bf0E1",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   }
+  ],
+  "parent": "arbitrum",
+  "note": "inevm.com states Injective has deprecated inEVM after native EVM mainnet launched 2025-11-11. Shutdown date is the L2BEAT archive date; no official withdrawal deadline found."
+ },
+ {
+  "id": "kinto",
+  "name": "Kinto",
+  "chain_id": 7887,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-09-30",
+  "closes": null,
+  "exit": "Withdrawals closed 2025-09-30; remaining bridge assets were swept and redistributed through onchain contracts, claimable via the Kinto CVR frontend.",
+  "link": "https://engen.kinto.xyz/cvr-claim",
+  "source": "https://x.com/KintoXYZ/status/1964721235675537573",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x7870D5398DB488c669B406fBE57b8d05b6A35e42",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   },
+   {
+    "address": "0x859a53Fe2C8DA961387030E7CB498D6D20d0B2DB",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0xBFfaA85c1756472fFC37e6D172A7eC0538C14474",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0xD9041DeCaDcBA88844b373e7053B4AC7A3390D60",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Announced 2025-09-07. Reports describe a perpetual claim contract, so no claim end date. Phoenix lenders ~76% recovery, Morpho victims up to $1.1k each."
+ },
+ {
+  "id": "l3x",
+  "name": "L3X",
+  "chain_id": 12324,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-03-27",
+  "closes": null,
+  "exit": "Nothing known: website, explorer and RPC are down and no exit path was announced.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/l3x",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x4fF3E70f30f0394Ad62428751Fe3858740595908",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   },
+   {
+    "address": "0x59E088d827CB7983Cd0CC64312E472D7cc8a4F44",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0x80de5c4ccDfb7b6a250A9588C2d80F62a2B7d13F",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0x817C8Da480bC6b42a5FA88A26e9eD8c0c03968Cf",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   }
+  ],
+  "parent": "arbitrum",
+  "note": "No official announcement found. L2BEAT archived it (PR l2beat#7296) because the website and explorer were inaccessible and X inactive for about a year. Date is the archive date."
+ },
+ {
+  "id": "lambda-chain",
+  "name": "Lambda Chain",
+  "chain_id": 56026,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-02-10",
+  "closes": null,
+  "exit": "Nothing known: no exit path was announced and the chain is offline.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/lambda",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x7288e508f56c1b4b52D2e4Fd3688a711c7cE0054",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0xEEBd256da18d0BF20c3CEb785a0946D41A7F408F",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No official announcement found. Date is the L2BEAT archive date. OP Stack rollup on Ethereum; an L1 forced withdrawal may be possible in theory only if state roots were posted, unverified."
+ },
+ {
+  "id": "molten",
+  "name": "Molten Network",
+  "chain_id": null,
+  "native": "MOLTEN",
+  "status": "shut_down",
+  "shutdown": "2026-05-18",
+  "closes": null,
+  "exit": "Nothing known: the Orbit L3 on Arbitrum is offline and no exit or claim path was announced.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/molten",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x235000876bd58336C802B3546Fc0250f285fCc79",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0x5a6f8ea5e1028C80CB98Fd8916afBBC4E6b23D80",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   },
+   {
+    "address": "0xAeAe9616A02dA527FceA2AC444EC918C7BfB9CdF",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   },
+   {
+    "address": "0xE1d32C985825562edAa906fAC39295370Db72195",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   }
+  ],
+  "parent": "arbitrum",
+  "note": "L2BEAT lists chain id 360, but 360 is Shape (live) in chainid.network, so chain_id is left null to avoid flagging Shape balances. Chain id conflict: L2BEAT lists 360, which is Shape mainnet in chainlist (live). No other chain id for Molten found (not in chainlist), so a scanner should NOT flag 360 as dead. No official announcement found; UniDex site reportedly offline since 2026-01. Date is L2BEAT archive (PR l2beat#11869 'Archive few dead projects'). Test wallet 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (vitalik.eth): not read (no RPC answered on 2026-10-26)."
+ },
+ {
+  "id": "muster",
+  "name": "Muster",
+  "chain_id": 4078,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-04-29",
+  "closes": null,
+  "exit": "Nothing known: Cometh's Orbit L3 is offline and no exit path was announced.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/muster",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x18BB8310E3a3DF4EFcCb6B3E9AeCB8bE6d4af07f",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0xB0EC3C1368AF7d9C2CAE6B7f8E022Cc14d59D2b1",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   }
+  ],
+  "parent": "arbitrum",
+  "note": "No official announcement found. Date is the L2BEAT archive date."
+ },
+ {
+  "id": "oev-network",
+  "name": "OEV Network",
+  "chain_id": 4913,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-12-19",
+  "closes": null,
+  "exit": "Nothing now: API3 told searchers to withdraw bridged funds by end of November before the network shut down.",
+  "link": null,
+  "source": "https://portal.caldera.xyz/oev-network",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x2403Dd9dFa12255Be8f42bc1e644733c9b2d10Dd",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0x7EF9d2fe20307165599101e93Ea05b04d46Af159",
+    "what": "Arbitrum Inbox (deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Caldera portal (now 404) said OEV Network was being deprecated, OEV Auctioneer shut down, searchers must withdraw by end of November (year not shown, likely 2025). L2BEAT archive PR l2beat#8430 merged 2025-07-17 but archivedAt is 2025-12-19; shutdown date is approximate."
+ },
+ {
+  "id": "onyx-l3",
+  "name": "Onyx",
+  "chain_id": 80888,
+  "native": "XCN",
+  "status": "shut_down",
+  "shutdown": "2026-07-06",
+  "closes": "2026-12-31",
+  "exit": "XCN stays a native Ethereum ERC-20; Onyx Layer 3 is deprecated and holders move XCN from Ethereum to Onyx Layer 1 if wanted; no L3 exit tool was found.",
+  "link": null,
+  "source": "https://blog.onyx.org/deprecating-the-onyx-layer-3-to-focus-on-layer-1-2e7594b51d98",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x167D43d1D60DE2320B5E143F9c6a058092A913C2",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   },
+   {
+    "address": "0x3CaA4581e7bA1aF2607e0198aF4E4C208f09c98b",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   },
+   {
+    "address": "0x8635f49481A90DeD18E8D0eB374028C4b39E700F",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0xcdf10130c75D42a3880Ae521734EaA8631aC2905",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   }
+  ],
+  "parent": "base",
+  "note": "Announced about 2026-07-02 (TechFlow); L3 'ceases services on December 31, 2026'. L2BEAT stopped tracking 2026-07-06. rpc.onyx.org now answers with chain id 327 (Onyx L1), not 80888, so the L3 RPC is gone. Native symbol for 80888 not in chainlist; XCN assumed."
+ },
+ {
+  "id": "optopia",
+  "name": "Optopia",
+  "chain_id": 62050,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-01-14",
+  "closes": null,
+  "exit": "Nothing known: RPC is down and no exit path was announced.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/optopia",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x1adE86B9cc8a50Db747b7aaC32E8527d42c71fC1",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0x39A90926306E11497EC5FE1C459910258B620edD",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No official announcement found. L2BEAT archived it (PR l2beat#10657): RPC down, no new blocks with txs, no social activity. Date is the archive date."
+ },
+ {
+  "id": "parallel",
+  "name": "Parallel",
+  "chain_id": 1024,
+  "native": "CLV",
+  "status": "shut_down",
+  "shutdown": "2024-12-05",
+  "closes": null,
+  "exit": "Nothing now: Parallel opened withdrawals in mid-2024 (ETH to Ethereum with 7-day wait, ERC-20s to Ethereum, Manta, Merlin, Arbitrum) and then deprecated the L2.",
+  "link": null,
+  "source": "https://medium.com/@ParallelFi/the-withdrawal-on-parallel-l2-is-now-available-c3b4b572864e",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x12485B9d469c1D51d05b5C39e009D50eF0170cF7",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0x5a961c7D162195a9Dc5a357Cc168b0694283382E",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0x5D657b905275F36AD62C3d5C36966975613aFB96",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   },
+   {
+    "address": "0x6Eb9240d4add111D5Fc81b10Ff12eECabcf9752d",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Maintenance mode from 2024-08-05 with only withdrawals; ERC-20 withdrawals live 2024-07-04 (x.com/ParallelFi/status/1808800965715210344). Shutdown date is the L2BEAT archive date. Chain id 1024 also belongs to CLV Parachain in chainlist: do not flag 1024 blindly."
+ },
+ {
+  "id": "pepe-unchained-op",
+  "name": "Pepe Unchained (old OP chain)",
+  "chain_id": 3409,
+  "native": "PEPU",
+  "status": "shut_down",
+  "shutdown": "2025-07-10",
+  "closes": "2025-05-29",
+  "exit": "Nothing now: holders had to bridge old PEPU back to Ethereum by about 2025-05-29 and migrate 1:1 to the new PEPU on the new Orbit chain (97741).",
+  "link": null,
+  "source": "https://mirror.xyz/0x5d229f641ccA8c85F356a29A2b5D12587a216Fd2/CJvQFPuEG1eUZ8rhZLnAd2d1i5wdxuxnE0mLRxeEBhs",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x34Ef4B527DB3F4AcfAE7Fdc7Db0f9981F48Cd23F",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0x384e3AE4D5efC9471201039b555EAe496b2A7240",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Migration announced May 2025 after Conduit deprecated custom gas tokens; 1:1 airdrop of new PEPU to legacy holders on L1 and old L2. Bridge deadline from Phemex guide. Shutdown date is L2BEAT archive date. New chain 97741 is a different chain."
+ },
+ {
+  "id": "proof-of-play-apex",
+  "name": "Proof of Play Apex",
+  "chain_id": 70700,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-09-25",
+  "closes": null,
+  "exit": "Nothing known: the chain was retired with Pirate Nation and no bridge-out deadline or claim path was found.",
+  "link": null,
+  "source": "https://x.com/PirateNation/status/1957529124102357014",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x074fFD20C6D8865752C997f4980Cf70F2a3Fbac6",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0xC3874bE54E3f25BBC6B4fB582654fd9294f485a1",
+    "what": "Arbitrum Inbox (deposits)"
+   }
+  ],
+  "parent": "arbitrum",
+  "note": "Announced 2025-08-18: Pirate Nation and Apex and Boss chains sunset 'at earliest 30 days from today'. Retirement 2025-09-25 per Cointelegraph. L2BEAT archived 2025-10-07."
+ },
+ {
+  "id": "proof-of-play-boss",
+  "name": "Proof of Play Boss",
+  "chain_id": 70701,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-09-25",
+  "closes": null,
+  "exit": "Nothing known: the chain was retired with Pirate Nation and no bridge-out deadline or claim path was found.",
+  "link": null,
+  "source": "https://x.com/PirateNation/status/1957529124102357014",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x53D82686BC9827fEc03bcEe661B37b855A18EcA9",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0xEe30EfcaF812d10e1EFE25E9458f76a39DAD3239",
+    "what": "Arbitrum Inbox (deposits)"
+   }
+  ],
+  "parent": "arbitrum",
+  "note": "Same announcement as Apex (2025-08-18). Boss is an L3 on Apex. Retirement 2025-09-25 per Cointelegraph."
+ },
+ {
+  "id": "powerloom",
+  "name": "Powerloom Mainnet V2",
+  "chain_id": 7869,
+  "native": "POWER",
+  "status": "shut_down",
+  "shutdown": "2026-07-21",
+  "closes": "2026-07-21",
+  "exit": "Nothing now: users had to unstake and bridge to Ethereum at bridge-v2.powerloom.network before 2026-07-21 06:00 UTC; the team said there is no emergency migration or private claim link.",
+  "link": "https://bridge-v2.powerloom.network",
+  "source": "https://blog.powerloom.io/wind-down/",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x46D9ff7ED3049798B406be811FE68b75B208f81A",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   },
+   {
+    "address": "0x53b168016aA2E3469B5D76315311aAC4Ce0020DB",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0x7d4509336b154C17Df80D03A19C051ddAcdA2e7f",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0x8b4b4328455615fCb7aaE14460cfa90767B1df55",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Post dated 2026-06-15. Epochs stopped 2026-06-16, mint.powerloom.network offline 2026-07-16, chain shutdown 2026-07-21 06:00 UTC."
+ },
+ {
+  "id": "powerloom-v1",
+  "name": "Powerloom Mainnet (v1)",
+  "chain_id": 7865,
+  "native": "POWER",
+  "status": "shut_down",
+  "shutdown": null,
+  "closes": null,
+  "exit": "Nothing known: older v1 chain superseded by 7869; the whole Powerloom network wound down by 2026-07-21.",
+  "link": null,
+  "source": "https://blog.powerloom.io/wind-down/",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [],
+  "parent": null,
+  "note": "No source on when v1 (7865) stopped; assumed retired when V2 (7869) launched. Wind-down post does not name chain ids."
+ },
+ {
+  "id": "pgn",
+  "name": "Public Goods Network",
+  "chain_id": 424,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2024-06-30",
+  "closes": null,
+  "exit": "Claim ETH and ERC-20 balances on Ethereum by calling claim() on the BalanceClaimerProxy (0x0ca4c7a370e0155c77a33e78443a54d749e0bc21) with your merkle proof from the funds-proofs file, via Etherscan.",
+  "link": "https://docs.publicgoods.network/using-pgn/claiming-old-funds",
+  "source": "https://gov.gitcoin.co/t/updating-pgns-contract-to-make-funds-easier-to-claim/19569",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0xb26Fd985c5959bBB382BAFdD0b879E149e48116c",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0xD0204B9527C1bA7bD765Fa5CCD9355d38338272b",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "L2BEAT says sunset June 2024 (exact day not given, month-end used). Claim contract enabled 2024-12-17. No claim deadline set; balances under $0.01 excluded; EOAs only."
+ },
+ {
+  "id": "race",
+  "name": "RACE Network",
+  "chain_id": 6805,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-08-06",
+  "closes": null,
+  "exit": "No official exit found; RPC and bridge are down, so only an OP Stack L1 portal withdrawal is possible and only if state roots were posted for your balance.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/race",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x0485Ca8A73682B3D3f5ae98cdca1E5b512E728e9",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0x680969A6c58183987c8126ca4DE6b59C6540Cd2a",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No official announcement found. Date is L2BEAT archive/untilTimestamp. racemainnet.io RPC DNS dead. Team (@RACEecosystem) still posts about RWA products in 2026."
+ },
+ {
+  "id": "rari",
+  "name": "RARI Chain",
+  "chain_id": 1380012617,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-06-14",
+  "closes": "2026-06-14",
+  "exit": "Deadline passed (2026-06-14 23:59 UTC); the route was unstake on Tally then bridge RARI and ETH to Ethereum via Relay; nothing announced after the deadline.",
+  "link": null,
+  "source": "https://x.com/RariChain/status/2062579818181362055",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x255f80Ef2F09FCE0944faBb292b8510F01316Cf0",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0x2623C144B4d167f70893f6A8968B98c89a6C5F97",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   },
+   {
+    "address": "0x37e60F80d921dc5E7f501a7130F31f6548dBa564",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0x46406c88285AD9BE2fB23D9aD96Cb578d824cAb6",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   }
+  ],
+  "parent": "arbitrum",
+  "note": "Announced 2026-06-04; bridge steps in https://x.com/RariChain/status/2062580215683985906. L2BEAT archived 2026-06-30. Orbit L3 on Arbitrum; all RPCs dead."
+ },
+ {
+  "id": "re-al",
+  "name": "Re.al",
+  "chain_id": 111188,
+  "native": "reETH",
+  "status": "shut_down",
+  "shutdown": "2025-06-20",
+  "closes": null,
+  "exit": "Nothing reliable: block production halted without notice and the DAC does not serve data, so L1 withdrawals (12-day delay) cannot be proven safely; no team statement.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/real",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x39D2EEcC8B55f46aE64789E2494dE777cDDeED03",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0x490f337Ac108b2a555183f5b5fd2ee84a7F45a18",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   },
+   {
+    "address": "0xf538671ddd60eE54BdD6FBb0E309c491A7A2df11",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0xfC89B875970122E24C6C5ADd4Dea139443943ea7",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Halted 2025-06-20 with no announcement; team did not respond to press (DL News 2025-06-24, ~$500k stuck): https://www.dlnews.com/articles/defi/real-blockchain-frozen-and-500k-user-funds-stuck-on-chain/"
+ },
+ {
+  "id": "rss3-vsl",
+  "name": "RSS3 VSL",
+  "chain_id": 12553,
+  "native": "RSS3",
+  "status": "shut_down",
+  "shutdown": "2026-04-24",
+  "closes": null,
+  "exit": "Migrated balances are claimable on Ethereum through the RSS3 migration portal ($RSS3 1:1, $POWER at 23:1 to $RSS3); pending withdrawals were completed in the migration.",
+  "link": "https://rss3.io/migration",
+  "source": "https://rss3.io/blog/the-next-stage-of-rss3.html",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x4cbab69108Aa72151EDa5A3c164eA86845f18438",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0x6A12432491bbbE8d3babf75F759766774C778Db4",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Announced 2026-04-21 (https://x.com/rss3_/status/2046589774362825017); migration complete and portal live 2026-04-30 (https://x.com/rss3_/status/2049813515821605109). No claim deadline seen."
+ },
+ {
+  "id": "sanko",
+  "name": "Sanko",
+  "chain_id": 1996,
+  "native": "DMT",
+  "status": "shut_down",
+  "shutdown": "2026-02-27",
+  "closes": "2026-02-27",
+  "exit": "Bridge deadline passed (2026-02-27 23:00 UTC); assets held directly in a wallet at cutoff may get a recovery distribution on Arbitrum One per the team, otherwise nothing self-serve.",
+  "link": null,
+  "source": "https://x.com/SankoGameCorp/status/2022403133582831693",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x2f285781B8d58678a3483de52D618198E4d27532",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0x718E2a83775343d5c0B1eE0676703cBAF30CaFCD",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0x847186fbeEBf41eEe9c230360D0bF8585c0Db57B",
+    "what": "Arbitrum GatewayRouter (ERC20 deposits)"
+   },
+   {
+    "address": "0xb4951c0C41CFceB0D195A95FE66280457A80a990",
+    "what": "Arbitrum ERC20Gateway (ERC20 escrow)"
+   }
+  ],
+  "parent": "arbitrum",
+  "note": "Announced 2026-02-13. Orbit L3 on Arbitrum (Caldera). L2BEAT archived 2026-04-29. Recovery distribution details not found."
+ },
+ {
+  "id": "snaxchain",
+  "name": "SNAXchain",
+  "chain_id": 2192,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-09-29",
+  "closes": null,
+  "exit": "No official exit found; RPC is down, only an OP Stack L1 portal withdrawal could work if your balance is covered by a posted state root.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/snaxchain",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x936D881b4760D5e9b6D55b774f65c509236b4743",
+    "what": "OptimismPortal2 (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0xA5fb68C24b02852e8B514E98A1014faf12547Fa5",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "L2BEAT's linked source is a wrong Cartesi Honeypot post. No Synthetix SNAXchain sunset post found; Synthetix exited all L2s in 2025 (Optimism wind-down Aug 2025) and a Synthetix contributor said 'snaxchain isn't a thing anymore' (https://x.com/danny_sacks/status/1977807778304655842, Oct 2025). Date is L2BEAT archive date."
+ },
+ {
+  "id": "stack",
+  "name": "Stack",
+  "chain_id": 78225,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-04-14",
+  "closes": null,
+  "exit": "No official exit found; bridge.stack.so and RPC are down, only an OP Stack L1 (Base) portal withdrawal might work.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/stack",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x752BE2A1c6DBe40884D7851CDC58c9cA54DCBD3E",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0xbA256039AEdaD407692D8Deb366308BE6Bb2515C",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "base",
+  "note": "No official announcement found. Date is L2BEAT archive date. Points L3 on Base; points were not tradable so little value likely stuck. Team pivoted to a social app in Jan 2025."
+ },
+ {
+  "id": "superlumio",
+  "name": "SuperLumio",
+  "chain_id": 8866,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-09-29",
+  "closes": null,
+  "exit": "No official exit found; RPC times out, only an OP Stack L1 portal withdrawal might work.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/superlumio",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x9C93982cb4861311179aE216d1B7fD61232DE1f0",
+    "what": "OptimismPortal2 (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0xdB5C6b73CB1c5875995a42D64C250BF8BC69a8bc",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No official announcement found. Date is L2BEAT archive date. Pontem project."
+ },
+ {
+  "id": "syndicate-frame",
+  "name": "Syndicate Frame Chain",
+  "chain_id": 5101,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-12-17",
+  "closes": "2025-12-17",
+  "exit": "Deadline passed; users had to bridge off (7-day withdrawals) before the chain went offline on 2025-12-17; nothing announced after.",
+  "link": null,
+  "source": "https://x.com/syndicateio/status/1990478445080707569",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x52fA397D799f1CE416a2089B964Aa293c347994F",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0xF7Cb313CB6D146dAbB8c5E31798BDCeFc67B831b",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "base",
+  "note": "Announced 2025-11-17. L3 on Base hosted by Caldera. L2BEAT archived 2025-12-19."
+ },
+ {
+  "id": "the-binary-holdings",
+  "name": "The Binary Holdings",
+  "chain_id": 624,
+  "native": "BNRY",
+  "status": "shut_down",
+  "shutdown": "2025-01-24",
+  "closes": null,
+  "exit": "No official exit found; RPC down, only an OP Stack L1 portal withdrawal might work.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/thebinaryholdings",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x5ff88fcF8e9947f45F4cAf8FFd5231B5DdF05e0A",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   },
+   {
+    "address": "0xD1B30378CBF968E5525e8835219A5726A1e71D10",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No official announcement found. Date is L2BEAT archive date. Chainlist says native BNRY; L2BEAT lists BNRY as escrowed token. RPC rpc.zero.thebinaryholdings.com has a bad TLS cert."
+ },
+ {
+  "id": "winr",
+  "name": "WINR",
+  "chain_id": 777777,
+  "native": "WINR",
+  "status": "shut_down",
+  "shutdown": "2026-01-05",
+  "closes": null,
+  "exit": "WINR Chain state was moved to Arbitrum One on 2026-01-05; use JustBet withdraw-only mode or the new WINR LP on Arbitrum to recover balances.",
+  "link": "https://x.com/WINRProtocol/status/2057513084369993889",
+  "source": "https://x.com/WINRProtocol/status/2007149896495681900",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x4FeBaEF286Ca477402dafCEeB17C64de481aFB42",
+    "what": "Arbitrum Inbox (deposits)"
+   },
+   {
+    "address": "0xF3f01622Ac969156760c32190995F9dC5b3eb7FA",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   }
+  ],
+  "parent": "arbitrum",
+  "note": "Announced ~2026-01-02 (quoted post). L2BEAT archived 2026-01-08. Unclear whether every raw on-chain balance was carried over or only JustBet app balances."
+ },
+ {
+  "id": "witness-chain",
+  "name": "Witness Chain",
+  "chain_id": 1702448187,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2024-12-18",
+  "closes": null,
+  "exit": "Nothing possible: the validium operator stopped (last batch 2024-12-18) and there is no forced exit from the Agglayer bridge.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/witness",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x42Ac57F24EC4C3AAC843f6DBAcd9282DAaeE9238",
+    "what": "Polygon CDK rollup contract"
+   },
+   {
+    "address": "0x2a3DD3EB832aF982ec71669E178424b10Dca2EDe",
+    "what": "Polygon Agglayer unified bridge (shared by all Polygon CDK chains; deposit calldata carries the destination network id)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No official announcement found; team still active on X but never mentioned the chain. Sequencer DNS dead."
+ },
+ {
+  "id": "xchain",
+  "name": "XCHAIN",
+  "chain_id": 94524,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2026-02-20",
+  "closes": null,
+  "exit": "No official exit found; RPC down. Contact Kuma (ex-IDEX); funds were mostly Stargate USDC.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/xchain",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x2Be65c5b58F78B02AB5c0e798A9ffC181703D3C1",
+    "what": "Arbitrum Bridge (ETH escrow)"
+   },
+   {
+    "address": "0xE961Ef06c26D0f032F0298c97C41e648d3bb715a",
+    "what": "Arbitrum Inbox (deposits)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "No official announcement found. Date is L2BEAT archive/untilTimestamp. IDEX rebranded to Kuma and moved its perps to Berachain."
+ },
+ {
+  "id": "xterio-eth",
+  "name": "Xterio Chain (ETH)",
+  "chain_id": 2702128,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-04-18",
+  "closes": null,
+  "exit": "Assets were migrated 1:1 to BNB Chain and can still be claimed via the Xterio migration portal.",
+  "link": "https://info.xter.io/xterio-chain-migration",
+  "source": "https://x.com/XterioGames/status/1908537180542427490",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x2AD84AbD52050956AcC9c490D024b821A59e3FB6",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0xBC2bEDA4ce7A1f40aa458322A33B44081b2F545A",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Migration ran 2025-04-11 to 2025-04-18. On 2026-01-17 Xterio said the old chain bridge (bnb-bridge.xter.io) closes 2026-02-17 but leftover assets stay claimable via the portal (https://x.com/XterioGames/status/2012533594229756315). L2BEAT: deposits disabled, admin can withdraw all ETH."
+ },
+ {
+  "id": "hypr",
+  "name": "Hypr",
+  "chain_id": null,
+  "native": "ETH",
+  "status": "shut_down",
+  "shutdown": "2025-01-17",
+  "closes": null,
+  "exit": "No official exit found; only an OP Stack L1 portal withdrawal might work.",
+  "link": null,
+  "source": "https://l2beat.com/scaling/projects/hypr",
+  "rpcs": [],
+  "explorer": null,
+  "explorer_kind": null,
+  "l1_bridges": [
+   {
+    "address": "0x1bBde518ad01BaABFE30020407A7630FB17B545d",
+    "what": "L1StandardBridge (ERC20 deposits)"
+   },
+   {
+    "address": "0xba1ac896F3b7cB273daE94bF9A6291A432e826c7",
+    "what": "OptimismPortal (ETH deposits / forced withdrawals)"
+   }
+  ],
+  "parent": "ethereum",
+  "note": "Chain id 881 reported for Hypr collides with Weber Governance in chainid.network, so chain_id is left null. No official announcement found; @hypr_network silent. Date is L2BEAT archive date. Chain id 881 from Sequence chain list (https://docs.sequence.xyz/solutions/chainlist/non-integrated/hypr) but chainlist assigns 881 to Weber Governance, so verify before matching. Native symbol assumed ETH (HYPR is a separate token)."
+ },
+ {
+  "id": "forma",
+  "name": "Forma",
+  "chain_id": 984122,
+  "native": "TIA",
+  "status": "closing",
+  "shutdown": null,
+  "closes": null,
+  "exit": "Withdraw TIA from Forma to Celestia (or Stride) through the Forma bridge, a Hyperlane warp route. No deadline announced; funds not withdrawn will be moved by hand to an EVM chain to be named later. Forma NFTs move to Ethereum L1.",
+  "link": "https://bridge.forma.art",
+  "source": "https://x.com/formachain/status/2081046187570798955",
+  "rpcs": [
+   "https://rpc.forma.art"
+  ],
+  "explorer": "https://explorer.forma.art",
+  "explorer_kind": "blockscout",
+  "l1_bridges": [],
+  "parent": "celestia",
+  "note": "Sunset announced 2026-07-25 by @formachain (thread 2081046187570798955, bridge link in 2081046192687882616); no end date given and no later post found. Chain still makes blocks (block 33926803 at 2026-10-21 02:48 UTC). Native TIA has 18 decimals on Forma (6 on Celestia). Forma side of the bridge is the HypNativeMinter router 0x832d26B6904BA7539248Db4D58614251FD63dC05 on Forma itself; it connects to Celestia's native Hyperlane module (router 0x726f757465725f61707000000000000000000000000000010000000000000008, collateral utia) and a Stride CosmWasm collateral (stride1h4rhlwcmdwnnd99agxm3gp7uqkr4vcjd73m4586hcuklh3vdtldqgqmjxc). Parent is Cosmos, so there are no EVM parent-chain bridge contracts. Test wallet 0xA0fF9b4B20a7280a7F715957FFA3432BBB345C54: 5000 TIA at the latest block."
+ },
+ {
+  "id": "harmony",
+  "name": "Harmony",
+  "chain_id": 1666600000,
+  "native": "ONE",
+  "status": "shut_down",
+  "shutdown": "2026-09-10",
+  "closes": "2026-09-10",
+  "exit": "No action for most holders: balances at the 2026-09-10 14:00 UTC cutoff were airdropped as ERC-20 ONE (0xFf74317E948695297acb79Cb2De06111F5Cc16b3) to the same 0x address on Ethereum; staked ONE went to governor vaults. Wallets with no Harmony activity in the 6 months before the cutoff must sign on migrate.country/confirm; wallets under 1,000 ONE are deferred. Check an address at migrate.country.",
+  "link": "https://migrate.country",
+  "source": "https://x.com/harmonyprotocol/status/2096604684450775296",
+  "rpcs": [
+   "https://api.harmony.one",
+   "https://api.s0.t.hmny.io",
+   "https://1rpc.io/one",
+   "https://harmony-0.drpc.org"
+  ],
+  "explorer": "https://explorer.harmony.one",
+  "explorer_kind": "other",
+  "l1_bridges": [
+   {
+    "address": "0xF9Fb1c508Ff49F78b60d3A96dea99Fa5d7F3A8A6",
+    "what": "Horizon EthManager (ETH locks, hacked 2022)"
+   },
+   {
+    "address": "0x2dCCDB493827E15a5dC8f8b72147E6c4A5620857",
+    "what": "Horizon ERC20EthManager (ERC20 locks, hacked 2022)"
+   },
+   {
+    "address": "0xfD53b1B4AF84D59B20bF2C20CA89a6BeeAa2c628",
+    "what": "Horizon BUSDEthManager"
+   }
+  ],
+  "parent": null,
+  "note": "Sunset announced 2026-09-06 (non-binding proposal, X article); validators told they may stop at 2026-09-10 14:00 UTC (post 2097822435328528663). Chain halted: last block 93624315 at 2026-09-10 14:41:43 UTC; RPCs still answer frozen state. Snapshot cutoff shard0 block 93623067, shard1 block 95882100 (migrate.country/api/v1/meta). Snapshot CSV at github.com/harmony-one/erc20 (snapshot-20260911.csv); airdrop announced in post 2106055662920970296. Keyless per-address lookup: GET https://migrate.country/api/v1/claims/{0x or one1}. Old 2020 ERC-20 ONE 0x799a4202c12ca952cB311598a024C80eD371a41e is a different token. Horizon bridge contracts are only a hint: assets bridged to Harmony after the 2022 hack were depegged. Test wallet 0x7bfd45845a34b17279428bf893d01079e6fdc02c: 5426.95 ONE at the last block, deferred, 0 ERC-20 ONE on Ethereum. closes = the 2026-09-10 snapshot cutoff: a balance left on Harmony is now either ERC-20 ONE on Ethereum or a deferred / confirm-by-signature claim, so it is a hint to check migrate.country, never money still to bridge."
+ }
+]

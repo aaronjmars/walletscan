@@ -1,0 +1,10 @@
+# on-disk indexes (stuck bridge caches): rebuilt on first use
+.cache/
+# secrets: keys come from env vars or ~/.config/walletscan/keys.json, never the repo
+*.key
+.env
+.env.*
+# node
+node_modules/
+# macOS
+.DS_Store
