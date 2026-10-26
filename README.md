@@ -32,7 +32,7 @@ Each finding has an amount, a USD value, how to claim it, a deadline when there 
 Node 24 or newer.
 
 ```bash
-npm i -g walletscan
+npm i -g walletscan-cli
 walletscan 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045
 ```
 

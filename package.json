@@ -1,5 +1,5 @@
 {
-  "name": "walletscan",
+  "name": "walletscan-cli",
   "version": "0.1.0",
   "description": "walletscan: a command line tool that finds the money a wallet forgot (rent, rewards, stuck bridges, airdrops, unredeemed bets) on EVM, Solana and more chains. Read-only, runs locally.",
   "type": "module",
