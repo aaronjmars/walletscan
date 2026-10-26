@@ -5,7 +5,7 @@ on:
 permissions:
   contents: read
 jobs:
-  publish:
+  npm:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -23,5 +23,56 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm pack --dry-run
+      - name: Skip when this version is already on npm
+        id: npm
+        run: |
+          if npm view "$(node -p 'require("./package.json").name')@${GITHUB_REF_NAME#v}" version >/dev/null 2>&1; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          fi
       # Auth via OIDC trusted publishing (set on npmjs.com, workflow publish.yml): no token. Needs npm >= 11.5, Node 24 ships it.
-      - run: npm publish --provenance --access public
+      - if: steps.npm.outputs.published != 'true'
+        run: npm publish --provenance --access public
+
+  github-packages:
+    needs: npm
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          registry-url: https://npm.pkg.github.com
+          scope: "@aaronjmars"
+      # GitHub Packages only takes names scoped to the repo owner
+      - run: npm pkg set name=@aaronjmars/walletscan-cli
+      - name: Skip when this version is already on GitHub Packages
+        id: gpr
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if npm view "@aaronjmars/walletscan-cli@${GITHUB_REF_NAME#v}" version >/dev/null 2>&1; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.gpr.outputs.published != 'true'
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  release:
+    needs: npm
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: GitHub release for the tag
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view "$GITHUB_REF_NAME" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 \
+            || gh release create "$GITHUB_REF_NAME" -R "$GITHUB_REPOSITORY" --verify-tag --generate-notes \
+              --notes "Install: \`npm i -g walletscan-cli\` ([npm](https://www.npmjs.com/package/walletscan-cli/v/${GITHUB_REF_NAME#v}))"

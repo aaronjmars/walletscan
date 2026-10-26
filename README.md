@@ -1,5 +1,7 @@
 # walletscan
 
+[![npm](https://img.shields.io/npm/v/walletscan-cli)](https://www.npmjs.com/package/walletscan-cli) [![ci](https://github.com/aaronjmars/walletscan/actions/workflows/ci.yml/badge.svg)](https://github.com/aaronjmars/walletscan/actions/workflows/ci.yml) [![license: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 Paste a wallet, find the money it forgot: rent, rewards, stuck bridge withdrawals, airdrops, unredeemed bets, old tokens whose swap still pays. A command line tool that runs every check on your machine. Read-only: nothing signs, sends or connects a wallet.
 
 Chains: EVM (every chain with a public RPC), Solana, Bitcoin, TRON, NEAR, Sui, Polkadot / Kusama, TON.
@@ -29,7 +31,7 @@ Each finding has an amount, a USD value, how to claim it, a deadline when there 
 
 ## Install
 
-Node 24 or newer.
+Node 24 or newer. The package is [`walletscan-cli` on npm](https://www.npmjs.com/package/walletscan-cli); the command it installs is `walletscan`.
 
 ```bash
 npm i -g walletscan-cli
@@ -160,6 +162,10 @@ npm test
 ```
 
 `node --test` over `test/*.test.mjs`: fixtures and a stubbed `fetch`, so the suite needs no keys and almost no network. CI runs it on every push and pull request.
+
+## Releases
+
+Each version goes to [npm](https://www.npmjs.com/package/walletscan-cli), [GitHub Packages](https://github.com/aaronjmars/walletscan/pkgs/npm/walletscan-cli) (as `@aaronjmars/walletscan-cli`) and [GitHub Releases](https://github.com/aaronjmars/walletscan/releases). To cut one: `npm version patch` (bumps `package.json` and tags `vX.Y.Z`), then `git push --follow-tags`. The [publish workflow](.github/workflows/publish.yml) runs the tests, publishes to npm through trusted publishing with provenance (no token stored), then to GitHub Packages, and writes the release notes.
 
 ## Credits
 
