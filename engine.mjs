@@ -234,7 +234,7 @@ async function fetchRoute(entry, rq) {
     }
     return { status: r.status, ok: r.ok && !softError(data), data };
   } catch (e) {
-    return { status: 502, ok: false, data: { error: e.name === "AbortError" ? `upstream timed out after ${limit / 1000}s` : e.message } };
+    return { status: 502, ok: false, data: { error: e.name === "AbortError" ? `upstream timed out after ${limit / 1000}s` : [e.message, e.cause?.code || e.cause?.message].filter(Boolean).join(": ") } };
   } finally {
     clearTimeout(to);
   }

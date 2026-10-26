@@ -1159,7 +1159,7 @@ export function walletList(raw) {
     const k = `${kind.kind}:${kind.account || (kind.kind === "evm" ? kind.address.toLowerCase() : kind.address)}`;
     if (!seen.has(k)) { seen.add(k); out.push(a); }
   }
-  if (bad.length) throw { status: 400, error: `${bad.length} address${bad.length > 1 ? "es are" : " is"} neither ${scannedNames().slice(0, -1).join(", ")} nor ${scannedNames().at(-1)} address${bad.length > 1 ? "es" : ""}`, detail: bad };
+  if (bad.length) throw { status: 400, error: `${bad.length} address${bad.length > 1 ? "es are not valid" : " is not a valid"} ${scannedNames().slice(0, -1).join(", ")} or ${scannedNames().at(-1)} address${bad.length > 1 ? "es" : ""}`, detail: bad };
   if (out.length > WALLETS.max) throw { status: 400, error: `max ${WALLETS.max} addresses per scan.wallets call (got ${out.length})`, detail: `split the list into calls of ${WALLETS.max} or fewer` };
   return out;
 }

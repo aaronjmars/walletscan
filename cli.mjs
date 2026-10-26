@@ -20,6 +20,12 @@ import { readFileSync, writeFileSync, mkdirSync, chmodSync, renameSync, realpath
 import { homedir } from "node:os";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { Agent, setGlobalDispatcher } from "undici";
+
+// Node 26's fetch (undici 8) talks HTTP/2 to hosts that offer it, and a dead HTTP/2 session fails every request sent
+// on it (ERR_HTTP2_INVALID_SESSION: ten Ethereum sources of a cold keyless scan on publicnode, 2026-10-26). Every
+// fetch goes over HTTP/1.1, as on Node 24.
+setGlobalDispatcher(new Agent({ allowH2: false }));
 
 const VERSION = JSON.parse(readFileSync(new URL("./package.json", import.meta.url), "utf8")).version;
 

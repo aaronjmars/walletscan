@@ -211,7 +211,7 @@ test("--json passes the in-process scan answer through on stdout, progress stays
 test("a bad address exits 2 before any scan, a bad flag 1", async () => {
   const r = await run(["hello"]);
   assert.equal(r.code, 2);
-  assert.match(r.err, /neither EVM, Solana/);
+  assert.match(r.err, /not a valid EVM, Solana/);
   assert.equal((await run(["0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045", "nope"])).code, 2);
   assert.equal((await run(["--min-usd", "abc", "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"])).code, 1);
   assert.equal((await run(["--bogus"])).code, 1);

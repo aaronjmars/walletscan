@@ -13,6 +13,7 @@
     "@noble/curves": "^1.9.1",
     "@noble/hashes": "^1.8.0",
     "@scure/base": "^1.2.6",
+    "undici": "^8.12.3",
     "viem": "^2.57.2"
   },
   "engines": {
@@ -26,7 +27,16 @@
   },
   "bugs": "https://github.com/aaronjmars/walletscan/issues",
   "homepage": "https://github.com/aaronjmars/walletscan#readme",
-  "keywords": ["wallet", "crypto", "ethereum", "solana", "airdrop", "bridge", "unclaimed", "cli"],
+  "keywords": [
+    "wallet",
+    "crypto",
+    "ethereum",
+    "solana",
+    "airdrop",
+    "bridge",
+    "unclaimed",
+    "cli"
+  ],
   "files": [
     "*.mjs",
     "airdrops/",

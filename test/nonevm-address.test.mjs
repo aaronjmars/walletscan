@@ -93,5 +93,5 @@ test("walletList: mixed kinds, duplicates dropped per kind (bech32 case, one SS5
     ...(SCANNED_KINDS.includes("polkadot") ? ["13UVJyLnbVp9RBZYFwFGyDvVd1y27Tt8tkntv6Q7JVPhFsTB", "F3opxRbN5ZbjJNU511Kj2TLuzFcDq9BGduA9TgiECafpg29"] : []),
   ]);
   assert.deepEqual(list, ["0x0B585F8DaEfBC68a311FbD4cB20d9174aD174016", "bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4", ...(SCANNED_KINDS.includes("polkadot") ? ["13UVJyLnbVp9RBZYFwFGyDvVd1y27Tt8tkntv6Q7JVPhFsTB"] : [])]);
-  assert.throws(() => walletList("bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4,vitalik.eth"), (e) => e.status === 400 && /1 address is neither/.test(e.error) && e.detail[0] === "vitalik.eth");
+  assert.throws(() => walletList("bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4,vitalik.eth"), (e) => e.status === 400 && /1 address is not a valid /.test(e.error) && e.detail[0] === "vitalik.eth");
 });

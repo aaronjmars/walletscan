@@ -49,7 +49,7 @@ test("walletList: comma, space or array; EVM and Solana mixed; duplicates droppe
 });
 
 test("walletList: a bad address, an empty list or too many = 400", () => {
-  assert.throws(() => walletList(`${E1},hello,0x12`), (e) => e.status === 400 && /2 addresses are neither/.test(e.error) && e.detail.join() === "hello,0x12");
+  assert.throws(() => walletList(`${E1},hello,0x12`), (e) => e.status === 400 && /2 addresses are not valid /.test(e.error) && e.detail.join() === "hello,0x12");
   assert.throws(() => walletList(""), (e) => e.status === 400 && e.detail[0] === "addresses");
   assert.throws(() => walletList(undefined), (e) => e.status === 400);
   assert.equal(WALLETS.max, 4);
