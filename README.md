@@ -165,7 +165,7 @@ npm test
 
 ## Releases
 
-Each version goes to [npm](https://www.npmjs.com/package/walletscan-cli), [GitHub Packages](https://github.com/aaronjmars/walletscan/pkgs/npm/walletscan-cli) (as `@aaronjmars/walletscan-cli`) and [GitHub Releases](https://github.com/aaronjmars/walletscan/releases). To cut one: `npm version patch` (bumps `package.json` and tags `vX.Y.Z`), then `git push --follow-tags`. The [publish workflow](.github/workflows/publish.yml) runs the tests, publishes to npm through trusted publishing with provenance (no token stored), then to GitHub Packages, and writes the release notes.
+Each version goes to [npm](https://www.npmjs.com/package/walletscan-cli), [GitHub Packages](https://github.com/aaronjmars/walletscan/pkgs/npm/walletscan-cli) (as `@aaronjmars/walletscan-cli`) and [GitHub Releases](https://github.com/aaronjmars/walletscan/releases). To cut one, bump the version on main (`npm version patch --no-git-tag-version`, commit, push). The [publish workflow](.github/workflows/publish.yml) sees a version with no `vX.Y.Z` tag yet, runs the tests, publishes to npm through trusted publishing with provenance (no token stored) and to GitHub Packages, then tags the commit and writes the release notes.
 
 ## Credits
 

@@ -1,11 +1,35 @@
 name: publish
+# Releases a new version when package.json on main has a version with no vX.Y.Z tag yet.
 on:
   push:
-    tags: ["v*"]
+    branches: [main]
+    paths: [package.json]
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      version: ${{ steps.v.outputs.version }}
+      release: ${{ steps.v.outputs.release }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: New version?
+        id: v
+        run: |
+          v="$(node -p 'require("./package.json").version')"
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+          if git ls-remote --exit-code --tags origin "refs/tags/v$v" >/dev/null; then
+            echo "v$v is already released"
+          else
+            echo "release=true" >> "$GITHUB_OUTPUT"
+          fi
+
   npm:
+    needs: check
+    if: needs.check.outputs.release == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -18,15 +42,13 @@ jobs:
           node-version: 24
           cache: npm
           registry-url: https://registry.npmjs.org
-      - name: Tag matches package.json version
-        run: test "${GITHUB_REF_NAME}" = "v$(node -p 'require("./package.json").version')"
       - run: npm ci
       - run: npm test
       - run: npm pack --dry-run
       - name: Skip when this version is already on npm
         id: npm
         run: |
-          if npm view "$(node -p 'require("./package.json").name')@${GITHUB_REF_NAME#v}" version >/dev/null 2>&1; then
+          if npm view "$(node -p 'require("./package.json").name')@${{ needs.check.outputs.version }}" version >/dev/null 2>&1; then
             echo "published=true" >> "$GITHUB_OUTPUT"
           fi
       # Auth via OIDC trusted publishing (set on npmjs.com, workflow publish.yml): no token. Needs npm >= 11.5, Node 24 ships it.
@@ -34,7 +56,7 @@ jobs:
         run: npm publish --provenance --access public
 
   github-packages:
-    needs: npm
+    needs: [check, npm]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -54,7 +76,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if npm view "@aaronjmars/walletscan-cli@${GITHUB_REF_NAME#v}" version >/dev/null 2>&1; then
+          if npm view "@aaronjmars/walletscan-cli@${{ needs.check.outputs.version }}" version >/dev/null 2>&1; then
             echo "published=true" >> "$GITHUB_OUTPUT"
           fi
       - if: steps.gpr.outputs.published != 'true'
@@ -63,16 +85,17 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release:
-    needs: npm
+    needs: [check, npm]
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
       contents: write
     steps:
-      - name: GitHub release for the tag
+      # Creates the vX.Y.Z tag on this commit. Tags made with GITHUB_TOKEN start no workflow, so this cannot loop.
+      - name: Tag + GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
+          V: ${{ needs.check.outputs.version }}
         run: |
-          gh release view "$GITHUB_REF_NAME" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 \
-            || gh release create "$GITHUB_REF_NAME" -R "$GITHUB_REPOSITORY" --verify-tag --generate-notes \
-              --notes "Install: \`npm i -g walletscan-cli\` ([npm](https://www.npmjs.com/package/walletscan-cli/v/${GITHUB_REF_NAME#v}))"
+          gh release create "v$V" -R "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --generate-notes \
+            --notes "Install: \`npm i -g walletscan-cli\` ([npm](https://www.npmjs.com/package/walletscan-cli/v/$V))"
