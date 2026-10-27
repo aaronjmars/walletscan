@@ -135,19 +135,20 @@ test("report: totals per bucket, findings by USD with how to claim, holdings, fa
   const keyFor = (id) => (id.startsWith("sol.") ? "helius" : id === "bridge.stuck" || id === "airdrop.index" ? "alchemy" : id.includes("zerion") ? "zerion" : null);
   const text = render(SCAN, { keyFor });
   assert.ok(text.startsWith(`${SCAN.address} (evm)`));
-  for (const w of ["you can claim", "team must release", "may not work"]) assert.match(text, new RegExp(`^  ${w} +\\$`, "m"));
-  assert.match(text, /^  of which sure \$[\d,.]+( \(\$[\d,.]+ after fees\))?, likely \$[\d,.]+ \(check in the app first\)$/m);
+  for (const w of ["you can claim", "team must release", "may not work"].filter((w, i) => !i || SCAN.totals.by_bucket[Object.keys(SCAN.totals.by_bucket)[i]].findings)) assert.match(text, new RegExp(`^ +\\$[\\d,.]+  ${w} +\\d+ finding`, "m"));
+  assert.match(text, /^ +of which sure \$[\d,.]+( \(\$[\d,.]+ after fees\))?, likely \$[\d,.]+ \(check in the app first\)$/m);
   assert.ok(!text.includes("claimable now"));
   const shown = SCAN.findings.filter((f) => f.confidence !== "low" && (f.usd == null || f.usd >= 0));
-  const usds = [...text.matchAll(/^ {2} *(\$[\d,.]+|unpriced) {2}\S/gm)].map((m) => m[1]);
-  assert.equal(usds.length, shown.length);
+  const list = text.split("\nFindings (")[1].split("\nHoldings")[0];
+  const usds = [...list.matchAll(/^ {2} *(\$[\d,.]+|unpriced) {2}\S/gm)].map((m) => m[1]);
+  assert.ok(usds.length > 0 && usds.length <= shown.length, "rows of one app and claim page merge, none added");
   const nums = usds.filter((u) => u !== "unpriced").map((u) => Number(u.replace(/[$,]/g, "")));
   assert.deepEqual(nums, [...nums].sort((a, b) => b - a));
   for (const f of shown.filter((x) => x.how_to_claim)) assert.ok(text.includes(f.how_to_claim), f.how_to_claim);
-  assert.match(text, /^Holdings: \$[\d,.]+ verified in \d+ rows?/m);
-  assert.match(text, /needs the alchemy key \(walletscan keys set alchemy\): .*bridge\.stuck/);
+  assert.match(text, /^Holdings  \$[\d,.]+ verified in \d+ rows?/m);
+  assert.match(text, /^  needs the alchemy key \(walletscan keys set alchemy\)\n(?: {4}.*\n)*? {4}bridge\.stuck/m);
   assert.match(text, /needs the zerion key/);
-  if (SCAN.failed_sources.length) assert.match(text, /^Failed sources \(\d+, not checked\)/m);
+  if (SCAN.failed_sources.length) assert.match(text, /^  failed +\S/m);
   assert.ok(!text.includes("\x1b["), "no color unless asked");
   assert.ok(render(SCAN, { color: true }).includes("\x1b[32m"));
 });
@@ -155,7 +156,7 @@ test("report: totals per bucket, findings by USD with how to claim, holdings, fa
 test("report: no sure money says so instead of a $0.00 line, and names the Zerion key when it is missing", () => {
   const t = { ...SCAN.totals, claimable_usd: 0, claimable_net_usd: 0, likely_usd: 16.13 };
   const text = render({ ...SCAN, totals: t, skipped_for_keys: [{ id: "holdings.zerion", key: "ZERION_API_KEY", why: "x" }] });
-  assert.match(text, /^  none of it is sure yet: check each in the app first \(a Zerion key confirms more: walletscan keys set zerion\)$/m);
+  assert.match(text, /^ +none of it is sure yet: check each in the app first \(a Zerion key confirms more: walletscan keys set zerion\)$/m);
   assert.ok(!/sure \$0\.00/.test(text));
   assert.ok(!render({ ...SCAN, totals: t, skipped_for_keys: [] }).includes("Zerion key"));
   assert.ok(!/sure|none of it/.test(render({ ...SCAN, totals: { ...t, likely_usd: 0 } }).split("Findings")[0]));
@@ -171,25 +172,23 @@ test("report: --all shows low hints, --min-usd hides small rows, skipped_for_key
   const min = render(data, { minUsd: 10 });
   assert.match(min, /Findings \(1\)/);
   assert.ok(min.includes("Mid"));
-  assert.match(render({ ...data, skipped_for_keys: [{ id: "sol.assets", key: "HELIUS_API_KEY" }] }), /needs the helius key \(walletscan keys set helius\): sol\.assets/);
-  assert.match(render({ ...data, skipped_for_keys: { ALCHEMY_API_KEY: ["bridge.stuck"] } }), /needs the alchemy key.*bridge\.stuck/);
-  assert.match(render({ ...data, skipped_for_keys: ["rewards.zerion"] }, { keyFor: () => "zerion" }), /needs the zerion key.*rewards\.zerion/);
-  assert.ok(!render({ ...data, skipped_for_keys: [] }).includes("Skipped"));
+  assert.match(render({ ...data, skipped_for_keys: [{ id: "sol.assets", key: "HELIUS_API_KEY" }] }), /needs the helius key \(walletscan keys set helius\)\n {4}sol\.assets\n/);
+  assert.match(render({ ...data, skipped_for_keys: { ALCHEMY_API_KEY: ["bridge.stuck"] } }), /needs the alchemy key.*\n {4}bridge\.stuck/);
+  assert.match(render({ ...data, skipped_for_keys: ["rewards.zerion"] }, { keyFor: () => "zerion" }), /needs the zerion key.*\n {4}rewards\.zerion/);
+  assert.ok(!render({ ...data, skipped_for_keys: [] }).includes("needs the"));
   // parts of a source: one line per source, networks and bridge names merged
   const parts = render({ ...data, skipped_for_keys: ["arb", "base"].map((n) => ({ id: "rewards.llamapay", key: "ALCHEMY_API_KEY", why: `full-history event logs on ${n}-mainnet` })).concat([{ id: "bridge.stuck", key: "ALCHEMY_API_KEY", why: "zora: RPC on zora-mainnet" }, { id: "bridge.stuck", key: "ALCHEMY_API_KEY", why: "ink: RPC on ink-mainnet" }]) });
-  assert.match(parts, /Skipped for a missing key \(2 sources, or parts of them\)/);
-  assert.match(parts, /needs the alchemy key \(walletscan keys set alchemy\): rewards\.llamapay, bridge\.stuck\n/);
-  assert.match(parts, /\n {4}rewards\.llamapay: full-history event logs on arb, base\n {4}bridge\.stuck: zora, ink\n/);
+  assert.match(parts, /\nNot fully checked\n  needs the alchemy key \(walletscan keys set alchemy\)\n {4}rewards\.llamapay {2}full-history event logs on arb, base\n {4}bridge\.stuck {6}zora, ink\n/);
   assert.match(render({ ...data, totals: { ...data.totals, debt_usd: -9.34 } }), /, -\$9\.34 debt/);
 });
 
 test("report: several wallets name the address on each row", () => {
   const multi = { addresses: 2, scanned: 2, partial: false, totals: SCAN.totals, wallets: [{ address: SCAN.address, sources: { "rewards.zerion": "not configured" } }, { address: "0x1111111111111111111111111111111111111111", sources: {} }], findings: SCAN.findings.map((x) => ({ address: SCAN.address, ...x })), holdings: [], failed_sources: [{ address: "0x1111111111111111111111111111111111111111", id: "rewards.alpaca2", reason: "step evm.rpc failed (upstream 502)" }] };
   const text = render(multi, { keyFor: () => "zerion" });
-  assert.match(text, /^Failed sources \(1, not checked\): rewards\.alpaca2 on 0x1111\.\.\.1111 \(step evm\.rpc failed/m);
+  assert.match(text, /^  failed +rewards\.alpaca2 on 0x1111\.\.\.1111 \(step evm\.rpc failed/m);
   assert.match(text, /^2\/2 wallets scanned/);
   if (multi.findings.some((x) => x.confidence !== "low")) assert.match(text, /0xd8dA\.\.\.6045/);
-  assert.match(text, /needs the zerion key.*rewards\.zerion/);
+  assert.match(text, /needs the zerion key.*\n {4}rewards\.zerion/);
 });
 
 test("--json passes the in-process scan answer through on stdout, progress stays off it", async () => {
@@ -304,4 +303,27 @@ test("testKey: works, rejected, Alchemy app with Ethereum off, and unknown on a 
   assert.match(all.note, /^every network checked is off in this Alchemy app, so the key adds nothing yet/);
   assert.deepEqual(await withFetch(reply(200, { status: "0", result: "Invalid API Key" }), () => testKey("etherscan", "A".repeat(34))), { ok: false });
   assert.deepEqual(await withFetch(async () => { throw new Error("offline"); }, () => testKey("zerion", "eGs6")), { ok: null });
+});
+
+test("report: rows of one app and claim page merge, $0.00 deadline rows hide, deadlines count days and the close ones go on top", () => {
+  const f = (o) => ({ chain: "ethereum", confidence: "high", bucket: "you_can_claim", source: "rewards.legacy", deadline: null, ...o });
+  const now = Date.parse("2026-10-27T12:00:00Z");
+  const findings = [
+    f({ protocol: "ZKsync Lite", asset: "ETH", amount: 0.01, usd: 30, action: "claim ETH left on ZKsync Lite", how_to_claim: "https://lite.zksync.io" }),
+    f({ protocol: "ZKsync Lite", asset: "USDC", amount: 14.5, usd: 14.5, action: "claim USDC left on ZKsync Lite", how_to_claim: "https://lite.zksync.io" }),
+    f({ protocol: "ZKsync Lite", asset: "ZZ", amount: 11, usd: null, action: "claim ZZ left on ZKsync Lite", how_to_claim: "https://lite.zksync.io" }),
+    f({ protocol: "Uniswap V3", asset: "WETH", amount: 0.1, usd: 400, action: "collect fees on position #1", how_to_claim: "https://app.uniswap.org/positions/v3/base/1" }),
+    f({ protocol: "Uniswap V3", asset: "WETH", amount: 0.01, usd: 40, action: "collect fees on position #2", how_to_claim: "https://app.uniswap.org/positions/v3/base/2" }),
+    f({ chain: "lisk", asset: "ETH", amount: 0, usd: 0, action: "bridge out", how_to_claim: "https://bridge.lisk.com", deadline: "2026-10-31", source: "holdings.chains" }),
+    f({ chain: "gravity-alpha", asset: "G", amount: 300, usd: 1.11, confidence: "medium", action: "bridge out", how_to_claim: "https://bridge.gravity.xyz", deadline: "2026-11-01", source: "holdings.zerion" }),
+    f({ protocol: "Old", asset: "ETH", amount: 1, usd: 5, action: "x", how_to_claim: "https://old.example", deadline: "2026-10-26" }),
+  ];
+  const text = render({ address: "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045", kind: "evm", totals: {}, findings }, { minUsd: 1, now });
+  assert.match(text, /\$44\.50 {2}ZKsync Lite · ethereum {2}0\.01 ETH \+ 14\.5 USDC \+ 11 ZZ\n {16}claim ETH, USDC, ZZ left on ZKsync Lite\n/);
+  assert.equal((text.match(/Uniswap V3/g) || []).length, 2, "two positions, two claim pages: two rows");
+  assert.ok(!text.includes("lisk"), "a $0.00 row is hidden even with a deadline");
+  assert.match(text, /Deadlines soon\n +\$1\.11 {2}by Nov 1, 2026 \(in 5 days\) {2}gravity-alpha {2}300 G\n/);
+  assert.match(text, /deadline Oct 26, 2026 \(passed\)/);
+  assert.match(text, /gravity-alpha {2}300 G {2}likely, check first/);
+  assert.match(text, /Findings \(5\)/);
 });

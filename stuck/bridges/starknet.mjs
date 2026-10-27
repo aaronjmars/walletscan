@@ -6,6 +6,7 @@ import { parseAbi, encodeFunctionData, keccak256, pad, getAddress, toHex } from 
 import * as chains from "viem/chains";
 import { readFileSync } from "node:fs";
 import { MIN, l1, pool, blockTime, memo, cachePath, saveJson, revertText, ETH, erc20 } from "../lib.mjs";
+import { logsCapped, needKey, ALCHEMY_PAID } from "../../keyless.mjs";
 
 const CORE = "0xc662c410C0ECf747543f5bA90660f6ABeBD9C8c4";
 const START = 13627224n; // first LogMessageToL1 (2021-11)
@@ -99,6 +100,8 @@ const sync = memo(async () => {
   const from = BigInt(cache.block) + 1n;
   if (from > head) return cache.rows;
   const first = !cache.rows.length;
+  // built from 200k-block log windows: an Alchemy Free plan key (10 blocks) cannot build it
+  if (first && logsCapped()) throw needKey("message index (full-history logs)", ALCHEMY_PAID);
   if (first) console.error("starknet: first run, indexing every StarkGate L2 -> L1 message since 2021 (about a minute, cached after)...");
   const parts = [];
   for (let a = from; a <= head; a += 200_000n) parts.push([a, a + 199_999n > head ? head : a + 199_999n]);

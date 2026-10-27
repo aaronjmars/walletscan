@@ -207,7 +207,7 @@ test("scan truncation is kept in totals, multi-wallet output and the CLI; approv
   assert.equal(multi.security.approvals.length, 1);
   assert.equal(multi.totals.claimable_usd, 0);
   const text = render(multi);
-  assert.match(text, /Stopped early/);
+  assert.match(text, /^  stopped +holdings\.zerion/m);
   assert.match(text, /Active token approvals/);
 });
 

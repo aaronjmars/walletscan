@@ -8,6 +8,9 @@ import { parseAbi, parseSignature, getAddress, toHex } from "viem";
 import * as chains from "viem/chains";
 import { readFileSync } from "node:fs";
 import { MIN, client, l1, transferTxs, blockTime, memo, cachePath, saveJson, revertText, pool, ETH, erc20 } from "../lib.mjs";
+import { logsCapped, needKey, ALCHEMY_PAID } from "../../keyless.mjs";
+// both indexes are built from 10k-block log windows: an Alchemy Free plan key (10 blocks) cannot build them
+const paidOnly = () => { if (logsCapped()) throw needKey("withdrawal index (full-history logs)", ALCHEMY_PAID); };
 
 const RONIN = { chain: chains.ronin, net: "ronin-mainnet" };
 const GW = "0x0CF8fF40a508bdBc39fBe1Bb679dCBa64E65C7Df"; // RoninGatewayV3 proxy
@@ -80,6 +83,7 @@ const logTime = (l) => (l.blockTimestamp ? Number(l.blockTimestamp) : null);
 // (Ronin implementation 0xdEaD, Ethereum gateway paused), so this is built once and never synced.
 const legacyIndex = memo(async () => {
   try { const x = JSON.parse(readFileSync(cachePath(LEGACY_CACHE), "utf8")); if (x.v === 1) return x.rows; } catch {}
+  paidOnly();
   console.error("ronin: first run, indexing unclaimed pre-2022 withdrawals (a few minutes, cached after)...");
   // Unclaimed = never recorded by the old Ethereum gateway; their order gives the migrated id.
   const ids = []; for (let i = 1; i <= OLD_MAX; i++) ids.push(i);
@@ -112,6 +116,7 @@ const v3Index = memo(async () => {
   const head = (await c.getBlockNumber()) - 50n; // stay behind the tip so reorged logs never reach the cache
   const from = BigInt(cache.block) + 1n;
   if (from > head) return cache.rows;
+  if (!cache.rows.length) paidOnly();
   // Event data: receiptHash, then the static Receipt tuple word by word.
   const rows = await rawLogs(c, GW, T_REQUESTED, from, head, (l) => {
     const w = (i) => word(l.data, i + 1);
