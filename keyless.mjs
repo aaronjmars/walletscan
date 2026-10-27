@@ -79,6 +79,16 @@ export function markLogsCapped() {
   LOGS.capped = true;
   console.error("alchemy: this key is on the Free plan, which caps eth_getLogs at 10 blocks, so full-history logs go through the keyless path (Ethereum, Avalanche, Mantle, Blast; other networks are skipped): Pay As You Go lifts the cap");
 }
+// one 16-block eth_getLogs on Ethereum before a scan: a Free plan key is known before any source runs, so an index
+// that only full-history logs can build (Ronin, Starknet) is skipped up front instead of starting over on every run
+export async function probeLogsCap(key = process.env.ALCHEMY_API_KEY || process.env.ALCHEMY_KEY) {
+  if (!key || LOGS.capped) return LOGS.capped;
+  try {
+    const r = await fetch(`https://eth-mainnet.g.alchemy.com/v2/${key}`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ jsonrpc: "2.0", id: 1, method: "eth_getLogs", params: [{ fromBlock: "0x1", toBlock: "0x10", address: "0x0000000000000000000000000000000000000000" }] }), signal: AbortSignal.timeout(5000) });
+    if (freeLogsCap(await r.text())) markLogsCapped();
+  } catch {} // no answer: the first wide read finds out instead
+  return LOGS.capped;
+}
 // an eth_getLogs filter over more than the Free plan's 10 blocks ("latest" or no end counts as wide)
 export function wideLogs(filter = {}) {
   if (filter.blockHash) return false;

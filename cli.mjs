@@ -589,6 +589,7 @@ async function scanCmd(addresses, opts, io) {
     return e.status === 400 ? 2 : 1;
   }
   const kinds = list.map((a) => addressKind(a)?.kind);
+  if (kinds.includes("evm")) await (await import("./keyless.mjs")).probeLogsCap();
   await warmIndexes(E.indexesFor(kinds).filter((x) => x.live), { log });
 
   const t0 = Date.now(), multi = list.length > 1;
