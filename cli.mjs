@@ -2,7 +2,7 @@
 // cli.mjs - walletscan: the scans run locally, in-process (engine.mjs). No account needed: it runs
 // keyless (every route that needs no key) and each provider key the user adds unlocks more sources.
 //
-//   walletscan <address...> [--json] [--min-usd N] [--all] [--no-color] [--quiet]
+//   walletscan <address|ens name...> [--json] [--min-usd N] [--all] [--no-color] [--quiet]
 //   walletscan                          in a terminal: asks for the address(es)
 //   walletscan setup                    walks through each provider key: what it unlocks, where to get one, a live check
 //   walletscan keys                     which provider keys are set, from where, what each unlocks
@@ -212,7 +212,7 @@ function keyGroups(skipped, keyFor) {
       else add(k, typeof v === "string" ? v : v?.key || v?.env);
     }
   }
-  return Object.fromEntries(Object.entries(groups).map(([k, m]) => [PROVIDER_OF[k] || k.replace(/_API_KEY$/, "").toLowerCase(), m]));
+  return Object.fromEntries(Object.entries(groups).map(([k, m]) => [PROVIDER_OF[k] || (/\s/.test(k) ? k : k.replace(/_API_KEY$/, "").toLowerCase()), m])); // "a paid Alchemy plan" stays as written
 }
 // whys of one source -> one line: "X on arb-mainnet", "X on base-mainnet" -> "X on arb, base"; parts named
 // "part: why" (bridge.stuck's bridges) -> just their names (--json has each why)
@@ -229,9 +229,10 @@ function whyLine(whys) {
 }
 
 // a scan.all or scan.wallets answer -> the human report
-export function render(data, { minUsd = 0, all = false, color = false, keyFor = () => null } = {}) {
+export function render(data, { minUsd = 0, all = false, color = false, keyFor = () => null, names = {} } = {}) {
   const c = paint(color), out = [], t = data.totals || {}, multi = Array.isArray(data.wallets);
-  out.push(c.bold(multi ? `${data.scanned}/${data.addresses} wallets scanned` : `${data.address} (${data.kind})`));
+  const ens = (a) => names[String(a ?? "").toLowerCase()]; // the ENS name a scanned address was given as
+  out.push(c.bold(multi ? `${data.scanned}/${data.addresses} wallets scanned` : `${data.address} (${[ens(data.address), data.kind].filter(Boolean).join(", ")})`));
   if (data.warning) out.push(c.yellow(`partial: ${data.warning}`));
   out.push("", c.bold("Money found"));
   const tone = { you_can_claim: c.green, team_must_release: c.yellow, may_not_work: c.dim };
@@ -252,7 +253,7 @@ export function render(data, { minUsd = 0, all = false, color = false, keyFor = 
   if (!rows.length) out.push(c.dim("  nothing found"));
   for (const f of rows) {
     const what = [f.protocol || (/^holdings\./.test(f.source || "") ? null : f.source), f.chain, [qty(f.amount), f.asset].filter(Boolean).join(" ")].filter(Boolean).join(", ");
-    out.push(`  ${tone[f.bucket]?.(usd(f.usd).padStart(14)) ?? usd(f.usd).padStart(14)}  ${what}  ${c.dim(`[${f.confidence}${f.bucket ? `, ${BUCKET_WORDS[f.bucket] || f.bucket}` : ""}]`)}${multi && f.address ? c.dim(`  ${short(f.address)}`) : ""}`);
+    out.push(`  ${tone[f.bucket]?.(usd(f.usd).padStart(14)) ?? usd(f.usd).padStart(14)}  ${what}  ${c.dim(`[${f.confidence}${f.bucket ? `, ${BUCKET_WORDS[f.bucket] || f.bucket}` : ""}]`)}${multi && f.address ? c.dim(`  ${ens(f.address) || short(f.address)}`) : ""}`);
     if (f.action) out.push(`  ${" ".repeat(14)}  ${f.action}`);
     if (f.how_to_claim) out.push(`  ${" ".repeat(14)}  ${c.cyan(f.how_to_claim)}`);
     if (f.deadline) out.push(`  ${" ".repeat(14)}  ${c.yellow(`deadline ${f.deadline}`)}`);
@@ -300,6 +301,7 @@ const HELP = `walletscan ${VERSION} - find the money a wallet forgot (rent, rewa
 
 Usage
   walletscan <address...>          scan one or more wallets (EVM, Solana, Bitcoin, TRON, NEAR, Sui, Polkadot, TON)
+                                   or ENS names (vitalik.eth)
   walletscan                       in a terminal: asks for the address(es) to scan
   walletscan setup                 add provider keys step by step (what each unlocks, where to get a free one)
   walletscan keys                  provider keys: set or not, from where, what each unlocks
@@ -483,17 +485,21 @@ async function scanCmd(addresses, opts, io) {
   if (minUsd != null && !(minUsd >= 0)) { io.stderr.write(`--min-usd takes a number of USD, got ${opts["min-usd"]}\n`); return 1; }
   await offerSetup(opts, io);
   prepareEnv();
-  const [E, { walletList }, { addressKind }] = await Promise.all([import("./engine.mjs"), import("./compose.mjs"), import("./nonevm/address.mjs")]);
-  let list;
-  try { list = walletList(addresses); } catch (e) {
-    io.stderr.write(`${e.error || e.message}${e.detail ? `: ${typeof e.detail === "string" ? e.detail : JSON.stringify(e.detail)}` : ""}\n`);
+  const [E, { walletList }, { addressKind }, { resolveNames }] = await Promise.all([import("./engine.mjs"), import("./compose.mjs"), import("./nonevm/address.mjs"), import("./ens.mjs")]);
+  let list, names;
+  try {
+    ({ list, names } = await (io.resolveNames || resolveNames)(addresses, (a) => !!addressKind(a)));
+    for (const [a, n] of Object.entries(names)) log(`ens: ${n} -> ${a}`);
+    list = walletList(list);
+  } catch (e) {
+    io.stderr.write(scrub(`${e.error || e.message}${e.detail ? `: ${typeof e.detail === "string" ? e.detail : JSON.stringify(e.detail)}` : ""}\n`));
     return e.status === 400 ? 2 : 1;
   }
   const kinds = list.map((a) => addressKind(a)?.kind);
   await warmIndexes(E.indexesFor(kinds).filter((x) => x.live), { log });
 
   const t0 = Date.now(), multi = list.length > 1;
-  const what = multi ? `${list.length} wallets` : `${list[0]} (${kinds[0]})`;
+  const what = multi ? `${list.length} wallets` : `${names[list[0].toLowerCase()] || list[0]} (${kinds[0]})`;
   let tick = null;
   if (!opts.quiet && io.stderr.isTTY) {
     // \x1b[K clears the rest of the line: the counter and the index messages sources print share stderr
@@ -517,7 +523,7 @@ async function scanCmd(addresses, opts, io) {
   if (!out.ok) { io.stderr.write(`scan failed (${out.status}): ${scrub(out.data?.error || JSON.stringify(out.data)).slice(0, 400)}\n`); return 1; }
   if (opts.json) { io.stdout.write(`${scrub(JSON.stringify(out.data, null, 2))}\n`); return 0; }
   const color = !opts["no-color"] && !process.env.NO_COLOR && !!io.stdout.isTTY;
-  io.stdout.write(scrub(render(out.data, { minUsd: minUsd ?? 0, all: !!opts.all, color, keyFor: keyNamer(E) })));
+  io.stdout.write(scrub(render(out.data, { minUsd: minUsd ?? 0, all: !!opts.all, color, keyFor: keyNamer(E), names })));
   return 0;
 }
 
@@ -534,7 +540,7 @@ export async function main(argv, io = { stdout: process.stdout, stderr: process.
   if (opts.help || pos[0] === "help") { io.stdout.write(HELP); return 0; }
   if (!pos.length) {
     if (!io.stdin.isTTY) { io.stderr.write(HELP); return 1; }
-    const a = await readLine("Wallet address(es) to scan (several: separate with spaces): ", io.stdin, io.stderr);
+    const a = await readLine("Wallet address(es) or ENS name(s) to scan (several: separate with spaces): ", io.stdin, io.stderr);
     if (!a) { io.stderr.write("nothing entered\n"); return 1; }
     pos.push(...a.split(/[\s,]+/).filter(Boolean));
   }

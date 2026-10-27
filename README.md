@@ -36,6 +36,7 @@ Node 24 or newer. The package is [`walletscan-cli` on npm](https://www.npmjs.com
 ```bash
 npm i -g walletscan-cli
 walletscan 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045
+walletscan vitalik.eth              # ENS names work too
 ```
 
 Start scanning without keys. Run `walletscan setup` when you want to add Alchemy and Zerion; the first terminal scan may also offer this optional setup.
@@ -48,7 +49,7 @@ Provider keys are optional. `walletscan setup` asks for the two that find the mo
 
 | Provider | Env | Unlocks |
 |---|---|---|
-| `alchemy` | `ALCHEMY_API_KEY` | full history on every EVM network for stuck bridges, airdrops, smart wallets and other log-based checks; tokens on 34 networks. In the Alchemy app, turn on every network |
+| `alchemy` | `ALCHEMY_API_KEY` | full history on every EVM network for stuck bridges, airdrops, smart wallets and other log-based checks; tokens on 34 networks. In the Alchemy app, turn on every network. The Free plan caps `eth_getLogs` at 10 blocks, so with a Free key those log reads go through the keyless path (listed as "needs a paid Alchemy plan") |
 | `zerion` | `ZERION_API_KEY` | portfolio, DeFi positions and rewards on every chain Zerion covers |
 | `helius` | `HELIUS_API_KEY` | Solana: Helius holdings and prices, Serum leftovers, faster scans |
 | `etherscan` | `ETHERSCAN_API_KEY` | more tokens on small EVM chains |
@@ -87,6 +88,7 @@ Jupiter remains the primary Solana token information source. Requests use its ca
 
 ```bash
 walletscan <address...> [--json] [--min-usd N] [--all] [--no-color] [--quiet]
+walletscan vitalik.eth nick.base.eth  # ENS names resolve to their ETH address on Ethereum first
 walletscan                          # in a terminal: asks for the address(es)
 walletscan update                   # rebuild the local indexes now
 ```

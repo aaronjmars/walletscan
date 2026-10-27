@@ -6,7 +6,7 @@ import { mkdirSync, writeFileSync, renameSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { AsyncLocalStorage } from "node:async_hooks";
-import { keylessRpc, PUBLIC_RPC, alchemyOff, markAlchemyOff, notEnabled, errText } from "../keyless.mjs";
+import { keylessRpc, PUBLIC_RPC, alchemyOff, markAlchemyOff, notEnabled, errText, logsCapped, markLogsCapped, freeLogsCap, wideLogs } from "../keyless.mjs";
 
 // Env is read at call time, so a server can set it after importing.
 const alchemyKey = () => process.env.ALCHEMY_KEY || process.env.ALCHEMY_API_KEY;
@@ -27,13 +27,16 @@ function client(chain, net) {
   }
   return clients.get(k);
 }
-// a network turned off in the Alchemy app (403 "... is not enabled for this app") goes keyless, like no key
+// a network turned off in the Alchemy app (403 "... is not enabled for this app") goes keyless, like no key; so do
+// the wide eth_getLogs of a Free plan key (10 blocks at most), or getLogsAll would split the range down to 10 blocks
 function offAware(net, keyed) {
   return (args) => {
     const t = keyed(args);
     return { ...t, request: async (rq) => {
-      if (alchemyOff(net)) return keylessRpc(net, rq.method, rq.params);
+      const wide = rq.method === "eth_getLogs" && wideLogs(rq.params?.[0]);
+      if (alchemyOff(net) || (wide && logsCapped())) return keylessRpc(net, rq.method, rq.params);
       try { return await t.request(rq); } catch (e) {
+        if (wide && freeLogsCap(errText(e))) { markLogsCapped(); return keylessRpc(net, rq.method, rq.params); }
         if (!notEnabled(errText(e))) throw e;
         markAlchemyOff(net);
         return keylessRpc(net, rq.method, rq.params);
