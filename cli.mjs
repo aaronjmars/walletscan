@@ -181,7 +181,8 @@ const paint = (on) => {
   return { bold: c(1), dim: c(2), green: c(32), yellow: c(33), red: c(31), cyan: c(36) };
 };
 const usd = (n) => (n == null ? "unpriced" : `${n < 0 ? "-" : ""}$${Math.abs(Number(n)).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`);
-const qty = (n) => (n == null ? "" : Number(n).toLocaleString("en-US", { maximumFractionDigits: Math.abs(n) >= 1 ? 4 : 8 }));
+// a token amount: 2 decimals from 1,000, 4 from 1, 4 significant digits under 1
+const qty = (n) => (n == null ? "" : Number(n).toLocaleString("en-US", Math.abs(n) >= 1000 ? { maximumFractionDigits: 2 } : Math.abs(n) >= 1 ? { maximumFractionDigits: 4 } : { maximumSignificantDigits: 4 }));
 const short = (a) => (a && a.length > 16 ? `${a.slice(0, 6)}...${a.slice(-4)}` : a);
 const BUCKET_WORDS = { you_can_claim: "you can claim", team_must_release: "team must release", may_not_work: "may not work" };
 
@@ -228,41 +229,130 @@ function whyLine(whys) {
   return [...(parts.size ? [[...parts].join(", ")] : []), ...[...by].map(([what, nets]) => (nets ? `${what} on ${nets.join(", ")}` : what))].join("; ");
 }
 
-// a scan.all or scan.wallets answer -> the human report
-export function render(data, { minUsd = 0, all = false, color = false, keyFor = () => null, names = {} } = {}) {
+// a scan.all or scan.wallets answer -> the human report: totals, deadlines closing soon, findings by USD per bucket
+// (rows of one app and one claim page merged), holdings, approvals, then what was not fully checked
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const SOON_DAYS = 60; // a deadline this close also gets a line at the top
+// whole days from today (UTC) to a YYYY-MM-DD deadline: 0 = today, < 0 = passed
+const daysLeft = (d, now) => Math.round((Date.parse(`${d}T00:00:00Z`) - Date.parse(`${new Date(now).toISOString().slice(0, 10)}T00:00:00Z`)) / 86_400_000);
+function when(d, now) {
+  const [y, m, day] = String(d).split("-").map(Number), n = daysLeft(d, now);
+  return `${MONTHS[m - 1] || "?"} ${day}, ${y} (${n < 0 ? "passed" : n === 0 ? "today" : n === 1 ? "tomorrow" : `in ${n} days`})`;
+}
+const reEscape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const swapWord = (text, from, to) => text.replace(new RegExp(`(?<![\\w-])${reEscape(from)}(?![\\w-])`, "g"), to);
+// words -> lines of at most width chars (a word longer than that, like a URL, gets its own line)
+function wrap(text, width) {
+  const out = [];
+  let cur = "";
+  for (const w of String(text).split(/\s+/).filter(Boolean)) {
+    if (cur && cur.length + 1 + w.length > width) { out.push(cur); cur = w; } else cur = cur ? `${cur} ${w}` : w;
+  }
+  if (cur) out.push(cur);
+  return out;
+}
+// "0.0155 ETH + 14.52 USDC": amounts of one asset added up, in first-seen order
+function amounts(parts) {
+  const by = new Map();
+  for (const f of parts) {
+    if (!f.asset) continue;
+    const x = by.get(f.asset) || by.set(f.asset, { n: null }).get(f.asset);
+    if (f.amount != null) x.n = (x.n ?? 0) + Number(f.amount);
+  }
+  return [...by].map(([a, { n }]) => [qty(n), a].filter(Boolean).join(" ")).join(" + ");
+}
+// rows of one app, one claim page and one bucket -> one row, when their actions are the same (a Stargate migration on
+// three chains) or differ only by the asset (ZKsync Lite ETH, USDC, DAI ...); anything else stays its own row
+function mergeRows(rows) {
+  const groups = new Map();
+  for (const f of rows) {
+    const k = f.how_to_claim ? [f.protocol || "", f.how_to_claim, f.bucket, f.address || ""].join("|") : Symbol("own row");
+    (groups.get(k) || groups.set(k, []).get(k)).push(f);
+  }
+  const uniq = (xs) => [...new Set(xs.filter(Boolean))];
+  return [...groups.values()].flatMap((g) => {
+    if (g.length === 1) return [{ ...g[0], parts: g }];
+    const a0 = g[0].action || "", same = g.every((f) => (f.action || "") === a0);
+    const byAsset = !same && !!g[0].asset && g.every((f) => f.asset && (f.action || "") === swapWord(a0, g[0].asset, f.asset));
+    if (!same && !byAsset) return g.map((f) => ({ ...f, parts: [f] }));
+    const priced = g.filter((f) => f.usd != null), rank = { low: 0, medium: 1, high: 2 };
+    return [{
+      ...g[0], parts: g, chain: uniq(g.map((f) => f.chain)).join(", "),
+      usd: priced.length ? Math.round(priced.reduce((s, f) => s + Number(f.usd), 0) * 100) / 100 : null,
+      action: byAsset ? swapWord(a0, g[0].asset, uniq(g.map((f) => f.asset)).join(", ")) : a0,
+      confidence: g.map((f) => f.confidence).sort((a, b) => (rank[a] ?? 0) - (rank[b] ?? 0))[0],
+      deadline: g.map((f) => f.deadline).filter(Boolean).sort()[0] || null,
+    }];
+  });
+}
+
+export function render(data, { minUsd = 0, all = false, color = false, keyFor = () => null, names = {}, width = 100, now = Date.now() } = {}) {
   const c = paint(color), out = [], t = data.totals || {}, multi = Array.isArray(data.wallets);
   const ens = (a) => names[String(a ?? "").toLowerCase()]; // the ENS name a scanned address was given as
+  const col = 12, pad = " ".repeat(col + 4), textWidth = Math.max(40, width - pad.length);
+  const money = (n) => usd(n).padStart(col);
   out.push(c.bold(multi ? `${data.scanned}/${data.addresses} wallets scanned` : `${data.address} (${[ens(data.address), data.kind].filter(Boolean).join(", ")})`));
   if (data.warning) out.push(c.yellow(`partial: ${data.warning}`));
+
+  // ---- totals
   out.push("", c.bold("Money found"));
   const tone = { you_can_claim: c.green, team_must_release: c.yellow, may_not_work: c.dim };
+  const by = t.by_bucket || {};
   for (const [b, words] of Object.entries(BUCKET_WORDS)) {
-    const x = t.by_bucket?.[b] || { findings: 0, usd: 0, unpriced: 0 };
-    out.push(`  ${words.padEnd(18)} ${tone[b](usd(x.usd).padStart(14))}  ${x.findings} finding${x.findings === 1 ? "" : "s"}${x.unpriced ? `, ${x.unpriced} unpriced` : ""}`);
+    const x = by[b] || { findings: 0, usd: 0, unpriced: 0 };
+    if (!x.findings && b !== "you_can_claim") continue;
+    const hints = b === "may_not_work" && !all ? " (--all shows them)" : "";
+    out.push(`  ${tone[b](money(x.usd))}  ${words.padEnd(18)} ${x.findings} finding${x.findings === 1 ? "" : "s"}${x.unpriced ? `, ${x.unpriced} unpriced` : ""}${hints}`);
+    if (b !== "you_can_claim") continue;
+    // the money above split by confidence: high = sure, medium = likely (worth a look in the app before paying gas)
+    const sure = t.claimable_usd || 0, likely = t.likely_usd || 0;
+    const zerionOff = /ZERION|"zerion"/.test(JSON.stringify(data.skipped_for_keys || [])); // any shape (see keyGroups)
+    if (sure > 0) out.push(c.dim(`${pad}of which sure ${usd(sure)}${t.claimable_net_usd != null && t.claimable_net_usd !== sure ? ` (${usd(t.claimable_net_usd)} after fees)` : ""}${likely > 0 ? `, likely ${usd(likely)} (check in the app first)` : ""}`));
+    else if (likely > 0) out.push(c.dim(`${pad}none of it is sure yet: check each in the app first${zerionOff ? " (a Zerion key confirms more: walletscan keys set zerion)" : ""}`));
   }
-  // the money above split by confidence: high = sure, medium = likely (worth a look in the app before paying gas)
-  const sure = t.claimable_usd || 0, likely = t.likely_usd || 0;
-  const zerionOff = /ZERION|"zerion"/.test(JSON.stringify(data.skipped_for_keys || [])); // any shape (see keyGroups)
-  if (sure > 0) out.push(`  of which sure ${usd(sure)}${t.claimable_net_usd != null && t.claimable_net_usd !== sure ? ` (${usd(t.claimable_net_usd)} after fees)` : ""}${likely > 0 ? `, likely ${usd(likely)} (check in the app first)` : ""}`);
-  else if (likely > 0) out.push(`  none of it is sure yet: check each in the app first${zerionOff ? " (a Zerion key confirms more: walletscan keys set zerion)" : ""}`);
 
-  const rows = (data.findings || []).filter((f) => (all || f.confidence !== "low") && (f.usd == null || f.usd >= minUsd || f.deadline));
+  // ---- findings: low hints only with --all; a priced row under the minimum is hidden, whatever its deadline
+  const all_ = data.findings || [];
+  const kept = all_.filter((f) => all || f.confidence !== "low");
+  const rows = mergeRows(kept).filter((f) => f.usd == null || f.usd >= minUsd);
   rows.sort((a, b) => (b.usd ?? -1) - (a.usd ?? -1));
-  const hiddenLow = (data.findings || []).filter((f) => !all && f.confidence === "low").length;
+  const hiddenLow = all ? 0 : all_.length - kept.length;
+  const hiddenSmall = mergeRows(kept).length - rows.length + (data.hidden_below_min_usd || 0);
+  const title = (f, { tag: withTag = true } = {}) => {
+    const name = f.protocol || (/^holdings\./.test(f.source || "") ? null : /^airdrop\./.test(f.source || "") ? "airdrop" : f.source);
+    const where = [name && c.bold(name), f.chain].filter(Boolean).join(c.dim(" · "));
+    const tag = !withTag ? "" : f.confidence === "medium" ? c.yellow("  likely, check first") : f.confidence === "low" ? c.dim("  hint") : "";
+    return `${where}${where ? "  " : ""}${amounts(f.parts)}${tag}${multi && f.address ? c.dim(`  ${ens(f.address) || short(f.address)}`) : ""}`;
+  };
+  const dl = (d, word = "deadline ", w = 0) => { const n = daysLeft(d, now); return (n <= 14 ? c.red : c.yellow)(`${word}${when(d, now)}`.padEnd(w)); };
+
+  const soon = rows.filter((f) => f.deadline && daysLeft(f.deadline, now) >= 0 && daysLeft(f.deadline, now) <= SOON_DAYS);
+  if (soon.length) {
+    out.push("", c.bold("Deadlines soon"));
+    const w = Math.max(...soon.map((f) => `by ${when(f.deadline, now)}`.length));
+    for (const f of [...soon].sort((a, b) => a.deadline.localeCompare(b.deadline))) out.push(`  ${money(f.usd)}  ${dl(f.deadline, "by ", w)}  ${title(f, { tag: false })}`);
+  }
+
   out.push("", c.bold(`Findings (${rows.length})`));
   if (!rows.length) out.push(c.dim("  nothing found"));
-  for (const f of rows) {
-    const what = [f.protocol || (/^holdings\./.test(f.source || "") ? null : f.source), f.chain, [qty(f.amount), f.asset].filter(Boolean).join(" ")].filter(Boolean).join(", ");
-    out.push(`  ${tone[f.bucket]?.(usd(f.usd).padStart(14)) ?? usd(f.usd).padStart(14)}  ${what}  ${c.dim(`[${f.confidence}${f.bucket ? `, ${BUCKET_WORDS[f.bucket] || f.bucket}` : ""}]`)}${multi && f.address ? c.dim(`  ${ens(f.address) || short(f.address)}`) : ""}`);
-    if (f.action) out.push(`  ${" ".repeat(14)}  ${f.action}`);
-    if (f.how_to_claim) out.push(`  ${" ".repeat(14)}  ${c.cyan(f.how_to_claim)}`);
-    if (f.deadline) out.push(`  ${" ".repeat(14)}  ${c.yellow(`deadline ${f.deadline}`)}`);
+  for (const [b, words] of Object.entries(BUCKET_WORDS)) {
+    const part = rows.filter((f) => (f.bucket || "you_can_claim") === b);
+    if (!part.length) continue;
+    if (Object.keys(BUCKET_WORDS).some((o) => o !== b && rows.some((f) => f.bucket === o))) out.push(c.dim(`  ${words}`));
+    for (const f of part) {
+      out.push(`  ${(tone[f.bucket] || ((s) => s))(f.usd == null ? c.dim(money(null)) : money(f.usd))}  ${title(f)}`);
+      if (f.action) for (const l of wrap(f.action, textWidth)) out.push(`${pad}${l}`);
+      if (f.how_to_claim) out.push(`${pad}${c.cyan(f.how_to_claim)}`);
+      if (f.deadline) out.push(`${pad}${dl(f.deadline)}`);
+    }
   }
-  const hidden = [hiddenLow && `${hiddenLow} low-confidence hint${hiddenLow === 1 ? "" : "s"} hidden (--all shows them)`, data.hidden_below_min_usd && `${data.hidden_below_min_usd} below the minimum hidden`].filter(Boolean);
+  const hidden = [hiddenLow && `${hiddenLow} low-confidence hint${hiddenLow === 1 ? "" : "s"} hidden (--all shows them)`, hiddenSmall > 0 && `${hiddenSmall} below the minimum hidden`].filter(Boolean);
   if (hidden.length) out.push(c.dim(`  ${hidden.join("; ")}`));
 
-  const h = data.holdings || [];
-  out.push("", `${c.bold("Holdings")}: ${usd(t.holdings_usd)} verified in ${h.filter((x) => x.verified).length} row${h.filter((x) => x.verified).length === 1 ? "" : "s"}${t.unverified_holdings_usd ? `, ${usd(t.unverified_holdings_usd)} unverified` : ""}${t.locked_usd ? `, ${usd(t.locked_usd)} locked` : ""}${t.debt_usd ? `, ${usd(t.debt_usd)} debt` : ""}${data.spam_hidden ? `, ${data.spam_hidden} spam hidden` : ""}`);
+  // ---- holdings
+  const h = data.holdings || [], verified = h.filter((x) => x.verified).length;
+  out.push("", `${c.bold("Holdings")}  ${usd(t.holdings_usd)} verified in ${verified} row${verified === 1 ? "" : "s"}${t.locked_usd ? `, ${usd(t.locked_usd)} locked` : ""}${t.debt_usd ? `, ${usd(t.debt_usd)} debt` : ""}${data.spam_hidden ? `, ${data.spam_hidden} spam hidden` : ""}`);
+  if (t.unverified_holdings_usd) out.push(c.dim(`          ${usd(t.unverified_holdings_usd)} unverified: tokens with no trusted price (often airdropped spam), not counted`));
 
   const permissions = data.security?.approvals || [];
   if (permissions.length) {
@@ -270,29 +360,32 @@ export function render(data, { minUsd = 0, all = false, color = false, keyFor = 
     for (const a of permissions.slice(0, 10)) out.push(`  ${a.chain}: ${a.symbol || short(a.token)} -> ${short(a.spender)} (${a.type}${a.unlimited ? ", unlimited" : ""})`, `    ${a.how_to_revoke}`);
     if (permissions.length > 10) out.push(c.dim(`  ${permissions.length - 10} more in --json`));
     out.push(c.dim("  Permissions are separate from money found; an approval alone does not mean the spender is malicious."));
+    if (data.security?.note) out.push(c.dim(`  ${data.security.note}`));
   }
-  if (data.security?.note) out.push(c.dim(data.security.note));
-  const securityCoverage = data.security?.coverage || {};
-  const uncheckedSecurity = [...Object.entries(securityCoverage), ...(data.security?.wallets || []).flatMap((w) => Object.entries(w.coverage || {}).map(([chain, c]) => [`${chain} on ${short(w.address)}`, c]))].filter(([, c]) => c.status !== "complete");
-  if (uncheckedSecurity.length) out.push(c.dim(`Approval checks incomplete: ${uncheckedSecurity.map(([chain, c]) => `${chain} (${c.reason || c.status})`).join(", ")}`));
-  const truncated = data.truncated_sources || [];
-  if (truncated.length) out.push(c.yellow(`Stopped early (${truncated.length} sources): ${truncated.map((x) => `${x.id}${multi && x.address ? ` on ${short(x.address)}` : ""} (${x.reason || "time or page budget"})`).join(", ")}`));
-  const risk = data.rugcheck;
-  if (risk?.unchecked) out.push(c.dim(`Rugcheck: ${risk.checked}/${risk.candidates} uncertain tokens checked; ${risk.unchecked} unchecked.`));
-  const quotes = data.market_quotes;
-  if (quotes?.unchecked) out.push(c.dim(`Market price fallback: ${quotes.checked}/${quotes.candidates} tokens checked; ${quotes.unchecked} unchecked.`));
 
-  const failed = data.failed_sources || [];
-  if (failed.length) out.push(c.red(`Failed sources (${failed.length}, not checked): ${failed.map((f) => `${f.id}${multi && f.address ? ` on ${short(f.address)}` : ""} (${String(f.reason || "").slice(0, 60)})`).join(", ")}`));
+  // ---- what was not fully checked: one aligned block
+  const gaps = [];
+  const gap = (label, text, paintIt = c.dim) => gaps.push(`  ${paintIt(label.padEnd(10))} ${text}`);
+  for (const f of data.failed_sources || []) gap("failed", `${f.id}${multi && f.address ? ` on ${short(f.address)}` : ""} (${String(f.reason || "").slice(0, 70)})`, c.red);
+  for (const x of data.truncated_sources || []) gap("stopped", `${x.id}${multi && x.address ? ` on ${short(x.address)}` : ""} (${x.reason || "time or page budget"})`, c.yellow);
+  const securityCoverage = data.security?.coverage || {};
+  const uncheckedSecurity = [...Object.entries(securityCoverage), ...(data.security?.wallets || []).flatMap((w) => Object.entries(w.coverage || {}).map(([chain, v]) => [`${chain} on ${short(w.address)}`, v]))].filter(([, v]) => v.status !== "complete");
+  if (uncheckedSecurity.length) gap("approvals", uncheckedSecurity.map(([chain, v]) => `${chain} (${/timeout|narrower block range/i.test(v.reason || "") ? "the explorer timed out" : String(v.reason || v.status).slice(0, 50)})`).join(", "));
+  const quotes = data.market_quotes;
+  if (quotes?.unchecked) gap("prices", `${quotes.unchecked} of ${quotes.candidates} tokens had no market price check`);
+  const risk = data.rugcheck;
+  if (risk?.unchecked) gap("rugcheck", `${risk.unchecked} of ${risk.candidates} uncertain tokens not checked`);
   const groups = keyGroups(data.skipped_for_keys ?? notConfigured(data), keyFor);
-  const n = Object.values(groups).reduce((s, x) => s + x.size, 0);
-  if (n) {
-    out.push(c.dim(`Skipped for a missing key (${n} source${n === 1 ? "" : "s"}, or parts of them):`));
-    for (const [p, ids] of Object.entries(groups)) {
-      out.push(c.dim(`  ${PROVIDERS[p] ? `needs the ${p} key (walletscan keys set ${p})` : p === "unavailable" ? "unavailable" : `needs ${p}`}: ${[...ids.keys()].join(", ")}`));
-      for (const [id, whys] of ids) if (whys.size) out.push(c.dim(`    ${id}: ${whyLine(whys)}`));
+  for (const [p, ids] of Object.entries(groups)) {
+    gaps.push(`  ${c.dim(PROVIDERS[p] ? `needs the ${p} key (walletscan keys set ${p})` : p === "unavailable" ? "unavailable" : `needs ${p}`)}`);
+    const w = Math.max(...[...ids.keys()].map((id) => id.length));
+    for (const [id, whys] of ids) {
+      const why = whys.size ? whyLine(whys) : "";
+      const lines = why ? wrap(why, Math.max(30, width - w - 6)) : [""];
+      lines.forEach((l, i) => gaps.push(c.dim(`    ${(i ? "" : id).padEnd(w)}  ${l}`.trimEnd())));
     }
   }
+  if (gaps.length) out.push("", c.bold("Not fully checked"), ...gaps);
   return `${out.join("\n")}\n`;
 }
 
@@ -523,7 +616,7 @@ async function scanCmd(addresses, opts, io) {
   if (!out.ok) { io.stderr.write(`scan failed (${out.status}): ${scrub(out.data?.error || JSON.stringify(out.data)).slice(0, 400)}\n`); return 1; }
   if (opts.json) { io.stdout.write(`${scrub(JSON.stringify(out.data, null, 2))}\n`); return 0; }
   const color = !opts["no-color"] && !process.env.NO_COLOR && !!io.stdout.isTTY;
-  io.stdout.write(scrub(render(out.data, { minUsd: minUsd ?? 0, all: !!opts.all, color, keyFor: keyNamer(E), names })));
+  io.stdout.write(scrub(render(out.data, { minUsd: minUsd ?? 1, all: !!opts.all, color, keyFor: keyNamer(E), names, width: io.stdout.columns || 100 })));
   return 0;
 }
 
