@@ -17,7 +17,7 @@ import { fileURLToPath } from "node:url";
 import { spawn } from "node:child_process";
 import { META, ROTKI, LISS, LISS_LISTS, EXTRA_LISTS, VESTING, NETS, SABLIER } from "./lists.mjs";
 import { FORMAT, REC, NB, HEAD, pre } from "./build.mjs";
-import { keylessRpc, alchemyOff, markAlchemyOff, notEnabled } from "../keyless.mjs";
+import { keylessRpc, alchemyOff, markAlchemyOff, notEnabled, logsCapped, markLogsCapped, freeLogsCap, wideLogs } from "../keyless.mjs";
 
 const HEX = /^0x[0-9a-fA-F]{40}$/;
 const ZERO = "0x0000000000000000000000000000000000000000";
@@ -201,7 +201,9 @@ export function lookup(address) {
 async function alchemyRpc(chainId, method, params) {
   const net = NETS[chainId]?.net;
   if (!net) throw new Error(`no RPC for chain ${chainId}`);
-  if (!alchemyKey() || alchemyOff(net)) return keylessRpc(net, method, params);
+  // a Free plan key answers eth_getLogs over 10 blocks at most: wide ones go keyless (../keyless.mjs markLogsCapped)
+  const wide = method === "eth_getLogs" && wideLogs(params[0]);
+  if (!alchemyKey() || alchemyOff(net) || (wide && logsCapped())) return keylessRpc(net, method, params);
   for (let i = 0; ; i++) {
     const r = await fetch(`https://${net}.g.alchemy.com/v2/${alchemyKey()}`, {
       method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ jsonrpc: "2.0", id: 1, method, params }), signal: AbortSignal.timeout(20_000),
@@ -209,6 +211,7 @@ async function alchemyRpc(chainId, method, params) {
     if ((r.status === 429 || r.status >= 500) && i < 3) { await new Promise((ok) => setTimeout(ok, 600 * 2 ** i)); continue; }
     const j = await r.json().catch(() => ({ error: { message: `HTTP ${r.status}` } }));
     if (j.error && notEnabled(j.error.message)) { markAlchemyOff(net); return keylessRpc(net, method, params); } // network off in the app
+    if (j.error && wide && freeLogsCap(j.error.message)) { markLogsCapped(); return keylessRpc(net, method, params); }
     if (j.error) throw new Error(`${method}: ${j.error.message || JSON.stringify(j.error)}`);
     return j.result;
   }

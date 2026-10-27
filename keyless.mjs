@@ -66,6 +66,28 @@ export function markAlchemyOff(net) {
   // one line per process, not one per network (an app can have twenty off)
   if (ALCHEMY_OFF.size === 1) console.error(`alchemy: some networks are off in this Alchemy app (first: ${net}), so they go through the keyless path: turn on every network in the Alchemy dashboard`);
 }
+// The Alchemy Free plan answers eth_getLogs over 10 blocks at most (400 "Under the Free tier plan, you can make
+// eth_getLogs requests with up to a 10 block range", 2026-10-27), so every full-history log read failed and
+// stuck/lib.mjs split the range down to 10 blocks until the bridge check timed out. With such a key, the wide
+// eth_getLogs of the rest of the process take the keyless path above; every other Alchemy method stays on the key.
+export const ALCHEMY_PAID = "a paid Alchemy plan";
+const LOGS = { capped: false };
+export const logsCapped = () => LOGS.capped;
+export const freeLogsCap = (text) => /free tier plan.{0,80}eth_getLogs.{0,60}block range/i.test(String(text ?? ""));
+export function markLogsCapped() {
+  if (LOGS.capped) return;
+  LOGS.capped = true;
+  console.error("alchemy: this key is on the Free plan, which caps eth_getLogs at 10 blocks, so full-history logs go through the keyless path (Ethereum, Avalanche, Mantle, Blast; other networks are skipped): Pay As You Go lifts the cap");
+}
+// an eth_getLogs filter over more than the Free plan's 10 blocks ("latest" or no end counts as wide)
+export function wideLogs(filter = {}) {
+  if (filter.blockHash) return false;
+  const b = (v) => (v == null || v === "latest" || v === "pending" || v === "safe" || v === "finalized" ? null : BigInt(v));
+  const from = b(filter.fromBlock ?? "0x0"), to = b(filter.toBlock);
+  return from == null || to == null || to - from >= 10n;
+}
+// a JSON-RPC body (one call or a batch) with a wide eth_getLogs in it
+export const wideLogsBody = (body) => [body].flat().some((b) => b?.method === "eth_getLogs" && wideLogs(b.params?.[0]));
 // a thrown viem / fetch error -> all its text, causes included
 export const errText = (e) => { const out = []; for (let x = e, i = 0; x && i < 6; x = x.cause, i++) out.push(x.message, x.details, x.shortMessage); return out.filter(Boolean).join(" "); };
 
@@ -140,11 +162,14 @@ function combos(topics = []) {
 }
 export async function logs(net, filter = {}) {
   const what = `full-history event logs`;
-  if (!EXPLORERS[net]) throw needKey(`${what} on ${net}`);
+  // a Free plan key reaches here too (markLogsCapped): what the part needs then is the paid plan, not a key
+  const key = LOGS.capped ? ALCHEMY_PAID : undefined;
+  const skip = (why) => needKey(why, key);
+  if (!EXPLORERS[net]) throw skip(`${what} on ${net}`);
   const addrs = filter.address == null ? [null] : [filter.address].flat();
   const sets = combos(filter.topics);
   // Etherscan-style APIs take one value per topic: past 64 single-value queries a scan would crawl, so it needs the key
-  if (addrs.length * sets.length > 64) throw needKey(`${what} on ${net} (${addrs.length * sets.length} topic / address combinations)`);
+  if (addrs.length * sets.length > 64) throw skip(`${what} on ${net} (${addrs.length * sets.length} topic / address combinations)`);
   const from0 = num(filter.fromBlock) ?? 0, to = num(filter.toBlock);
   const seen = new Map();
   // the queries run side by side (http() paces each host); each walks its pages from the last block
@@ -158,9 +183,9 @@ export async function logs(net, filter = {}) {
       for (let x = 0; x < used.length; x++) for (let y = x + 1; y < used.length; y++) q[`topic${used[x][1]}_${used[y][1]}_opr`] = "and";
       // Routescan gives up on a sparse topic over the whole history ("Timeout reached, please use a narrower block
       // range", LlamaPay's StreamCreated on Ethereum): no keyless source can answer that, so it is a skip, not a failure
-      const page = await explorer(net, q, what).catch((e) => { throw /narrower block range/i.test(errText(e)) ? needKey(`${what} on ${net} (too much history for the keyless explorer)`) : e; });
+      const page = await explorer(net, q, what).catch((e) => { throw /narrower block range/i.test(errText(e)) ? skip(`${what} on ${net} (too much history for the keyless explorer)`) : e; });
       for (const l of page) seen.set(`${l.transactionHash}:${hex(l.logIndex)}`, toLog(l));
-      if (seen.size > MAX_LOGS) throw needKey(`${what} on ${net} (more than ${MAX_LOGS} logs)`);
+      if (seen.size > MAX_LOGS) throw skip(`${what} on ${net} (more than ${MAX_LOGS} logs)`);
       if (page.length < PAGE) break;
       const last = num(page.at(-1).blockNumber);
       if (last <= from) throw new Error(`eth_getLogs: over ${PAGE} logs in block ${from}, not read`);

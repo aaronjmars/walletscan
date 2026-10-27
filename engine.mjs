@@ -7,7 +7,7 @@ import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { REGISTRY, buildRequest, routeLive, keysFor, keySlot, markKeyEmpty, keylessOf } from "./registry.mjs";
-import { alchemyOff, markAlchemyOff, notEnabled } from "./keyless.mjs";
+import { alchemyOff, markAlchemyOff, notEnabled, logsCapped, markLogsCapped, freeLogsCap, wideLogsBody } from "./keyless.mjs";
 import { COMPOSE } from "./compose.mjs";
 import { CACHE, CACHE_ON, cacheKey } from "./cache.mjs";
 
@@ -134,9 +134,12 @@ export async function callRoute(entry, params, opts = {}) {
   if (entry.keyless?.route === "evm.keyless_rpc" && !opts.keyedOnly) {
     const net = params.network || entry.keyless.params?.network || "eth-mainnet";
     const stand = () => callRoute(REG_BY_ID.get(entry.keyless.route), { ...params, ...entry.keyless.params }, { ...opts, body: opts.body ?? buildRequest(entry, params).body });
-    if (alchemyOff(net)) return stand();
+    // a Free plan key: wide eth_getLogs go keyless too (keyless.mjs markLogsCapped)
+    const wide = wideLogsBody(opts.body ?? buildRequest(entry, params).body);
+    if (alchemyOff(net) || (wide && logsCapped())) return stand();
     const out = await callRoute(entry, params, { ...opts, keyedOnly: true });
     if (out.status === 403 && notEnabled(JSON.stringify(out.data))) { markAlchemyOff(net); return stand(); }
+    if (wide && freeLogsCap(JSON.stringify(out.data))) { markLogsCapped(); return stand(); }
     return out;
   }
   const rq = buildRequest(entry, params, opts);

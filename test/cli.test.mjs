@@ -289,7 +289,7 @@ test("the first scan in a terminal with no key offers the setup once; piped or -
 test("no address in a terminal asks for one", async () => {
   const io = terminal(["hello\r", "n\r"]);
   assert.equal(await main([], io), 2);
-  assert.match(io.stderr.text, /^Wallet address\(es\) to scan/);
+  assert.match(io.stderr.text, /^Wallet address\(es\) or ENS name\(s\) to scan/);
 });
 
 test("testKey: works, rejected, Alchemy app with Ethereum off, and unknown on a network error", async () => {
