@@ -52,7 +52,7 @@ export async function approvals(p, ctx) {
           const d = r.data;
           const empty = r.ok && String(d?.status) === "0" && /no (records|logs) found/i.test(`${d?.message} ${d?.result}`);
           if (empty) break;
-          if (!r.ok || String(d?.status) !== "1" || !Array.isArray(d.result)) throw new Error(`approval history upstream ${r.status}: ${String(d?.result || d?.message).slice(0, 60)}`);
+          if (!r.ok || String(d?.status) !== "1" || !Array.isArray(d.result)) { const why = d?.result || d?.message; throw new Error(`approval history upstream ${r.status}${why ? `: ${String(why).slice(0, 60)}` : ""}`); }
           logs.push(...d.result);
           if (d.result.length < 1000) break;
           if (page === 3 || Date.now() >= until) { truncated = true; break; }

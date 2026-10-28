@@ -77,7 +77,7 @@ export const freeLogsCap = (text) => /free tier plan.{0,80}eth_getLogs.{0,60}blo
 export function markLogsCapped() {
   if (LOGS.capped) return;
   LOGS.capped = true;
-  console.error("alchemy: this key is on the Free plan, which caps eth_getLogs at 10 blocks, so full-history logs go through the keyless path (Ethereum, Avalanche, Mantle, Blast; other networks are skipped): Pay As You Go lifts the cap");
+  console.error("alchemy: Free plan key, some history checks are skipped (listed at the end of the report)");
 }
 // one 16-block eth_getLogs on Ethereum before a scan: a Free plan key is known before any source runs, so an index
 // that only full-history logs can build (Ronin, Starknet) is skipped up front instead of starting over on every run
