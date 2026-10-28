@@ -217,17 +217,34 @@ function keyGroups(skipped, keyFor) {
 }
 // whys of one source -> one line: "X on arb-mainnet", "X on base-mainnet" -> "X on arb, base"; parts named
 // "part: why" (bridge.stuck's bridges) -> just their names (--json has each why)
+// "full-history event logs" (what every such part needs) is left out: the networks say enough
+const NET_WORDS = { eth: "ethereum", arb: "arbitrum", opt: "optimism", avax: "avalanche", matic: "polygon" };
 function whyLine(whys) {
   const by = new Map(), parts = new Set();
   for (const w of whys) {
     const part = /^([a-z0-9]+): /.exec(w)?.[1];
     if (part) { parts.add(part); continue; }
-    const [, what, net] = /^(.*) on ([a-z0-9]+)-mainnet$/.exec(w) || [];
-    if (what) (by.get(what) || by.set(what, []).get(what)).push(net);
-    else by.set(w, null);
+    const [, what, net, note = ""] = /^(.*) on ([a-z0-9]+)-mainnet( \(.*\))?$/.exec(w) || [];
+    if (!what) { by.set(w, null); continue; }
+    const k = `${what === "full-history event logs" ? "" : what}|${note.replace(" for the keyless explorer", "")}`;
+    (by.get(k) || by.set(k, []).get(k)).push(NET_WORDS[net] || net);
   }
-  return [...(parts.size ? [[...parts].join(", ")] : []), ...[...by].map(([what, nets]) => (nets ? `${what} on ${nets.join(", ")}` : what))].join("; ");
+  return [...(parts.size ? [[...parts].join(", ")] : []), ...[...by].map(([k, nets]) => {
+    if (!nets) return k;
+    const [what, note] = k.split("|");
+    return `${what ? `${what} on ` : ""}${nets.join(", ")}${note}`;
+  })].join("; ");
 }
+// a scan source id -> words for the report (--json keeps the ids)
+const SOURCE_WORDS = {
+  "bridge.stuck": "stuck bridges", "airdrop.index": "airdrop lists", "rewards.llamapay": "LlamaPay streams", "rewards.zerion": "Zerion rewards",
+  "holdings.zerion": "Zerion holdings", "sol.assets": "Solana assets", "rewards.uniswap_fees": "Uniswap fees", "rewards.ve_nfts": "veNFT rewards",
+  "rewards.validators_0x00": "old validators", "rewards.lrt_withdrawals": "restaking withdrawals",
+};
+const sourceName = (id) => SOURCE_WORDS[id] || String(id).replace(/^[a-z]+\./, "").replace(/_/g, " ");
+// a chain key -> its name: gravity-alpha -> Gravity Alpha
+const CHAIN_WORDS = { bnb: "BNB Chain", bsc: "BNB Chain", zksync: "ZKsync", opbnb: "opBNB", "polygon-zkevm": "Polygon zkEVM", xdai: "Gnosis", hyperevm: "HyperEVM" };
+const chainName = (k) => CHAIN_WORDS[k] || String(k).split("-").map((w) => (w ? w[0].toUpperCase() + w.slice(1) : w)).join(" ");
 
 // a scan.all or scan.wallets answer -> the human report: totals, deadlines closing soon, findings by USD per bucket
 // (rows of one app and one claim page merged), holdings, approvals, then what was not fully checked
@@ -289,6 +306,8 @@ function mergeRows(rows) {
 export function render(data, { minUsd = 0, all = false, color = false, keyFor = () => null, names = {}, width = 100, now = Date.now() } = {}) {
   const c = paint(color), out = [], t = data.totals || {}, multi = Array.isArray(data.wallets);
   const ens = (a) => names[String(a ?? "").toLowerCase()]; // the ENS name a scanned address was given as
+  // text stays readable in a wide terminal: lines stop at 110 columns whatever the window
+  width = Math.min(width, 110);
   const col = 12, pad = " ".repeat(col + 4), textWidth = Math.max(40, width - pad.length);
   const money = (n) => usd(n).padStart(col);
   out.push(c.bold(multi ? `${data.scanned}/${data.addresses} wallets scanned` : `${data.address} (${[ens(data.address), data.kind].filter(Boolean).join(", ")})`));
@@ -314,13 +333,15 @@ export function render(data, { minUsd = 0, all = false, color = false, keyFor = 
   // ---- findings: low hints only with --all; a priced row under the minimum is hidden, whatever its deadline
   const all_ = data.findings || [];
   const kept = all_.filter((f) => all || f.confidence !== "low");
-  const rows = mergeRows(kept).filter((f) => f.usd == null || f.usd >= minUsd);
+  const merged = mergeRows(kept), big = (f) => f.usd == null || f.usd >= minUsd;
+  const rows = merged.filter(big);
   rows.sort((a, b) => (b.usd ?? -1) - (a.usd ?? -1));
   const hiddenLow = all ? 0 : all_.length - kept.length;
-  const hiddenSmall = mergeRows(kept).length - rows.length + (data.hidden_below_min_usd || 0);
+  const count = (xs) => xs.reduce((n, f) => n + f.parts.length, 0); // findings, not rows
+  const hiddenSmall = count(merged.filter((f) => !big(f))) + (data.hidden_below_min_usd || 0);
   const title = (f, { tag: withTag = true } = {}) => {
     const name = f.protocol || (/^holdings\./.test(f.source || "") ? null : /^airdrop\./.test(f.source || "") ? "airdrop" : f.source);
-    const where = [name && c.bold(name), f.chain].filter(Boolean).join(c.dim(" · "));
+    const where = [name && c.bold(name), f.chain && String(f.chain).split(", ").map(chainName).join(", ")].filter(Boolean).join(c.dim(" · "));
     const tag = !withTag ? "" : f.confidence === "medium" ? c.yellow("  likely, check first") : f.confidence === "low" ? c.dim("  hint") : "";
     return `${where}${where ? "  " : ""}${amounts(f.parts)}${tag}${multi && f.address ? c.dim(`  ${ens(f.address) || short(f.address)}`) : ""}`;
   };
@@ -333,7 +354,8 @@ export function render(data, { minUsd = 0, all = false, color = false, keyFor = 
     for (const f of [...soon].sort((a, b) => a.deadline.localeCompare(b.deadline))) out.push(`  ${money(f.usd)}  ${dl(f.deadline, "by ", w)}  ${title(f, { tag: false })}`);
   }
 
-  out.push("", c.bold(`Findings (${rows.length})`));
+  const shown = count(rows);
+  out.push("", c.bold(`Findings (${shown === rows.length ? shown : `${shown} in ${rows.length} rows`})`));
   if (!rows.length) out.push(c.dim("  nothing found"));
   for (const [b, words] of Object.entries(BUCKET_WORDS)) {
     const part = rows.filter((f) => (f.bucket || "you_can_claim") === b);
@@ -346,7 +368,7 @@ export function render(data, { minUsd = 0, all = false, color = false, keyFor = 
       if (f.deadline) out.push(`${pad}${dl(f.deadline)}`);
     }
   }
-  const hidden = [hiddenLow && `${hiddenLow} low-confidence hint${hiddenLow === 1 ? "" : "s"} hidden (--all shows them)`, hiddenSmall > 0 && `${hiddenSmall} below the minimum hidden`].filter(Boolean);
+  const hidden = [hiddenLow && `${hiddenLow} low-confidence hint${hiddenLow === 1 ? "" : "s"} hidden (--all shows them)`, hiddenSmall > 0 && `${hiddenSmall} under $${minUsd.toLocaleString("en-US")} hidden (--min-usd 0 shows them)`].filter(Boolean);
   if (hidden.length) out.push(c.dim(`  ${hidden.join("; ")}`));
 
   // ---- holdings
@@ -366,8 +388,8 @@ export function render(data, { minUsd = 0, all = false, color = false, keyFor = 
   // ---- what was not fully checked: one aligned block
   const gaps = [];
   const gap = (label, text, paintIt = c.dim) => gaps.push(`  ${paintIt(label.padEnd(10))} ${text}`);
-  for (const f of data.failed_sources || []) gap("failed", `${f.id}${multi && f.address ? ` on ${short(f.address)}` : ""} (${String(f.reason || "").slice(0, 70)})`, c.red);
-  for (const x of data.truncated_sources || []) gap("stopped", `${x.id}${multi && x.address ? ` on ${short(x.address)}` : ""} (${x.reason || "time or page budget"})`, c.yellow);
+  for (const f of data.failed_sources || []) gap("failed", `${sourceName(f.id)}${multi && f.address ? ` on ${short(f.address)}` : ""} (${String(f.reason || "").slice(0, 70)})`, c.red);
+  for (const x of data.truncated_sources || []) gap("stopped", `${sourceName(x.id)}${multi && x.address ? ` on ${short(x.address)}` : ""} (${x.reason || "time or page budget"})`, c.yellow);
   const securityCoverage = data.security?.coverage || {};
   const uncheckedSecurity = [...Object.entries(securityCoverage), ...(data.security?.wallets || []).flatMap((w) => Object.entries(w.coverage || {}).map(([chain, v]) => [`${chain} on ${short(w.address)}`, v]))].filter(([, v]) => v.status !== "complete");
   if (uncheckedSecurity.length) gap("approvals", uncheckedSecurity.map(([chain, v]) => `${chain} (${/timeout|narrower block range/i.test(v.reason || "") ? "the explorer timed out" : String(v.reason || v.status).slice(0, 50)})`).join(", "));
@@ -378,11 +400,11 @@ export function render(data, { minUsd = 0, all = false, color = false, keyFor = 
   const groups = keyGroups(data.skipped_for_keys ?? notConfigured(data), keyFor);
   for (const [p, ids] of Object.entries(groups)) {
     gaps.push(`  ${c.dim(PROVIDERS[p] ? `needs the ${p} key (walletscan keys set ${p})` : p === "unavailable" ? "unavailable" : `needs ${p}`)}`);
-    const w = Math.max(...[...ids.keys()].map((id) => id.length));
+    const w = Math.max(...[...ids.keys()].map((id) => sourceName(id).length));
     for (const [id, whys] of ids) {
       const why = whys.size ? whyLine(whys) : "";
       const lines = why ? wrap(why, Math.max(30, width - w - 6)) : [""];
-      lines.forEach((l, i) => gaps.push(c.dim(`    ${(i ? "" : id).padEnd(w)}  ${l}`.trimEnd())));
+      lines.forEach((l, i) => gaps.push(c.dim(`    ${(i ? "" : sourceName(id)).padEnd(w)}  ${l}`.trimEnd())));
     }
   }
   if (gaps.length) out.push("", c.bold("Not fully checked"), ...gaps);
