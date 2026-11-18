@@ -444,7 +444,8 @@ export function legacy(data) {
   }));
 }
 
-// money left in old Ethereum contracts (rewards.old_contracts, rewards.maker_scd, rewards.argent_wallets: oldeth/).
+// money left in old Ethereum contracts (rewards.old_contracts, rewards.maker_scd, rewards.argent_wallets: oldeth/;
+// rewards.etherr_old_tokens: forgotten/etherr.mjs, low-confidence hints only).
 // Each item carries its own confidence: high = read onchain now (EtherDelta/IDEX balance, ENS deed owned by the
 // wallet, a PoWH clone's dividends, an Argent wallet's ETH); medium = a SAI vault with debt settled at our estimate,
 // Zerion's token read in an Argent wallet; low = listed in Forgotten ETH's index with no onchain reader here (a hint)

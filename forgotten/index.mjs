@@ -4,6 +4,7 @@ import { lrtWithdrawals } from "./lrt.mjs";
 import { bnbFarms } from "./bnb.mjs";
 import { solLeftovers, solStreams } from "./solana.mjs";
 import { deadDefi } from "./deaddefi.mjs";
+import { etherrOldTokens } from "./etherr.mjs";
 import { oldTokens, expiredLocks } from "./tokens.mjs";
 import { stargateFees } from "./stargate.mjs";
 import { smartWallets } from "./wallets.mjs";
@@ -11,7 +12,7 @@ import { deadApps } from "./deadapps.mjs";
 import { balancerPools } from "./balancer.mjs";
 import { veNfts } from "./venft.mjs";
 
-export const FORGOTTEN = { lrtWithdrawals, bnbFarms, solLeftovers, solStreams, deadDefi, oldTokens, expiredLocks, stargateFees, smartWallets, deadApps, balancerPools, veNfts };
+export const FORGOTTEN = { lrtWithdrawals, bnbFarms, solLeftovers, solStreams, deadDefi, etherrOldTokens, oldTokens, expiredLocks, stargateFees, smartWallets, deadApps, balancerPools, veNfts };
 
 // hiddenfunds.xyz gap sources (forgotten/hf.mjs): Blur Pool, Plasma vault, Zora + 0xSplits, dead DEX LPs, Blast USDB, Balancer rescue, Agglayer,
 // Nucleus vault shares, Mooniswap LPs, Karak queue, K2 claims, Polkadot sale claims, dead Solana apps

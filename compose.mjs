@@ -959,6 +959,7 @@ export const COMPOSE = {
       { id: "rewards.venice", run: async () => F.venice(await get(ctx, "rewards.venice", { address })) },
       { id: "rewards.legacy", run: async () => ({ findings: F.legacy(await get(ctx, "rewards.legacy", { address })) }) },
       { id: "rewards.old_contracts", run: async () => ({ findings: F.oldEthereum(await get(ctx, "rewards.old_contracts", { address }), { source: "rewards.old_contracts" }) }) },
+      { id: "rewards.etherr_old_tokens", run: async () => ({ findings: F.oldEthereum(await get(ctx, "rewards.etherr_old_tokens", { address }), { source: "rewards.etherr_old_tokens" }) }) },
       { id: "rewards.maker_scd", run: async () => ({ findings: F.oldEthereum(await get(ctx, "rewards.maker_scd", { address }), { source: "rewards.maker_scd" }) }) },
       { id: "rewards.argent_wallets", run: async () => ({ findings: F.oldEthereum(await get(ctx, "rewards.argent_wallets", { address }), { source: "rewards.argent_wallets" }) }) },
       { id: "rewards.validators_0x00", run: async () => F.validators0x00(await get(ctx, "rewards.validators_0x00", { address })) },
