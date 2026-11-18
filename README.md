@@ -16,7 +16,7 @@ Chains: EVM (every chain with a public RPC), Solana, Bitcoin, TRON, NEAR, Sui, P
 | `creator_fees` | pump.fun, PumpSwap, Flaunch, Bankr, Klik and Pons v2 creator fees never collected |
 | `airdrop` | unclaimed airdrops from 40+ open eligibility lists (each hit checked onchain), Parcl, the 2017 DOT sale |
 | `vesting` | Pons buybacks vested and never released, plus vesting and payment streams unlocked and never withdrawn (Sablier, Hedgey, LlamaPay, Streamflow, UNCX, Team Finance) |
-| `unstake_ready` | finished unstakes and withdrawals never claimed (Lido, EigenLayer, liquid restaking queues, expired vote locks, Babylon BTC, TRON, NEAR, DOT, Sui) and money left in old Ethereum contracts |
+| `unstake_ready` | finished unstakes and withdrawals never claimed (Lido, EigenLayer, liquid restaking queues, expired vote locks, Babylon BTC, TRON, NEAR, DOT, Sui) and money left in old Ethereum contracts, plus old 2015-2017 tokens held from [Etherr's Claimables list](https://etherr.eth.limo/) (hints only) |
 | `token_migration` | old tokens whose official swap still pays (KNCL to KNC, RNDR, NU / KEEP, dead DeFi tokens, LP of dead DEXes) |
 | `bridge_stuck` / `bridge_blocked` | bridge withdrawals that need a last step (32 bridges via `stuck/`, plus LayerZero, CCIP, Wormhole, Across...) and money left on ~100 shut-down chains |
 | `prediction_winnings` | resolved Polymarket bets never redeemed |
@@ -151,6 +151,7 @@ Addresses go only to the upstream data APIs a scan reads: public RPCs and explor
 | `airdrops/` | the airdrop eligibility index, see `airdrops/README.md` |
 | `chains/` | balances on every EVM chain with a public RPC, and shut-down chains, see `chains/README.md` |
 | `oldeth/` | money left in old Ethereum contracts (Forgotten ETH index + onchain readers) |
+| `data/etherr-tokens.json` | the token rows of Etherr's Claimables 2015-2017 list, read by `forgotten/etherr.mjs` |
 | `forgotten/`, `unclaimed/`, `perps/` | the forgotten-money sources: contracts read directly, dead apps, perp venues |
 | `nonevm/` | Bitcoin, TRON, NEAR, Polkadot, Sui and TON: address kinds, routes and scans |
 | `data/` | hand-kept lists: claim deadlines, shut-down chains, dead DEXes, embedded-wallet guide |
@@ -171,7 +172,7 @@ Each version goes to [npm](https://www.npmjs.com/package/walletscan-cli), [GitHu
 
 ## Credits
 
-`stuck/` started as `stuck`, a standalone bridge checker (MIT). Airdrop lists come from rotki/data, lissstern/airdrop-db and the projects named in `airdrops/README.md`, downloaded at run time; some contract addresses were read from rotki's decoders. The old-contract index is Forgotten ETH's.
+`stuck/` started as `stuck`, a standalone bridge checker (MIT). Airdrop lists come from rotki/data, lissstern/airdrop-db and the projects named in `airdrops/README.md`, downloaded at run time; some contract addresses were read from rotki's decoders. The old-contract index is Forgotten ETH's. The 2015-2017 token list is Etherr's (etherr.eth.limo).
 
 ## License
 
