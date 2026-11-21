@@ -67,6 +67,7 @@ const HOST_RPS = {
 const nextSlot = new Map();
 export const sleep = (ms) => new Promise((done) => setTimeout(done, ms));
 async function pace(host) {
+  if (process.env.WALLETSCAN_NO_PACE === "1") return;
   const now = Date.now(), rps = HOST_RPS[host];
   if (!rps) { const at = nextSlot.get(host) || 0; if (at > now) await sleep(at - now); return; }
   const at = Math.max(now, nextSlot.get(host) || 0);

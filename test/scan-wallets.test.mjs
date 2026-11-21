@@ -5,6 +5,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 
 process.env.WALLETS_MAX = "4";
+process.env.WALLETSCAN_NO_PACE = "1"; // fetch is stubbed: no upstream to pace for
 globalThis.fetch = async () => new Response("{}", { status: 404 });
 
 const F = await import("../findings.mjs");

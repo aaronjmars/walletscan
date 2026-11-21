@@ -107,6 +107,7 @@ export const errText = (e) => { const out = []; for (let x = e, i = 0; x && i < 
 const RPS = { "api.routescan.io": 2, "blockscout.com": 2, "explorer.optimism.io": 2, "coins.llama.fi": 5, "publicnode.com": 15 };
 const nextSlot = new Map();
 async function pace(url) {
+  if (process.env.WALLETSCAN_NO_PACE === "1") return;
   const host = new URL(url).host, k = Object.keys(RPS).find((h) => host === h || host.endsWith(`.${h}`));
   if (!k) return;
   const now = Date.now(), at = Math.max(now, nextSlot.get(k) || 0);
